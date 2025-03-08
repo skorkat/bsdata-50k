@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Lib - Imperial - Base" id="331b-005e-07b0-6041" targetId="0d98-1036-43bc-85f0"/>
+    <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Equipment" id="b609-da18-63b6-2e95" targetId="0e97-bb9e-538e-d4e5"/>
+  </catalogueLinks>
+  <sharedProfiles>
+    <profile name="Space Marine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a3e8-fe05-3a69-f4d3" noindex="true">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Space Marine Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1fbe-e6ba-b13c-d0f8">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scout" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f156-6774-c01f-eafa">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scout Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3f7b-3050-8870-152c">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sternguard Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="80ff-bd80-4286-bd4b">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sternguard Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="290c-8cbd-8457-0775">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vanguard Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7a43-dc47-3f29-869b">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vanguard Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7175-0ed4-b896-e946">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Terminator" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="aa07-8fb3-1a5e-c7e4">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Terminator Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="928f-31d9-400f-0db5">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dreadnought" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="773f-88c1-f007-3b18">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Drop Pod" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="19a8-eee4-ca93-8741">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">0</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">0</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rhino" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4a75-a220-2562-a611">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Razorback" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="f630-210e-776c-eec6">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Apothecary" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="222c-e928-8fb7-d55a">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6++</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ancient" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="260f-914b-9c9c-0a02">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e3b0-26ad-a2e6-71d9">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5+</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scout Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a1c4-c99f-a1c5-3ac1">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scout Biker Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="004b-044a-23f3-4b82">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Attack Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="31bd-5b56-5716-3020" noindex="true">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Biker Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4151-17b5-3e86-ef22">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="bc15-d4b1-2b53-fb44" noindex="true">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Thunderfire Cannon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="b259-f03a-a4cf-4b45">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">M</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">2</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Predator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="6a89-5f10-ad5f-f2dc">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vindicator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="8ec9-a28d-4a3d-7a46">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">In</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Whirlwind" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="fdf5-324b-aafc-fb6f">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Land Speeder" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="38fa-a157-e3ad-7ea8">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">1</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Land Raider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="291b-b3f7-f990-c5b6">
+      <characteristics>
+        <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
+        <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Captain" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2197-21e7-05b2-7f26">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">8</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">1+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Librarian" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="920f-a9a6-b0a8-07aa">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lieutenant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="33f2-b875-6d2f-de10">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaplain" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="22f7-85c5-721e-8ae8">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Techmarine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c2a5-e051-cb9c-c214">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Centurion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c626-b07b-7ea2-6c81">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Centurion Sereant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="af5b-a753-c73a-8d05">
+      <characteristics>
+        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
+        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Space Marine" hidden="false" id="8e8e-d6f7-78bd-8388" flatten="false" collapsible="false" collective="false">
+      <infoLinks>
+        <infoLink name="Space Marine" id="3ed3-51ec-40e0-3a06" hidden="false" type="profile" targetId="a3e8-fe05-3a69-f4d3"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="0650-13ac-bc58-c152" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55b6-2464-f2be-4fc8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55b6-2464-f2be-4fc8-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="ddbb-327e-740c-abbe" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1197-5595-45fd-ec8e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1197-5595-45fd-ec8e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout" hidden="false" id="a999-1b7a-ca24-8de6">
+      <infoLinks>
+        <infoLink name="Infiltrate" id="a7cd-58dd-1f2c-7625" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+        <infoLink name="Scout" id="18e2-dc39-9958-0743" hidden="false" type="profile" targetId="f156-6774-c01f-eafa"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="7727-5f7a-d077-9419" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8e5-5d7d-2cc1-9831-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e5-5d7d-2cc1-9831-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="431a-fd98-beb7-c585" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cf5-71d0-1e9f-4fce-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cf5-71d0-1e9f-4fce-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="e34c-2530-aa1f-9f55" flatten="false" collapsible="false">
+      <entryLinks>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="9e3b-e5af-7722-2d53" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f52c-6451-a96d-3466-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f52c-6451-a96d-3466-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="1085-5f44-0917-b964" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1992-0e49-6194-920a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1992-0e49-6194-920a-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="4b58-50f3-c91c-be5e" type="selectionEntryGroup" targetId="2a98-3ac3-c36a-94ca"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Space Marine Sergeant" id="68d6-1008-2d68-94b7" hidden="false" type="profile" targetId="1fbe-e6ba-b13c-d0f8"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout Sergeant" hidden="false" id="0ac5-c455-d9bb-f8c9">
+      <entryLinks>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="4480-1c1d-9cf9-37b7" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8549-b690-977d-8b33-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8549-b690-977d-8b33-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="71d2-b2e1-602f-b722" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cccc-1903-1151-dbf9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cccc-1903-1151-dbf9-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="655f-dd6a-d740-965f" type="selectionEntryGroup" targetId="2a98-3ac3-c36a-94ca"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Infiltrate" id="f026-21c4-f2e6-665a" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+        <infoLink name="Scout Sergeant" id="4ea8-a383-19d8-5057" hidden="false" type="profile" targetId="3f7b-3050-8870-152c"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="19"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sternguard Veteran" hidden="false" id="bdc6-30be-20c9-1568">
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Sternguard Veteran" id="fd9f-fbaf-7c6e-4ae1" hidden="false" type="profile" targetId="80ff-bd80-4286-bd4b"/>
+        <infoLink name="Special Issue Ammo" id="3c7c-0172-b6a5-9fc6" hidden="false" type="rule" targetId="8e0c-2e10-ceae-ff93"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="8006-2339-c11d-4989" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ece-3cb9-5252-9a0e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ece-3cb9-5252-9a0e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="22b8-0db5-9629-c20e" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4bc-515c-2471-b3ff-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4bc-515c-2471-b3ff-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="3f00-e4cb-47e3-792d" type="selectionEntry" targetId="90a6-be2b-7c5a-03a4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4158-4348-0c04-ee16-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4158-4348-0c04-ee16-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sternguard Sergeant" hidden="false" id="21c9-9448-ce5c-c09b">
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="27"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Sternguard Sergeant" id="44dd-5ea4-5352-0cd3" hidden="false" type="profile" targetId="290c-8cbd-8457-0775"/>
+        <infoLink name="Special Issue Ammo" id="3c0d-7f03-b1b1-1d94" hidden="false" type="rule" targetId="8e0c-2e10-ceae-ff93"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="4f16-f784-8c64-406d" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8561-77b0-487d-d8ab-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8561-77b0-487d-d8ab-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="9d43-8020-70fc-6ba5" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d21f-bb89-9e7c-250b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d21f-bb89-9e7c-250b-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="8225-cff5-3e1f-9d51" type="selectionEntryGroup" targetId="2a98-3ac3-c36a-94ca"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vanguard Veteran" hidden="false" id="d604-63e9-0d82-fc38">
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="23"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Vanguard Veteran" id="bcb7-d975-31cf-5504" hidden="false" type="profile" targetId="7a43-dc47-3f29-869b"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="afb9-95dd-3c82-5782" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="430d-4f98-7676-ed3e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="430d-4f98-7676-ed3e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="b567-f237-04b3-c0fb" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e81-0383-d1d3-7b5b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e81-0383-d1d3-7b5b-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vanguard Sergeant" hidden="false" id="3c78-11ad-addb-f625">
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Vanguard Sergeant" id="722f-e136-423c-a803" hidden="false" type="profile" targetId="7175-0ed4-b896-e946"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="cc60-612a-4f83-6f99" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a10-81f8-12b6-b683-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a10-81f8-12b6-b683-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="608b-6853-8ac7-ab2a" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c896-7820-24af-94ed-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c896-7820-24af-94ed-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="cc9d-0c84-b5d7-d1c0" type="selectionEntryGroup" targetId="2a98-3ac3-c36a-94ca"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Terminator" hidden="false" id="101b-0ab9-f03e-323b">
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="34"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="97eb-ad5b-11dc-b862" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Terminator Bulk" id="a07b-a04f-a9d0-399c" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Terminator" id="b92d-e362-f403-fcaf" hidden="false" type="profile" targetId="aa07-8fb3-1a5e-c7e4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Terminator Sergeant" hidden="false" id="5367-700d-5299-8de9">
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="36"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="576f-399f-462c-c7c8" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Terminator Bulk" id="072a-41d2-e9d3-b2e2" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Terminator Sergeant" id="d84e-d02c-66db-3c2f" hidden="false" type="profile" targetId="928f-31d9-400f-0db5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout Biker" hidden="false" id="4b18-b8ae-d50c-1717">
+      <infoLinks>
+        <infoLink name="Infiltrate" id="8c1d-261d-a0e8-4d0e" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+        <infoLink name="Scout Biker" id="3cd7-768a-4c3c-cfa9" hidden="false" type="profile" targetId="a1c4-c99f-a1c5-3ac1"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="c624-001f-7655-fde2" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5381-72dd-b2e4-0066" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a975-e490-db2e-0f3b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="17bc-656e-2c74-5fd8" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="455f-357d-9af4-3386" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced2-a50f-da7f-c2b1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Boltgun" hidden="false" id="05e5-4092-793c-b25a" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9a5c-9171-1e35-4e75-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9a5c-9171-1e35-4e75-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="32"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout Biker Sergeant" hidden="false" id="4f10-d494-a4f6-065d">
+      <infoLinks>
+        <infoLink name="Infiltrate" id="1d40-f4e5-4252-00c2" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+        <infoLink name="Scout Biker Sergeant" id="a701-edba-920c-cfff" hidden="false" type="profile" targetId="004b-044a-23f3-4b82"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="cc80-76ba-9f91-baea" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be2f-a55d-6ad9-4a0d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cadc-4b6d-91ba-762d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="759a-476c-6731-0a4c" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fcf-a18f-0026-fd60" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83d6-b523-791a-10c4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Boltgun" hidden="false" id="9930-6f71-7726-7d1b" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5bce-ede6-8cfd-c2b0-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5bce-ede6-8cfd-c2b0-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="34"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Attack Biker" hidden="false" id="8dd6-c82d-4710-7661">
+      <infoLinks>
+        <infoLink name="Attack Biker" id="a774-3260-ef73-57f6" hidden="false" type="profile" targetId="31bd-5b56-5716-3020"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="8d18-7faf-294a-8241" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb7d-0f7b-a14b-8551" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b9a-b24f-9b10-df18" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="3b32-556f-6ef7-e97a" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d7a-458e-6e2c-d229" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b812-6c7f-42e5-453b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Boltgun" hidden="false" id="da4a-d757-9b9c-bfdd" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0fb1-879d-a82c-fc65-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0fb1-879d-a82c-fc65-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Biker" hidden="false" id="3188-ee79-8431-2715">
+      <infoLinks>
+        <infoLink name="Biker" id="20fc-2c26-b19f-5d1b" hidden="false" type="profile" targetId="bc15-d4b1-2b53-fb44"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="91a9-8ff9-79a3-8503" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3794-7379-8932-1728" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee1a-c444-5e76-e139" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="7680-5fc5-b330-4478" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a824-1a25-1568-a702" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="336d-75e7-64ca-52c0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Boltgun" hidden="false" id="a62f-2994-6034-2b32" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c738-4c6b-6eae-a7f8-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c738-4c6b-6eae-a7f8-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Biker Sergeant" hidden="false" id="90ff-14d3-29b8-89e9">
+      <infoLinks>
+        <infoLink name="Biker Sergeant" id="6af0-ba1a-fed6-1672" hidden="false" type="profile" targetId="4151-17b5-3e86-ef22"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="049f-4a68-a17e-8a88" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2102-6965-4327-2115" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f54-b379-5582-e065" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="0247-01f3-4398-5e83" type="selectionEntry" targetId="93a9-80e6-91df-b396">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a73f-213e-4637-e1ab" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d48a-b851-4a89-755b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Boltgun" hidden="false" id="4c58-92f6-ba3f-8aac" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="40f3-4125-113c-b5a9-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="40f3-4125-113c-b5a9-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="37"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Centurion" hidden="false" id="4a3f-f781-5f10-3a03">
+      <infoLinks>
+        <infoLink name="Centurion" id="c5fb-b9b6-3169-1612" hidden="false" type="profile" targetId="c626-b07b-7ea2-6c81"/>
+        <infoLink name="Bulky" id="e879-5d6e-64bf-2fc1" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+        <infoLink name="Centurion Armour" id="f8a8-72ed-b077-e5f8" hidden="false" type="rule" targetId="ce90-cc29-ec2a-a78c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Centurion Sergeant" hidden="false" id="cb9d-c76f-f709-fbef">
+      <infoLinks>
+        <infoLink name="Centurion Sereant" id="8066-bcf0-32df-9fe4" hidden="false" type="profile" targetId="af5b-a753-c73a-8d05"/>
+        <infoLink name="Bulky" id="fb53-6dc3-ea78-59d7" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+        <infoLink name="Centurion Armour" id="be75-8249-e093-d556" hidden="false" type="rule" targetId="ce90-cc29-ec2a-a78c"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Sergeant Upgrades" id="2a98-3ac3-c36a-94ca" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Pistol Upgrades" id="b25a-0e89-e2f8-dff1" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66ae-a7fd-f98c-0d03-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ae-a7fd-f98c-0d03-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="05c9-a114-8a91-e465" type="selectionEntry" targetId="90a6-be2b-7c5a-03a4" sortIndex="1"/>
+            <entryLink import="true" name="Plasma Pistol" hidden="false" id="15d9-2294-64f3-c149" type="selectionEntry" targetId="e62e-b317-ff6b-e651" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Shield" hidden="false" id="8373-56c9-32cc-8ec9" type="selectionEntry" targetId="1e39-44e7-9b07-74c3" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Upgrade" id="e9e8-b322-87ca-33c1" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9038-23c3-275f-5aed-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9038-23c3-275f-5aed-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Boltgun" hidden="false" id="02fc-6991-2ad7-98f4" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75" sortIndex="1"/>
+            <entryLink import="true" name="Chainsword" hidden="false" id="06a0-2560-d7cf-ee72" type="selectionEntry" targetId="3dd1-54e3-2ee7-5c14" sortIndex="2"/>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="ddfd-c0ff-54b9-daa0" type="selectionEntry" targetId="71da-bae6-b3a0-096a" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Weapon" hidden="false" id="d74c-889a-bd80-134d" type="selectionEntry" targetId="29d1-fe6b-ffcd-89c8" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Fist" hidden="false" id="1e38-48eb-d46e-7218" type="selectionEntry" targetId="08c4-0d22-a50c-026d" sortIndex="6">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Shield" hidden="false" id="61bb-615e-5fdf-b72e" type="selectionEntry" targetId="1e39-44e7-9b07-74c3" sortIndex="7">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="76d9-e466-cb02-785b" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Terminator Sergeant Upgrades" id="3332-efc0-e540-91fc" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Upgrade" id="a0b3-474c-02f0-b473" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8cc-3dcd-e6fc-bae4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e53-2c01-93ae-44db" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="6822-467a-a5f4-87ab" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Shield" hidden="false" id="af8d-16e4-536e-c136" type="selectionEntry" targetId="1e39-44e7-9b07-74c3" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Upgrade" id="0725-93d1-b950-c55d" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26ed-0eb0-d6cd-812b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a768-05fc-96b1-6500" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="37ad-c60b-6239-fe0c" type="selectionEntry" targetId="71da-bae6-b3a0-096a" sortIndex="2"/>
+            <entryLink import="true" name="Power Weapon" hidden="false" id="5e6a-3944-dd10-3b98" type="selectionEntry" targetId="29d1-fe6b-ffcd-89c8" sortIndex="3"/>
+            <entryLink import="true" name="Power Fist" hidden="false" id="aac3-b198-ddb4-b59d" type="selectionEntry" targetId="08c4-0d22-a50c-026d" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Thunderhammer" hidden="false" id="3df2-0840-9330-a807" type="selectionEntry" targetId="fbb7-7ab3-e1a4-106c" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Leader Upgrades" id="dabb-2def-cb21-ba67" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Upgrade" id="f431-089b-3d6a-88ba" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b023-cc66-d05e-73ff" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfc6-410b-5380-1e84" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Boltgun" hidden="false" id="9273-5561-a31f-c402" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75" sortIndex="2"/>
+            <entryLink import="true" name="Chainsword" hidden="false" id="6107-c4b2-0e68-16de" type="selectionEntry" targetId="3dd1-54e3-2ee7-5c14" sortIndex="1"/>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="4d17-b080-6e25-b1c5" type="selectionEntry" targetId="71da-bae6-b3a0-096a" sortIndex="6">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Weapon" hidden="false" id="ca39-4b9b-c6ad-9994" type="selectionEntry" targetId="29d1-fe6b-ffcd-89c8" sortIndex="8">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Fist" hidden="false" id="1bfb-4f53-f992-fbb7" type="selectionEntry" targetId="08c4-0d22-a50c-026d" sortIndex="13">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Shield" hidden="false" id="bda6-fbeb-f183-7031" type="selectionEntry" targetId="1e39-44e7-9b07-74c3" sortIndex="16">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Thunderhammer" hidden="false" id="3f3e-fb1e-e8a4-5b8c" type="selectionEntry" targetId="fbb7-7ab3-e1a4-106c" sortIndex="14">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="3f71-fb6e-36b3-4d98" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flamer" hidden="false" id="a97c-0df7-ed3b-58d4" type="selectionEntry" targetId="324f-7005-f274-463f" sortIndex="3"/>
+            <entryLink import="true" name="Plasma Gun" hidden="false" id="2b47-9b5b-e919-3d27" type="selectionEntry" targetId="7758-e196-ed4b-b7a1" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Meltagun" hidden="false" id="d75b-5a4d-0a4f-cce1" type="selectionEntry" targetId="1e56-923e-a004-5faa" sortIndex="7">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="136f-d048-f60c-ec17" type="selectionEntry" targetId="67c6-37a0-efbd-a30b" sortIndex="9">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="6"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="ae30-9ca3-851e-b6fb" type="selectionEntry" targetId="e335-df5f-9e4d-9532" sortIndex="10">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="6"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Missile Launcher" hidden="false" id="0cd0-2e52-aaa0-c8b1" type="selectionEntry" targetId="64bf-b436-5573-e12d" sortIndex="11">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Plasma Cannon" hidden="false" id="dac7-e0a7-6b07-3798" type="selectionEntry" targetId="40e5-185f-42bb-eec5" sortIndex="12">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Lascannon" hidden="false" id="df93-fb55-eda7-f55a" type="selectionEntry" targetId="e9e1-b958-e8fa-2bc5" sortIndex="15">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Leader Pistol Upgrades" hidden="false" id="6783-1e3c-1aef-1185" type="selectionEntryGroup" targetId="6da4-b55c-ea46-70f3"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Leader Pistol Upgrades" id="6da4-b55c-ea46-70f3" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="19f1-6be4-c88e-8259" type="selectionEntry" targetId="90a6-be2b-7c5a-03a4"/>
+        <entryLink import="true" name="Plasma Pistol" hidden="false" id="4f12-6769-92fb-bf53" type="selectionEntry" targetId="e62e-b317-ff6b-e651">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Storm Shield" hidden="false" id="499c-9382-a2fe-8506" type="selectionEntry" targetId="1e39-44e7-9b07-74c3">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a55a-9a18-30bc-c38a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5d4-0767-433d-c145" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Terminator Leader Upgrades" id="1aa1-5acd-5e55-5aea" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Upgrade" id="d8c1-27aa-42b5-2a18" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93cf-f7d6-391a-c1d0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cccb-f2ff-291f-7b55" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="adfe-d38c-6b51-0f10" type="selectionEntry" targetId="71da-bae6-b3a0-096a" sortIndex="2"/>
+            <entryLink import="true" name="Power Weapon" hidden="false" id="9b89-51df-1deb-3bca" type="selectionEntry" targetId="29d1-fe6b-ffcd-89c8" sortIndex="3"/>
+            <entryLink import="true" name="Power Fist" hidden="false" id="e39f-b457-8e24-7e56" type="selectionEntry" targetId="08c4-0d22-a50c-026d" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Thunderhammer" hidden="false" id="1ad7-6bda-acb7-6b2d" type="selectionEntry" targetId="fbb7-7ab3-e1a4-106c" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Terminator Leader Ranged Upgrades" hidden="false" id="b958-0c79-deec-882d" type="selectionEntryGroup" targetId="3cc7-736f-c643-e9c6"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Terminator Leader Ranged Upgrades" id="3cc7-736f-c643-e9c6" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3818-3ff8-8881-e76f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d80-8cbf-bcd7-5d6d" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="aba4-cdc9-57e6-6151" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Assault Cannon" hidden="false" id="ca36-6328-27af-710c" type="selectionEntry" targetId="d1ca-eb66-6300-8f2d" sortIndex="3">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Storm Shield" hidden="false" id="1d9f-898d-43c8-4eba" type="selectionEntry" targetId="1e39-44e7-9b07-74c3" sortIndex="4">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Heavy Flamer" hidden="false" id="4082-ae66-1485-39c5" type="selectionEntry" targetId="c16f-47ef-ebcb-8213" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="Special Issue Ammo" id="8e0c-2e10-ceae-ff93" hidden="false">
+      <description>Boltguns and Heavy Bolters gain:
+    Lance (6+), Poison (6+), and Warpbane (6+)</description>
+    </rule>
+    <rule name="Narthecium" id="1024-9a93-6840-6547" hidden="false">
+      <description>When attached to a unit, all models gain FnP 6+++</description>
+    </rule>
+    <rule name="Servo-harness" id="77f5-bdde-0161-f4da" hidden="false">
+      <description>May fire all non-Pistol weapons together</description>
+    </rule>
+    <rule name="Centurion Armour" id="ce90-cc29-ec2a-a78c" hidden="false">
+      <description>Cannot embark in transports. May fire all ranged weapons in a single action.</description>
+    </rule>
+  </sharedRules>
+</catalogue>

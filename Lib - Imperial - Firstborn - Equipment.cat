@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="0e97-bb9e-538e-d4e5" name="aLib - Imperial - Firstborn - Equipment" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Storm Shield" id="1732-a04f-527e-d259" hidden="false">
+      <description>Increase Sv+ by 1</description>
+    </rule>
+    <rule name="Terminator Bulk" id="69aa-f2da-5a33-e375" hidden="false">
+      <description>Can only embark in Land Raiders, and count as 2 models.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Storm Shield" hidden="false" id="1e39-44e7-9b07-74c3">
+      <infoLinks>
+        <infoLink name="Storm Shield" id="3bc3-43b8-f45a-3296" hidden="false" type="rule" targetId="1732-a04f-527e-d259"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="244c-d9a8-1cd6-d0d0" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
+        <modifier type="set" value="3+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="0029-f67f-83cc-2499" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="0ac5-c455-d9bb-f8c9" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="3332-efc0-e540-91fc" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="d5cf-f65b-b6f1-1a5c" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="cba4-c2a3-2328-e0e0" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="6a97-3bf7-2761-c0c5" childId="any" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="3332-efc0-e540-91fc" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="d5cf-f65b-b6f1-1a5c" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="f8b0-81bb-b427-6608" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="c735-c574-bb7a-ca31" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="1c54-42d3-bbd0-2ee4" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Camo Cloak" hidden="false" id="edd7-2b11-79b5-3757">
+      <infoLinks>
+        <infoLink name="Stealth" id="ac03-900d-2936-ab31" hidden="false" type="rule" targetId="c1af-e857-e57d-b4f3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jump Packs" hidden="false" id="0254-8ea1-d49a-6d3f">
+      <infoLinks>
+        <infoLink name="Fly" id="3919-6990-7479-7927" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+        <infoLink name="Deep Strike" id="3ed2-1f7a-f308-cc13" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bike" hidden="false" id="480c-3726-6f47-38fc">
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="Mo" field="db89-3815-8161-5287" affects="profiles.Unit" scope="parent"/>
+        <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terminator Armour" hidden="false" id="024d-6468-c7f7-f79c">
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="1+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
+        <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="0a0e-1bae-e627-fce4" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Terminator Bulk" id="93a8-e02d-bafa-a854" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Veil of Time" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="9a02-8997-c3b4-c5d6">
+      <characteristics>
+        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18”</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">Gain +2 Initiative</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Might of Heroes" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="2ed7-45a6-49b4-1c38">
+      <characteristics>
+        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly Character within 12&quot;</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">Gain +1 S, +1 T, +1 A</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Psychic Scourge" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="be13-2272-7fab-49f1">
+      <characteristics>
+        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">Caster and target unit roll a D6 and subtract the numerical value of their Leadership (to a minimum of 0). If the caster gets a higher result, the target suffers a number of Psychic Wounds equal to the difference between the two results</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fury of the Ancients" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="9aca-6e8a-7c1c-fcf8">
+      <characteristics>
+        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">12” Straight line</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit (friend or foe) that the line passes over, excluding the caster’s unit, suffers 1 Psychic Wound</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vortex of Doom" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="133d-c039-17c5-999c">
+      <characteristics>
+        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 12”</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit, and each other unit (friend or foe) within 3” suffers a Psychic Wound</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Null Zone" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="4ad3-cf83-1d5c-aaa8">
+      <characteristics>
+        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">All units within 6”</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">Invulnerable Saves can be modified by AP</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Librarius Discipline" id="efca-de01-357b-5627" hidden="false">
+      <constraints>
+        <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f61f-843b-34c5-52a9-min" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f61f-843b-34c5-52a9-max" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fury of the Ancients" hidden="false" id="5105-5892-0986-ee20">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b939-534e-1b38-184b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fury of the Ancients" id="a36c-0326-622e-bfeb" hidden="false" type="profile" targetId="9aca-6e8a-7c1c-fcf8"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Might of Heroes" hidden="false" id="2d3a-86b3-404f-6025">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8803-5dbc-1c26-5046" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Might of Heroes" id="4c42-399e-0125-b196" hidden="false" type="profile" targetId="2ed7-45a6-49b4-1c38"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Null Zone" hidden="false" id="24c7-9679-9d1e-1099">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ef1-de0b-2a82-6019" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Null Zone" id="92be-5785-c0ba-4043" hidden="false" type="profile" targetId="4ad3-cf83-1d5c-aaa8"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Psychic Scourge" hidden="false" id="740d-1992-597c-ace6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72d6-ce52-5774-a84b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Psychic Scourge" id="23a3-51b0-f2cc-1fa7" hidden="false" type="profile" targetId="be13-2272-7fab-49f1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Veil of Time" hidden="false" id="2537-468b-6967-6921">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c32-9807-d16b-673c" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Veil of Time" id="7d45-11a7-e25e-ad00" hidden="false" type="profile" targetId="9a02-8997-c3b4-c5d6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vortex of Doom" hidden="false" id="565b-04c8-a811-9b9d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a945-6c0a-535e-b09b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Vortex of Doom" id="7c0d-7741-0e84-a343" hidden="false" type="profile" targetId="133d-c039-17c5-999c"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
