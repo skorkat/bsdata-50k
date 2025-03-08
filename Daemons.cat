@@ -1553,6 +1553,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="6e78-5008-7ca9-5f58" primary="true" name="Greater Daemon"/>
       </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="500"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Daemon Lord" hidden="false" id="5509-a7c7-464c-7b05">
       <categoryLinks>
