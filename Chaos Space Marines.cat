@@ -637,7 +637,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <categoryLink name="Elite" hidden="false" id="7983-664e-04d9-0040" targetId="6297-a84f-a103-e2ac"/>
         <categoryLink name="Transport" hidden="false" id="446d-b402-82bc-546c" targetId="57f8-02cb-ea36-4d85"/>
         <categoryLink name="Leader" hidden="false" id="e590-671c-d6ae-5f55" targetId="default-category"/>
-        <categoryLink name="Daemonspawn" hidden="false" id="121c-bca2-d867-829d" targetId="be0a-badc-4087-52e3" type="categoryEntry"/>
+        <categoryLink name="Daemonspawn" hidden="false" id="121c-bca2-d867-829d" targetId="be0a-badc-4087-52e3"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1165,6 +1165,10 @@ A model aligned with a particular god cannot join units aligned with a different
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Firing Deck (X)" id="dc69-3f31-9e64-5912" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
+        <infoLink name="Transport (X)" id="2713-e61e-06d1-57ae" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Noise Marines" hidden="false" id="797a-e4f9-2951-7e41">
       <categoryLinks>
@@ -1211,7 +1215,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Noise Marine Champion" hidden="false" id="8f49-fc00-3d6c-6aa3" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Noise Marine Champion" hidden="false" id="8f49-fc00-3d6c-6aa3" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0624-b647-7451-e346-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0624-b647-7451-e346-max" includeChildSelections="false"/>
@@ -1253,7 +1257,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="23"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Noise Marine w/ Blastmaster" hidden="false" id="1310-4ac6-639f-ec30" defaultAmount="" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Noise Marine w/ Blastmaster" hidden="false" id="1310-4ac6-639f-ec30" sortIndex="2">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fe71-e44e-c093-58e3" includeChildSelections="false"/>
               </constraints>
@@ -1350,7 +1354,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plague Marine Champion" hidden="false" id="205c-83ed-3d40-4240" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Plague Marine Champion" hidden="false" id="205c-83ed-3d40-4240" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="117a-595f-b4a2-687f-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="117a-595f-b4a2-687f-max" includeChildSelections="false"/>
@@ -1392,7 +1396,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plague Marine w/ Special Weapon" hidden="false" id="6a9a-cfb9-72c6-0ce9" defaultAmount="" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Plague Marine w/ Special Weapon" hidden="false" id="6a9a-cfb9-72c6-0ce9" sortIndex="2">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e328-26eb-49da-1154" includeChildSelections="false"/>
               </constraints>
@@ -1492,7 +1496,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Khorne Berzerker w/ Special Weapon" hidden="false" id="e93d-437a-12f6-03b7" defaultAmount="" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Khorne Berzerker w/ Special Weapon" hidden="false" id="e93d-437a-12f6-03b7" sortIndex="2">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0735-b2b3-edbd-23f9" includeChildSelections="false"/>
               </constraints>
@@ -1532,7 +1536,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Khorne Berzerker Champion" hidden="false" id="d4b0-e37d-22ee-424e" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Khorne Berzerker Champion" hidden="false" id="d4b0-e37d-22ee-424e" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b1f6-a27f-b75a-6163-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1f6-a27f-b75a-6163-max" includeChildSelections="false"/>
@@ -1604,7 +1608,7 @@ A model aligned with a particular god cannot join units aligned with a different
       <selectionEntryGroups>
         <selectionEntryGroup name="Rubric Marines" id="4ed7-d765-9478-98b8" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Aspiring Sorcerer" hidden="false" id="5c7b-0b6c-3e6a-abf5" defaultAmount="">
+            <selectionEntry type="upgrade" import="true" name="Aspiring Sorcerer" hidden="false" id="5c7b-0b6c-3e6a-abf5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d69-74a7-7f53-d369-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d69-74a7-7f53-d369-max" includeChildSelections="false"/>
@@ -1700,7 +1704,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rubric Marine w/ Soulreaper Cannon" hidden="false" id="d5c4-eeac-2218-5070" defaultAmount="">
+            <selectionEntry type="upgrade" import="true" name="Rubric Marine w/ Soulreaper Cannon" hidden="false" id="d5c4-eeac-2218-5070">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d4a-f822-d3dc-c52a" includeChildSelections="false"/>
               </constraints>
@@ -1931,7 +1935,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="29"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Chaos Terminator Champion" hidden="false" id="5907-4c87-9ebd-b863" defaultAmount="">
+            <selectionEntry type="upgrade" import="true" name="Chaos Terminator Champion" hidden="false" id="5907-4c87-9ebd-b863">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e52-8868-a397-fa49-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e52-8868-a397-fa49-max" includeChildSelections="false"/>
@@ -2088,7 +2092,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="23"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Raptor Champion" hidden="false" id="f252-8a0a-8bad-ab86" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Raptor Champion" hidden="false" id="f252-8a0a-8bad-ab86" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c91-1a82-d4ad-347a-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c91-1a82-d4ad-347a-max" includeChildSelections="false"/>
@@ -2138,7 +2142,7 @@ A model aligned with a particular god cannot join units aligned with a different
       <selectionEntryGroups>
         <selectionEntryGroup name="Havocs" id="fa3e-34d3-0d20-6c22" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Havoc" hidden="false" id="21ef-35b9-5a1d-dd9c" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Havoc" hidden="false" id="21ef-35b9-5a1d-dd9c" sortIndex="1">
               <infoLinks>
                 <infoLink name="Bolt Pistol" id="647d-fefe-8e4e-5c48" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
                 <infoLink name="Boltgun" id="4606-144c-df4d-997f" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
@@ -2256,7 +2260,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="23"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Havoc Champion" hidden="false" id="adf1-561b-6778-df42" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Havoc Champion" hidden="false" id="adf1-561b-6778-df42" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1417-ace7-0946-1e3d-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1417-ace7-0946-1e3d-max" includeChildSelections="false"/>
@@ -2694,6 +2698,8 @@ A model aligned with a particular god cannot join units aligned with a different
         <infoLink name="Lascannon" id="1929-1428-b439-6f1a" hidden="false" type="profile" targetId="d729-2b11-1734-557a"/>
         <infoLink name="Lascannon" id="4b6b-de8b-a0fa-d298" hidden="false" type="profile" targetId="d729-2b11-1734-557a"/>
         <infoLink name="Lascannon" id="7f29-c888-94b1-4644" hidden="false" type="profile" targetId="d729-2b11-1734-557a"/>
+        <infoLink name="Firing Deck (X)" id="6947-ad82-d10f-033c" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
+        <infoLink name="Transport (X)" id="b1b3-01e3-7c80-32da" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="5c7b-6eda-1adf-b4b6" targetId="6297-a84f-a103-e2ac" primary="true"/>
@@ -3956,7 +3962,7 @@ A model aligned with a particular god cannot join units aligned with a different
     <entryLink import="true" name="Cultists" hidden="false" id="c1bd-fe9a-b793-9bfc" type="selectionEntry" targetId="f766-52ee-7f4b-0b64"/>
     <entryLink import="true" name="Legionnaires" hidden="false" id="32a8-e41b-0048-289a" type="selectionEntry" targetId="262a-000c-6156-8970"/>
     <entryLink import="true" name="Traitor Guardsmen" hidden="false" id="5f8e-be28-462e-601f" type="selectionEntry" targetId="0adb-fa38-a216-fe0c"/>
-    <entryLink import="true" name="Rhino" hidden="false" id="663d-9edf-2efd-b2ac" type="selectionEntry" targetId="86b6-b938-dc90-c23c"/>
+    <entryLink import="true" name="Chaos Rhino" hidden="false" id="663d-9edf-2efd-b2ac" type="selectionEntry" targetId="86b6-b938-dc90-c23c"/>
     <entryLink import="true" name="Noise Marines" hidden="false" id="f2c2-382d-23e4-b860" type="selectionEntry" targetId="797a-e4f9-2951-7e41"/>
     <entryLink import="true" name="Plague Marines" hidden="false" id="bae2-a781-3d9e-9649" type="selectionEntry" targetId="c443-7dfc-66ce-aed2"/>
     <entryLink import="true" name="Khorne Berzerkers" hidden="false" id="62f3-98d3-5758-9b3b" type="selectionEntry" targetId="da5f-0e3f-89fb-48ab"/>
@@ -3972,7 +3978,7 @@ A model aligned with a particular god cannot join units aligned with a different
     <entryLink import="true" name="Chaos Predator" hidden="false" id="cbfe-dcf3-4f17-d545" type="selectionEntry" targetId="3615-9899-dbbb-cda6"/>
     <entryLink import="true" name="Chaos Vindicator" hidden="false" id="14c6-02b4-abdb-8f60" type="selectionEntry" targetId="8fae-e176-df21-061a"/>
     <entryLink import="true" name="Defiler" hidden="false" id="6a88-9171-e656-ef16" type="selectionEntry" targetId="725f-f3dd-1aa8-ba71"/>
-    <entryLink import="true" name="Posessed" hidden="false" id="6e5c-5a0f-657e-7049" type="selectionEntry" targetId="5dab-c877-6a72-7a65"/>
+    <entryLink import="true" name="Possessed" hidden="false" id="6e5c-5a0f-657e-7049" type="selectionEntry" targetId="5dab-c877-6a72-7a65"/>
     <entryLink import="true" name="Maulerfiend" hidden="false" id="78e3-cd5f-c776-d25b" type="selectionEntry" targetId="e318-ed4d-7901-04a9"/>
     <entryLink import="true" name="Forgefiend" hidden="false" id="02a4-4b4c-918d-b4ae" type="selectionEntry" targetId="ec15-9346-9970-ccc6"/>
     <entryLink import="true" name="Warp Talons" hidden="false" id="e22b-3db9-7ba7-f05f" type="selectionEntry" targetId="1d8f-1f5e-0115-8dc5"/>
@@ -3990,7 +3996,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Warp Claw" hidden="false" id="3357-2245-a3d3-4cb9" sortIndex="2">
               <infoLinks>
-                <infoLink name="Warp Claws" id="5734-3e10-0ce8-bd5c" hidden="false" type="profile" targetId="22cb-4052-429c-f351"/>
+                <infoLink name="Warp Claw" id="5734-3e10-0ce8-bd5c" hidden="false" type="profile" targetId="22cb-4052-429c-f351"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>

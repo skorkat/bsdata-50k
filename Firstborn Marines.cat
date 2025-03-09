@@ -44,7 +44,7 @@
     <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="6810-9d8f-c3c6-ffc6" type="selectionEntry" targetId="e04d-b91a-3c77-2b99"/>
     <entryLink import="true" name="Land Raider" hidden="false" id="1581-9124-c421-ffef" type="selectionEntry" targetId="76f0-0537-1ce1-d50a"/>
     <entryLink import="true" name="Techmarine" hidden="false" id="50df-56d8-bcf4-71d7" type="selectionEntry" targetId="21d5-7b3d-b752-657f"/>
-    <entryLink import="true" name="Lieurenant" hidden="false" id="97c1-57b2-dfc8-773a" type="selectionEntry" targetId="c396-ec21-4e13-a533"/>
+    <entryLink import="true" name="Lieutenant" hidden="false" id="97c1-57b2-dfc8-773a" type="selectionEntry" targetId="c396-ec21-4e13-a533"/>
     <entryLink import="true" name="Chaplain" hidden="false" id="72da-d6a4-d9b6-e0bf" type="selectionEntry" targetId="722f-5539-5994-6856"/>
     <entryLink import="true" name="Captain" hidden="false" id="38ec-bddd-1b10-d0ef" type="selectionEntry" targetId="e1e7-2a20-af80-f9df"/>
     <entryLink import="true" name="Librarian" hidden="false" id="0b97-3d64-fbb3-ef99" type="selectionEntry" targetId="2b68-8a2b-fffa-3539"/>
@@ -492,7 +492,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sternguard Veteran [Special Weapon]" hidden="false" id="262a-6010-1bb6-0423" sortIndex="3" collapsible="true" defaultAmount="">
+            <selectionEntry type="upgrade" import="true" name="Sternguard Veteran [/ Special Weapon" hidden="false" id="262a-6010-1bb6-0423" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Sternguard Veteran" hidden="false" id="79c0-f63d-bf88-97f5" type="selectionEntry" targetId="bdc6-30be-20c9-1568">
                   <constraints>
@@ -1004,6 +1004,7 @@
         <infoLink name="Immobile" id="4e31-e53b-715f-8153" hidden="false" type="rule" targetId="7267-fda0-76c1-676e"/>
         <infoLink name="Deep Strike" id="a1b7-1d22-0dee-93e5" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
         <infoLink name="Transport (X)" id="84f3-cd25-0b8a-f40e" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Firing Deck (X)" id="52bf-3b1d-1e6b-6797" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
       </infoLinks>
       <profiles>
         <profile name="Drop Pod" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="542f-4250-7501-d14c">
@@ -1040,6 +1041,8 @@
     <selectionEntry type="upgrade" import="true" name="Razorback" hidden="false" id="b971-72f5-ac66-9297">
       <infoLinks>
         <infoLink name="Razorback" id="e1f2-021a-b36e-0cca" hidden="false" type="profile" targetId="f630-210e-776c-eec6"/>
+        <infoLink name="Firing Deck (X)" id="701a-e848-092b-2f7d" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
+        <infoLink name="Transport (X)" id="6fb7-d4c4-0e14-cd6d" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
       </infoLinks>
       <profiles>
         <profile name="Razorback" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="06c1-2ef2-8d72-1709">
@@ -1124,6 +1127,8 @@
     <selectionEntry type="upgrade" import="true" name="Rhino" hidden="false" id="5ecf-0eed-7d23-d378">
       <infoLinks>
         <infoLink name="Rhino" id="3958-506f-8bf8-49c2" hidden="false" type="profile" targetId="4a75-a220-2562-a611"/>
+        <infoLink name="Firing Deck (X)" id="c4c6-6823-4c50-00c2" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
+        <infoLink name="Transport (X)" id="5e5d-ba60-1406-0add" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
       </infoLinks>
       <profiles>
         <profile name="Rhino" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="fe2f-bef5-8455-9dc9">
@@ -1688,6 +1693,8 @@
     <selectionEntry type="upgrade" import="true" name="Land Raider" hidden="false" id="76f0-0537-1ce1-d50a">
       <infoLinks>
         <infoLink name="Land Raider" id="c06f-1e0b-9d52-a38e" hidden="false" type="profile" targetId="291b-b3f7-f990-c5b6"/>
+        <infoLink name="Firing Deck (X)" id="64c2-232e-140f-b8cd" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
+        <infoLink name="Transport (X)" id="e381-6b5c-18c1-f1cc" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Storm Bolter" hidden="false" id="a06d-d2dc-15be-9e6a" type="selectionEntry" targetId="eb52-302e-e11b-dcf6">

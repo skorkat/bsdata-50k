@@ -831,7 +831,7 @@
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1b16-0a7b-a255-c171" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shas&apos;ui" hidden="false" id="589b-97d8-4e29-3bbe" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Shas&apos;ui" hidden="false" id="589b-97d8-4e29-3bbe" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
               </costs>
@@ -972,7 +972,7 @@
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c119-50b5-8df3-c468" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shas&apos;ui" hidden="false" id="3d41-3bb7-3ab6-d875" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Shas&apos;ui" hidden="false" id="3d41-3bb7-3ab6-d875" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
               </costs>
@@ -1003,7 +1003,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="965e-9b06-e441-5fcc" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Pathfinder [Heavy Weapon]" hidden="false" id="48a5-715c-ed5c-b2e3" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Pathfinder w/ Heavy Weapon" hidden="false" id="48a5-715c-ed5c-b2e3" sortIndex="3">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="28"/>
               </costs>
@@ -1128,7 +1128,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shas&apos;vre" hidden="false" id="3f84-a596-abab-8fd9" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Shas&apos;vre" hidden="false" id="3f84-a596-abab-8fd9" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
               </costs>
@@ -1186,7 +1186,7 @@
         <categoryLink targetId="b083-7a5c-1d92-5ca6" id="c85d-937d-5dab-277a" primary="true" name="Battlesuit"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Crisis Bodyguard" hidden="false" id="eb21-6109-e1ce-6da7" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Crisis Bodyguard" hidden="false" id="eb21-6109-e1ce-6da7">
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
           </costs>
@@ -1539,7 +1539,7 @@
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e35a-d93b-096b-f36b" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shas&apos;vre" hidden="false" id="843e-1b64-2876-0ed8" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Shas&apos;vre" hidden="false" id="843e-1b64-2876-0ed8" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
               </costs>
@@ -1592,7 +1592,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Stealthsuit [Fusion Blaster]" hidden="false" id="cf65-6192-a7e0-20c2" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Stealthsuit w/ Fusion Blaster" hidden="false" id="cf65-6192-a7e0-20c2" sortIndex="3">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
               </costs>
@@ -1647,7 +1647,7 @@
         <categoryLink name="Battlesuit" hidden="false" id="03bf-1fc5-610a-1b35" targetId="b083-7a5c-1d92-5ca6" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Broadside" hidden="false" id="cb89-1a41-38dc-75ca" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Broadside" hidden="false" id="cb89-1a41-38dc-75ca">
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="62"/>
           </costs>
@@ -2070,6 +2070,8 @@
       <infoLinks>
         <infoLink name="Burst Cannon" id="75cf-9104-601a-52f5" hidden="false" type="profile" targetId="67a5-90de-468e-1d14"/>
         <infoLink name="Hover" id="3f52-0d6e-2dd4-0731" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Firing Deck (X)" id="3230-5f18-2283-48d0" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
+        <infoLink name="Transport (X)" id="9a2a-29c5-490e-28ad" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
       </infoLinks>
       <profiles>
         <profile name="Hammerhead" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b1c4-f56e-4491-40dd">
@@ -2269,7 +2271,7 @@
     <entryLink import="true" name="Riptide" hidden="false" id="ce13-29e8-6976-43b8" type="selectionEntry" targetId="dd89-1d15-dd61-61e6"/>
     <entryLink import="true" name="Ghostkeel" hidden="false" id="f5e3-e989-da70-53ac" type="selectionEntry" targetId="ea10-04dd-7190-ed64"/>
     <entryLink import="true" name="Piranha Squadron" hidden="false" id="b06e-180a-d759-f094" type="selectionEntry" targetId="33cf-95ca-0870-8270"/>
-    <entryLink import="true" name="Skyray" hidden="false" id="5847-9ba6-b850-651d" type="selectionEntry" targetId="6242-981a-aa9d-cec5"/>
+    <entryLink import="true" name="Sky Ray" hidden="false" id="5847-9ba6-b850-651d" type="selectionEntry" targetId="6242-981a-aa9d-cec5"/>
     <entryLink import="true" name="Hammerhead" hidden="false" id="1f53-1ab1-05d4-e6c1" type="selectionEntry" targetId="73d8-ac0f-6339-3b15"/>
     <entryLink import="true" name="Devilfish" hidden="false" id="a680-8529-fc9a-f444" type="selectionEntry" targetId="2df8-3a8e-15c3-9f14"/>
   </entryLinks>
