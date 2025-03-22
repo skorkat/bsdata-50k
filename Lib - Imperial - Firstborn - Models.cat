@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Lib - Imperial - Base" id="331b-005e-07b0-6041" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Equipment" id="b609-da18-63b6-2e95" targetId="0e97-bb9e-538e-d4e5"/>
@@ -7,9 +7,7 @@
   <sharedProfiles>
     <profile name="Space Marine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a3e8-fe05-3a69-f4d3" noindex="true">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -22,12 +20,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Space Marine Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1fbe-e6ba-b13c-d0f8">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -40,12 +39,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Scout" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f156-6774-c01f-eafa">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -58,12 +58,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Scout Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3f7b-3050-8870-152c">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -76,12 +77,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Sternguard Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="80ff-bd80-4286-bd4b">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -94,12 +96,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Sternguard Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="290c-8cbd-8457-0775">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -112,12 +115,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Vanguard Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7a43-dc47-3f29-869b">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -130,12 +134,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Vanguard Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7175-0ed4-b896-e946">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -148,11 +153,12 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Terminator" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="aa07-8fb3-1a5e-c7e4">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -166,11 +172,12 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Terminator Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="928f-31d9-400f-0db5">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -184,12 +191,15 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Dreadnought" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="773f-88c1-f007-3b18">
       <characteristics>
         <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
         <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -225,7 +235,7 @@
       <characteristics>
         <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
         <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -243,7 +253,7 @@
       <characteristics>
         <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
         <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -259,9 +269,7 @@
     </profile>
     <profile name="Apothecary" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="222c-e928-8fb7-d55a">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -274,12 +282,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6++</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Ancient" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="260f-914b-9c9c-0a02">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -292,11 +301,12 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e3b0-26ad-a2e6-71d9">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -310,12 +320,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5+</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Scout Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a1c4-c99f-a1c5-3ac1">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -328,12 +339,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Scout Biker Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="004b-044a-23f3-4b82">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -346,12 +358,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Attack Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="31bd-5b56-5716-3020" noindex="true">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -364,12 +377,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Biker Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4151-17b5-3e86-ef22">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -382,12 +396,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="bc15-d4b1-2b53-fb44" noindex="true">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -400,12 +415,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Thunderfire Cannon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="b259-f03a-a4cf-4b45">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">M</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">2</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">1</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -418,12 +434,15 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Predator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="6a89-5f10-ad5f-f2dc">
       <characteristics>
         <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
         <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
@@ -441,7 +460,7 @@
       <characteristics>
         <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">In</characteristic>
         <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
@@ -459,7 +478,7 @@
       <characteristics>
         <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
         <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
@@ -477,7 +496,7 @@
       <characteristics>
         <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
         <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
@@ -495,7 +514,7 @@
       <characteristics>
         <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
         <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
@@ -511,8 +530,6 @@
     </profile>
     <profile name="Captain" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2197-21e7-05b2-7f26">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">8</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">1+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -526,11 +543,12 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Librarian" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="920f-a9a6-b0a8-07aa">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -544,11 +562,12 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Lieutenant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="33f2-b875-6d2f-de10">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -562,11 +581,12 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Chaplain" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="22f7-85c5-721e-8ae8">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -580,11 +600,12 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Techmarine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c2a5-e051-cb9c-c214">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -598,12 +619,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Centurion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c626-b07b-7ea2-6c81">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -616,12 +638,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Centurion Sereant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="af5b-a753-c73a-8d05">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -634,6 +657,9 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>

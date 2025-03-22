@@ -23,6 +23,31 @@
         <constraint type="max" value="50" field="limit::b109-6551-e41a-f1f7" scope="roster" shared="true" id="d718-d6a9-cb2a-07ed" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Infantry" id="d354-6680-584e-943c" hidden="false"/>
+    <categoryEntry name="Mounted" id="0f1f-1b81-c12f-ff5f" hidden="false">
+      <infoLinks>
+        <infoLink name="Full Speed" id="ed08-9d78-94e0-c2a8" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Walker" id="b9c1-ec26-9c02-2026" hidden="false"/>
+    <categoryEntry name="Tank" id="841c-6009-19bb-93fb" hidden="false">
+      <infoLinks>
+        <infoLink name="Full Speed" id="0043-395a-7952-fb14" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Biological" id="de72-13bd-1789-6816" hidden="false"/>
+    <categoryEntry name="Mechanical" id="05d8-53ff-1ca8-52b0" hidden="false"/>
+    <categoryEntry name="Daemonic" id="b625-812b-ea6f-c45f" hidden="false"/>
+    <categoryEntry name="Character" id="ce7b-7bf5-3b56-3b0e" hidden="false">
+      <infoLinks>
+        <infoLink name="Character" id="9936-82aa-b876-18d9" hidden="false" type="rule" targetId="cbbc-99b6-4371-e441"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Psyker" id="c759-da28-35c5-802b" hidden="false">
+      <infoLinks>
+        <infoLink name="Psyker (X)" id="7802-e7da-9ecc-0742" hidden="false" type="rule" targetId="b70e-0d63-3b19-cc70"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <profileTypes>
     <profileType name="Melee Weapon" id="4437-4cfe-f1f5-8c41" hidden="false" sortIndex="7">
@@ -62,8 +87,6 @@
     </profileType>
     <profileType name="Unit" id="f155-763b-f0e5-a42a" hidden="false" sortIndex="1">
       <characteristicTypes>
-        <characteristicType name="Size" id="db89-3815-8161-5287"/>
-        <characteristicType name="Type" id="08f4-4b48-4bfa-3b25"/>
         <characteristicType name="WS" id="1509-720c-2a2f-ed46"/>
         <characteristicType name="BS" id="4a75-e14b-051b-c0f1"/>
         <characteristicType name="S" id="229e-fdb9-4bbc-f6ff"/>
@@ -80,8 +103,6 @@
     </profileType>
     <profileType name="Vehicle" id="a397-0d29-a6e4-23e6" hidden="false" sortIndex="2">
       <characteristicTypes>
-        <characteristicType name="Size" id="dac7-90ac-f062-7ecc"/>
-        <characteristicType name="Type" id="c454-f65a-d979-6cda"/>
         <characteristicType name="WS" id="5fb4-0778-e5dd-b382"/>
         <characteristicType name="BS" id="6ba5-adee-cf9c-7941"/>
         <characteristicType name="S" id="cd7c-e257-6d0e-3291"/>
@@ -383,6 +404,9 @@ If this movement takes the unit into contact with the edge of the board, then it
 
 
 If a unit which is Engaged is forced to make an Involuntary Fall Back Move, but it is not possible to end this move all models outside of Engagement range, then the unit cannot Fall Back. Instead, roll one D6 for each model in the unit. For every result of 1, the unit suffers a Mortal Wound. The unit then remains in Combat but remains Broken.</description>
+    </rule>
+    <rule name="Full Speed" id="1725-7fd4-0d06-70b0" hidden="false">
+      <description>Mounted and Tank models can move an additional 3&quot;, as long as their entire move is in a straight line.</description>
     </rule>
   </sharedRules>
   <costTypes>

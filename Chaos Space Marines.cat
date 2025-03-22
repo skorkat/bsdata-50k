@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -456,9 +456,7 @@ A model aligned with a particular god cannot join units aligned with a different
     </profile>
     <profile name="Cultist" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="6f2e-9dc4-d7cb-8c24">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">2</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -471,11 +469,12 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Traitor Guardsman" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="8147-5262-5877-6b85">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">2</characteristic>
@@ -489,12 +488,13 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Legionary" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="33ed-980d-2a40-fc5e">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -507,6 +507,9 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Slaanesh" typeId="95f2-550a-2a63-25f8" typeName="Chaos Alignment" hidden="false" id="0ab9-2db7-eb14-657e">
       <characteristics>
@@ -530,8 +533,6 @@ A model aligned with a particular god cannot join units aligned with a different
     </profile>
     <profile name="Noise Marine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="73ed-8202-44c1-b688">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">IN</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -545,12 +546,13 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Plague Marine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="0404-b0b0-5fcc-bb0d">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -563,12 +565,13 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Khorne Berzerker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f7e6-c945-b42b-a9a4">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -581,12 +584,13 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Rubric Marine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a0d1-3d98-88b6-f9ee">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -599,11 +603,12 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Chosen" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ca30-90f6-998b-bcdf">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -617,6 +622,9 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
   </sharedProfiles>
   <categoryEntries>
@@ -645,13 +653,15 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Cultists" hidden="false" id="f766-52ee-7f4b-0b64">
       <categoryLinks>
         <categoryLink targetId="b6c8-a4d5-23c0-3606" id="8d12-6ed6-c121-a18c" primary="true" name="Core"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="76c9-0e05-cd05-6af4" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="993d-1af2-d86a-b9b4" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Cultists" id="3e92-d638-4109-01f3" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Cultist" hidden="false" id="dd24-7c48-d5f8-1d8f" defaultAmount="10">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <infoLinks>
                 <infoLink name="Autopistol" id="42d5-5052-fc43-776e" hidden="false" type="profile" targetId="fb91-11f1-4afc-1bc5"/>
@@ -666,7 +676,7 @@ A model aligned with a particular god cannot join units aligned with a different
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Cultist w/ Bolt Pistol" hidden="false" id="86a0-efda-1dc8-ebd9">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <infoLinks>
                 <infoLink name="Frag Grenades" id="2a5c-6d79-3729-b9ed" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
@@ -680,7 +690,7 @@ A model aligned with a particular god cannot join units aligned with a different
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Cultist w/ Heavy Weapon" hidden="false" id="edd8-6c64-1683-755a">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <infoLinks>
                 <infoLink name="Frag Grenades" id="43f6-3441-dd0f-ff32" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
@@ -737,13 +747,15 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Traitor Guardsmen" hidden="false" id="0adb-fa38-a216-fe0c">
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="d0ad-9d6c-dd06-2ccf" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="ddcc-2b5a-305b-9b9d" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="1cba-af26-d94c-3c0e" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Traitor Guardsmen" id="c2cd-6d02-9f04-4692" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Traitor Guardsman" hidden="false" id="ae15-3c61-1531-d7ea" defaultAmount="9">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
               </costs>
               <infoLinks>
                 <infoLink name="Lasgun" id="9aeb-2123-b510-126c" hidden="false" type="profile" targetId="adc0-6fe3-4450-2225"/>
@@ -759,8 +771,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Traitor Guardsman Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="5472-6455-a547-8db3">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
@@ -774,10 +784,13 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
               </costs>
               <infoLinks>
                 <infoLink name="Frag Grenades" id="e10d-664f-7822-96a7" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
@@ -856,7 +869,7 @@ A model aligned with a particular god cannot join units aligned with a different
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Traitor Guardsman w/ Special Weapon" hidden="false" id="9f69-710a-d081-2992">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
               </costs>
               <infoLinks>
                 <infoLink name="Frag Grenades" id="60fa-dad6-3dcf-e238" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
@@ -928,6 +941,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Legionnaires" hidden="false" id="262a-000c-6156-8970">
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="f73b-4a70-1058-fa1f" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="c242-6ec4-8f0b-b381" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="44a0-4dde-6bd3-3cca" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Leginnaires" id="e37c-3529-fb39-3899" hidden="false">
@@ -971,9 +986,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Legionary Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ad00-4958-b7e5-305c">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -986,6 +999,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1120,7 +1136,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -1137,6 +1153,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </profiles>
       <categoryLinks>
         <categoryLink name="Transport" hidden="false" id="d194-4554-07f3-f612" targetId="57f8-02cb-ea36-4d85" primary="true"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="264f-fb69-c648-cb53" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="3ee8-d05a-19ba-044e" primary="false" name="Mechanical"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
@@ -1173,6 +1191,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Noise Marines" hidden="false" id="797a-e4f9-2951-7e41">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="354c-6620-8fd3-97ce" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="194d-41ef-c9d6-61f4" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="fa89-d5f9-b63d-ed53" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Noise Marines" id="45a3-a7bd-56f3-e0eb" hidden="false">
@@ -1236,8 +1256,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Noise Marine Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="56b3-a679-24fb-f316">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -1251,6 +1269,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1304,6 +1325,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Plague Marines" hidden="false" id="c443-7dfc-66ce-aed2">
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="0e3f-324a-942c-0d85" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="a8e8-4dc9-ee21-a693" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="f5aa-07a7-7c59-fd1f" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Plague Marines" id="ee9a-06a1-3bd9-3dd0" hidden="false">
@@ -1375,9 +1398,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Plague Marine Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="49ea-1211-6880-c3a0">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -1390,6 +1411,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6++</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1476,6 +1500,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Khorne Berzerkers" hidden="false" id="da5f-0e3f-89fb-48ab">
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="0d1e-be7d-9250-02a7" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="eefe-87e9-a7a6-3ff5" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="b182-1716-c355-7cf0" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Berzerkers" id="e8e7-9c13-f13a-d74e" hidden="false">
@@ -1557,9 +1583,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Khorne Berzerker Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2ba4-1ce9-5549-b3bf">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1572,6 +1596,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1589,6 +1616,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Rubric Marines" hidden="false" id="4ce5-eb0d-5d9e-359f">
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="de95-3233-9d6e-e1c8" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="cdeb-2c56-a1d1-0956" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="f6c6-3505-7c57-6a65" primary="false" name="Biological"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Dark Hereticus Discipline" hidden="false" id="45e7-570f-f01b-cb53" type="selectionEntryGroup" targetId="a0c0-d07c-0e66-5525">
@@ -1670,9 +1699,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Aspiring Sorcerer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="88ed-1c2a-2589-f7b7">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1685,10 +1712,13 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6++</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="27"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="26"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Rubric Marine" hidden="false" id="fe61-0e4b-43ad-8d9a" defaultAmount="4">
@@ -1701,7 +1731,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <infoLink name="Rubric Marine" id="8e1d-62cb-60e7-4e11" hidden="false" type="profile" targetId="a0d1-3d98-88b6-f9ee"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="23"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Rubric Marine w/ Soulreaper Cannon" hidden="false" id="d5c4-eeac-2218-5070">
@@ -1713,7 +1743,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <infoLink name="Rubric Marine" id="43f5-f716-1e4f-22fe" hidden="false" type="profile" targetId="a0d1-3d98-88b6-f9ee"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="44"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="43"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1727,6 +1757,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Chosen" hidden="false" id="7996-67d7-df34-d68d">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="0444-d2a8-bdce-c43a" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="7b97-40ce-8892-40c0" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="d032-76a1-96a4-b726" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Chosen" id="d1ee-14cf-9cac-c8d9" hidden="false">
@@ -1751,8 +1783,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Chosen Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2ee0-7edd-b782-5fee">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -1766,6 +1796,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1834,6 +1867,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Chaos Terminators" hidden="false" id="4b1c-7656-8c66-241f">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="0aeb-a53d-e2cc-6ff9" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="f014-ef83-2d3d-9578" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="7f2c-81b7-dde3-d2c5" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Terminators" id="a37f-8f89-814c-9845" hidden="false">
@@ -1849,8 +1884,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Chaos Terminator" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="54d6-54cd-d326-cf69">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -1864,6 +1897,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1914,8 +1950,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Chaos Terminator" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="05b3-3234-af95-8f85">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -1929,6 +1963,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1943,8 +1980,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Chaos Terminator Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="be73-3d14-da23-444c">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -1958,6 +1993,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1981,6 +2019,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Raptors" hidden="false" id="d565-4b7d-2574-350a">
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="167e-d634-f7cc-1de3" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="7ea9-1590-4580-64f4" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="0e67-1ad7-64cf-b7b7" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Raptors" id="da59-e5b3-b0a5-2205" hidden="false">
@@ -1999,9 +2039,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Raptor" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e854-4791-d7a4-21cb">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -2014,6 +2052,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2071,9 +2112,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Raptor" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1a00-e187-b971-dc40">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -2086,6 +2125,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2100,9 +2142,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Raptor Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f9ec-b0fd-9394-72d5">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -2115,6 +2155,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2138,6 +2181,8 @@ A model aligned with a particular god cannot join units aligned with a different
     <selectionEntry type="upgrade" import="true" name="Havocs" hidden="false" id="76e5-fa0a-2b50-52da">
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="8cd4-e5be-ec8d-3fb1" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="fee1-1f29-8925-bf04" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="5e30-5ebc-09e9-1bde" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Havocs" id="fa3e-34d3-0d20-6c22" hidden="false">
@@ -2155,9 +2200,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Havoc" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="d983-61f2-2e8e-33db">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -2170,6 +2213,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2239,9 +2285,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Havoc" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="d9f6-2f59-de9e-05a5">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -2254,6 +2298,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2268,9 +2315,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Havoc Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f12b-0b95-57c1-6700">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -2283,6 +2328,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2309,7 +2357,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -2411,6 +2459,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </costs>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="ca68-05a0-ebad-dc41" primary="true" name="Elite"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="dcec-e86a-151e-8481" primary="false" name="Walker"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="9c37-84bb-fff6-7691" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Accursed Cultists" hidden="false" id="2a32-d235-d817-abf2">
@@ -2426,8 +2476,6 @@ A model aligned with a particular god cannot join units aligned with a different
           <profiles>
             <profile name="Mutant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="d991-a920-9934-b11e">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                 <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
@@ -2441,6 +2489,9 @@ A model aligned with a particular god cannot join units aligned with a different
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -2452,8 +2503,6 @@ A model aligned with a particular god cannot join units aligned with a different
           <profiles>
             <profile name="Torment" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="89f8-ec85-1557-0be6">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                 <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -2467,35 +2516,43 @@ A model aligned with a particular god cannot join units aligned with a different
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Hideous Mutations" id="5e56-81f5-b852-5ea0" hidden="false" type="profile" targetId="12e4-0a48-43b1-c619"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="5a60-fd4a-9943-5793" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="3109-4e9c-1417-57a1" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="2fe7-dda1-0850-0b4b" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bikers" hidden="false" id="c382-7605-8664-d954">
+    <selectionEntry type="upgrade" import="true" name="Chaos Bikers" hidden="false" id="c382-7605-8664-d954">
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="2a4f-0c8d-0512-836f" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="1086-9fd5-6f58-db4b" primary="false" name="Biological"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="d3f4-bca9-ad06-4282" primary="false" name="Mounted"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Bikers" id="9344-1816-abdd-c7be" hidden="false">
+        <selectionEntryGroup name="Chaos Bikers" id="9344-1816-abdd-c7be" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Biker" hidden="false" id="d6cf-63c8-f2c0-70ee" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Chaos Biker" hidden="false" id="d6cf-63c8-f2c0-70ee" sortIndex="1">
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6336-c32e-bf1b-4a38" includeChildSelections="false"/>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="98a0-eba7-4c02-7eb6" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="cf83-45ad-32d1-ce95">
+                <profile name="Chaos Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="cf83-45ad-32d1-ce95">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -2508,6 +2565,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2521,7 +2581,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Biker Champion" hidden="false" id="991d-d211-2ec2-4da9" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Chaos Biker Champion" hidden="false" id="991d-d211-2ec2-4da9" sortIndex="3">
               <entryLinks>
                 <entryLink import="true" name="Chosen Upgrades" hidden="false" id="65a2-52ff-5ecc-5ec6" type="selectionEntryGroup" targetId="b291-6453-337b-d16f"/>
               </entryLinks>
@@ -2536,11 +2596,9 @@ A model aligned with a particular god cannot join units aligned with a different
                 <infoLink name="Krak Grenades" id="4cd8-7c52-bf52-f8a1" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <profiles>
-                <profile name="Biker Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e50e-074d-bf25-0514">
+                <profile name="Chaos Biker Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e50e-074d-bf25-0514">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -2553,22 +2611,23 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="38"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Biker [Special Weapon]" hidden="false" id="bd07-aed3-23b9-137b" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Chaos Biker [Special Weapon]" hidden="false" id="bd07-aed3-23b9-137b" sortIndex="2">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8887-6f35-eded-0764" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3694-e63d-7b67-b6b0">
+                <profile name="Chaos Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3694-e63d-7b67-b6b0">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -2581,6 +2640,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2644,6 +2706,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="0018-a335-d02e-ba9b" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="cf3f-f192-6c8c-3d54" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="0a34-b31a-de05-4644" primary="false" name="Mechanical"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="d71e-cf16-204f-20f5" sortIndex="1">
@@ -2674,7 +2738,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
@@ -2703,6 +2767,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="5c7b-6eda-1adf-b4b6" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="fe2e-7a74-0eab-b230" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="7513-42ca-19a2-b3ba" primary="false" name="Mechanical"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="225"/>
@@ -2718,7 +2784,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
@@ -2835,6 +2901,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="8392-f5eb-8553-1516" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="c163-f56d-b49b-f69b" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="5f7f-bbdc-d75e-7e3a" primary="false" name="Mechanical"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Havoc Launcher" hidden="false" id="435f-6a5c-0c32-d4e9" sortIndex="3">
@@ -2854,7 +2922,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
@@ -2876,7 +2944,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
@@ -2996,6 +3064,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="be0a-badc-4087-52e3" id="5aff-532c-c6fb-54dd" primary="true" name="Daemonspawn"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="8a7a-9e2e-2492-1a04" primary="false" name="Walker"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="d591-e0f1-0541-a405" primary="false" name="Daemonic"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Possessed" hidden="false" id="5dab-c877-6a72-7a65">
@@ -3006,9 +3076,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Possessed" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="b9bc-cd53-efdf-0bdf">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -3021,6 +3089,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3038,9 +3109,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Possessed Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="330d-103d-9d9d-7aa3">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -3053,6 +3122,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3071,6 +3143,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="be0a-badc-4087-52e3" id="9d47-2509-7c7b-f249" primary="true" name="Daemonspawn"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="784a-00e0-940d-40ec" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="7eae-2a68-f992-0579" primary="false" name="Daemonic"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maulerfiend" hidden="false" id="e318-ed4d-7901-04a9">
@@ -3082,7 +3156,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -3126,6 +3200,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="be0a-badc-4087-52e3" id="10f6-7fa6-2034-247f" primary="true" name="Daemonspawn"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="3215-588c-2d84-3677" primary="false" name="Walker"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="599c-f053-422e-2eff" primary="false" name="Daemonic"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Forgefiend" hidden="false" id="ec15-9346-9970-ccc6">
@@ -3139,7 +3215,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
@@ -3192,6 +3268,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="be0a-badc-4087-52e3" id="734a-4c32-9ff2-54b6" primary="true" name="Daemonspawn"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="8f9a-19ea-b652-cdae" primary="false" name="Walker"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="d0ef-689f-f4f1-8fdf" primary="false" name="Daemonic"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warp Talons" hidden="false" id="1d8f-1f5e-0115-8dc5">
@@ -3202,9 +3280,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Warp Talon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4139-42a4-1c5c-d45f">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -3217,6 +3293,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3234,9 +3313,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Warp Talon Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e023-52c4-2945-99f0">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -3249,6 +3326,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3267,6 +3347,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Daemonspawn" hidden="false" id="82bb-47f6-91f9-132c" targetId="be0a-badc-4087-52e3" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="92dc-30b9-2bd1-3aff" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="9730-7b44-46ce-93df" primary="false" name="Daemonic"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Venomcrawler" hidden="false" id="e2b4-c845-be03-08d7">
@@ -3275,7 +3357,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -3297,6 +3379,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="be0a-badc-4087-52e3" id="31cc-24e8-1b7a-6284" primary="true" name="Daemonspawn"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="10c5-6316-0576-4a94" primary="false" name="Walker"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="3c9a-36e7-2ba9-631c" primary="false" name="Daemonic"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="115"/>
@@ -3311,9 +3395,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <profiles>
             <profile name="Obliterator" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="066d-4c93-ea3b-b635">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">6</characteristic>
@@ -3326,6 +3408,9 @@ A model aligned with a particular god cannot join units aligned with a different
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -3348,6 +3433,8 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="be0a-badc-4087-52e3" id="e7ee-2bc1-f732-d9c8" primary="true" name="Daemonspawn"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="bbfb-05c8-4979-08d5" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="7fab-6b64-4d22-cdfa" primary="false" name="Daemonic"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Lord" hidden="false" id="5b22-f77f-e82a-9448">
@@ -3361,8 +3448,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Chaos Lord" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7438-9474-c345-fe73">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">8</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">1+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3376,6 +3461,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3385,13 +3473,14 @@ A model aligned with a particular god cannot join units aligned with a different
               <entryLinks>
                 <entryLink import="true" name="Chosen Upgrades" hidden="false" id="1d9b-ba93-a20f-46cc" type="selectionEntryGroup" targetId="b291-6453-337b-d16f"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="7c44-7d03-16cd-d99b" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Chaos Lord [Biker]" hidden="false" id="b298-76f8-21e6-0d3b">
               <profiles>
                 <profile name="Chaos Lord" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="71e2-8fcc-04cf-f7e1">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">8</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">1+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3405,6 +3494,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3423,13 +3515,14 @@ A model aligned with a particular god cannot join units aligned with a different
                 <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit"/>
                 <modifier type="set" value="Mo" field="08f4-4b48-4bfa-3b25" affects="profiles.Unit"/>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="7dab-4ec0-a48f-3637" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Chaos Lord [Terminator]" hidden="false" id="1e14-dae4-3c55-4dea">
               <profiles>
                 <profile name="Chaos Lord" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="51c2-8a50-c02b-f8a9">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">8</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">1+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3443,6 +3536,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3459,6 +3555,9 @@ A model aligned with a particular god cannot join units aligned with a different
                 <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit"/>
                 <modifier type="set" value="1+" field="badd-cd3a-81ca-6883" affects="profiles.Unit"/>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="c5d5-57f9-2a02-4536" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3473,6 +3572,7 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="default-category" id="278a-259b-483c-1721" primary="true" name="Leader"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="ca56-c734-b802-c469" primary="false" name="Character"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="60"/>
@@ -3486,8 +3586,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Sorcerer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="51f8-d4d7-383b-4926">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3501,19 +3599,23 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Frag Grenades" id="7de3-19ff-91ea-097e" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="bab1-4517-98b6-7281" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="f01f-5625-2d07-7b8e" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Sorcerer [Biker]" hidden="false" id="e5c4-1afd-2d89-9e26">
               <profiles>
                 <profile name="Sorcerer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f357-c84b-1de6-0786">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3527,6 +3629,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3542,13 +3647,14 @@ A model aligned with a particular god cannot join units aligned with a different
                 <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit"/>
                 <modifier type="set" value="Mo" field="08f4-4b48-4bfa-3b25" affects="profiles.Unit"/>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="4a2f-cd95-555b-bca6" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Sorcerer [Terminator]" hidden="false" id="6211-d9e4-1542-749a">
               <profiles>
                 <profile name="Sorcerer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3d3f-9d84-2d7f-f7e3">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3562,6 +3668,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3576,6 +3685,9 @@ A model aligned with a particular god cannot join units aligned with a different
                 <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit"/>
                 <modifier type="set" value="1+" field="badd-cd3a-81ca-6883" affects="profiles.Unit"/>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="89ee-2657-aa8a-0da6" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3673,6 +3785,9 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="5006-faff-8141-7ee0" targetId="default-category" primary="true"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="fe52-a1b6-ebe3-24fd" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="521e-60c2-1089-7c96" primary="false" name="Character"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="32b9-c006-a2cb-66ea" primary="false" name="Psyker"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
@@ -3701,8 +3816,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <profiles>
                 <profile name="Dark Apostle" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ee6f-c1bc-9f48-eae6">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3716,19 +3829,23 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Frag Grenades" id="0307-4b02-c9cc-dff8" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="c655-3eaa-2c64-c4f5" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="a0e9-0940-0904-1fb2" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Dark Apostle [Biker]" hidden="false" id="9884-938a-f69b-d8b7">
               <profiles>
                 <profile name="Dark Apostle" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="6ed0-9ba3-3d81-bf2b">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3742,6 +3859,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3757,13 +3877,14 @@ A model aligned with a particular god cannot join units aligned with a different
                 <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit"/>
                 <modifier type="set" value="Mo" field="08f4-4b48-4bfa-3b25" affects="profiles.Unit"/>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="894d-78be-c32d-fee4" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Dark Apostle [Terminator]" hidden="false" id="ce2b-0631-0b6b-96fb">
               <profiles>
                 <profile name="Dark Apostle" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4cf4-7174-6356-bd15">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3777,6 +3898,9 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3791,6 +3915,9 @@ A model aligned with a particular god cannot join units aligned with a different
                 <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit"/>
                 <modifier type="set" value="1+" field="badd-cd3a-81ca-6883" affects="profiles.Unit"/>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="9fc5-2a5e-de1a-386b" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3859,6 +3986,9 @@ A model aligned with a particular god cannot join units aligned with a different
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="8a06-2e51-71e9-f6f9" targetId="default-category" primary="true"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="cc82-9002-2641-2963" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="3128-bd26-90f8-bca6" primary="false" name="Character"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="7140-13f8-9e3b-d63e" primary="false" name="Psyker"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
@@ -3876,6 +4006,9 @@ A model aligned with a particular god cannot join units aligned with a different
       </costs>
       <categoryLinks>
         <categoryLink targetId="default-category" id="10c7-2d95-d3c6-f825" primary="true" name="Leader"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="ab41-29ca-f21e-c3f3" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="7279-3221-5a83-12e2" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="1092-3a31-7590-fc78" primary="false" name="Character"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Exalted Champion" hidden="false" id="17ee-b525-7dac-6eb7">
@@ -3885,8 +4018,6 @@ A model aligned with a particular god cannot join units aligned with a different
           <profiles>
             <profile name="Exalted Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="068e-e031-dcab-60d0">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                 <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3900,6 +4031,9 @@ A model aligned with a particular god cannot join units aligned with a different
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -3927,12 +4061,13 @@ A model aligned with a particular god cannot join units aligned with a different
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="44c8-2008-e047-38a1" targetId="default-category" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="f8a0-ff5f-db0a-04b3" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="f95e-7dfa-5251-d77a" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="a87a-0675-4eef-b17c" primary="false" name="Character"/>
       </categoryLinks>
       <profiles>
         <profile name="Techmarine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="aa67-5981-f665-2328">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
             <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
@@ -3946,6 +4081,9 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
       </profiles>
       <entryLinks>

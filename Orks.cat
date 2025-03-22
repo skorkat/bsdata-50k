@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -537,9 +537,7 @@
     </profile>
     <profile name="Ork Boy" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1aa5-b539-7a27-1d1c">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -552,12 +550,13 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
     <profile name="Nob" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c0eb-f9fb-e5c2-60aa">
       <characteristics>
-        <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-        <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -570,6 +569,9 @@
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
     </profile>
   </sharedProfiles>
   <rules>
@@ -619,8 +621,6 @@ The unit gains the following special rules:
       <profiles>
         <profile name="Weirdboy" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7bf9-8439-fa24-a99a">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
             <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
@@ -634,6 +634,9 @@ The unit gains the following special rules:
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Weirdboy" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="b9af-4846-a0e6-4b0d">
           <characteristics>
@@ -664,6 +667,10 @@ The unit gains the following special rules:
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="default-category" id="e5e9-071d-387d-382d" primary="true" name="Leader"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="390e-ce92-bcc9-74d9" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="e966-c54a-40dd-4e0b" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="4d8d-7a4d-76c5-d271" primary="false" name="Character"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="5204-7fd9-8a6e-0ce2" primary="false" name="Psyker"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gretchin Mob" hidden="false" id="cf11-ad44-cc16-445a">
@@ -676,8 +683,6 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Gretchin" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e294-a846-5e39-7b05">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
                 <characteristic name="WS" typeId="1509-720c-2a2f-ed46">2</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">2</characteristic>
@@ -691,6 +696,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -705,7 +713,7 @@ The unit gains the following special rules:
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7458-67be-be3a-451f" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
           </costs>
           <infoLinks>
             <infoLink name="Slugga" id="d562-0e8c-5b86-b9f8" hidden="false" type="profile" targetId="2484-99f4-4d86-b604"/>
@@ -715,11 +723,15 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="b6c8-a4d5-23c0-3606" id="d059-6138-a4e3-4d8f" primary="true" name="Core"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="17ae-704b-0c28-8aca" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="2d32-e945-50e1-2bfa" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Trukk" hidden="false" id="edff-960c-ab44-36fe">
       <categoryLinks>
         <categoryLink targetId="57f8-02cb-ea36-4d85" id="1f86-8b6f-aef0-506d" primary="true" name="Transport"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="f042-747b-a743-0272" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="0ca5-c4cb-d3f7-c4b7" primary="false" name="Mechanical"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
@@ -766,7 +778,7 @@ The unit gains the following special rules:
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
@@ -925,7 +937,7 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="e175-3392-4b5f-48c7" childId="any" shared="true" roundUp="false"/>
+                    <repeat value="1" repeats="1" field="selections" scope="e175-3392-4b5f-48c7" childId="ce1a-2437-2399-4a37" shared="true" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -934,7 +946,7 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="increment" value="1" field="b109-6551-e41a-f1f7">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="e175-3392-4b5f-48c7" childId="any" shared="true" roundUp="false"/>
+                    <repeat value="1" repeats="1" field="selections" scope="e175-3392-4b5f-48c7" childId="ce1a-2437-2399-4a37" shared="true" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" affects="self.entries.profiles.Unit" scope="parent"/>
@@ -948,6 +960,8 @@ The unit gains the following special rules:
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="b6c8-a4d5-23c0-3606" id="2ce0-0d5c-6ddc-0007" primary="true" name="Core"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="5596-8ddf-5473-dd78" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="fc63-a70d-638d-8637" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Slugga Boyz" hidden="false" id="eab7-a0b4-0ba2-86ab">
@@ -1010,7 +1024,7 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="eab7-a0b4-0ba2-86ab" childId="any" shared="true" roundUp="false"/>
+                    <repeat value="1" repeats="1" field="selections" scope="eab7-a0b4-0ba2-86ab" childId="9f99-f402-c8cf-2a56" shared="true" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -1019,7 +1033,7 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="increment" value="1" field="b109-6551-e41a-f1f7">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="eab7-a0b4-0ba2-86ab" childId="any" shared="true" roundUp="false"/>
+                    <repeat value="1" repeats="1" field="selections" scope="eab7-a0b4-0ba2-86ab" childId="9f99-f402-c8cf-2a56" shared="true" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" affects="self.entries.profiles.Unit" scope="parent"/>
@@ -1033,6 +1047,8 @@ The unit gains the following special rules:
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="ea3a-fe1b-955b-1410" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="dacb-c8c9-4b4b-12a2" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="5162-b345-cc0c-00f3" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Burna Boyz" hidden="false" id="6337-6218-0da5-23f7">
@@ -1048,7 +1064,7 @@ The unit gains the following special rules:
             <infoLink name="Burna [Shooting]" id="060a-32ae-5034-fb41" hidden="false" type="profile" targetId="1226-5a68-4220-9bf4"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mek" hidden="false" id="de09-7191-428d-c005">
@@ -1060,7 +1076,7 @@ The unit gains the following special rules:
             <infoLink name="Choppa" id="c76a-9e99-fa97-18e0" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="5fd5-76f8-7433-9982" hidden="false">
@@ -1097,6 +1113,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="9360-549d-8dc6-ef80" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="15d0-14b1-9628-6b7f" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="aae4-b778-6004-2a90" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lootas" hidden="false" id="c995-b3ab-d260-0af9">
@@ -1111,7 +1129,7 @@ The unit gains the following special rules:
             <infoLink name="Deffgun" id="e21f-5d5c-8c9b-ed67" hidden="false" type="profile" targetId="141e-f7ec-4f61-fee1"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mek" hidden="false" id="8236-a591-ffe1-c838">
@@ -1123,7 +1141,7 @@ The unit gains the following special rules:
             <infoLink name="Choppa" id="6fcf-c915-b19d-fc48" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="1fbc-56ba-7118-cc0c" hidden="false">
@@ -1160,6 +1178,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="0cd6-24a4-c5ac-a398" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="5cdd-2820-cf13-9fcf" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="cafa-acbe-61d5-1e3c" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tankbustas" hidden="false" id="5d55-9c36-5930-3105">
@@ -1195,6 +1215,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="0488-d175-204a-dcea" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="dc54-0f7e-7f85-beba" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="4fa7-3ac7-54c1-e59c" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kommandos" hidden="false" id="97ab-1654-0594-d1d6">
@@ -1322,6 +1344,8 @@ The unit gains the following special rules:
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="db10-8dc2-0e91-6d90" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="17be-e5a8-ba8c-f382" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="4fd3-d68d-0f98-8a27" primary="false" name="Biological"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Stealth" id="4f5c-049a-1727-6af4" hidden="false" type="rule" targetId="c1af-e857-e57d-b4f3"/>
@@ -1394,8 +1418,6 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Big Gun" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2de4-85a1-e478-6dda">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">M</characteristic>
                 <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">2</characteristic>
@@ -1409,6 +1431,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1421,6 +1446,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="1dc9-e497-dfb4-d4ef" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="fa0c-cb29-d466-67cd" primary="false" name="Infantry"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="a179-74a1-9b43-e3ce" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Killa Kans" hidden="false" id="4c7b-19cc-1d6f-9430">
@@ -1507,6 +1534,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="80d5-cddb-2922-c036" primary="true" name="Elite"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="fef2-51a5-958a-cd26" primary="false" name="Walker"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="cda4-d59d-6713-d547" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deff Dread" hidden="false" id="7cc5-e34a-ef40-7fd7">
@@ -1518,7 +1547,7 @@ The unit gains the following special rules:
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -1597,6 +1626,8 @@ The unit gains the following special rules:
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="d0d7-7bcf-cb96-2994" primary="true" name="Elite"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="6bd5-073d-649f-7090" primary="false" name="Walker"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="699f-13bc-8b37-a19c" primary="false" name="Mechanical"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="4" field="ff82-d90f-34a9-9279" affects="profiles.Vehicle">
@@ -1630,9 +1661,7 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Squig Hog Boy" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="966e-2cdc-5564-bd84">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -1645,6 +1674,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1664,9 +1696,7 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Squig Hog Nob" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="8d73-92a6-46a1-5b02">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">6</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">6</characteristic>
@@ -1679,6 +1709,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1695,6 +1728,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="ff86-ff60-2c85-abae" primary="true" name="Elite"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="5add-e2b7-af9b-9f58" primary="false" name="Biological"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="b4ce-5a37-63d0-29ea" primary="false" name="Mounted"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Battlewagon" hidden="false" id="1ae4-82ca-5f30-8254">
@@ -1706,7 +1741,7 @@ The unit gains the following special rules:
           <characteristics>
             <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
             <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
@@ -1861,6 +1896,8 @@ The unit gains the following special rules:
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="7e6b-123e-96b1-f9c2" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="7fdc-3830-8174-94d0" primary="false" name="Mounted"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="3702-66a4-572b-8eff" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Buggies" hidden="false" id="4b0c-a462-e9b1-1adc">
@@ -1944,7 +1981,7 @@ The unit gains the following special rules:
               <characteristics>
                 <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
                 <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
-                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
                 <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
                 <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
                 <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
@@ -1983,6 +2020,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="2f5d-36c5-eab9-d7e2" id="7e9b-774e-df2f-e5cc" primary="true" name="Speed Freeks"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="5218-0e43-f540-4aff" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="28f2-bd64-0180-e6cb" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Storm Boyz" hidden="false" id="2c62-9246-190c-ba63">
@@ -2025,6 +2064,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="2f5d-36c5-eab9-d7e2" id="f46d-b798-ee34-0027" primary="true" name="Speed Freeks"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="f29b-edd1-d6da-395e" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="09e1-80bd-bd8b-be9f" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warbikers" hidden="false" id="34a3-1128-5b7c-2619">
@@ -2033,9 +2074,7 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Warbiker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4d30-a7be-bcc5-567e">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -2048,6 +2087,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -2057,7 +2099,7 @@ The unit gains the following special rules:
             <infoLink name="Choppa" id="991e-067b-165a-ca48" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="27"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="26"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a755-8ca6-7131-769e" includeChildSelections="false"/>
@@ -2068,9 +2110,7 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Warbiker Nob" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c9e7-b050-8046-d11e">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">6</characteristic>
@@ -2083,6 +2123,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -2103,6 +2146,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="2f5d-36c5-eab9-d7e2" id="5098-ce73-27f7-132c" primary="true" name="Speed Freeks"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="2a8c-a0da-8976-1499" primary="false" name="Biological"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="f239-2c83-6b68-628d" primary="false" name="Mounted"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deffkoptas" hidden="false" id="c821-0ee0-eb46-05ec">
@@ -2113,7 +2158,7 @@ The unit gains the following special rules:
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="865d-dafb-0896-2562" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="31"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
           </costs>
           <infoLinks>
             <infoLink name="Slugga" id="c744-bb7b-1577-5a8b" hidden="false" type="profile" targetId="2484-99f4-4d86-b604"/>
@@ -2123,9 +2168,7 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Deffkopta" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="5872-f90f-e7ec-70f0">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -2138,6 +2181,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -2177,11 +2223,15 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="2f5d-36c5-eab9-d7e2" id="cd48-f2ce-9354-e064" primary="true" name="Speed Freeks"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="e3ab-ddaf-6795-6ebd" primary="false" name="Mounted"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="1072-a3ff-190f-6cd2" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flash Gitz" hidden="false" id="6e0e-32a0-97e7-e403">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="e817-97f3-7b6d-ca86" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="fca2-8b86-3d35-471f" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="42f3-ffbb-69e2-df61" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Flash Git" hidden="false" id="edec-887a-a386-a7a1" sortIndex="1">
@@ -2199,7 +2249,7 @@ The unit gains the following special rules:
             <modifier type="set" value="4" field="4a75-e14b-051b-c0f1" affects="profiles.Unit"/>
           </modifiers>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="32"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="31"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shootier (+1 S)" hidden="false" id="7ed1-6d1b-207b-7cdd" sortIndex="2">
@@ -2368,6 +2418,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="9acc-beae-3fe2-b880" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="832e-4771-e01f-13d0" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="3b6b-4c65-dde5-d8ee" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Meganobz" hidden="false" id="b2cc-70fc-329a-6371">
@@ -2406,6 +2458,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="9054-a330-d302-b67b" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="81af-e3a3-bf11-6c3d" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="e982-23e0-c509-3552" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warboss" hidden="false" id="1a13-b086-4661-0a44">
@@ -2429,6 +2483,9 @@ The unit gains the following special rules:
               <infoLinks>
                 <infoLink name="Stikkbombz" id="24a1-c9a7-7c28-5649" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="6682-94b3-4906-2cbe" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Squig" hidden="false" id="dcdb-c6cd-ab8b-c321" sortIndex="4">
               <costs>
@@ -2441,6 +2498,9 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="cf29-1bf1-d733-0827" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="06f8-5633-10e2-6a4a" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mega Armour" hidden="false" id="f3b0-6990-3e0d-7ad0" sortIndex="5">
               <costs>
@@ -2452,6 +2512,9 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Meganob Weapons" hidden="false" id="0cf4-9aeb-7663-25e9" type="selectionEntryGroup" targetId="672b-8e39-6e1f-c28e"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="329c-4ac4-6721-3a8c" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warbike" hidden="false" id="5d34-32bc-b98b-565d" sortIndex="3">
               <costs>
@@ -2464,6 +2527,9 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="300f-e108-ac61-a892" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="9597-6046-a863-d180" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warboss" hidden="false" id="3f25-06a1-e962-f479" sortIndex="1">
               <entryLinks>
@@ -2472,6 +2538,9 @@ The unit gains the following special rules:
               <infoLinks>
                 <infoLink name="Stikkbombz" id="62fb-6062-7cbf-a59e" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="ae6f-cde6-cbc1-c345" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2485,9 +2554,7 @@ The unit gains the following special rules:
       <profiles>
         <profile name="Warboss" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="9077-f5ec-d23d-06a5">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">8</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">6</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">6</characteristic>
@@ -2500,6 +2567,9 @@ The unit gains the following special rules:
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
       </profiles>
       <selectionEntries>
@@ -2528,6 +2598,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="default-category" id="96b1-bcc7-b87d-48a4" primary="true" name="Leader"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="f4cf-d904-113d-4960" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="c8f6-7e78-509e-e734" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Big Mek" hidden="false" id="6549-f339-87b7-4e85">
@@ -2548,6 +2620,9 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="0d23-8203-7fca-da57" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="57f8-02cb-ea36-4d85" id="6cdc-950d-ba91-830a" primary="false" name="Transport"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Squig" hidden="false" id="44af-fcbf-7d62-cf4e" sortIndex="4">
               <costs>
@@ -2560,6 +2635,9 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="37a6-2b3b-0d65-5611" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="e893-e7b7-41b2-70bb" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mega Armour" hidden="false" id="514b-002e-42f5-977f" sortIndex="5">
               <costs>
@@ -2571,6 +2649,9 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Meganob Weapons" hidden="false" id="cb5b-daf2-37f3-7a6a" type="selectionEntryGroup" targetId="672b-8e39-6e1f-c28e"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="2bf3-c36f-872e-3d13" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warbike" hidden="false" id="5bed-7e66-c14a-fc06" sortIndex="3">
               <costs>
@@ -2583,11 +2664,17 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="a1df-b712-2ea5-ff1c" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="eec7-dfca-0abc-8789" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Big Mek" hidden="false" id="fe48-2f9f-ace5-0ccc" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="a810-5f91-969a-1a27" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="154d-01fa-a5d5-e751" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2626,8 +2713,6 @@ The unit gains the following special rules:
       <profiles>
         <profile name="Big Mek" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3358-0f9f-062c-2665">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
             <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
@@ -2641,6 +2726,9 @@ The unit gains the following special rules:
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
       </profiles>
       <selectionEntries>
@@ -2669,6 +2757,8 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="ccc4-72ba-c3d3-54bb" targetId="default-category" primary="true"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="a247-8352-d3e3-a92c" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="ea50-a6b6-a275-4681" primary="false" name="Character"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Repair" id="40e7-24a8-7135-7e40" hidden="false" type="rule" targetId="4f57-16f9-b581-ef59"/>
@@ -2745,8 +2835,6 @@ The unit gains the following special rules:
       <profiles>
         <profile name="Painboss" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="83fc-6658-9c22-d2f8">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">B</characteristic>
             <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
@@ -2760,6 +2848,9 @@ The unit gains the following special rules:
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
       </profiles>
       <selectionEntries>
@@ -2788,6 +2879,9 @@ The unit gains the following special rules:
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="2e2a-6a0c-c08f-e0aa" targetId="default-category" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="a3fa-3616-4f6f-22bb" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="07ec-b359-b7f0-e5ba" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="ba4e-0dc9-c013-4843" primary="false" name="Character"/>
       </categoryLinks>
       <rules>
         <rule name="Dok&apos;s Tools" id="bf40-a3ff-7913-1877" hidden="false">

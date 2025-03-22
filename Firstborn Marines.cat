@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Honoured Brethren" id="ba83-6a23-709e-c810" hidden="false">
       <constraints>
@@ -151,6 +151,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="b6c8-a4d5-23c0-3606" id="bc3c-d07d-0db1-ed3c" primary="true" name="Core"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="1e42-3ce6-1b10-3f79" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="91ea-76ba-fbd9-13d2" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Assault Squad" hidden="false" id="9391-d5e0-3280-a616" flatten="false" collective="false" collapsible="false">
@@ -262,6 +264,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="b6c8-a4d5-23c0-3606" id="e19c-20b4-4472-70d6" primary="true" name="Core"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="6468-76dd-e10f-e9b2" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="81aa-678a-8119-9a53" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Devastator Squad" hidden="false" id="542d-e87c-aefc-6d23" flatten="false" collective="false" collapsible="false">
@@ -341,6 +345,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="4f59-97a9-14fa-8c89" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="3025-89dd-a5be-0c91" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="98fe-7122-84b0-d8e9" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scout Squad" hidden="false" id="b604-9077-d1f1-cae4" flatten="false" collective="false" collapsible="false">
@@ -433,6 +439,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="feac-6d6f-9bae-10d5" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="b2c7-e240-3e40-a608" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="6b81-a8a7-3845-7510" primary="false" name="Biological"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Camo Cloak" hidden="false" id="d215-8929-79f6-b85e" collective="false" targetId="edd7-2b11-79b5-3757" type="selectionEntry">
@@ -564,6 +572,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="ba83-6a23-709e-c810" id="f9db-c064-57de-9204" primary="true" name="Honoured Brethren"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="06bb-f02c-ef03-afab" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="156e-c82e-841d-3002" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vanguard Squad" hidden="false" id="0c82-1326-84e1-6a20" flatten="false" collective="false" collapsible="false">
@@ -657,6 +667,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="ba83-6a23-709e-c810" id="2f70-8297-c57b-d525" primary="true" name="Honoured Brethren"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="4c8d-a83b-eddd-b851" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="b054-45a6-f154-3492" primary="false" name="Biological"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Jump Packs" hidden="false" id="ab18-1d5c-fbf2-c986" collective="false" targetId="0254-8ea1-d49a-6d3f" type="selectionEntry">
@@ -679,6 +691,8 @@
     <selectionEntry type="upgrade" import="true" name="Relic Terminator Squad" hidden="false" id="42ae-6742-0eb2-e0f7">
       <categoryLinks>
         <categoryLink targetId="ba83-6a23-709e-c810" id="7c90-04b4-e9ec-e10f" primary="true" name="Honoured Brethren"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="c044-57c0-75eb-22c1" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="e16f-40cf-4b49-09d5" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Terminators" id="f4da-fb71-618a-ba88" hidden="false">
@@ -875,11 +889,15 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="ba83-6a23-709e-c810" id="0585-12a9-1ffd-ae72" primary="true" name="Honoured Brethren"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="479e-8499-b5d8-2915" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="3b35-9f36-9c8e-0f67" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dreadnought" hidden="false" id="5f9a-0219-5a4b-faa9">
       <categoryLinks>
         <categoryLink targetId="ba83-6a23-709e-c810" id="4a6b-3c27-83be-7cf9" primary="true" name="Honoured Brethren"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="b0d4-e52c-1081-3b02" primary="false" name="Mechanical"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="4518-2706-d70e-4c92" primary="false" name="Walker"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Left Hand" id="b00f-feb0-ddb3-a0fd" hidden="false">
@@ -995,6 +1013,8 @@
     <selectionEntry type="upgrade" import="true" name="Drop Pod" hidden="false" id="699d-6d1d-4ad8-1340">
       <categoryLinks>
         <categoryLink targetId="57f8-02cb-ea36-4d85" id="dd44-b900-a218-c11a" primary="true" name="Transport"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="9cd7-9d88-c82d-4e7e" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="fb15-96c7-4242-8b54" primary="false" name="Mechanical"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
@@ -1100,6 +1120,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="57f8-02cb-ea36-4d85" id="bb6f-a4ab-a45b-61b1" primary="true" name="Transport"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="4bf9-6ef6-3359-2f89" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="7438-e43c-1915-e3c6" primary="false" name="Mechanical"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="90"/>
@@ -1140,6 +1162,8 @@
       </profiles>
       <categoryLinks>
         <categoryLink name="Transport" hidden="false" id="8f06-de65-144e-bd9f" targetId="57f8-02cb-ea36-4d85" primary="true"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="8e39-cb44-e352-f8e8" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="702d-979d-a591-47d9" primary="false" name="Mechanical"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
@@ -1190,6 +1214,9 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="b555-2628-9cab-191f" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="0382-116b-8b5a-6430" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="12e2-1adf-0dad-4644" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="7a6e-9d0f-4cbc-1ed4" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ancient" hidden="false" id="7f76-5945-bdcc-d07d">
@@ -1217,6 +1244,9 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="840f-bdcf-e288-9f6f" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="89d8-bc32-2f85-eaf7" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="98da-85c1-a3dd-adc3" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="64f7-bf9f-fe99-5e6e" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Champion" hidden="false" id="dfdb-4807-d217-ec4e">
@@ -1244,11 +1274,16 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="9de2-5922-7b4f-e98e" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="d8ec-5c37-c579-aa0d" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="eff5-919f-2b02-725e" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="bb51-9971-e92f-8467" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scout Bikers" hidden="false" id="19eb-0e34-76a3-3833">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="ad86-dc16-8893-e9dc" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="4d47-10a0-4af8-400a" primary="false" name="Mounted"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="bb60-a5cf-7d96-82a9" primary="false" name="Biological"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Scout Biker" hidden="false" id="5a5a-4650-ed7a-5e2f" type="selectionEntry" targetId="4b18-b8ae-d50c-1717">
@@ -1322,6 +1357,8 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="e727-a49a-28b2-2cfe" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="ba5e-1dcc-efe2-1c53" primary="false" name="Mounted"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="1552-09c2-f8cb-d1bb" primary="false" name="Biological"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Bikers" id="3c52-a26c-bd52-6d7b" hidden="false">
@@ -1430,6 +1467,8 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="4532-74e8-433d-c3fb" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="436a-4a06-1826-07b5" primary="false" name="Mounted"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="6b20-ed0e-c5f6-d232" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Thunderfire Cannon" hidden="false" id="7158-0c01-407f-235d">
@@ -1448,6 +1487,8 @@
       </rules>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="9dfc-dc9a-547a-7af5" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="2ccb-90a3-e1bd-7ba4" primary="false" name="Infantry"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="9d4c-8e01-27e9-e644" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Predator" hidden="false" id="4780-d414-7b11-0cab">
@@ -1549,6 +1590,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="9c35-d176-e732-6636" primary="true" name="Elite"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="3a6b-3cc7-b596-8f77" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="7235-6af6-79eb-e4d5" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vindicator" hidden="false" id="15b0-0aed-d26b-e550">
@@ -1585,6 +1628,8 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="c65e-e596-0608-955f" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="106c-646f-ee6c-e164" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e1bd-4e14-1974-5b1d" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Whirlwind" hidden="false" id="b5bd-2606-1701-4d58">
@@ -1620,11 +1665,15 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="4722-d099-2b13-b64c" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="a8de-6354-912c-44e3" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="15eb-b894-d007-eabf" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Land Speeder Squadron" hidden="false" id="e04d-b91a-3c77-2b99">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="bd37-8a86-81c9-861b" primary="true" name="Elite"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="4afc-3a3b-13af-0428" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="d82d-09f8-8ce9-1e10" primary="false" name="Mechanical"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Land Speeder" hidden="false" id="4f34-1c5b-ee5a-218c">
@@ -1795,6 +1844,8 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="d61a-184c-e7f4-73a3" primary="true" name="Elite"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="df3a-0151-cc42-ca28" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="441f-b660-65c6-064c" primary="false" name="Mechanical"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="225"/>
@@ -1826,6 +1877,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="default-category" id="19a3-108c-f975-5b72" primary="true" name="Leader"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="7a78-9152-860f-33a2" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="a05e-aa06-d2a5-2fe3" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="94ef-4463-6e11-562f" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lieutenant" hidden="false" id="c396-ec21-4e13-a533">
@@ -1843,11 +1897,16 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="default-category" id="2d16-2c1a-545b-e359" primary="true" name="Leader"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="e6fb-dff6-d4af-546b" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="6e18-b430-2fd9-dc27" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="d8b7-3b8e-6930-648c" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaplain" hidden="false" id="722f-5539-5994-6856">
       <categoryLinks>
         <categoryLink targetId="default-category" id="04ea-db27-f7da-adc8" primary="true" name="Leader"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="5554-43a1-9357-f42e" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="529b-e8b7-9f5e-04ab" primary="false" name="Character"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
@@ -1869,6 +1928,9 @@
                 <infoLink name="Krak Grenades" id="6206-c767-9433-a165" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Chaplain" id="438e-d1b6-e5dd-1a41" hidden="false" type="profile" targetId="22f7-85c5-721e-8ae8"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="1a3f-9401-77fa-7597" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Chaplain [Bike]" hidden="false" id="34d8-cc07-0caf-f8d8">
               <infoLinks>
@@ -1892,6 +1954,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="1a80-d38e-673c-8c3c" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Chaplain [Terminator]" hidden="false" id="f8b0-81bb-b427-6608">
               <infoLinks>
@@ -1907,6 +1972,9 @@
                 </entryLink>
                 <entryLink import="true" name="Terminator Leader Ranged Upgrades" hidden="false" id="bfff-0e00-311e-58a9" type="selectionEntryGroup" targetId="3cc7-736f-c643-e9c6"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="5802-d45b-bb6f-1210" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1918,6 +1986,8 @@
     <selectionEntry type="upgrade" import="true" name="Captain" hidden="false" id="e1e7-2a20-af80-f9df">
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="ffce-f528-6351-2dc7" targetId="default-category" primary="true"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="3f43-b21c-ec49-ff87" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="7a26-2626-dbfb-49a3" primary="false" name="Character"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="60"/>
@@ -1941,6 +2011,9 @@
                 <infoLink name="Krak Grenades" id="2f06-7ffd-2746-4a65" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Captain" id="0f9e-d0e6-49fe-0ab5" hidden="false" type="profile" targetId="2197-21e7-05b2-7f26"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="519c-3542-a344-f9dd" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Captain [Bike]" hidden="false" id="b4c7-3009-fd8c-68f4">
               <infoLinks>
@@ -1963,6 +2036,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="5c1d-18fd-4d0e-7c73" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Captain [Terminator]" hidden="false" id="c735-c574-bb7a-ca31">
               <infoLinks>
@@ -1977,6 +2053,9 @@
                 </entryLink>
                 <entryLink import="true" name="Terminator Leader Upgrades" hidden="false" id="d2be-05da-e6ea-fda6" type="selectionEntryGroup" targetId="1aa1-5acd-5e55-5aea"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="5bbb-95b8-9639-5f7b" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1988,6 +2067,9 @@
     <selectionEntry type="upgrade" import="true" name="Librarian" hidden="false" id="2b68-8a2b-fffa-3539">
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="172c-6df8-51a8-7dbd" targetId="default-category" primary="true"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="e93a-abe4-f209-0ce9" primary="false" name="Biological"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="026e-acd9-46d5-f21d" primary="false" name="Character"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="ee38-008a-28f2-fc3f" primary="false" name="Psyker"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
@@ -2008,6 +2090,9 @@
                 <infoLink name="Krak Grenades" id="092f-ba84-8125-7a65" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Librarian" id="ce81-20bf-4d9f-4cad" hidden="false" type="profile" targetId="920f-a9a6-b0a8-07aa"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="9368-0f7a-f7c5-dcc4" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Librarian [Bike]" hidden="false" id="c438-92da-981e-5d63">
               <infoLinks>
@@ -2030,6 +2115,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="b6da-8dc5-3860-b445" primary="false" name="Mounted"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Librarian [Terminator]" hidden="false" id="1c54-42d3-bbd0-2ee4">
               <infoLinks>
@@ -2044,6 +2132,9 @@
                 </entryLink>
                 <entryLink import="true" name="Terminator Leader Ranged Upgrades" hidden="false" id="1f4b-819c-4f1c-8733" type="selectionEntryGroup" targetId="3cc7-736f-c643-e9c6"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="d354-6680-584e-943c" id="d2d2-d468-7632-1fee" primary="false" name="Infantry"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2179,6 +2270,8 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="78e7-652a-c00d-e13a" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="5383-a9ef-e7b5-3b90" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="525a-a972-fce3-9ac2" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Devastator Centurion Squad" hidden="false" id="c0e0-aba4-369e-709a">
@@ -2330,6 +2423,8 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="167d-853c-b727-d828" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="7e7e-cebe-3d50-4568" primary="false" name="Infantry"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="eb36-e650-01a2-e5c1" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>

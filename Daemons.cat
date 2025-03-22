@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Terrors of the Warp" id="beb5-78b8-d6cd-57fa" hidden="false">
       <description>When an enemy unit is Engaged with a Chaos Daemon unit, it must roll an additional D6 when taking Leadership Tests, and remove the highest dice before applying any other modifiers.</description>
@@ -132,11 +132,8 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Bolt of Change" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="43b9-8c0a-9ca3-5538">
               <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll a D3, applying the relevant bonus: 
-1:   +1 Attack
-2:   +1 Strength
-3:   +1 Toughness</characteristic>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 12&quot;</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll nine D6. For each roll of 6, the enemy unit suffers a Psychic Wound.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -162,7 +159,7 @@ Unaligned    Boon of Slaughter</description>
             <profile name="Flickering Flames" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="272e-869d-e585-e62e">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit immediately makes a ranged attack, and adds 1 To Wound.</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Enemy units which attack the target unit (with Shooting or Melee) suffer -1 To Hit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -175,7 +172,7 @@ Unaligned    Boon of Slaughter</description>
             <profile name="Warpflare" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="bff6-1553-ebae-6f90">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">All enemy units within 9&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit rolls a Leadership test. If they fail, they suffer D3 Psychic Wounds</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit rolls an Initiative test. If they fail, they suffer D3 Psychic Wounds</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -187,8 +184,11 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Boon of Change" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="b498-fa91-d905-faf3">
               <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 12”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll nine D6. For each roll of 6, the enemy unit suffers a Psychic Wound.</characteristic>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 12”</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll a D3, applying the relevant bonus. If you rolled a 6 on the Psychic Test, you can instead choose which bonus. 
+1: +1 Attack
+2: +1 Strength
+3: +1 Toughness</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -228,13 +228,17 @@ Unaligned    Boon of Slaughter</description>
     <profile name="Pink Fire of Tzeentch" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="bdcb-7029-bf9f-6b68">
       <characteristics>
         <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 12”</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">1 Psychic Wound for each 2 models in the casting unit (rounding down), to a minimum of 1</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll a number of dice equal to the number of models in the target unit. The target suffers 1 Psychic Wound for result which is less than or equal to half the models in the casting unit (rounding up). Rolls of 1 always inflict a wound.
+* 1-2 models: 2+
+* 3-4 models: 3+
+* 5-6 models: 4+
+* 7 models: 5+</characteristic>
       </characteristics>
     </profile>
     <profile name="Blue Fire of Tzeentch" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="e823-39f2-4f68-79f9">
       <characteristics>
         <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">3 Psychic Wounds</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">If the target is Infantry or Mounted, they suffer 1 Psychic Wound. Otherwise, they suffer 3 Psychic Wounds.</characteristic>
       </characteristics>
     </profile>
     <profile name="Malefic Talons" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="7073-87ab-5784-3a34">
@@ -522,9 +526,7 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Warp Daemon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="23e6-25d0-4b54-2241">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -537,6 +539,9 @@ Unaligned    Boon of Slaughter</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -544,7 +549,7 @@ Unaligned    Boon of Slaughter</description>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="c5c0-fe4e-5115-a28d" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
           </costs>
           <infoLinks>
             <infoLink name="Malefic Talons" id="a444-e182-63d8-65d5" hidden="false" type="profile" targetId="7073-87ab-5784-3a34"/>
@@ -553,6 +558,8 @@ Unaligned    Boon of Slaughter</description>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="b6c8-a4d5-23c0-3606" id="0900-09f7-852a-6eef" primary="true" name="Core"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="664e-b093-8236-8a3c" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="4412-eacf-2d11-03cb" primary="false" name="Daemonic"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Unaligned: Boon of Slaughter" id="d90d-46b3-49c0-848b" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
@@ -565,9 +572,7 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Daemonette" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ef8d-23e6-d405-7332">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -580,6 +585,9 @@ Unaligned    Boon of Slaughter</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -587,7 +595,7 @@ Unaligned    Boon of Slaughter</description>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="7cf6-04c1-e55d-da84" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
           </costs>
           <infoLinks>
             <infoLink name="Daemonic Claws" id="7679-be65-a3e1-edb4" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
@@ -596,6 +604,8 @@ Unaligned    Boon of Slaughter</description>
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="57ce-ee9e-2c6e-3098" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="672e-fa97-da70-3a60" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="651d-be2d-ef18-1239" primary="false" name="Daemonic"/>
       </categoryLinks>
       <comment>Slaanesh</comment>
       <infoLinks>
@@ -609,8 +619,6 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Plaguebearer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="8ab9-ce03-57d4-6561">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
                 <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
@@ -624,6 +632,9 @@ Unaligned    Boon of Slaughter</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -640,6 +651,8 @@ Unaligned    Boon of Slaughter</description>
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="4305-921e-5666-2df2" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="8dc6-69db-553f-33b8" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="9dc9-dd4f-cf88-203b" primary="false" name="Daemonic"/>
       </categoryLinks>
       <comment>Nurgle</comment>
       <infoLinks>
@@ -654,9 +667,7 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Bloodletter" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a5e9-7bac-4ba6-f602">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -669,6 +680,9 @@ Unaligned    Boon of Slaughter</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -676,7 +690,7 @@ Unaligned    Boon of Slaughter</description>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="ecae-b5dd-9541-0780" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
           </costs>
           <infoLinks>
             <infoLink name="Hellblade" id="2bc1-b198-cdeb-393b" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
@@ -685,6 +699,8 @@ Unaligned    Boon of Slaughter</description>
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="9dd5-0590-b340-7296" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="0cf9-2bbf-c16c-1f68" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="da76-928a-3c79-a5d5" primary="false" name="Daemonic"/>
       </categoryLinks>
       <comment>Khorne</comment>
       <infoLinks>
@@ -696,9 +712,7 @@ Unaligned    Boon of Slaughter</description>
       <profiles>
         <profile name="Blue Horror" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="874e-8af4-2615-d849">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">2</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">2</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">2</characteristic>
@@ -711,12 +725,13 @@ Unaligned    Boon of Slaughter</description>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Brimstone Horror" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1250-7dcd-010e-ff01">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">2</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">1</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">1</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">1</characteristic>
@@ -729,6 +744,9 @@ Unaligned    Boon of Slaughter</description>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Horrors" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="933a-ed29-1637-ee83">
           <characteristics>
@@ -737,9 +755,7 @@ Unaligned    Boon of Slaughter</description>
         </profile>
         <profile name="Pink Horror" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="9ace-7378-5ccc-2c52">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -752,6 +768,9 @@ Unaligned    Boon of Slaughter</description>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
       </profiles>
       <selectionEntries>
@@ -772,7 +791,7 @@ Unaligned    Boon of Slaughter</description>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Pink Horror" hidden="false" id="9fc0-8944-ef53-493c" defaultAmount="5">
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="8499-1930-6fa8-a504" includeChildSelections="false"/>
@@ -780,7 +799,7 @@ Unaligned    Boon of Slaughter</description>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Brimstone Horror" hidden="false" id="0aa9-e155-189f-c397">
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="9dbe-8c76-78cc-03b4" includeChildSelections="false"/>
@@ -788,7 +807,7 @@ Unaligned    Boon of Slaughter</description>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Blue Horror" hidden="false" id="0c8c-55b4-08eb-17fa">
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="51d1-7a54-ddd0-6309" includeChildSelections="false"/>
@@ -801,6 +820,9 @@ Unaligned    Boon of Slaughter</description>
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="90ed-f2e1-2f6b-60f7" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="2f7a-d407-853e-5f1c" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="b1e0-0db4-301c-3c88" primary="false" name="Daemonic"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="ea6b-2fff-cfc8-c39f" primary="false" name="Psyker"/>
       </categoryLinks>
       <comment>Tzeentch</comment>
       <infoLinks>
@@ -822,14 +844,12 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Fiend" hidden="false" id="96b7-f37d-5a98-0d78">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="26"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
           </costs>
           <profiles>
             <profile name="Fiend" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="33a3-485c-048c-fa0f">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -842,6 +862,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -855,6 +878,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="e7e3-dab1-1a12-b75d" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="bdcc-edf3-be71-5834" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="9c2d-4c86-897d-60c9" primary="false" name="Daemonic"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Slaanesh: Boon of Swiftness" id="46ec-268a-d58a-1d5c" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
@@ -867,9 +892,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <profiles>
             <profile name="Seeker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="188b-cc2c-4673-7368">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -882,13 +905,16 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Daemonic Claws" id="a79e-ce0d-8dc0-45ed" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="19"/>
           </costs>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ec64-49d1-3e54-c0b9" includeChildSelections="false"/>
@@ -898,6 +924,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="c29b-d073-091b-6ee9" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="cc23-1400-1908-9fd4" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="f07b-95a3-c3a1-a3d1" primary="false" name="Daemonic"/>
       </categoryLinks>
       <comment>Slaanesh</comment>
       <infoLinks>
@@ -909,9 +937,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Seeker Chariot" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="47ac-71e7-ab21-245f">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">4</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
@@ -927,7 +953,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="47"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
       </costs>
       <infoLinks>
         <infoLink name="Daemonic Claws" id="f31d-0c00-e947-15f4" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
@@ -937,6 +963,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="fe67-aa7c-da03-ea6e" primary="true" name="Elite"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="220b-a4a1-fc1e-3288" primary="false" name="Tank"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="b94e-441b-2ca3-63e4" primary="false" name="Daemonic"/>
       </categoryLinks>
       <comment>Slaanesh</comment>
     </selectionEntry>
@@ -950,9 +978,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <profiles>
             <profile name="Plague Drone" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ca38-ad82-2d1c-58ec">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -965,6 +991,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -972,12 +1001,14 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <infoLink name="Plague Weapon" id="aa22-a521-2384-3450" hidden="false" type="profile" targetId="ced4-cc0a-80ea-72f1"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="38"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="3c2a-eb98-bbed-48d6" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="dc4a-e6e4-25e3-eee7" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="efcc-1aa0-41b1-36f1" primary="false" name="Daemonic"/>
       </categoryLinks>
       <comment>Nurgle</comment>
       <infoLinks>
@@ -997,9 +1028,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <profiles>
             <profile name="Beast of Nurgle" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="67af-5f9c-62f5-f373">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -1012,18 +1041,23 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Plague Weapon" id="989f-ae45-941d-0364" hidden="false" type="profile" targetId="ced4-cc0a-80ea-72f1"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="36"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="34"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="9b3e-5215-28f0-1dcc" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="acde-90a5-2d43-b305" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="ff97-daa5-e677-74ad" primary="false" name="Daemonic"/>
       </categoryLinks>
       <comment>Nurgle</comment>
       <infoLinks>
@@ -1038,9 +1072,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <profiles>
             <profile name="Nurgling" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="cce3-2f62-fd57-bae4">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">2</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">1</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">2</characteristic>
@@ -1053,6 +1085,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -1060,12 +1095,14 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="6384-4926-c898-cacd" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="0a77-a1b2-8739-bcf2" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="2025-8089-034d-5120" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="0163-5454-a5a2-4204" primary="false" name="Daemonic"/>
       </categoryLinks>
       <comment>Nurgle</comment>
       <infoLinks>
@@ -1077,18 +1114,18 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <selectionEntry type="upgrade" import="true" name="Bloodcrushers" hidden="false" id="00bc-ec41-c8ea-0265">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="2fe7-de78-82f9-9124" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="0071-636a-a584-2610" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="4874-d2cb-9a52-ae9d" primary="false" name="Daemonic"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Bloodcrusher" hidden="false" id="9a3e-d72b-2b46-c6e6">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="32"/>
           </costs>
           <profiles>
             <profile name="Bloodcrusher" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f73d-edda-5e3a-1584">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -1101,6 +1138,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1121,18 +1161,18 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <selectionEntry type="upgrade" import="true" name="Flesh Hounds" hidden="false" id="8631-9b83-fbef-6382">
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="3b4d-1289-7961-35be" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="7784-42a7-8711-e3c8" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="c290-d413-7fd9-79e5" primary="false" name="Daemonic"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Flesh Hound" hidden="false" id="9bfb-6da3-7c93-167a">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
           </costs>
           <profiles>
             <profile name="Flesh Hound" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="fa79-f7f0-7644-caf0">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1145,6 +1185,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1166,6 +1209,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <comment>Khorne</comment>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="f31b-be55-94ac-3e26" primary="true" name="Elite"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="6b1f-c0ec-ef81-dfbb" primary="false" name="Tank"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="8532-da70-812c-23cf" primary="false" name="Daemonic"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="95"/>
@@ -1173,11 +1218,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Skull Cannon" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="e56a-888f-cb31-e0fb">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">7</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
@@ -1209,9 +1252,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <profiles>
             <profile name="Flamer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="8184-8604-248d-b9cb">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -1224,6 +1265,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -1234,6 +1278,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="8e5c-6e84-5d32-f21b" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="7029-429f-7a89-5833" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="b091-80cb-2851-7967" primary="false" name="Daemonic"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="36b5-218b-a034-d894" primary="false" name="Psyker"/>
       </categoryLinks>
       <comment>Tzeentch</comment>
       <infoLinks>
@@ -1253,6 +1300,10 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <selectionEntry type="upgrade" import="true" name="Exalted Flamer" hidden="false" id="8b81-7c35-7e45-4803">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="852a-fdcc-0ceb-a591" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="7514-739a-a3bf-536f" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="bf56-adc3-61f1-a30f" primary="false" name="Daemonic"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="00f5-d54b-da88-fa90" primary="false" name="Psyker"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="e2d5-6a8c-0304-2e95" primary="false" name="Character"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="70"/>
@@ -1260,9 +1311,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Exalted Flamer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="dff2-d04f-98bf-f3fc">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">6</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1275,6 +1324,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Exalted Flamer" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="d46c-c854-b2bf-822c">
           <characteristics>
@@ -1294,11 +1346,13 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <selectionEntry type="upgrade" import="true" name="Screamers" hidden="false" id="1f49-669c-f7cd-e4f2">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="5411-fe2b-296e-4443" primary="true" name="Elite"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="3c1e-9802-dec6-1b75" primary="false" name="Mounted"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="a537-95d7-225a-9218" primary="false" name="Daemonic"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Screamer" hidden="false" id="28d3-2f10-5cea-e108">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="31"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="28"/>
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1300-6b58-35ea-b104" includeChildSelections="false"/>
@@ -1307,9 +1361,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <profiles>
             <profile name="Screamer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c9bd-2727-56e8-062c">
               <characteristics>
-                <characteristic name="Size" typeId="db89-3815-8161-5287">Mo</characteristic>
-                <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">6</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1319,9 +1371,12 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
-                <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+                <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1341,8 +1396,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Keeper of Secrets" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="aa68-938a-d986-2a62">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">10</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
@@ -1368,6 +1421,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </costs>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="0187-6848-4957-4093" primary="true" name="Greater Daemon"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="222d-ba78-1430-f3ef" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="9119-472f-4356-f484" primary="false" name="Daemonic"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="4761-77bd-dada-17a7" primary="false" name="Psyker"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Lashes of Torment" id="22a7-1273-054e-d63b" hidden="false" type="profile" targetId="697f-69ff-f4ce-d031"/>
@@ -1393,8 +1449,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Great Unclean One" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="9a00-2c4e-2a88-c9e8">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">d</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">9</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
@@ -1439,6 +1493,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </costs>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="a41a-47c1-2cde-e51a" primary="true" name="Greater Daemon"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="2e4b-1667-77c5-ea98" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="0160-9b3b-ccad-34eb" primary="false" name="Daemonic"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="3010-90b5-9928-675e" primary="false" name="Psyker"/>
       </categoryLinks>
       <comment>Nurgle</comment>
     </selectionEntry>
@@ -1449,8 +1506,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Bloodthirster" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="0b3b-2096-c4fc-e031">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">9</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">9</characteristic>
@@ -1502,6 +1557,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="ce29-f803-cea4-dbe8" primary="true" name="Greater Daemon"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="1979-6e8f-0c43-701d" primary="false" name="Walker"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="a912-7128-36fe-53e9" primary="false" name="Daemonic"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="b88e-d379-9113-43ae" primary="false" name="Character"/>
       </categoryLinks>
       <comment>Khorne</comment>
     </selectionEntry>
@@ -1510,9 +1568,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Lord of Change" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4f40-54fa-a413-30ed">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">9</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
@@ -1552,14 +1608,19 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="6e78-5008-7ca9-5f58" primary="true" name="Greater Daemon"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="e9cb-570d-2a15-e752" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="6bea-dd4f-e27c-d85b" primary="false" name="Daemonic"/>
+        <categoryLink targetId="c759-da28-35c5-802b" id="940a-4e16-6e1a-f79a" primary="false" name="Psyker"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="500"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Daemon Lord" hidden="false" id="5509-a7c7-464c-7b05">
+    <selectionEntry type="upgrade" import="true" name="Daemon Herald" hidden="false" id="5509-a7c7-464c-7b05">
       <categoryLinks>
         <categoryLink targetId="default-category" id="09c3-4c9d-3448-29e6" primary="true" name="Leader"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="cfa3-901a-2b02-af91" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="c94d-2ea5-37e6-4ffc" primary="false" name="Daemonic"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Allegiance" id="8bad-6470-76e0-7bc1" hidden="false">
@@ -1573,7 +1634,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Unaligned: Boon of Slaughter" id="628d-5cd3-0fc0-f398" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
               </infoLinks>
               <profiles>
-                <profile name="Daemon Lord" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="b2b5-0378-fc18-a267">
+                <profile name="Daemon Herald" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="b2b5-0378-fc18-a267">
                   <characteristics>
                     <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">1</characteristic>
                   </characteristics>
@@ -1590,6 +1651,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="c759-da28-35c5-802b" id="d890-be51-7577-162f" primary="false" name="Psyker"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="2210-3c1e-cc92-52dc" sortIndex="2">
               <costs>
@@ -1600,14 +1664,14 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="b785-7acb-76b1-ee28" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
               </infoLinks>
               <profiles>
-                <profile name="Daemon Lord" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="ba27-4746-c0e7-e3d1">
+                <profile name="Slaanesh Herald" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="ba27-4746-c0e7-e3d1">
                   <characteristics>
                     <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="set" value="8" field="1509-720c-2a2f-ed46" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="7" field="1509-720c-2a2f-ed46" scope="parent" affects="profiles.Unit"/>
                 <modifier type="set" value="6" field="85f0-cca6-d69e-ffa2" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <constraints>
@@ -1621,6 +1685,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="c759-da28-35c5-802b" id="b312-cec2-b06c-6b7e" primary="false" name="Psyker"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="8f25-0f57-0b7a-c4fd" sortIndex="4">
               <costs>
@@ -1641,6 +1708,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               </costs>
               <modifiers>
                 <modifier type="set" value="4++" field="4cb6-278f-f4f3-4747" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="5" field="1509-720c-2a2f-ed46" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Tzeench Psychic Powers" hidden="false" id="c8c2-c306-af1c-6663" type="selectionEntryGroup" targetId="5ba4-dbe5-248d-9799">
@@ -1655,12 +1723,15 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Tzeentch: Boon of Trickery" id="c1a6-f9fa-044c-d6c6" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
               </infoLinks>
               <profiles>
-                <profile name="Daemon Lord" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="d050-aa9f-1916-a30d">
+                <profile name="Tzeentch Herald" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="d050-aa9f-1916-a30d">
                   <characteristics>
                     <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink targetId="c759-da28-35c5-802b" id="2d0e-9688-a30f-51fe" primary="false" name="Psyker"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="f47c-62bd-e793-f90b" sortIndex="3">
               <costs>
@@ -1683,12 +1754,15 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Nurgle: Boon of Pestilence" id="1887-1ac3-5ace-f995" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
               </infoLinks>
               <profiles>
-                <profile name="Daemon Lord" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="86f4-f2f0-a7df-f98d">
+                <profile name="Nurgle Herald" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="86f4-f2f0-a7df-f98d">
                   <characteristics>
                     <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink targetId="c759-da28-35c5-802b" id="278a-2d0f-c337-a025" primary="false" name="Psyker"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1698,15 +1772,12 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Character" id="1c1b-f0e3-8dab-0413" hidden="false" type="rule" targetId="cbbc-99b6-4371-e441"/>
         <infoLink name="Fear" id="ad46-a4ce-08be-ca45" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
       <profiles>
-        <profile name="Daemon Lord" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a8a6-9cc2-c6ab-bc97">
+        <profile name="Daemon Herald" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a8a6-9cc2-c6ab-bc97">
           <characteristics>
-            <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-            <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -1719,12 +1790,18 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Daemon Prince" hidden="false" id="723f-d2a8-697f-b365">
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="e468-1bb0-01ed-ae97" targetId="default-category" primary="true"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="dab6-c115-2c52-5e35" primary="false" name="Walker"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="9830-d68b-e05c-a943" primary="false" name="Daemonic"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="784c-e7b9-2afe-507e" primary="false" name="Character"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Allegiance" id="a553-ff5e-af85-37b2" hidden="false">
@@ -1754,6 +1831,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="c759-da28-35c5-802b" id="937d-489f-053e-fb1a" primary="false" name="Psyker"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="de8f-f4a7-69c5-8118" sortIndex="4">
               <costs>
@@ -1787,12 +1867,15 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Nurgle: Boon of Pestilence" id="c3af-540e-af80-67d1" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
               </infoLinks>
               <profiles>
-                <profile name="Daemon Prince" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="65fc-0181-31d8-90bf">
+                <profile name="Nurgle Prince" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="65fc-0181-31d8-90bf">
                   <characteristics>
                     <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink targetId="c759-da28-35c5-802b" id="c235-b39a-7ddc-4743" primary="false" name="Psyker"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="5884-f3e2-7aae-a8b0" sortIndex="2">
               <costs>
@@ -1802,7 +1885,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="006a-3ae2-4431-3075" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
               </infoLinks>
               <profiles>
-                <profile name="Daemon Prince" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="0ff1-5f0e-bb67-d762">
+                <profile name="Slaanesh Prince" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="0ff1-5f0e-bb67-d762">
                   <characteristics>
                     <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">2</characteristic>
                   </characteristics>
@@ -1823,6 +1906,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="c759-da28-35c5-802b" id="61f8-fa27-6e3e-7c01" primary="false" name="Psyker"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="6409-192b-2701-e155" sortIndex="5">
               <costs>
@@ -1830,6 +1916,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               </costs>
               <modifiers>
                 <modifier type="set" value="4++" field="5681-e76b-dcac-f4ea" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="7" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Tzeench Psychic Powers" hidden="false" id="f939-fa59-b87b-96d9" type="selectionEntryGroup" targetId="5ba4-dbe5-248d-9799">
@@ -1843,12 +1930,15 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Tzeentch: Boon of Trickery" id="4c7a-d23f-056e-89b7" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
               </infoLinks>
               <profiles>
-                <profile name="Daemon Prince" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="8151-435c-79d7-1678">
+                <profile name="Tzeentch Prince" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="8151-435c-79d7-1678">
                   <characteristics>
                     <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">3</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink targetId="c759-da28-35c5-802b" id="8dad-18a6-3935-daa2" primary="false" name="Psyker"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1858,7 +1948,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Character" id="f66e-908c-1282-d965" hidden="false" type="rule" targetId="cbbc-99b6-4371-e441"/>
         <infoLink name="Fear" id="f20d-d030-9851-c1fd" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Hellforged Sword" id="37da-4513-29f5-d6a7" hidden="false" type="profile" targetId="a399-7370-387d-d8fd"/>
         <infoLink name="Fly" id="a367-6688-d08d-7667" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
@@ -1866,8 +1955,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Daemon Lord" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="cf1a-4d63-6164-4302">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">In</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">7+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -1887,6 +1974,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <selectionEntry type="upgrade" import="true" name="Furies" hidden="false" id="3af2-d5af-577d-d30a">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="cc01-4109-fe16-cdb2" primary="true" name="Elite"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="d8c5-fbca-53b8-0866" primary="false" name="Infantry"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="13aa-fda5-3f00-9c97" primary="false" name="Daemonic"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Fury" id="bffd-0055-8360-5d90" hidden="false" sortIndex="2">
@@ -1899,9 +1988,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <profiles>
                 <profile name="Fury" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="35fa-2d5d-1df0-9d2e">
                   <characteristics>
-                    <characteristic name="Size" typeId="db89-3815-8161-5287">In</characteristic>
-                    <characteristic name="Type" typeId="08f4-4b48-4bfa-3b25">D</characteristic>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -1914,75 +2001,71 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Malefic Talons" id="3847-893d-6dd2-f5f3" hidden="false" type="profile" targetId="7073-87ab-5784-3a34"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Allegiance" id="5831-305e-61da-b8f0" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Unaligned" hidden="false" id="a6ff-e917-af2d-2ec9" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Unaligned: Boon of Slaughter" id="537a-df92-863c-3550" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="f8c1-0b25-9620-e1f6" sortIndex="2">
-                      <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Slaanesh: Boon of Swiftness" id="b603-07b4-928e-9eb9" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
-                      </infoLinks>
-                      <modifiers>
-                        <modifier type="set" value="7" field="1509-720c-2a2f-ed46" scope="parent" affects="profiles.Unit"/>
-                        <modifier type="set" value="5" field="85f0-cca6-d69e-ffa2" scope="parent" affects="profiles.Unit"/>
-                      </modifiers>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="458e-acd3-53d5-09c8" sortIndex="4">
-                      <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="4" field="229e-fdb9-4bbc-f6ff" scope="parent" affects="profiles.Unit"/>
-                        <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71" scope="parent" affects="profiles.Unit"/>
-                      </modifiers>
-                      <infoLinks>
-                        <infoLink name="Khorne: Boon of Rage" id="d519-e24d-7e12-f765" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="62da-91df-2eae-6dca" sortIndex="5">
-                      <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="4++" field="4cb6-278f-f4f3-4747" affects="unit.profiles.Unit" scope="parent"/>
-                      </modifiers>
-                      <infoLinks>
-                        <infoLink name="Tzeentch: Boon of Trickery" id="f074-6ac0-7389-541f" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="8832-684a-fb5d-35e8" sortIndex="3">
-                      <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="profiles.Unit"/>
-                        <modifier type="set" value="6+++" field="c9d0-52c0-aa47-95c6" scope="parent" affects="profiles.Unit"/>
-                      </modifiers>
-                      <infoLinks>
-                        <infoLink name="Nurgle: Boon of Pestilence" id="ed2f-7126-2f42-d346" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="self" shared="true" id="e7b3-7f6d-df07-30c1-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="e7b3-7f6d-df07-30c1-max" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Allegiance" id="5831-305e-61da-b8f0" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Unaligned" hidden="false" id="a6ff-e917-af2d-2ec9" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Unaligned: Boon of Slaughter" id="537a-df92-863c-3550" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="f8c1-0b25-9620-e1f6" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Slaanesh: Boon of Swiftness" id="b603-07b4-928e-9eb9" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="5" field="1509-720c-2a2f-ed46" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="5" field="85f0-cca6-d69e-ffa2" scope="parent" affects="self.entries.profiles.Unit"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="458e-acd3-53d5-09c8" sortIndex="4">
+              <modifiers>
+                <modifier type="set" value="4" field="229e-fdb9-4bbc-f6ff" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71" scope="parent" affects="self.entries.profiles.Unit"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Khorne: Boon of Rage" id="d519-e24d-7e12-f765" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="62da-91df-2eae-6dca" sortIndex="5">
+              <modifiers>
+                <modifier type="set" value="4++" field="4cb6-278f-f4f3-4747" affects="self.entries.unit.profiles.Unit" scope="parent"/>
+                <modifier type="set" value="3" field="1509-720c-2a2f-ed46" scope="parent" affects="self.entries.profiles.Unit"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Tzeentch: Boon of Trickery" id="f074-6ac0-7389-541f" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="8832-684a-fb5d-35e8" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="6+++" field="c9d0-52c0-aa47-95c6" scope="parent" affects="self.entries.profiles.Unit"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Nurgle: Boon of Pestilence" id="ed2f-7126-2f42-d346" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="e7b3-7f6d-df07-30c1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="e7b3-7f6d-df07-30c1-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -1993,6 +2076,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <selectionEntry type="upgrade" import="true" name="Soulgrinder" hidden="false" id="8afb-1d7a-ba70-43b7">
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="c299-716a-5994-49c0" targetId="6297-a84f-a103-e2ac" primary="true"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="22e9-c796-ec59-e137" primary="false" name="Walker"/>
+        <categoryLink targetId="b625-812b-ea6f-c45f" id="0a98-7718-b2c6-c0d3" primary="false" name="Daemonic"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Allegiance" id="a9a4-07cb-2e86-78f1" hidden="false">
@@ -2037,7 +2122,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="58b1-9890-a035-9b96" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
               </infoLinks>
               <modifiers>
-                <modifier type="set" value="7" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="5" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="5" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
             </selectionEntry>
@@ -2047,6 +2132,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               </costs>
               <modifiers>
                 <modifier type="set" value="4++" field="5681-e76b-dcac-f4ea" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="3" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <infoLinks>
                 <infoLink name="Tzeentch: Boon of Trickery" id="c3c6-508c-d6bb-9206" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
@@ -2095,9 +2181,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Soulgrinder" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="96da-1959-ac41-42a0">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
