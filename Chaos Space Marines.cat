@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -2387,7 +2387,7 @@ A model aligned with a particular god cannot join units aligned with a different
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heavy Flamer &amp; Power Fist" hidden="false" id="ec9d-8126-90f4-9343" sortIndex="2">
               <infoLinks>
-                <infoLink name="Storm Bolter" id="6fc5-fbe5-9672-a57d" hidden="false" type="profile" targetId="9643-ded0-d7ae-ebdb"/>
+                <infoLink name="Heavy Flamer" id="6fc5-fbe5-9672-a57d" hidden="false" type="profile" targetId="985a-d278-19b1-e82f"/>
                 <infoLink name="Power Fist" id="451e-40b5-04f6-3d32" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
               </infoLinks>
               <costs>
@@ -4111,7 +4111,7 @@ A model aligned with a particular god cannot join units aligned with a different
     <entryLink import="true" name="Havocs" hidden="false" id="a8b0-2266-6da0-9427" type="selectionEntry" targetId="76e5-fa0a-2b50-52da"/>
     <entryLink import="true" name="Helbrute" hidden="false" id="e006-77f8-d3ae-7a20" type="selectionEntry" targetId="1973-6041-df9b-444a"/>
     <entryLink import="true" name="Accursed Cultists" hidden="false" id="da91-9823-713c-967c" type="selectionEntry" targetId="2a32-d235-d817-abf2"/>
-    <entryLink import="true" name="Bikers" hidden="false" id="7f75-9505-57cb-a496" type="selectionEntry" targetId="c382-7605-8664-d954"/>
+    <entryLink import="true" name="Chaos Bikers" hidden="false" id="7f75-9505-57cb-a496" type="selectionEntry" targetId="c382-7605-8664-d954"/>
     <entryLink import="true" name="Chaos Land Raider" hidden="false" id="2f74-2781-7951-a902" type="selectionEntry" targetId="8d06-9e00-ac93-86d3"/>
     <entryLink import="true" name="Chaos Predator" hidden="false" id="cbfe-dcf3-4f17-d545" type="selectionEntry" targetId="3615-9899-dbbb-cda6"/>
     <entryLink import="true" name="Chaos Vindicator" hidden="false" id="14c6-02b4-abdb-8f60" type="selectionEntry" targetId="8fae-e176-df21-061a"/>

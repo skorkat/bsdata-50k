@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="86c1-35b4-c984-858a" name="aLib - Chaos" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="86c1-35b4-c984-858a" name="aLib - Chaos" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Khorne: Boon of Rage" id="6dd3-7c64-ea26-063b" hidden="false">
       <description>+1 Strength (until the end of the turn) after making a Charge Move</description>

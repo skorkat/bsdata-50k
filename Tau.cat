@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Battlesuit" id="b083-7a5c-1d92-5ca6" hidden="false">
       <constraints>
@@ -337,7 +337,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">72&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">12</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">6</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
@@ -1332,6 +1332,7 @@
           <infoLinks>
             <infoLink name="Kroot Rifle (Melee)" id="812f-f569-4a48-4806" hidden="false" type="profile" targetId="378b-4efd-4d60-4048"/>
             <infoLink name="Kroot Rifle (Shooting)" id="5174-9e3a-34c4-e31a" hidden="false" type="profile" targetId="15a0-274f-4b07-2aac"/>
+            <infoLink name="Quill Grenades" id="891f-f035-0226-5c9a" hidden="false" type="profile" targetId="8cca-fa18-4c48-5a37"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
@@ -2098,6 +2099,9 @@
           <infoLinks>
             <infoLink name="Seeker Missile" id="073b-c4ce-5546-c915" hidden="false" type="profile" targetId="00e4-43ca-417f-5eda"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -2147,7 +2151,7 @@
                 <infoLink name="Ion Cannon" id="96c9-f8de-919e-0c48" hidden="false" type="profile" targetId="578c-1094-43f4-5723"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2184,7 +2188,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="125"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="135"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sky Ray" hidden="false" id="6242-981a-aa9d-cec5">
@@ -2196,6 +2200,9 @@
           <infoLinks>
             <infoLink name="Seeker Missile" id="a594-78d1-9d1c-fe1e" hidden="false" type="profile" targetId="00e4-43ca-417f-5eda"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -2272,6 +2279,9 @@
           <infoLinks>
             <infoLink name="Seeker Missile" id="394e-0928-365d-bb6c" hidden="false" type="profile" targetId="00e4-43ca-417f-5eda"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
