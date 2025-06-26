@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -126,7 +126,7 @@
   <sharedRules>
     <rule name="Infiltrate" id="f6d2-4715-f8a6-5a6b" hidden="false">
       <comment>Deployment</comment>
-      <description>If every model in this model’s unit has this rule, it can be deployed anywhere that is at least 12” away from enemy units during Deployment. Alternatively, if placed in reserves, it may enter from any board edge outside of the opposing player&apos;s deployment zone and outside of 6&quot; of enemy models.</description>
+      <description>If every model in this model’s unit has this rule, it can be deployed anywhere that is at least 12” away from enemy units and more than 3” away from any Objective Marker during Deployment. Alternatively, if placed in reserves, it may enter from any board edge outside of the opponent’s deployment zone and outside of 6&quot; of enemy models.</description>
     </rule>
     <rule name="Deep Strike" id="2f62-8a76-e9b0-d6e9" hidden="false">
       <comment>Deployment</comment>
@@ -147,11 +147,11 @@ They may instead be placed anywhere on the battlefield where they would be able 
       <comment>Movement</comment>
     </rule>
     <rule name="Agile" id="6248-ab86-68c5-20f4" hidden="false">
-      <description>Can make a 3” Run action either before or after making a Shoot or Psychic action. If they do so, they count as moving for the purpose of Shooting (regardless of whether they moved in the Move phase, or if they Run before or after shooting).</description>
+      <description>May move up to 3” either before or after making a Shoot or Psychic action. If they do so, they suffer -1 To Hit for the purpose of Shooting.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Fleet" id="10f1-6b51-74e1-9df4" hidden="false">
-      <description>Can charge 3 + 2d3” instead of 3 + d6”.</description>
+      <description>Can move an additional 2” when making a standard Move. Can charge 3 + 2d3” instead of 3 + d6”.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Immobile" id="7267-fda0-76c1-676e" hidden="false">
@@ -224,26 +224,10 @@ If a transport is destroyed, all models inside must immediately take a Dangerous
       <alias>Transports</alias>
     </rule>
     <rule name="Firing Deck (X)" id="d111-e063-4372-fe92" hidden="false">
-      <description>Up to X transported models may choose targets outside of the transport in the Action Phase.</description>
+      <description>Up to X transported models may choose targets outside of the transport in the Action Phase. They cannot do this if the transport moves at Full Speed.</description>
     </rule>
     <rule name="Unique" id="17f1-244a-b389-bd77" hidden="false">
       <description>Only one of these units may be included in an army.</description>
-    </rule>
-    <rule name="Assault Grenades" id="2b91-aaad-56c4-5d13" hidden="false">
-      <description>When a unit equipped with Assault Grenades charges, all targets of the charge halve their WS in the first round.
-
-
-A model equipped with Assault Grenades can use them against a Walker or Tank unit in Melee, instead of attacking with standard weapons. Use the following profile:
-A1, S0, AP0, Lance (6+), Poison (6+), Warpbane (6+), Cumbersome, Dangerous</description>
-      <comment>Grenades</comment>
-    </rule>
-    <rule name="Defensive Grenades" id="797e-64e4-843c-4f88" hidden="false">
-      <description>When a unit equipped with Defensive Grenades is charged, all enemy charging units halve their WS in the first round.
-
-
-A model equipped with Defensive Grenades can use them against a Walker or Tank unit in Melee, instead of attacking with standard weapons. Use the following profile:
-A1, S0, AP0, Lance (6+), Poison (6+), Warpbane (6+), Cumbersome, Dangerous</description>
-      <comment>Grenades</comment>
     </rule>
     <rule name="Tankbusting Grenades" id="f3a0-79c4-283a-641d" hidden="false">
       <description>A model equipped with Tankbusting Grenades can use them against a Walker or Tank unit in Melee, instead of attacking with standard weapons. Use the following profile:
@@ -476,4 +460,7 @@ Models in a unit can never voluntarily move outside of coherency with their unit
 - If any model in a unit moves, then all models in that unit count as having moved, even if an individual model itself did not.</description>
     </rule>
   </rules>
+  <publications>
+    <publication name="Github" id="8377-2337-b353-5228" hidden="false" publisherUrl="https://github.com/skorkat/bsdata-50k"/>
+  </publications>
 </gameSystem>

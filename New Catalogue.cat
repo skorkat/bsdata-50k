@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="86c1-35b4-c984-858a" name="aLib - Chaos" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="86c1-35b4-c984-858a" name="aLib - Chaos" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Khorne: Boon of Rage" id="6dd3-7c64-ea26-063b" hidden="false">
-      <description>+1 Strength (until the end of the turn) after making a Charge Move</description>
+      <description>Natural rolls of 6 to hit in the Fight Phase count as 2 hits.</description>
       <alias>Boon of Rage</alias>
     </rule>
     <rule name="Nurgle: Boon of Pestilence" id="85a2-9959-0d31-39d0" hidden="false">
-      <description>Always count as being in Soft Cover and being equipped with Defensive Grenades.</description>
+      <description>Always count as being in Soft Cover</description>
       <alias>Boon of Pestilence</alias>
     </rule>
     <rule name="Slaanesh: Boon of Swiftness" id="6f24-d2c5-2c7f-32b6" hidden="false">
-      <description>Gain Agile and Fleet</description>
+      <description>Gain Fleet</description>
       <alias>Boon of Swiftness</alias>
     </rule>
     <rule name="Tzeentch: Boon of Trickery" id="db16-98e7-5f3a-cd6f" hidden="false">
-      <description>+1 to rolls on the Warp Effects table
-+1 to Psychic Saves</description>
+      <description>Once per round, re-roll a single Armour Save, Invulnerable Save, Psychic Save, or Warp Effects result</description>
       <alias>Boon of Trickery</alias>
-    </rule>
-    <rule name="Unaligned: Boon of Slaughter" id="f800-2ebb-9c2b-9c51" hidden="false">
-      <description>In the Command Phase, the unit chooses one of the following to apply for the turn:
-Poison (6)
-Lance (6)
-Warpbane (6)</description>
-      <alias>Boon of Slaughter</alias>
     </rule>
   </sharedRules>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Lib - Imperial - Base" id="331b-005e-07b0-6041" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Equipment" id="b609-da18-63b6-2e95" targetId="0e97-bb9e-538e-d4e5"/>
@@ -677,12 +677,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55b6-2464-f2be-4fc8-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="ddbb-327e-740c-abbe" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1197-5595-45fd-ec8e-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1197-5595-45fd-ec8e-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Scout" hidden="false" id="a999-1b7a-ca24-8de6">
@@ -697,12 +691,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e5-5d7d-2cc1-9831-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="431a-fd98-beb7-c585" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cf5-71d0-1e9f-4fce-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cf5-71d0-1e9f-4fce-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
@@ -710,12 +698,6 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="e34c-2530-aa1f-9f55" flatten="false" collapsible="false">
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="9e3b-e5af-7722-2d53" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f52c-6451-a96d-3466-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f52c-6451-a96d-3466-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="1085-5f44-0917-b964" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1992-0e49-6194-920a-min" includeChildSelections="false"/>
@@ -739,12 +721,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8549-b690-977d-8b33-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="71d2-b2e1-602f-b722" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cccc-1903-1151-dbf9-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cccc-1903-1151-dbf9-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="655f-dd6a-d740-965f" type="selectionEntryGroup" targetId="2a98-3ac3-c36a-94ca"/>
       </entryLinks>
       <infoLinks>
@@ -764,12 +740,6 @@
         <infoLink name="Special Issue Ammo" id="3c7c-0172-b6a5-9fc6" hidden="false" type="rule" targetId="8e0c-2e10-ceae-ff93"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="8006-2339-c11d-4989" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ece-3cb9-5252-9a0e-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ece-3cb9-5252-9a0e-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="22b8-0db5-9629-c20e" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4bc-515c-2471-b3ff-min" includeChildSelections="false"/>
@@ -793,12 +763,6 @@
         <infoLink name="Special Issue Ammo" id="3c0d-7f03-b1b1-1d94" hidden="false" type="rule" targetId="8e0c-2e10-ceae-ff93"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="4f16-f784-8c64-406d" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8561-77b0-487d-d8ab-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8561-77b0-487d-d8ab-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="9d43-8020-70fc-6ba5" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d21f-bb89-9e7c-250b-min" includeChildSelections="false"/>
@@ -816,12 +780,6 @@
         <infoLink name="Vanguard Veteran" id="bcb7-d975-31cf-5504" hidden="false" type="profile" targetId="7a43-dc47-3f29-869b"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="afb9-95dd-3c82-5782" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="430d-4f98-7676-ed3e-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="430d-4f98-7676-ed3e-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="b567-f237-04b3-c0fb" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e81-0383-d1d3-7b5b-min" includeChildSelections="false"/>
@@ -838,12 +796,6 @@
         <infoLink name="Vanguard Sergeant" id="722f-e136-423c-a803" hidden="false" type="profile" targetId="7175-0ed4-b896-e946"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="cc60-612a-4f83-6f99" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a10-81f8-12b6-b683-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a10-81f8-12b6-b683-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="608b-6853-8ac7-ab2a" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c896-7820-24af-94ed-min" includeChildSelections="false"/>
@@ -885,12 +837,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a975-e490-db2e-0f3b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="17bc-656e-2c74-5fd8" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="455f-357d-9af4-3386" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced2-a50f-da7f-c2b1" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Boltgun" hidden="false" id="05e5-4092-793c-b25a" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9a5c-9171-1e35-4e75-min" includeChildSelections="false"/>
@@ -912,12 +858,6 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be2f-a55d-6ad9-4a0d" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cadc-4b6d-91ba-762d" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="759a-476c-6731-0a4c" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fcf-a18f-0026-fd60" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83d6-b523-791a-10c4" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Boltgun" hidden="false" id="9930-6f71-7726-7d1b" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
@@ -942,12 +882,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b9a-b24f-9b10-df18" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="3b32-556f-6ef7-e97a" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d7a-458e-6e2c-d229" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b812-6c7f-42e5-453b" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Boltgun" hidden="false" id="da4a-d757-9b9c-bfdd" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0fb1-879d-a82c-fc65-min" includeChildSelections="false"/>
@@ -970,12 +904,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee1a-c444-5e76-e139" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="7680-5fc5-b330-4478" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a824-1a25-1568-a702" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="336d-75e7-64ca-52c0" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Boltgun" hidden="false" id="a62f-2994-6034-2b32" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c738-4c6b-6eae-a7f8-min" includeChildSelections="false"/>
@@ -996,12 +924,6 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2102-6965-4327-2115" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f54-b379-5582-e065" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="0247-01f3-4398-5e83" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a73f-213e-4637-e1ab" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d48a-b851-4a89-755b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Boltgun" hidden="false" id="4c58-92f6-ba3f-8aac" type="selectionEntry" targetId="9fa3-d0cc-f732-8a75">

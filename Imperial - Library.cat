@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0d98-1036-43bc-85f0" name="aLib - Imperial - Base" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0d98-1036-43bc-85f0" name="aLib - Imperial - Base" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <sharedProfiles>
     <profile name="Assault Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="176f-7ee7-5ee4-347f">
       <characteristics>
@@ -121,11 +121,6 @@
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
-    <profile name="Frag Grenades" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="ff4b-803f-bbaa-b153">
-      <characteristics>
-        <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">Assault Grenades</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Krak Grenades" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="87c9-b0d4-c233-55b5">
       <characteristics>
         <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">Tankbusting Grenades</characteristic>
@@ -228,10 +223,10 @@
     </profile>
     <profile name="Sniper Rifle" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="41ee-f79d-43c3-1998">
       <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">48&quot;</characteristic>
+        <characteristic name="Range" typeId="5bc1-f923-633a-2354">36&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">4</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Sniper</characteristic>
       </characteristics>
@@ -258,10 +253,10 @@
     </profile>
     <profile name="Vengeance Launcher" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="b406-c430-a182-5352">
       <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">72&quot;</characteristic>
+        <characteristic name="Range" typeId="5bc1-f923-633a-2354">48&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d3</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">7</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect</characteristic>
       </characteristics>
@@ -490,11 +485,6 @@
     <selectionEntry type="upgrade" import="true" name="Hurricane Bolter" hidden="false" id="8bb4-f8f1-a8b8-ffa3">
       <infoLinks>
         <infoLink name="Hurricane Bolter" id="ae85-b494-4e43-516e" hidden="false" type="profile" targetId="3fbb-b6a7-502f-f574"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Frag Grenades" hidden="false" id="93a9-80e6-91df-b396">
-      <infoLinks>
-        <infoLink name="Frag Grenades" id="de2d-0ee3-cd6c-e182" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Krak Grenades" hidden="false" id="8d35-e9fe-e980-ec4b" collective="false">

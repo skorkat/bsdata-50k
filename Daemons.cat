@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <rules>
-    <rule name="Terrors of the Warp" id="beb5-78b8-d6cd-57fa" hidden="false">
-      <description>When an enemy unit is Engaged with a Chaos Daemon unit, it must roll an additional D6 when taking Leadership Tests, and remove the highest dice before applying any other modifiers.</description>
-    </rule>
     <rule name="Children of the Chaos Gods" id="f631-f11a-b827-50f2" hidden="false">
       <description>All Chaos Daemons automatically get the Boon associated with their god as per the table below:
 Slaanesh     Boon of Swiftness
@@ -11,6 +8,9 @@ Nurgle         Boon of Pestilence
 Khorne        Boon of Rage
 Tzeentch     Boon of Trickery
 Unaligned    Boon of Slaughter</description>
+    </rule>
+    <rule name="Warp Rifts" id="558b-418f-6d4f-84ea" hidden="false">
+      <description>Up to one third of the units in an army may be given the Deep Strike special rule, however they must be placed on the battlefield so that at least one model is within 12” of another Daemon unit that started the turn on the battlefield.</description>
     </rule>
   </rules>
   <sharedSelectionEntryGroups>
@@ -34,7 +34,7 @@ Unaligned    Boon of Slaughter</description>
             <profile name="Hysterical Frenzy" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="6441-329e-b404-cc98">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">In the Fight Phase, each unmodified To Hit roll of 6 scores 2 hits instead of 1</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Melee weapons gain Poison (6+), Lance (6+), Warpbane (6+) and Dangerous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -76,8 +76,8 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Stream of Corruption" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="cf54-3deb-3955-20f3">
               <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">All enemy units within 7&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit rolls a D6 and subtracts its Toughness (to a minimum of 1). The result is the number of Psychic Wounds they take</characteristic>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll seven D6. For each roll of 6, the unit suffers a Psychic Wound</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -89,8 +89,8 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Fleshy Abundance" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="5c94-d246-c6dc-4c93">
               <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll seven D6. For each roll of 6, the unit suffers a Psychic Wound</characteristic>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18”</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">One model in that unit can regain 1 lost wound.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -102,8 +102,8 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Nurgle’s Rot" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="5b68-9e8f-a0cd-1124">
               <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">One model in that unit can regain up to D3 lost wounds.</characteristic>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">All enemy units within 7&quot;</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit rolls a D6 and subtracts its Toughness (to a minimum of 1). The result is the number of Psychic Wounds they take</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -116,7 +116,7 @@ Unaligned    Boon of Slaughter</description>
             <profile name="Virulent Blessing" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="b179-8b84-f8e0-304a">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit adds 1 to all rolls To Wound in the Fight Phase, and all weapons reduce the target number for Poisoned hits by 1 (or gain “Poison (6+)” if the weapon did not already have the Poison special rule).</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">All weapons in the unit reduce the target number for Poisoned hits by 1 (or gain “Poison (6+)” if the weapon did not already have the Poison special rule).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -132,8 +132,8 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Bolt of Change" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="43b9-8c0a-9ca3-5538">
               <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 12&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll nine D6. For each roll of 6, the enemy unit suffers a Psychic Wound.</characteristic>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit or Character within 24”</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">The enemy unit suffers a Psychic Wound. If the model that took the wound survives, it must roll a d6. If the result is greater than their Toughness (or if it is a 6), they suffer a second Psychic Wound.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -146,7 +146,7 @@ Unaligned    Boon of Slaughter</description>
             <profile name="Gaze of Fate" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="69ac-d2b0-6044-a993">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">N/A</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">You may re-roll a single dice in each of the Action and Fight phases.</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll nine D6. For each roll of 6, you may re-roll single dice at any point before your next Command Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -172,7 +172,7 @@ Unaligned    Boon of Slaughter</description>
             <profile name="Warpflare" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="bff6-1553-ebae-6f90">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">All enemy units within 9&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit rolls an Initiative test. If they fail, they suffer D3 Psychic Wounds</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit rolls a d6. If the result is greater than their Initiative, they suffer 1 Psychic Wound</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -237,7 +237,7 @@ Unaligned    Boon of Slaughter</description>
     </profile>
     <profile name="Blue Fire of Tzeentch" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="e823-39f2-4f68-79f9">
       <characteristics>
-        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
+        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit or Character within 18”</characteristic>
         <characteristic name="Details" typeId="577b-53c9-886f-0871">If the target is Infantry or Mounted, they suffer 1 Psychic Wound. Otherwise, they suffer 3 Psychic Wounds.</characteristic>
       </characteristics>
     </profile>
@@ -304,7 +304,7 @@ Unaligned    Boon of Slaughter</description>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+1</characteristic>
         <characteristic name="AP" typeId="b61b-983a-90e6-48fc">4</characteristic>
-        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Daemonbane (6+)</characteristic>
+        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Sniper, Daemonbane (6+)</characteristic>
       </characteristics>
       <comment>Slaanesh</comment>
     </profile>
@@ -562,7 +562,6 @@ Unaligned    Boon of Slaughter</description>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="4412-eacf-2d11-03cb" primary="false" name="Daemonic"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Unaligned: Boon of Slaughter" id="d90d-46b3-49c0-848b" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
         <infoLink name="Fear" id="9893-ffcb-174b-a7d3" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
     </selectionEntry>
@@ -572,7 +571,7 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Daemonette" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ef8d-23e6-d405-7332">
               <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -619,12 +618,12 @@ Unaligned    Boon of Slaughter</description>
           <profiles>
             <profile name="Plaguebearer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="8ab9-ce03-57d4-6561">
               <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
-                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">34</characteristic>
+                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
@@ -657,7 +656,6 @@ Unaligned    Boon of Slaughter</description>
       <comment>Nurgle</comment>
       <infoLinks>
         <infoLink name="Nurgle: Boon of Pestilence" id="dd34-4815-0c89-694d" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
-        <infoLink name="Bulky" id="d8fc-25ce-89dc-ceda" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
         <infoLink name="Fear" id="b755-1550-55dd-f3af" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
     </selectionEntry>
@@ -849,7 +847,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <profiles>
             <profile name="Fiend" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="33a3-485c-048c-fa0f">
               <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -892,7 +890,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <profiles>
             <profile name="Seeker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="188b-cc2c-4673-7368">
               <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -937,7 +935,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Seeker Chariot" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="47ac-71e7-ab21-245f">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">4</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
@@ -983,7 +981,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
@@ -1013,7 +1011,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <comment>Nurgle</comment>
       <infoLinks>
         <infoLink name="Nurgle: Boon of Pestilence" id="7b31-31d8-d952-227c" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
-        <infoLink name="Bulky" id="22c8-8a1d-fe87-301b" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
         <infoLink name="Fear" id="afb1-7d90-0042-9ad4" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Fly" id="d155-f2e1-1344-e198" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
       </infoLinks>
@@ -1029,15 +1026,15 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <profile name="Beast of Nurgle" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="67af-5f9c-62f5-f373">
               <characteristics>
                 <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
-                <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
-                <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
-                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
-                <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+                <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
+                <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">6</characteristic>
+                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">6</characteristic>
+                <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
+                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
+                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
+                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
               </characteristics>
@@ -1062,7 +1059,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <comment>Nurgle</comment>
       <infoLinks>
         <infoLink name="Nurgle: Boon of Pestilence" id="3765-6a9e-e83f-dbb2" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
-        <infoLink name="Bulky" id="f966-5202-9f38-e7ab" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
         <infoLink name="Fear" id="1e23-8b8e-f51e-a76b" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
     </selectionEntry>
@@ -1107,7 +1103,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <comment>Nurgle</comment>
       <infoLinks>
         <infoLink name="Nurgle: Boon of Pestilence" id="6aa5-16e6-6d51-208e" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
-        <infoLink name="Bulky" id="f1a9-b808-867b-ccfe" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
         <infoLink name="Fear" id="7f10-070b-1fa8-a37b" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
     </selectionEntry>
@@ -1218,7 +1213,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Skull Cannon" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="e56a-888f-cb31-e0fb">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">7</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -1352,7 +1347,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Screamer" hidden="false" id="28d3-2f10-5cea-e108">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="28"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1300-6b58-35ea-b104" includeChildSelections="false"/>
@@ -1367,7 +1362,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
+                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
@@ -1401,11 +1396,11 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">6</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">8</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">0+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
           </characteristics>
@@ -1417,13 +1412,13 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="380"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="420"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="0187-6848-4957-4093" primary="true" name="Greater Daemon"/>
-        <categoryLink targetId="d354-6680-584e-943c" id="222d-ba78-1430-f3ef" primary="false" name="Infantry"/>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="9119-472f-4356-f484" primary="false" name="Daemonic"/>
         <categoryLink targetId="c759-da28-35c5-802b" id="4761-77bd-dada-17a7" primary="false" name="Psyker"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="cb20-d4dc-17f0-feac" primary="false" name="Walker"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Lashes of Torment" id="22a7-1273-054e-d63b" hidden="false" type="profile" targetId="697f-69ff-f4ce-d031"/>
@@ -1432,6 +1427,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         <infoLink name="Fear" id="2255-bfb0-e0e6-0183" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Slaanesh: Boon of Swiftness" id="eb58-6949-1853-a382" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
         <infoLink name="Unique" id="be8f-482e-4f29-28eb" hidden="false" type="rule" targetId="17f1-244a-b389-bd77"/>
+        <infoLink name="Agile" id="b38b-0dde-13ea-eb6e" hidden="false" type="rule" targetId="6248-ab86-68c5-20f4"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fa8a-1e51-5f1c-99b4" includeChildSelections="true"/>
@@ -1449,18 +1445,18 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Great Unclean One" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="9a00-2c4e-2a88-c9e8">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">9</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">5</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">6</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">0+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">6+++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">5+++</characteristic>
           </characteristics>
         </profile>
         <profile name="Great Unclean One" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="10de-11fc-63c4-a1b7">
@@ -1489,33 +1485,33 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="410"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="450"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="a41a-47c1-2cde-e51a" primary="true" name="Greater Daemon"/>
-        <categoryLink targetId="d354-6680-584e-943c" id="2e4b-1667-77c5-ea98" primary="false" name="Infantry"/>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="0160-9b3b-ccad-34eb" primary="false" name="Daemonic"/>
         <categoryLink targetId="c759-da28-35c5-802b" id="3010-90b5-9928-675e" primary="false" name="Psyker"/>
+        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="250b-fa64-6fa5-f73f" primary="false" name="Mounted"/>
       </categoryLinks>
       <comment>Nurgle</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bloodthirster" hidden="false" id="2588-791d-8a96-8b27">
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="350"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="380"/>
       </costs>
       <profiles>
         <profile name="Bloodthirster" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="0b3b-2096-c4fc-e031">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">9</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">9</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">5</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">7</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">6</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">0+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
           </characteristics>
@@ -1568,16 +1564,16 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <profiles>
         <profile name="Lord of Change" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4f40-54fa-a413-30ed">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">7</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">5</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">7</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">0+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
           </characteristics>
@@ -1598,8 +1594,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <entryLinks>
         <entryLink import="true" name="Tzeench Psychic Powers" hidden="false" id="8aba-1bde-8477-b1bf" type="selectionEntryGroup" targetId="5ba4-dbe5-248d-9799">
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a990-a3ce-0254-62af-min" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a990-a3ce-0254-62af-max" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a990-a3ce-0254-62af-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a990-a3ce-0254-62af-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1608,13 +1604,18 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="6e78-5008-7ca9-5f58" primary="true" name="Greater Daemon"/>
-        <categoryLink targetId="d354-6680-584e-943c" id="e9cb-570d-2a15-e752" primary="false" name="Infantry"/>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="6bea-dd4f-e27c-d85b" primary="false" name="Daemonic"/>
         <categoryLink targetId="c759-da28-35c5-802b" id="940a-4e16-6e1a-f79a" primary="false" name="Psyker"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="e4f9-c848-6c9e-4c38" primary="false" name="Walker"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="500"/>
       </costs>
+      <rules>
+        <rule name="Master of Magics" id="6644-6c2d-967d-3b3f" hidden="false">
+          <description>The Lord of Change always knows all 5 Tzeentch psychic powers</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Daemon Herald" hidden="false" id="5509-a7c7-464c-7b05">
       <categoryLinks>
@@ -1631,7 +1632,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               </costs>
               <infoLinks>
                 <infoLink name="Daemonic Axe" id="ca27-936e-0a6e-0db0" hidden="false" type="profile" targetId="44eb-8f3f-99b2-8a44"/>
-                <infoLink name="Unaligned: Boon of Slaughter" id="628d-5cd3-0fc0-f398" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
               </infoLinks>
               <profiles>
                 <profile name="Daemon Herald" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="b2b5-0378-fc18-a267">
@@ -1671,7 +1671,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="set" value="7" field="1509-720c-2a2f-ed46" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="8" field="1509-720c-2a2f-ed46" scope="parent" affects="profiles.Unit"/>
                 <modifier type="set" value="6" field="85f0-cca6-d69e-ffa2" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <constraints>
@@ -1740,6 +1740,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <modifiers>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="profiles.Unit"/>
                 <modifier type="set" value="6+++" field="c9d0-52c0-aa47-95c6" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="4" field="85f0-cca6-d69e-ffa2" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Nurgle Psychic Powers" hidden="false" id="4edd-7827-3794-dd4e" type="selectionEntryGroup" targetId="909c-ab9a-34c9-48b2">
@@ -1810,9 +1811,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="165"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Unaligned: Boon of Slaughter" id="ca4e-bba5-a319-e588" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
-              </infoLinks>
               <profiles>
                 <profile name="Daemon Prince" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="ccc1-c2ed-c582-621e">
                   <characteristics>
@@ -1854,6 +1852,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <modifiers>
                 <modifier type="set" value="12" field="d456-0ff3-8a75-eb52" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="6+++" field="3c92-8b17-10bf-a7a5" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="5" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Nurgle Psychic Powers" hidden="false" id="a882-15fa-90ba-6538" type="selectionEntryGroup" targetId="909c-ab9a-34c9-48b2">
@@ -1892,7 +1891,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="set" value="9" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="19" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="7" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <constraints>
@@ -1916,7 +1915,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               </costs>
               <modifiers>
                 <modifier type="set" value="4++" field="5681-e76b-dcac-f4ea" scope="parent" affects="profiles.Vehicle"/>
-                <modifier type="set" value="7" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="6" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Tzeench Psychic Powers" hidden="false" id="f939-fa59-b87b-96d9" type="selectionEntryGroup" targetId="5ba4-dbe5-248d-9799">
@@ -1953,15 +1952,15 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         <infoLink name="Fly" id="a367-6688-d08d-7667" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
       </infoLinks>
       <profiles>
-        <profile name="Daemon Lord" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="cf1a-4d63-6164-4302">
+        <profile name="Daemon Prince" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="cf1a-4d63-6164-4302">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">7</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">7+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">6</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">0+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
@@ -2017,11 +2016,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         </selectionEntryGroup>
         <selectionEntryGroup name="Allegiance" id="5831-305e-61da-b8f0" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Unaligned" hidden="false" id="a6ff-e917-af2d-2ec9" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Unaligned: Boon of Slaughter" id="537a-df92-863c-3550" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
-              </infoLinks>
-            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Unaligned" hidden="false" id="a6ff-e917-af2d-2ec9" sortIndex="1"/>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="f8c1-0b25-9620-e1f6" sortIndex="2">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
@@ -2030,7 +2025,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="b603-07b4-928e-9eb9" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
               </infoLinks>
               <modifiers>
-                <modifier type="set" value="5" field="1509-720c-2a2f-ed46" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="6" field="1509-720c-2a2f-ed46" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="5" field="85f0-cca6-d69e-ffa2" scope="parent" affects="self.entries.profiles.Unit"/>
               </modifiers>
             </selectionEntry>
@@ -2056,6 +2051,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <modifiers>
                 <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="6+++" field="c9d0-52c0-aa47-95c6" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="3" field="85f0-cca6-d69e-ffa2" scope="parent" affects="self.entries.profiles.Unit"/>
               </modifiers>
               <infoLinks>
                 <infoLink name="Nurgle: Boon of Pestilence" id="ed2f-7126-2f42-d346" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
@@ -2086,9 +2082,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Unaligned: Boon of Slaughter" id="274b-36f9-034f-7252" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="f105-423b-5656-93c9" sortIndex="4">
               <costs>
@@ -2107,8 +2100,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
               </costs>
               <modifiers>
-                <modifier type="set" value="12" field="d456-0ff3-8a75-eb52" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="13" field="d456-0ff3-8a75-eb52" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="6+++" field="3c92-8b17-10bf-a7a5" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="3" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <infoLinks>
                 <infoLink name="Nurgle: Boon of Pestilence" id="0ec6-f0ea-52d2-8627" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
@@ -2122,7 +2116,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="58b1-9890-a035-9b96" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
               </infoLinks>
               <modifiers>
-                <modifier type="set" value="5" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="6" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="5" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
             </selectionEntry>
@@ -2184,7 +2178,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
@@ -2223,7 +2217,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <entryLink import="true" name="Bloodthirster" hidden="false" id="999c-ebeb-760f-2273" type="selectionEntry" targetId="2588-791d-8a96-8b27"/>
     <entryLink import="true" name="Lord of Change" hidden="false" id="e3b3-654d-41e5-a44b" type="selectionEntry" targetId="cad6-7b43-6cb3-2e12"/>
     <entryLink import="true" name="Great Unclean One" hidden="false" id="3020-533f-9a47-9566" type="selectionEntry" targetId="d5b0-6747-f7d0-6cb9"/>
-    <entryLink import="true" name="Daemon Lord" hidden="false" id="0f79-d0f9-4705-6401" type="selectionEntry" targetId="5509-a7c7-464c-7b05"/>
+    <entryLink import="true" name="Daemon Herald" hidden="false" id="0f79-d0f9-4705-6401" type="selectionEntry" targetId="5509-a7c7-464c-7b05"/>
     <entryLink import="true" name="Daemon Prince" hidden="false" id="6b41-7fa7-d404-1261" type="selectionEntry" targetId="723f-d2a8-697f-b365"/>
     <entryLink import="true" name="Soulgrinder" hidden="false" id="db1e-8941-175f-cb79" type="selectionEntry" targetId="8afb-1d7a-ba70-43b7"/>
     <entryLink import="true" name="Furies" hidden="false" id="6623-1003-4c26-b9b8" type="selectionEntry" targetId="3af2-d5af-577d-d30a"/>
@@ -2236,6 +2230,5 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <infoLink name="Nurgle: Boon of Pestilence" id="4cf6-d22c-7503-a8b1" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
     <infoLink name="Khorne: Boon of Rage" id="1962-cbac-99c7-5956" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
     <infoLink name="Tzeentch: Boon of Trickery" id="9d16-a31b-8b8b-c709" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
-    <infoLink name="Unaligned: Boon of Slaughter" id="708f-956d-bb14-9040" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
   </infoLinks>
 </catalogue>

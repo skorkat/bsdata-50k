@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -236,11 +236,11 @@
     <profile name="Rokkit Launcha" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="ef04-4692-4093-714e">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">24&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d3</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">8</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Shokk Attack Gun" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="a002-abf7-4710-ccef">
@@ -269,7 +269,7 @@
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">0</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Template</characteristic>
       </characteristics>
     </profile>
@@ -487,11 +487,6 @@
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U</characteristic>
         <characteristic name="AP" typeId="b61b-983a-90e6-48fc">0</characteristic>
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Poison (5+)</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Stikkbombz" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="95b8-8805-4a54-9ff9">
-      <characteristics>
-        <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">Assault</characteristic>
       </characteristics>
     </profile>
     <profile name="Tankbusta Bombz" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="3a65-bb92-4eab-1b10">
@@ -832,7 +827,6 @@ The unit gains the following special rules:
               <infoLinks>
                 <infoLink name="Ork Boy" id="f535-ec1c-751d-d02c" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
                 <infoLink name="Shoota" id="8310-a4e3-09d9-37b6" hidden="false" type="profile" targetId="6169-2203-4d90-885d"/>
-                <infoLink name="Stikkbombz" id="baf6-f9ce-2f6c-93eb" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
@@ -874,7 +868,6 @@ The unit gains the following special rules:
             <selectionEntry type="upgrade" import="true" name="Shoota Boy w/ &apos;eavy weapon" hidden="false" id="9868-054c-e1c5-95b6">
               <infoLinks>
                 <infoLink name="Ork Boy" id="b38f-3c74-aa18-41b0" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
-                <infoLink name="Stikkbombz" id="a835-7d03-5ffd-97ce" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
@@ -972,7 +965,6 @@ The unit gains the following special rules:
               <infoLinks>
                 <infoLink name="Ork Boy" id="d379-7040-ca4b-0b75" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
                 <infoLink name="Slugga" id="a24e-1ee5-08f0-1263" hidden="false" type="profile" targetId="2484-99f4-4d86-b604"/>
-                <infoLink name="Stikkbombz" id="e6c2-90d1-2347-95a2" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
                 <infoLink name="Choppa" id="8ce3-56fb-2c5e-a964" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
               </infoLinks>
               <costs>
@@ -1235,7 +1227,6 @@ The unit gains the following special rules:
                     </modifier>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Stikkbombz" id="8936-b988-8f48-c194" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
                 <infoLink name="Choppa" id="1613-dbd0-bef8-d0ed" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
@@ -1281,7 +1272,6 @@ The unit gains the following special rules:
             <selectionEntry type="upgrade" import="true" name="Kommando w/ &apos;eavy weapon" hidden="false" id="44f6-dff7-31bf-4378">
               <infoLinks>
                 <infoLink name="Ork Boy" id="7006-3967-fbc3-955b" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
-                <infoLink name="Stikkbombz" id="513e-e243-6614-899f" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
@@ -2035,7 +2025,6 @@ The unit gains the following special rules:
             <infoLink name="Ork Boy" id="1084-fc96-db27-1f6d" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
             <infoLink name="Slugga" id="2fda-e521-12a6-681d" hidden="false" type="profile" targetId="2484-99f4-4d86-b604"/>
             <infoLink name="Choppa" id="19ba-b56f-b4f4-4537" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
-            <infoLink name="Stikkbombz" id="63dc-a401-6088-8a6c" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f835-5d09-f437-6ccf" includeChildSelections="false"/>
@@ -2047,7 +2036,6 @@ The unit gains the following special rules:
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Storm Boy Nob" hidden="false" id="1b72-eb35-cac3-0e79">
           <infoLinks>
-            <infoLink name="Stikkbombz" id="8520-cf48-bec5-c58b" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
             <infoLink name="Nob" id="8453-706a-b111-b6e3" hidden="false" type="profile" targetId="c0eb-f9fb-e5c2-60aa"/>
           </infoLinks>
           <entryLinks>
@@ -2376,20 +2364,6 @@ The unit gains the following special rules:
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink name="Stikkbombz" id="f139-744d-9bd1-c4c3" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="1680-a25b-0812-410c" shared="true" includeChildSelections="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="88dd-aedf-8656-d049" shared="true" includeChildSelections="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
@@ -2480,9 +2454,6 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="5a6f-757a-1ac5-7b82" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
-              <infoLinks>
-                <infoLink name="Stikkbombz" id="24a1-c9a7-7c28-5649" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
-              </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="d354-6680-584e-943c" id="6682-94b3-4906-2cbe" primary="false" name="Infantry"/>
               </categoryLinks>
@@ -2535,9 +2506,6 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="c447-bfa5-e1e4-5a3a" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
-              <infoLinks>
-                <infoLink name="Stikkbombz" id="62fb-6062-7cbf-a59e" hidden="false" type="profile" targetId="95b8-8805-4a54-9ff9"/>
-              </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="d354-6680-584e-943c" id="ae6f-cde6-cbc1-c345" primary="false" name="Infantry"/>
               </categoryLinks>
@@ -2704,9 +2672,6 @@ The unit gains the following special rules:
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45bd-2cf8-701b-fc7f" includeChildSelections="false"/>
-      </constraints>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
       </costs>
@@ -2826,9 +2791,6 @@ The unit gains the following special rules:
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53ea-4bde-7789-8939" includeChildSelections="false"/>
-      </constraints>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
       </costs>

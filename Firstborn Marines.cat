@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Honoured Brethren" id="ba83-6a23-709e-c810" hidden="false">
       <constraints>
@@ -1198,12 +1198,6 @@
         <infoLink name="Apothecary" id="5c7b-df8d-662f-8857" hidden="false" type="profile" targetId="222c-e928-8fb7-d55a"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="ec2a-0d55-533e-4ca3" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="504f-39fc-055b-36db-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="504f-39fc-055b-36db-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="efb6-b8e7-2daf-69fc" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7817-3157-c40a-0aea-min" includeChildSelections="false"/>
@@ -1228,12 +1222,6 @@
         <infoLink name="Ancient" id="5c60-4e4e-32bb-d3ae" hidden="false" type="profile" targetId="260f-914b-9c9c-0a02"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="7bb0-ea33-977b-a234" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3efd-1e38-1670-4ee5-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3efd-1e38-1670-4ee5-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="1e1c-123f-d20d-6522" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2148-b4b6-c8a7-b828-min" includeChildSelections="false"/>
@@ -1258,12 +1246,6 @@
         <infoLink name="Champion" id="70e6-0fe2-3ca9-6eee" hidden="false" type="profile" targetId="e3b0-26ad-a2e6-71d9"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="5fdd-c0eb-35d0-a426" type="selectionEntry" targetId="93a9-80e6-91df-b396">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed69-547e-4ac3-d1c3-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed69-547e-4ac3-d1c3-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="277d-9ef9-7e10-3b70" type="selectionEntry" targetId="8d35-e9fe-e980-ec4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4690-de2d-912a-5b5e-min" includeChildSelections="false"/>
@@ -1869,7 +1851,6 @@
         <infoLink name="Plasma Gun" id="222a-dc3b-c28d-5402" hidden="false" type="profile" targetId="520b-5102-93e9-c9cf"/>
         <infoLink name="Bolt Pistol" id="ee4b-0e7d-c764-5a3a" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
         <infoLink name="Omnissian Power Axe" id="b571-acb8-231a-5403" hidden="false" type="profile" targetId="04d7-1291-ce06-a4da"/>
-        <infoLink name="Frag Grenades" id="facf-3c2b-eab1-1168" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
         <infoLink name="Krak Grenades" id="3dbf-98ff-03ac-9370" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
         <infoLink name="Servo-harness" id="8c3d-4425-bf3c-0668" hidden="false" type="rule" targetId="77f5-bdde-0161-f4da"/>
         <infoLink name="Repair" id="27c6-70c1-7ce7-c03a" hidden="false" type="rule" targetId="4f57-16f9-b581-ef59"/>
@@ -1888,7 +1869,6 @@
       </costs>
       <infoLinks>
         <infoLink name="Lieutenant" id="fe5a-6144-f988-fad5" hidden="false" type="profile" targetId="33f2-b875-6d2f-de10"/>
-        <infoLink name="Frag Grenades" id="526c-80c1-9aae-2ce7" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
         <infoLink name="Krak Grenades" id="cde4-55ae-07d6-16b5" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
         <infoLink name="Character" id="6c62-0f80-4e4c-3a53" hidden="false" type="rule" targetId="cbbc-99b6-4371-e441"/>
       </infoLinks>
@@ -1924,7 +1904,6 @@
               </entryLinks>
               <infoLinks>
                 <infoLink name="Crozius" id="5f1b-f063-a346-86db" hidden="false" type="profile" targetId="abac-eaa6-52db-cc10"/>
-                <infoLink name="Frag Grenades" id="96e3-7b8b-09e0-01e9" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="6206-c767-9433-a165" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Chaplain" id="438e-d1b6-e5dd-1a41" hidden="false" type="profile" targetId="22f7-85c5-721e-8ae8"/>
               </infoLinks>
@@ -1936,7 +1915,6 @@
               <infoLinks>
                 <infoLink name="Chaplain" id="d79a-4d29-589d-74de" hidden="false" type="profile" targetId="22f7-85c5-721e-8ae8"/>
                 <infoLink name="Crozius" id="716b-4c57-28cd-22ff" hidden="false" type="profile" targetId="abac-eaa6-52db-cc10"/>
-                <infoLink name="Frag Grenades" id="348e-5191-ac96-6fd1" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="da96-1741-6e87-d4ca" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <entryLinks>
@@ -2007,7 +1985,6 @@
                 <entryLink import="true" name="Leader Upgrades" hidden="false" id="12eb-d17b-8dc4-710c" type="selectionEntryGroup" targetId="dabb-2def-cb21-ba67"/>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="8675-6da9-fe0a-c648" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="2f06-7ffd-2746-4a65" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Captain" id="0f9e-d0e6-49fe-0ab5" hidden="false" type="profile" targetId="2197-21e7-05b2-7f26"/>
               </infoLinks>
@@ -2018,7 +1995,6 @@
             <selectionEntry type="upgrade" import="true" name="Captain [Bike]" hidden="false" id="b4c7-3009-fd8c-68f4">
               <infoLinks>
                 <infoLink name="Captain" id="c791-74b1-78d3-aa06" hidden="false" type="profile" targetId="2197-21e7-05b2-7f26"/>
-                <infoLink name="Frag Grenades" id="9b49-5b32-8cac-6eb6" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="34a9-11f9-fda6-1d06" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <entryLinks>
@@ -2086,7 +2062,6 @@
                 <entryLink import="true" name="Leader Pistol Upgrades" hidden="false" id="7bab-da10-4a05-7675" type="selectionEntryGroup" targetId="6da4-b55c-ea46-70f3"/>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="f7b8-5374-f9b8-c6c5" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="092f-ba84-8125-7a65" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Librarian" id="ce81-20bf-4d9f-4cad" hidden="false" type="profile" targetId="920f-a9a6-b0a8-07aa"/>
               </infoLinks>
@@ -2096,7 +2071,6 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Librarian [Bike]" hidden="false" id="c438-92da-981e-5d63">
               <infoLinks>
-                <infoLink name="Frag Grenades" id="d7a0-e82e-00ee-fc22" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="f70e-adbd-e973-6eaf" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Librarian" id="0522-80eb-6739-3e60" hidden="false" type="profile" targetId="920f-a9a6-b0a8-07aa"/>
               </infoLinks>
@@ -2192,7 +2166,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c3d-cc12-2119-b606-max" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Frag Grenades" hidden="false" id="4449-edff-bcea-8ed5" type="selectionEntry" targetId="93a9-80e6-91df-b396"/>
                 <entryLink import="true" name="Hurricane Bolter" hidden="false" id="e521-01fc-4e6b-5fb1" type="selectionEntry" targetId="8bb4-f8f1-a8b8-ffa3">
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
@@ -2257,7 +2230,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac7c-897d-55e9-fb73-max" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Frag Grenades" hidden="false" id="6321-3079-031b-26b4" type="selectionEntry" targetId="93a9-80e6-91df-b396"/>
                 <entryLink import="true" name="Hurricane Bolter" hidden="false" id="b6b6-8720-08dc-5466" type="selectionEntry" targetId="8bb4-f8f1-a8b8-ffa3">
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>

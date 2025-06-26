@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -9,29 +9,28 @@
     <infoLink name="Nurgle: Boon of Pestilence" id="d4cb-0695-9bf1-465a" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
     <infoLink name="Khorne: Boon of Rage" id="e15f-9e65-b381-709f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
     <infoLink name="Tzeentch: Boon of Trickery" id="b53c-d579-a0a7-5668" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
-    <infoLink name="Unaligned: Boon of Slaughter" id="cd80-f4e3-69fe-503b" hidden="false" type="rule" targetId="f800-2ebb-9c2b-9c51"/>
   </infoLinks>
   <rules>
     <rule name="Dark Pact" id="6e21-3eb2-a9f8-58ec" hidden="false">
-      <description>In the Additional Command Phase Abilities sub-phase of the Command Phase, any Chaos Space Marine unit may attempt to make a Dark Pact. To do so, choose one of the Boons below and then make a Leadership Test.
+      <description>Unless otherwise specified, each unit begins the battle as Unaligned. 
 
 
-If the test is failed, one model in the unit immediately suffers 1 Mortal Wound. 
+As an action, any Unaligned unit may make a Dark Pact to align themselves to a specific god. At the end of that Action Phase, until the end of the battle, that unit is devoted to that god.
 
 
-The unit gains the Boon for the duration of that turn, regardless of whether the Leadership test is passed or failed.
+An unit which is aligned with a specific god gains the associated boon.
 
 
 ---
 
 
-A unit which is aligned with a particular god (eg. Noise Marines for Slaanesh, Plague Marines for Nurgle, Khorne Bezerkers for Khorne, Rubric Marines for Tzeentch) can only choose the boon of that god. All other units may choose any of the boons.
+A unit which is aligned with a particular god (ie. Noise Marines for Slaanesh, Plague Marines for Nurgle, Khorne Bezerkers for Khorne, Rubric Marines for Tzeentch) begins the battle aligned with that god.
 
 
-A model which takes an upgrade associated with a specific Mark must align itself with that god. A model already aligned to a god cannot take an upgrade associated with a different god.
+A model which takes a Chosen Upgrade associated with a specific Mark can only choose to align themselves with that god. A model already aligned to a god cannot take an upgrade associated with a different god.
 
 
-A model aligned with a particular god cannot join units aligned with a different god, and unaligned models/units cannot join with aligned models/units.</description>
+A model aligned with a particular god cannot join units aligned with a different god, and unaligned models/units cannot join with or be joined by aligned models/units.</description>
     </rule>
   </rules>
   <sharedProfiles>
@@ -61,14 +60,14 @@ A model aligned with a particular god cannot join units aligned with a different
     </profile>
     <profile name="Gift of Chaos" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="d054-5bed-a31e-9b40">
       <characteristics>
-        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">The closest visible enemy unit within 18”</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">D3 Psychic Wounds. Roll a D6 for each other enemy unit within 6” of that unit. On a 4+, they suffer 1 Psychic Wound.</characteristic>
+        <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit, and each other unit (friend or foe) within 6” suffers a Psychic Wound</characteristic>
       </characteristics>
     </profile>
     <profile name="Warptime" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="f9a5-dc6b-cf6f-bdb0">
       <characteristics>
         <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18”</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit can immediately make a Run move, in addition to any other actions they take this Phase. They count as moving for the purpose of Shooting even if they Remained Stationary in the Movement Phase. This cannot be used in addition to Agile.</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit can gains Agile, but can move 6” instead of 3”. This cannot be used in addition to the Advancing Fire special rule.</characteristic>
       </characteristics>
     </profile>
     <profile name="Baleflamer" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="8f3d-8f49-48b9-1b07">
@@ -449,11 +448,6 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667"/>
       </characteristics>
     </profile>
-    <profile name="Blight Grenades" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="fc35-afa8-406d-c300">
-      <characteristics>
-        <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">Defensive</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Cultist" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="6f2e-9dc4-d7cb-8c24">
       <characteristics>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
@@ -665,7 +659,6 @@ A model aligned with a particular god cannot join units aligned with a different
               </costs>
               <infoLinks>
                 <infoLink name="Autopistol" id="42d5-5052-fc43-776e" hidden="false" type="profile" targetId="fb91-11f1-4afc-1bc5"/>
-                <infoLink name="Frag Grenades" id="7a9e-d576-2a0b-ca35" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Cultist" id="06dd-0576-644b-4983" hidden="false" type="profile" targetId="6f2e-9dc4-d7cb-8c24"/>
                 <infoLink name="Krak Grenades" id="ab85-3643-5579-97c3" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
@@ -679,7 +672,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="2a5c-6d79-3729-b9ed" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Cultist" id="01dc-adac-4547-04c1" hidden="false" type="profile" targetId="6f2e-9dc4-d7cb-8c24"/>
                 <infoLink name="Krak Grenades" id="b6e6-7be2-76f1-4fd9" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Bolt Pistol" id="2bf1-3cd5-daed-36c6" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
@@ -693,7 +685,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="43f6-3441-dd0f-ff32" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Cultist" id="10fa-d543-b8d5-e940" hidden="false" type="profile" targetId="6f2e-9dc4-d7cb-8c24"/>
                 <infoLink name="Krak Grenades" id="66b0-1510-750c-75d5" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
@@ -759,7 +750,6 @@ A model aligned with a particular god cannot join units aligned with a different
               </costs>
               <infoLinks>
                 <infoLink name="Lasgun" id="9aeb-2123-b510-126c" hidden="false" type="profile" targetId="adc0-6fe3-4450-2225"/>
-                <infoLink name="Frag Grenades" id="095c-6161-2f83-550b" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Traitor Guardsman" id="fc57-fac1-37af-0976" hidden="false" type="profile" targetId="8147-5262-5877-6b85"/>
               </infoLinks>
               <constraints>
@@ -792,9 +782,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Frag Grenades" id="e10d-664f-7822-96a7" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon" id="6f4a-5824-fdb7-005c" hidden="false">
                   <selectionEntries>
@@ -872,7 +859,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="60fa-dad6-3dcf-e238" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Traitor Guardsman" id="20c5-7de9-51d6-b507" hidden="false" type="profile" targetId="8147-5262-5877-6b85"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -952,7 +938,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="8641-7d6e-272b-e113" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="3fe7-8880-62f6-97af" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Bolt Pistol" id="04b8-c6f5-a5d0-a8a7" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
                 <infoLink name="Legionary" id="1bbb-9ba9-55df-d82b" hidden="false" type="profile" targetId="33ed-980d-2a40-fc5e"/>
@@ -1008,7 +993,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="b57f-bbe5-ec3d-567a" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="c97a-603e-8d9e-d246" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <constraints>
@@ -1024,7 +1008,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="339e-be94-2ae6-81b7" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Legionary" id="72dc-7a86-08f1-419e" hidden="false" type="profile" targetId="33ed-980d-2a40-fc5e"/>
                 <infoLink name="Krak Grenades" id="660d-f4a0-72b9-e32a" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Bolt Pistol" id="70be-495c-f96a-c945" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
@@ -1034,7 +1017,7 @@ A model aligned with a particular god cannot join units aligned with a different
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="d06c-d506-94cc-3168" sortIndex="3">
                       <infoLinks>
-                        <infoLink name="Heavy Stubber" id="b40f-481e-5aae-b6ed" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
+                        <infoLink name="Plasma Gun" id="b40f-481e-5aae-b6ed" hidden="false" type="profile" targetId="520b-5102-93e9-c9cf"/>
                       </infoLinks>
                       <costs>
                         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
@@ -1123,6 +1106,9 @@ A model aligned with a particular god cannot join units aligned with a different
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="180d-965f-f877-b08e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Rhino" hidden="false" id="86b6-b938-dc90-c23c">
       <profiles>
@@ -1205,7 +1191,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Noise Marine" id="d533-aa06-17d9-cb49" hidden="false" type="profile" targetId="73ed-8202-44c1-b688"/>
                 <infoLink name="Bolt Pistol" id="c843-d22f-1e99-cb5e" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
-                <infoLink name="Frag Grenades" id="9e34-8ba0-c758-ca00" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="58e1-a2dc-1a60-efcf" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -1241,7 +1226,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0624-b647-7451-e346-max" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="d70d-ce41-670e-ef39" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="71b5-168a-2e56-302e" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <entryLinks>
@@ -1285,7 +1269,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Noise Marine" id="36ba-5336-1ab3-4999" hidden="false" type="profile" targetId="73ed-8202-44c1-b688"/>
                 <infoLink name="Bolt Pistol" id="12ba-26c8-f419-a70f" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
-                <infoLink name="Frag Grenades" id="1636-1901-d375-7dff" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="aae6-72b5-4082-edd9" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Blastmaster (Single Frequency)" id="97be-84f3-752c-0376" hidden="false" type="profile" targetId="0ac7-38e7-40ad-d94e"/>
                 <infoLink name="Blastmaster (Varied Frequency)" id="c8db-d241-b708-0ff4" hidden="false" type="profile" targetId="471d-488f-4abf-cf5b"/>
@@ -1301,6 +1284,9 @@ A model aligned with a particular god cannot join units aligned with a different
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="5ad0-f2f6-b2d6-7b1c" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="54c0-f131-2e95-3f0f" sortIndex="1">
       <infoLinks>
@@ -1339,7 +1325,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Plague Marine" id="3ce7-0ef4-3dac-1d3a" hidden="false" type="profile" targetId="0404-b0b0-5fcc-bb0d"/>
                 <infoLink name="Plague Weapon" id="7c55-8817-9e96-6b88" hidden="false" type="profile" targetId="8b87-c0fe-46fa-6295"/>
-                <infoLink name="Blight Grenades" id="37ae-bdcb-457a-2c3c" hidden="false" type="profile" targetId="fc35-afa8-406d-c300"/>
                 <infoLink name="Krak Grenades" id="a726-26d7-8414-17d4" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -1383,7 +1368,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="117a-595f-b4a2-687f-max" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Blight Grenades" id="5903-8fcd-2112-aadd" hidden="false" type="profile" targetId="fc35-afa8-406d-c300"/>
                 <infoLink name="Krak Grenades" id="2d1b-ed75-885b-ee80" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <entryLinks>
@@ -1427,7 +1411,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Plague Marine" id="041a-cff9-de94-46c0" hidden="false" type="profile" targetId="0404-b0b0-5fcc-bb0d"/>
                 <infoLink name="Bolt Pistol" id="7767-c8ee-5d3a-c037" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
-                <infoLink name="Blight Grenades" id="855b-7ec6-d903-2101" hidden="false" type="profile" targetId="fc35-afa8-406d-c300"/>
                 <infoLink name="Krak Grenades" id="38ac-8aed-2896-4a6d" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -1496,6 +1479,9 @@ A model aligned with a particular god cannot join units aligned with a different
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="f66a-669f-f15c-088f" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Khorne Berzerkers" hidden="false" id="da5f-0e3f-89fb-48ab">
       <categoryLinks>
@@ -1514,7 +1500,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Khorne Berzerker" id="fbcd-350f-fea7-5124" hidden="false" type="profile" targetId="f7e6-c945-b42b-a9a4"/>
                 <infoLink name="Berzerker Chainblade" id="e36d-f194-f727-56c3" hidden="false" type="profile" targetId="01a7-4248-4d88-c16a"/>
-                <infoLink name="Frag Grenades" id="ec6e-6290-fb47-dab6" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="f99d-9a94-228d-f2c8" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Bolt Pistol" id="6c75-39a8-aeb0-47f9" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
               </infoLinks>
@@ -1529,7 +1514,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Khorne Berzerker" id="27e7-9042-3766-6158" hidden="false" type="profile" targetId="f7e6-c945-b42b-a9a4"/>
                 <infoLink name="Berzerker Chainblade" id="5a6b-c740-c95c-96f7" hidden="false" type="profile" targetId="01a7-4248-4d88-c16a"/>
-                <infoLink name="Frag Grenades" id="ea89-efdd-b335-9b65" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="2d66-bd66-2738-d806" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -1568,7 +1552,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1f6-a27f-b75a-6163-max" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="5577-60ab-4a12-b17d" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="17e3-22b8-3b7d-50f4" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <entryLinks>
@@ -1612,6 +1595,9 @@ A model aligned with a particular god cannot join units aligned with a different
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="f664-bf22-4ed7-2ed0" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rubric Marines" hidden="false" id="4ce5-eb0d-5d9e-359f">
       <categoryLinks>
@@ -1626,6 +1612,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14d5-8fa8-3be6-059d-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="50de-d50c-964c-f33d" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
       <profiles>
         <profile name="Rubric Marines" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="90be-44b4-769a-1a79">
@@ -1643,7 +1630,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d69-74a7-7f53-d369-max" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="0590-44e1-b15c-8c21" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="e06c-a01d-3f32-d82e" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -1768,7 +1754,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="a2f8-66e7-a6c2-94a6" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="b6c4-e2f5-78ba-50fc" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Bolt Pistol" id="1af1-8641-2d16-ea9e" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
                 <infoLink name="Chosen" id="8d3a-a7a8-6b4f-fe10" hidden="false" type="profile" targetId="ca30-90f6-998b-bcdf"/>
@@ -1805,7 +1790,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="879f-4578-2e33-3b97" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="8c86-f027-7c07-5cdd" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <constraints>
@@ -1821,7 +1805,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
               </costs>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="91fd-d702-0eed-0644" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Chosen" id="16ed-9663-8c21-c42d" hidden="false" type="profile" targetId="ca30-90f6-998b-bcdf"/>
                 <infoLink name="Krak Grenades" id="e563-316e-33b7-e665" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Boltgun" id="dec4-ca68-a8f2-c2e7" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
@@ -1863,6 +1846,9 @@ A model aligned with a particular god cannot join units aligned with a different
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="0904-990a-dfa2-1d5e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Terminators" hidden="false" id="4b1c-7656-8c66-241f">
       <categoryLinks>
@@ -2029,7 +2015,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Bolt Pistol" id="6343-a8dc-72dc-ea81" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
                 <infoLink name="Chainsword" id="cafe-6698-a9b5-1832" hidden="false" type="profile" targetId="5184-6468-88a4-4587"/>
-                <infoLink name="Frag Grenades" id="e067-709e-7151-8095" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="fdb2-4bed-6033-f41b" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <constraints>
@@ -2065,7 +2050,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Krak Grenades" id="92cb-10b8-2dfd-43a7" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Chainsword" id="99b5-fd49-72d2-0178" hidden="false" type="profile" targetId="5184-6468-88a4-4587"/>
-                <infoLink name="Frag Grenades" id="30e1-efcf-09a5-6af9" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3226-297b-bf9b-811a" includeChildSelections="false"/>
@@ -2177,6 +2161,9 @@ A model aligned with a particular god cannot join units aligned with a different
           </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="e15c-bcb8-f07d-977e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Havocs" hidden="false" id="76e5-fa0a-2b50-52da">
       <categoryLinks>
@@ -2191,7 +2178,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Bolt Pistol" id="647d-fefe-8e4e-5c48" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
                 <infoLink name="Boltgun" id="4606-144c-df4d-997f" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
-                <infoLink name="Frag Grenades" id="834a-ee3d-355e-19d1" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="0f80-da82-96fe-8d5f" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <constraints>
@@ -2226,7 +2212,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Krak Grenades" id="53da-4436-c086-6b16" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Bolt Pistol" id="42af-51d5-0d4e-32e0" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
-                <infoLink name="Frag Grenades" id="5a1d-60d7-1208-ee42" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="995b-7869-8fd7-43bd" includeChildSelections="false"/>
@@ -2350,6 +2335,9 @@ A model aligned with a particular god cannot join units aligned with a different
           </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="0938-39a8-aba4-7633" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Helbrute" hidden="false" id="1973-6041-df9b-444a">
       <profiles>
@@ -2573,13 +2561,32 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Boltgun" id="d5ee-4684-ae6d-8f13" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="ba8d-dd52-fc8d-dedc" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
-                <infoLink name="Frag Grenades" id="61c0-f128-7555-55e3" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="4c80-cb1c-b0e3-4ef4" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Bolt Pistol" id="6de1-58fd-12d6-659e" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon" id="b5fd-fd45-edba-719a" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="2896-4fd0-8d94-7f4d" sortIndex="1">
+                      <infoLinks>
+                        <infoLink name="Bolt Pistol" id="0671-83c8-d7d7-49b7" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="eb74-3750-93bf-01cd" sortIndex="2">
+                      <infoLinks>
+                        <infoLink name="Chainsword" id="4b87-69b0-e853-4fbd" hidden="false" type="profile" targetId="5184-6468-88a4-4587"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f757-da82-7dbc-e482-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f757-da82-7dbc-e482-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Chaos Biker Champion" hidden="false" id="991d-d211-2ec2-4da9" sortIndex="3">
               <entryLinks>
@@ -2592,7 +2599,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Boltgun" id="1949-9d58-5b31-acbf" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="013c-d000-cce6-5ccf" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
-                <infoLink name="Frag Grenades" id="e50e-3ff6-3840-b747" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="4cd8-7c52-bf52-f8a1" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <profiles>
@@ -2648,7 +2654,6 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Boltgun" id="58e8-f01f-6638-b9ba" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="52e0-b3b4-8fc5-f0d2" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
-                <infoLink name="Frag Grenades" id="795b-b0be-2c32-9660" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="e874-7190-78e4-b5c3" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -2696,6 +2701,9 @@ A model aligned with a particular god cannot join units aligned with a different
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="c9a6-44ce-04be-16af" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Vindicator" hidden="false" id="8fae-e176-df21-061a">
       <costs>
@@ -3146,6 +3154,9 @@ A model aligned with a particular god cannot join units aligned with a different
         <categoryLink targetId="d354-6680-584e-943c" id="784a-00e0-940d-40ec" primary="false" name="Infantry"/>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="7eae-2a68-f992-0579" primary="false" name="Daemonic"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="d1fe-c674-1de5-260d" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maulerfiend" hidden="false" id="e318-ed4d-7901-04a9">
       <costs>
@@ -3350,6 +3361,9 @@ A model aligned with a particular god cannot join units aligned with a different
         <categoryLink targetId="d354-6680-584e-943c" id="92dc-30b9-2bd1-3aff" primary="false" name="Infantry"/>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="9730-7b44-46ce-93df" primary="false" name="Daemonic"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Alignment" hidden="false" id="f1ca-3ac8-221a-a997" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Venomcrawler" hidden="false" id="e2b4-c845-be03-08d7">
       <profiles>
@@ -3467,7 +3481,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="7b44-b3ed-a7f3-a3c7" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="8ba4-7a95-4ee7-3afe" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <entryLinks>
@@ -3500,7 +3513,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="9e9b-e19e-1a13-5099" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="bae9-c302-0db8-9b1d" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Boltgun" id="e48d-4a60-1545-6976" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="ffe4-2ba5-2f04-fec8" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
@@ -3605,7 +3617,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="7de3-19ff-91ea-097e" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="bab1-4517-98b6-7281" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <categoryLinks>
@@ -3635,7 +3646,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="3d13-3cdd-e377-146d" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="2b98-2f2b-7d6e-61fc" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Boltgun" id="1406-68ae-ae3e-6132" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="da17-ac01-f070-dd8c" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
@@ -3835,7 +3845,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="0307-4b02-c9cc-dff8" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="c655-3eaa-2c64-c4f5" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <categoryLinks>
@@ -3865,7 +3874,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Frag Grenades" id="44dc-2db5-e3c3-bf0d" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
                 <infoLink name="Krak Grenades" id="511b-187a-c236-9882" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Boltgun" id="891f-029a-2e7f-b63e" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="58dc-9c84-4787-c3ae" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
@@ -4037,7 +4045,6 @@ A model aligned with a particular god cannot join units aligned with a different
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Frag Grenades" id="80f8-c441-6d10-ce42" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
             <infoLink name="Krak Grenades" id="05c0-5384-6340-62cf" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
           </infoLinks>
           <constraints>
@@ -4047,13 +4054,12 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Techmarine" hidden="false" id="8cb8-ec8f-7fe4-f509">
+    <selectionEntry type="upgrade" import="true" name="Warpsmith" hidden="false" id="8cb8-ec8f-7fe4-f509">
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
       </costs>
       <infoLinks>
         <infoLink name="Flamer Tendril" id="8bbe-26fe-6c61-d932" hidden="false" type="profile" targetId="55a2-78c9-4f98-2261"/>
-        <infoLink name="Frag Grenades" id="c85e-80a2-b1b0-b13d" hidden="false" type="profile" targetId="ff4b-803f-bbaa-b153"/>
         <infoLink name="Krak Grenades" id="a4c5-8f79-6fd8-7ef7" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
         <infoLink name="Repair" id="9e46-0b67-1306-b6aa" hidden="false" type="rule" targetId="4f57-16f9-b581-ef59"/>
         <infoLink name="Character" id="583f-bd86-f392-0643" hidden="false" type="rule" targetId="cbbc-99b6-4371-e441"/>
@@ -4066,7 +4072,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="a87a-0675-4eef-b17c" primary="false" name="Character"/>
       </categoryLinks>
       <profiles>
-        <profile name="Techmarine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="aa67-5981-f665-2328">
+        <profile name="Warpsmith" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="aa67-5981-f665-2328">
           <characteristics>
             <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
@@ -4094,6 +4100,56 @@ A model aligned with a particular god cannot join units aligned with a different
           <description>May fire all Pistol weapons together</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chaos Alignment (Character)" id="9b27-2e4d-141b-71a7" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0874-de79-cdda-09ed" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Tzeentch" hidden="false" id="9bf0-3cf5-32d6-c0e5" targetId="6c71-fac7-b298-335a" type="selectionEntry" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Khorne" hidden="false" id="d48f-b97f-fff4-4ef3" targetId="cd12-93c2-c39a-ed77" type="selectionEntry" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Nurgle" hidden="false" id="79f1-5819-fac7-419c" targetId="f5c3-5c40-b234-2465" type="selectionEntry" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Slaanesh" hidden="false" id="c3cd-3c44-18e9-a350" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f5c3-5c40-b234-2465" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd12-93c2-c39a-ed77" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="54c0-f131-2e95-3f0f" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6c71-fac7-b298-335a" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="9b27-2e4d-141b-71a7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -4126,6 +4182,7 @@ A model aligned with a particular god cannot join units aligned with a different
     <entryLink import="true" name="Sorcerer" hidden="false" id="d133-479e-ee89-325e" type="selectionEntry" targetId="7ede-498b-c1b2-182f"/>
     <entryLink import="true" name="Dark Apostle" hidden="false" id="6bdf-7d55-8e9a-dcea" type="selectionEntry" targetId="e324-95b9-6855-fde7"/>
     <entryLink import="true" name="Exalted Champion" hidden="false" id="1e62-2f5d-ebf8-83e3" type="selectionEntry" targetId="3350-0034-8db6-8034"/>
+    <entryLink import="true" name="Warpsmith" hidden="false" id="ed82-c1e4-1569-b842" type="selectionEntry" targetId="8cb8-ec8f-7fe4-f509"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Chosen Terminator Upgrades" id="b3b6-0cf7-6d55-77a3" hidden="false">
@@ -4444,39 +4501,155 @@ A model aligned with a particular god cannot join units aligned with a different
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b58e-8006-7449-2bf7-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Chaos Alignment" id="82f1-b222-84f5-225f" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="174c-82a4-5f9d-cc94" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Tzeentch" hidden="false" id="8c63-0840-8f58-24c8" targetId="6c71-fac7-b298-335a" type="selectionEntry" sortIndex="4"/>
-            <entryLink import="true" name="Khorne" hidden="false" id="389e-d0a7-bd30-130a" targetId="cd12-93c2-c39a-ed77" type="selectionEntry" sortIndex="3"/>
-            <entryLink import="true" name="Nurgle" hidden="false" id="a384-6c30-e235-d922" targetId="f5c3-5c40-b234-2465" type="selectionEntry" sortIndex="2"/>
-            <entryLink import="true" name="Slaanesh" hidden="false" id="a842-59bc-3ce8-1a2f" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1"/>
-          </entryLinks>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Chaos Alignment (Character)" id="828a-02f3-1faf-37c2" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd42-7924-87a8-badb" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Tzeentch" hidden="false" id="894c-07e7-3315-3b46" targetId="6c71-fac7-b298-335a" type="selectionEntry" sortIndex="4">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Khorne" hidden="false" id="dcff-77e2-142c-a97e" targetId="cd12-93c2-c39a-ed77" type="selectionEntry" sortIndex="3">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Nurgle" hidden="false" id="dc8a-b4ce-9b96-54f2" targetId="f5c3-5c40-b234-2465" type="selectionEntry" sortIndex="2">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Slaanesh" hidden="false" id="474b-0016-03d0-d576" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
               <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f5c3-5c40-b234-2465" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd12-93c2-c39a-ed77" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="54c0-f131-2e95-3f0f" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6c71-fac7-b298-335a" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="82f1-b222-84f5-225f" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f5c3-5c40-b234-2465" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd12-93c2-c39a-ed77" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="54c0-f131-2e95-3f0f" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6c71-fac7-b298-335a" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="828a-02f3-1faf-37c2" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Chaos Alignment" id="1c90-a83e-3dc1-cd42" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffd0-1166-3777-b127" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Tzeentch" hidden="false" id="22e0-ecc5-a75b-6403" targetId="6c71-fac7-b298-335a" type="selectionEntry" sortIndex="4">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="2" field="b109-6551-e41a-f1f7">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1c90-a83e-3dc1-cd42" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="entry" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
+        <entryLink import="true" name="Khorne" hidden="false" id="4f4f-e629-4b4f-4ffb" targetId="cd12-93c2-c39a-ed77" type="selectionEntry" sortIndex="3">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="2" field="b109-6551-e41a-f1f7">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1c90-a83e-3dc1-cd42" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="entry" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
+        <entryLink import="true" name="Nurgle" hidden="false" id="e289-d343-c5bf-c72e" targetId="f5c3-5c40-b234-2465" type="selectionEntry" sortIndex="2">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="2" field="b109-6551-e41a-f1f7">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1c90-a83e-3dc1-cd42" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="entry" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
+        <entryLink import="true" name="Slaanesh" hidden="false" id="7733-8bd8-0962-fa6f" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="2" field="b109-6551-e41a-f1f7">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1c90-a83e-3dc1-cd42" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="entry" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f5c3-5c40-b234-2465" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd12-93c2-c39a-ed77" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="54c0-f131-2e95-3f0f" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6c71-fac7-b298-335a" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="1c90-a83e-3dc1-cd42" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <profileTypes>

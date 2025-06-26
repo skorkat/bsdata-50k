@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Battlesuit" id="b083-7a5c-1d92-5ca6" hidden="false">
       <constraints>
@@ -415,16 +415,6 @@
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667"/>
       </characteristics>
     </profile>
-    <profile name="Photon Grenades" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="77d1-7497-42d8-ba24">
-      <characteristics>
-        <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">Defensive</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Quill Grenades" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="8cca-fa18-4c48-5a37">
-      <characteristics>
-        <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">Assault</characteristic>
-      </characteristics>
-    </profile>
     <profile name="EMP Grenades" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="cb20-3970-4a82-0924">
       <characteristics>
         <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">Haywire</characteristic>
@@ -533,7 +523,7 @@
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -547,7 +537,6 @@
       <infoLinks>
         <infoLink name="Character" id="4137-c175-4621-624b" hidden="false" type="rule" targetId="cbbc-99b6-4371-e441"/>
         <infoLink name="Fireblade Pulse Rifle" id="ae44-5662-403f-3470" hidden="false" type="profile" targetId="c668-72b4-4895-a6ac"/>
-        <infoLink name="Photon Grenades" id="b300-f863-0bf2-dd26" hidden="false" type="profile" targetId="77d1-7497-42d8-ba24"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Markerlight" hidden="false" id="934e-1db2-ef73-ef58" sortIndex="1">
@@ -711,7 +700,6 @@
         <infoLink name="Agile" id="9b73-7dcb-1ab3-7a0d" hidden="false" type="rule" targetId="6248-ab86-68c5-20f4"/>
         <infoLink name="Infiltrate" id="dcfb-d0ce-b7ba-f189" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
         <infoLink name="Ritual Blade" id="6b08-d0b6-df14-221a" hidden="false" type="profile" targetId="cde1-9121-487f-ff35"/>
-        <infoLink name="Quill Grenades" id="9855-2fa1-4bbf-6d52" hidden="false" type="profile" targetId="8cca-fa18-4c48-5a37"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ranged Weapon" id="b0e8-5f38-6716-9d75" hidden="false">
@@ -781,6 +769,15 @@
         <infoLink name="Hover" id="935a-3687-e1a4-9d69" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Deep Strike" id="ed8b-c920-ff54-2e2e" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
         <infoLink name="Character" id="bc9b-fda6-209b-8e3d" hidden="false" type="rule" targetId="cbbc-99b6-4371-e441"/>
+        <infoLink name="Agile" id="8333-3d66-c6f3-59ad" hidden="false" type="rule" targetId="6248-ab86-68c5-20f4">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="1b63-a709-b5ee-25ca" childId="247e-07f5-b814-f8ba" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Battlesuit Upgrades" hidden="false" id="eb8b-5668-c8ec-fc5e" type="selectionEntryGroup" targetId="537b-9b99-fd41-2cdc" sortIndex="2">
@@ -812,7 +809,7 @@
                 <modifier type="set" value="3+" field="4a75-e14b-051b-c0f1" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <infoLinks>
-                <infoLink name="Agile" id="9833-89b8-61bc-db60" hidden="false" type="rule" targetId="6248-ab86-68c5-20f4"/>
+                <infoLink name="Fleet" id="9833-89b8-61bc-db60" hidden="false" type="rule" targetId="10f1-6b51-74e1-9df4"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
@@ -928,7 +925,6 @@
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="940e-c633-faa2-b29a" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Photon Grenades" id="8f3e-a000-9309-e928" hidden="false" type="profile" targetId="77d1-7497-42d8-ba24"/>
             <infoLink name="EMP Grenades" id="09ca-ed67-d01e-48bb" hidden="false" type="profile" targetId="cb20-3970-4a82-0924"/>
           </infoLinks>
         </selectionEntryGroup>
@@ -1234,6 +1230,7 @@
         <infoLink name="Hover" id="2442-bbba-7305-7116" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Deep Strike" id="186d-c032-f865-e934" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
         <infoLink name="Multi-tracker" id="8e2d-c27c-85c9-4fd4" hidden="false" type="rule" targetId="6b3e-57b3-363c-bd82"/>
+        <infoLink name="Agile" id="7118-1a0f-03c0-d06d" hidden="false" type="rule" targetId="6248-ab86-68c5-20f4"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Crisis Bodyguards" hidden="false" id="0590-bf52-9956-7fcf">
@@ -1290,6 +1287,7 @@
         <infoLink name="Hover" id="3b57-be67-0ec4-f35a" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Deep Strike" id="6aa3-cca6-3d4f-ab3a" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
         <infoLink name="Multi-tracker" id="ed1c-6cfa-2f09-4031" hidden="false" type="rule" targetId="6b3e-57b3-363c-bd82"/>
+        <infoLink name="Agile" id="7fc2-f308-3989-1940" hidden="false" type="rule" targetId="6248-ab86-68c5-20f4"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kroot Pack" hidden="false" id="8f6a-6f71-9df1-728e">
@@ -1332,7 +1330,6 @@
           <infoLinks>
             <infoLink name="Kroot Rifle (Melee)" id="812f-f569-4a48-4806" hidden="false" type="profile" targetId="378b-4efd-4d60-4048"/>
             <infoLink name="Kroot Rifle (Shooting)" id="5174-9e3a-34c4-e31a" hidden="false" type="profile" targetId="15a0-274f-4b07-2aac"/>
-            <infoLink name="Quill Grenades" id="891f-f035-0226-5c9a" hidden="false" type="profile" targetId="8cca-fa18-4c48-5a37"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
@@ -1447,7 +1444,7 @@
     <selectionEntry type="upgrade" import="true" name="Kroot Hound Pack" hidden="false" id="4473-41b6-5ac9-54e0">
       <infoLinks>
         <infoLink name="Infiltrate" id="6c7f-008f-cccf-2fa3" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
-        <infoLink name="Agile" id="e290-4b22-4291-8075" hidden="false" type="rule" targetId="6248-ab86-68c5-20f4"/>
+        <infoLink name="Fleet" id="e290-4b22-4291-8075" hidden="false" type="rule" targetId="10f1-6b51-74e1-9df4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="0762-e7e8-20c9-2c1e" primary="true" name="Elite"/>
@@ -1470,7 +1467,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1523,7 +1520,6 @@
           <infoLinks>
             <infoLink name="Kroot Gun" id="12f5-9a5e-ed9e-8584" hidden="false" type="profile" targetId="2138-3bcd-4817-e423"/>
             <infoLink name="Krootox Fists" id="c118-f022-9cba-a970" hidden="false" type="profile" targetId="bde8-c179-4a78-ef7a"/>
-            <infoLink name="Quill Grenades" id="ae2b-1347-211f-a21b" hidden="false" type="profile" targetId="8cca-fa18-4c48-5a37"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="27"/>
@@ -1534,6 +1530,7 @@
     <selectionEntry type="upgrade" import="true" name="Vespid" hidden="false" id="6d5c-1155-a9d0-146e">
       <infoLinks>
         <infoLink name="Fly" id="52e4-02f4-c389-38f3" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+        <infoLink name="Deep Strike" id="7a6c-49e9-564a-b1a6" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="92bf-b825-f48d-d2a0" primary="true" name="Elite"/>
@@ -1988,7 +1985,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Bulky" id="f983-2f0b-344e-65d2" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
         <infoLink name="Infiltrate" id="f00a-39a8-2ecb-5cd0" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
       </infoLinks>
       <entryLinks>
@@ -2164,8 +2160,6 @@
       <infoLinks>
         <infoLink name="Burst Cannon" id="75cf-9104-601a-52f5" hidden="false" type="profile" targetId="67a5-90de-468e-1d14"/>
         <infoLink name="Hover" id="3f52-0d6e-2dd4-0731" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Firing Deck (X)" id="3230-5f18-2283-48d0" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
-        <infoLink name="Transport (X)" id="9a2a-29c5-490e-28ad" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
       </infoLinks>
       <profiles>
         <profile name="Hammerhead" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b1c4-f56e-4491-40dd">
@@ -2405,9 +2399,21 @@ If Gun Drones undock from multiple Tanks in a single unit in the same Command Ph
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Drones" id="acbb-162d-1146-36db" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Gun Drone" hidden="false" id="ff97-4005-b2e7-6bc1" type="selectionEntry" targetId="6c2b-cb77-3548-396e" defaultAmount="0"/>
-        <entryLink import="true" name="Marker Drone" hidden="false" id="8733-ba3e-2b75-4e50" type="selectionEntry" targetId="68a3-54f1-2376-898d"/>
-        <entryLink import="true" name="Shield Drone" hidden="false" id="b7b2-3416-8717-89e4" type="selectionEntry" targetId="d763-7643-1910-c9b6"/>
+        <entryLink import="true" name="Gun Drone" hidden="false" id="ff97-4005-b2e7-6bc1" type="selectionEntry" targetId="6c2b-cb77-3548-396e" defaultAmount="0">
+          <infoLinks>
+            <infoLink name="Insignificant" id="f6da-ef85-761b-9311" hidden="false" type="rule" targetId="478e-0095-8a92-1233"/>
+          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Marker Drone" hidden="false" id="8733-ba3e-2b75-4e50" type="selectionEntry" targetId="68a3-54f1-2376-898d">
+          <infoLinks>
+            <infoLink name="Insignificant" id="44e0-8123-949a-0456" hidden="false" type="rule" targetId="478e-0095-8a92-1233"/>
+          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Shield Drone" hidden="false" id="b7b2-3416-8717-89e4" type="selectionEntry" targetId="d763-7643-1910-c9b6">
+          <infoLinks>
+            <infoLink name="Insignificant" id="9034-8da1-b9c8-657f" hidden="false" type="rule" targetId="478e-0095-8a92-1233"/>
+          </infoLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Battlesuit Upgrades" id="537b-9b99-fd41-2cdc" hidden="false">
@@ -2487,6 +2493,9 @@ If Gun Drones undock from multiple Tanks in a single unit in the same Command Ph
   <sharedRules>
     <rule name="Multi-tracker" id="6b3e-57b3-363c-bd82" hidden="false">
       <description>Can fire all weapons at once</description>
+    </rule>
+    <rule name="Insignificant" id="478e-0095-8a92-1233" hidden="false">
+      <description>When attached to a Battlesuit unit, Drones are ignored for the purpose of calculating majority Toughness or Break Tests.</description>
     </rule>
   </sharedRules>
 </catalogue>
