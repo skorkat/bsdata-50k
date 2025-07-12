@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -14,11 +14,11 @@
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="6d70-1ddb-2e31-7609" includeChildSelections="false"/>
       </constraints>
       <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="58ea-c94a-2d77-0e24" targetId="default-category"/>
         <categoryLink name="Core" hidden="false" id="2a7f-a68a-f2ce-768f" targetId="b6c8-a4d5-23c0-3606"/>
         <categoryLink name="Elite" hidden="false" id="5b5a-6013-d505-2a41" targetId="6297-a84f-a103-e2ac"/>
-        <categoryLink name="Transport" hidden="false" id="2736-fe94-2081-53e4" targetId="57f8-02cb-ea36-4d85"/>
-        <categoryLink name="Leader" hidden="false" id="58ea-c94a-2d77-0e24" targetId="default-category"/>
         <categoryLink name="Speed Freeks" hidden="false" id="d01a-b65f-aa49-152b" targetId="2f5d-36c5-eab9-d7e2"/>
+        <categoryLink name="Transport" hidden="false" id="2736-fe94-2081-53e4" targetId="57f8-02cb-ea36-4d85"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -46,11 +46,11 @@
     <profile name="Burna [Shooting]" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="1226-5a68-4220-9bf4">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">8&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Torrent</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">4</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">0</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Template</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Dakkagun" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="b998-6987-4083-058a">
@@ -266,11 +266,11 @@
     <profile name="Skorcha" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="1f7b-ce4c-4e8c-ca9b">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">12&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Torrent</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Template</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Slugga" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="2484-99f4-4d86-b604">
@@ -713,6 +713,7 @@ The unit gains the following special rules:
           <infoLinks>
             <infoLink name="Slugga" id="d562-0e8c-5b86-b9f8" hidden="false" type="profile" targetId="2484-99f4-4d86-b604"/>
             <infoLink name="Grabba Stick" id="6e1c-9da5-7ce5-24b2" hidden="false" type="profile" targetId="5880-cef4-42f2-24b7"/>
+            <infoLink name="Ork Boy" id="f7f0-f975-e457-7fcf" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>

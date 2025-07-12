@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Honoured Brethren" id="ba83-6a23-709e-c810" hidden="false">
       <constraints>
@@ -2412,11 +2412,11 @@
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="0069-eee9-7ee1-5c2b-max" includeChildSelections="false"/>
       </constraints>
       <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="61cc-5811-0604-05be" targetId="default-category"/>
         <categoryLink name="Core" hidden="false" id="f118-8d41-adca-15fd" targetId="b6c8-a4d5-23c0-3606"/>
         <categoryLink name="Elite" hidden="false" id="3037-190c-4cd4-a02c" targetId="6297-a84f-a103-e2ac"/>
-        <categoryLink name="Transport" hidden="false" id="38ba-18e4-f07e-b4fa" targetId="57f8-02cb-ea36-4d85"/>
-        <categoryLink name="Leader" hidden="false" id="61cc-5811-0604-05be" targetId="default-category"/>
         <categoryLink name="Honoured Brethren" hidden="false" id="972b-473b-ad10-71d2" targetId="ba83-6a23-709e-c810"/>
+        <categoryLink name="Transport" hidden="false" id="38ba-18e4-f07e-b4fa" targetId="57f8-02cb-ea36-4d85"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>

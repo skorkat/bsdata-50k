@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -317,17 +317,20 @@ The unit then immediately becomes Broken.</description>
       <description>Can shoot in combat. Cannot be used if other non-Pistol weapons are used</description>
     </rule>
     <rule name="Assault" id="d0b6-0c6b-c28a-cc2a" hidden="false">
-      <description>Does not suffer the -1 to hit if moved</description>
+      <description>Can use choose to use Advancing Fire:
+    * Can only target the closest unit
+    * Suffer -1 To Hit
+    * Once shooting is complete, move up to 3”
+    * Must end closer to the unit you targeted (if that unit was destroyed, you can move in any direction)</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Rapid Fire" id="caa5-5eff-4834-78d2" hidden="false">
-      <description>Fires 2 shots at half range, 1 shot at full range.
-Infantry/Mounted cannot fire at full range unless they remained stationary.</description>
+      <description>Can choose to fire 2 shots at half range, but if you do so you can only target the closest unit</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Heavy" id="5080-657a-2368-b490" hidden="false">
       <comment>Weapon</comment>
-      <description>Infantry/Mounted cannot fire unless they remained stationary</description>
+      <description>Cannot perform any other actions (such as psychic powers that allow you to immediately shoot) or benefit from any movement rules/abilities (such as Agile, transport movement, etc.)</description>
     </rule>
     <rule name="Run" id="5852-841f-6fe7-77a3" hidden="false">
       <comment>Action</comment>
@@ -391,6 +394,13 @@ If a unit which is Engaged is forced to make an Involuntary Fall Back Move, but 
     </rule>
     <rule name="Full Speed" id="1725-7fd4-0d06-70b0" hidden="false">
       <description>Mounted and Tank models can move an additional 3&quot;, as long as their entire move is in a straight line.</description>
+    </rule>
+    <rule name="Torrent" id="5f8d-1ad7-3fc2-4d72" hidden="false">
+      <description>Automatically hits the target unit. Ignore Cover. If the model moves for any reason (eg via Agile, Deep Strike, a transport movement, etc.), they instead hit on 4+ but do not apply any To Hit modifiers.
+
+
+If the weapon also has Poison, Lance, or Warpbane, roll To Hit rolls regardless to see if any of them auto-wound, and then roll To Wound on any dice which don&apos;t auto-wound.</description>
+      <comment>Weapon</comment>
     </rule>
   </sharedRules>
   <costTypes>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -73,11 +73,11 @@ A model aligned with a particular god cannot join units aligned with a different
     <profile name="Baleflamer" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="8f3d-8f49-48b9-1b07">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">18&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Torrent</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">6</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Template</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Blastmaster (Single Frequency)" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="0ac7-38e7-40ad-d94e">
@@ -163,11 +163,11 @@ A model aligned with a particular god cannot join units aligned with a different
     <profile name="Flamer Tendril" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="55a2-78c9-4f98-2261">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">12&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Pistol</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Torrent</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">4</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">0</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Template</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Fleshmetal Guns (Focused Malice)" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="cae7-9fac-41fa-93cd">
@@ -303,21 +303,21 @@ A model aligned with a particular god cannot join units aligned with a different
     <profile name="Warpflame Pistol" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="16a4-8ce8-4881-f654">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">6&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Pistol</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Torrent</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">4</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Template</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Warpflamer" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="91de-50df-4d5f-5c34">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">12&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Torrent</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">4</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Template</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Axe of Dismemberment" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="64b2-3fa1-4c50-def6">
@@ -635,11 +635,11 @@ A model aligned with a particular god cannot join units aligned with a different
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f0d0-f087-0334-5fa3" includeChildSelections="false"/>
       </constraints>
       <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="e590-671c-d6ae-5f55" targetId="default-category"/>
         <categoryLink name="Core" hidden="false" id="7449-a3a8-3280-b995" targetId="b6c8-a4d5-23c0-3606"/>
         <categoryLink name="Elite" hidden="false" id="7983-664e-04d9-0040" targetId="6297-a84f-a103-e2ac"/>
-        <categoryLink name="Transport" hidden="false" id="446d-b402-82bc-546c" targetId="57f8-02cb-ea36-4d85"/>
-        <categoryLink name="Leader" hidden="false" id="e590-671c-d6ae-5f55" targetId="default-category"/>
         <categoryLink name="Daemonspawn" hidden="false" id="121c-bca2-d867-829d" targetId="be0a-badc-4087-52e3"/>
+        <categoryLink name="Transport" hidden="false" id="446d-b402-82bc-546c" targetId="57f8-02cb-ea36-4d85"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1107,7 +1107,7 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="180d-965f-f877-b08e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="180d-965f-f877-b08e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Rhino" hidden="false" id="86b6-b938-dc90-c23c">
@@ -1285,7 +1285,7 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="5ad0-f2f6-b2d6-7b1c" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="5ad0-f2f6-b2d6-7b1c" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="54c0-f131-2e95-3f0f" sortIndex="1">
@@ -1480,7 +1480,7 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="f66a-669f-f15c-088f" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="f66a-669f-f15c-088f" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Khorne Berzerkers" hidden="false" id="da5f-0e3f-89fb-48ab">
@@ -1596,7 +1596,7 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="f664-bf22-4ed7-2ed0" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="f664-bf22-4ed7-2ed0" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rubric Marines" hidden="false" id="4ce5-eb0d-5d9e-359f">
@@ -1612,7 +1612,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14d5-8fa8-3be6-059d-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="50de-d50c-964c-f33d" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="50de-d50c-964c-f33d" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
       <profiles>
         <profile name="Rubric Marines" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="90be-44b4-769a-1a79">
@@ -1847,7 +1847,7 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="0904-990a-dfa2-1d5e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="0904-990a-dfa2-1d5e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Terminators" hidden="false" id="4b1c-7656-8c66-241f">
@@ -2162,7 +2162,7 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="e15c-bcb8-f07d-977e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="e15c-bcb8-f07d-977e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Havocs" hidden="false" id="76e5-fa0a-2b50-52da">
@@ -2336,7 +2336,7 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="0938-39a8-aba4-7633" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="0938-39a8-aba4-7633" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Helbrute" hidden="false" id="1973-6041-df9b-444a">
@@ -2702,7 +2702,7 @@ A model aligned with a particular god cannot join units aligned with a different
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="c9a6-44ce-04be-16af" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="c9a6-44ce-04be-16af" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Vindicator" hidden="false" id="8fae-e176-df21-061a">
@@ -3155,7 +3155,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <categoryLink targetId="b625-812b-ea6f-c45f" id="7eae-2a68-f992-0579" primary="false" name="Daemonic"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="d1fe-c674-1de5-260d" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="d1fe-c674-1de5-260d" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maulerfiend" hidden="false" id="e318-ed4d-7901-04a9">
@@ -3362,7 +3362,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <categoryLink targetId="b625-812b-ea6f-c45f" id="9730-7b44-46ce-93df" primary="false" name="Daemonic"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Chaos Alignment" hidden="false" id="f1ca-3ac8-221a-a997" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
+        <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="f1ca-3ac8-221a-a997" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Venomcrawler" hidden="false" id="e2b4-c845-be03-08d7">
@@ -4121,7 +4121,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Slaanesh" hidden="false" id="c3cd-3c44-18e9-a350" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="">
+            <entryLink import="true" name="Slaanesh" hidden="false" id="c3cd-3c44-18e9-a350" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
@@ -4523,7 +4523,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Slaanesh" hidden="false" id="474b-0016-03d0-d576" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="">
+        <entryLink import="true" name="Slaanesh" hidden="false" id="474b-0016-03d0-d576" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1">
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
           </costs>
@@ -4610,7 +4610,7 @@ A model aligned with a particular god cannot join units aligned with a different
             </modifierGroup>
           </modifierGroups>
         </entryLink>
-        <entryLink import="true" name="Slaanesh" hidden="false" id="7733-8bd8-0962-fa6f" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="">
+        <entryLink import="true" name="Slaanesh" hidden="false" id="7733-8bd8-0962-fa6f" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1">
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
