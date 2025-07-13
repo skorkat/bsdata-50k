@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -143,7 +143,7 @@ They may instead be placed anywhere on the battlefield where they would be able 
       <comment>Movement</comment>
     </rule>
     <rule name="Bulky" id="bdeb-e59a-e173-9286" hidden="false">
-      <description>Cannot Run in the Action phase. This model ignores the -1 penalty To Hit for moving and shooting. This model ignores movement penalties imposed by all terrain types. It may move over both Impassable terrain which is 3” or shorter and other non-Titanic models, but cannot end on either.</description>
+      <description>Reduce movement by 2”, but ignore movement penalties imposed by all terrain types. Cannot benefit from any movement rules/abilities (such as Psychic Powers, Agile, or Fleet).</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Agile" id="6248-ab86-68c5-20f4" hidden="false">
@@ -215,9 +215,8 @@ They may instead be placed anywhere on the battlefield where they would be able 
       <description>Enemy units suffer -1 To Hit this target using ranged Shooting attacks.</description>
     </rule>
     <rule name="Transport (X)" id="13aa-c030-2dbd-16fd" hidden="false">
-      <description>This model may transport up to X Infantry models (using the Embark / Disembark rules). Any units inside can be activated independently of the transport, however if the transport has moved then all models inside count as having performed the same type of movement. 
+      <description>This model may transport up to X Infantry models (using the Embark / Disembark rules). Any units inside can be activated independently of the transport, however if the transport has moved then all models inside count as having performed the same type of movement. The only movement activation these units can use is Disembark.
 
-Units inside can target units outside the transport in the Action Phase, but cannot take Actions which involve movement (eg. Run or Charge). They cannot target units within the transport, or the transport itself, unless otherwise stated.
 
 If a transport is destroyed, all models inside must immediately take a Dangerous Terrain test (Mortal Wounds on a 6). Then all surviving models must immediately make an Emergency Disembark move. The transport model is then removed. Finally, all disembarked units must take a Break test.</description>
       <alias>Transport</alias>
@@ -235,9 +234,10 @@ A1, S0, AP3, Lance (6+), Poison (6+), Warpbane (6+), Cumbersome, Dangerous</desc
       <comment>Grenades</comment>
     </rule>
     <rule name="Melta Grenades" id="e728-cf66-82e2-1646" hidden="false">
-      <description>A model equipped with Tankbusting Grenades can use them against a Walker or Tank unit in Melee, instead of attacking with standard weapons. Use the following profile:
+      <description>A model equipped with Melta Grenades can use them against a Walker or Tank unit in Melee, instead of attacking with standard weapons. Use the following profile:
 A1, S0, AP5, Lance (5+), Poison (5+), Warpbane (5+), Cumbersome, Dangerous</description>
       <comment>Grenades</comment>
+      <alias>MeltaGrenades</alias>
     </rule>
     <rule name="Haywire Grenades" id="de21-afe6-8d24-ab96" hidden="false">
       <description>A model equipped with Haywire Grenades can use them against a Walker or Tank unit in Melee, instead of attacking with standard weapons. Use the following profile:
@@ -330,7 +330,7 @@ The unit then immediately becomes Broken.</description>
     </rule>
     <rule name="Heavy" id="5080-657a-2368-b490" hidden="false">
       <comment>Weapon</comment>
-      <description>Cannot perform any other actions (such as psychic powers that allow you to immediately shoot) or benefit from any movement rules/abilities (such as Agile, transport movement, etc.)</description>
+      <description>Cannot perform any other actions (such as psychic powers that allow you to immediately shoot) or benefit from any movement rules/abilities (such as Agile, transport movement, etc.) when fired</description>
     </rule>
     <rule name="Run" id="5852-841f-6fe7-77a3" hidden="false">
       <comment>Action</comment>
@@ -393,7 +393,7 @@ If this movement takes the unit into contact with the edge of the board, then it
 If a unit which is Engaged is forced to make an Involuntary Fall Back Move, but it is not possible to end this move all models outside of Engagement range, then the unit cannot Fall Back. Instead, roll one D6 for each model in the unit. For every result of 1, the unit suffers a Mortal Wound. The unit then remains in Combat but remains Broken.</description>
     </rule>
     <rule name="Full Speed" id="1725-7fd4-0d06-70b0" hidden="false">
-      <description>Mounted and Tank models can move an additional 3&quot;, as long as their entire move is in a straight line.</description>
+      <description>Can move an additional 3&quot;, as long as the entire move is in a straight line.</description>
     </rule>
     <rule name="Torrent" id="5f8d-1ad7-3fc2-4d72" hidden="false">
       <description>Automatically hits the target unit. Ignore Cover. If the model moves for any reason (eg via Agile, Deep Strike, a transport movement, etc.), they instead hit on 4+ but do not apply any To Hit modifiers.
@@ -401,6 +401,9 @@ If a unit which is Engaged is forced to make an Involuntary Fall Back Move, but 
 
 If the weapon also has Poison, Lance, or Warpbane, roll To Hit rolls regardless to see if any of them auto-wound, and then roll To Wound on any dice which don&apos;t auto-wound.</description>
       <comment>Weapon</comment>
+    </rule>
+    <rule name="Large" id="b104-bf24-10a2-e9a4" hidden="false">
+      <description>Counts as 2 models for the purpose of Transport capacity.</description>
     </rule>
   </sharedRules>
   <costTypes>
