@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0d98-1036-43bc-85f0" name="aLib - Imperial - Base" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="true" id="0d98-1036-43bc-85f0" name="aLib - Imperial - Base" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <sharedProfiles>
     <profile name="Assault Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="176f-7ee7-5ee4-347f">
       <characteristics>
@@ -128,7 +128,7 @@
     </profile>
     <profile name="Melta Grenades" typeId="ee67-1829-4789-204c" typeName="Grenades" hidden="false" id="a50b-4c70-a82c-ecf7">
       <characteristics>
-        <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">Melta Grenades</characteristic>
+        <characteristic name="Rules" typeId="fbc1-f1f1-b069-97e7">MeltaGrenades</characteristic>
       </characteristics>
     </profile>
     <profile name="Lascannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="d729-2b11-1734-557a">

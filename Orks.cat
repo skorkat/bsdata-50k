@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -1730,8 +1730,6 @@ The unit gains the following special rules:
       <profiles>
         <profile name="Battlewagon" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="8591-c808-c8ee-b310">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
@@ -1740,7 +1738,7 @@ The unit gains the following special rules:
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
