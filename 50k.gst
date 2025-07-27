@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -171,7 +171,7 @@ They may instead be placed anywhere on the battlefield where they would be able 
       <comment>Weapon</comment>
     </rule>
     <rule name="Melta" id="f96d-d15b-8c08-65cd" hidden="false">
-      <description>+1 To Wound when in Short Range or in Combat</description>
+      <description>When in Half Range or in Combat, add 1 to To Wound rolls. In addition, natural rolls of 2 can wound AV.</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Sniper" id="e56f-ad5a-3951-8020" hidden="false">

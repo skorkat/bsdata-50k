@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -49,8 +49,7 @@ Restrictions: Cannot be Broken or Engaged. May only target units which are able 
     <rule name="Orders" id="62d1-ade6-18cc-3a14" hidden="false">
       <description>In the Action Phase, a model with this rule may choose to take the Give Orders action.
 
-
-Target a friendly unit within 12” and nominate an Order from the list below. The effect is immediately applied to the target unit and lasts until the start of your next turn. A unit can only be targeted by an Order once per turn.
+Target a friendly unit within 12” and nominate an Order from the list below. The effect is immediately applied to the target unit and lasts until the start of your next turn. A unit can only be targeted by a Give Orders once per turn.
 
 * Move! Move! Move!
 * Fix Bayonets!
@@ -58,10 +57,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
 * Take Cover!
 * Duty and Honour!
 * Frag Out!
-* Get Back In The Fight!
-
-
-</description>
+* Get Back In The Fight!</description>
     </rule>
     <rule name="Frag Grenades" id="8744-17e2-4104-733d" hidden="false">
       <description>Can be chosen for the Frag Out! Order</description>
@@ -272,7 +268,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="9f64-9d5f-8d1e-d1f4" type="selectionEntryGroup" targetId="e23f-6f9f-ab2f-1957"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Scion" hidden="false" id="7760-4131-d988-9f6c" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Scion" hidden="false" id="7760-4131-d988-9f6c" sortIndex="1">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="48df-a339-f3d7-f9e0"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="0453-809a-9562-3325"/>
@@ -379,7 +375,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="4142-c984-947c-0656" type="selectionEntryGroup" targetId="e23f-6f9f-ab2f-1957"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Guardsman" hidden="false" id="315e-f156-6757-6d30" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Guardsman" hidden="false" id="315e-f156-6757-6d30" sortIndex="1">
               <constraints>
                 <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="fd43-8f12-0a13-19fd"/>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="481a-3411-98c3-6da5"/>
@@ -397,7 +393,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
               </costs>
               <infoLinks>
-                <infoLink name="Heavy Weapon Team" id="f7c7-b446-abf2-ee7e" hidden="false" type="profile" targetId="3d65-050f-ce21-f699"/>
+                <infoLink name="Heavy Weapons Team" id="f7c7-b446-abf2-ee7e" hidden="false" type="profile" targetId="3d65-050f-ce21-f699"/>
                 <infoLink name="Large" id="ef90-1219-ad7f-11e7" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4">
                   <modifiers>
                     <modifier type="set" value="Heavy Weapon Team only" field="annotation"/>
@@ -1392,7 +1388,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71bb-dea2-1a85-633d-max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Basilisk" hidden="false" id="6279-51c3-1c8f-810a" sortIndex="3">
+                <selectionEntry type="upgrade" import="true" name="Basilisk" hidden="false" id="6279-51c3-1c8f-810a" sortIndex="4">
                   <infoLinks>
                     <infoLink name="Earthshaker Cannon" id="d3f5-4df1-a822-d767" hidden="false" type="profile" targetId="5acc-4a5c-e7c2-6b1e"/>
                   </infoLinks>
@@ -1403,7 +1399,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Deathstrike" hidden="false" id="17fd-0824-bce5-d7fa" sortIndex="4">
+                <selectionEntry type="upgrade" import="true" name="Deathstrike" hidden="false" id="17fd-0824-bce5-d7fa" sortIndex="2">
                   <infoLinks>
                     <infoLink name="Deathstrike Missile" id="05b4-1814-71d6-5723" hidden="false" type="profile" targetId="55d2-9339-fa22-cee8"/>
                   </infoLinks>
@@ -1411,10 +1407,10 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d3-5310-e997-81db"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Manticore" hidden="false" id="8c69-2670-cb4e-d94e" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Manticore" hidden="false" id="8c69-2670-cb4e-d94e" sortIndex="3">
                   <infoLinks>
                     <infoLink name="Storm Eagle Rockets" id="7306-c894-e923-c7f0" hidden="false" type="profile" targetId="504d-19a1-4c9a-7a0d"/>
                   </infoLinks>
@@ -1422,7 +1418,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="524a-1fde-f033-a028"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Wyvern" hidden="false" id="4bc7-6779-d6b8-b221" sortIndex="1">
@@ -1796,11 +1792,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="2x Heavy Bolters" hidden="false" id="9d72-5438-05e3-3cd4" sortIndex="1">
               <infoLinks>
-                <infoLink name="Heavy Bolter" id="01ab-ff42-7bc6-0384" hidden="false" type="profile" targetId="e775-c918-ae40-40de">
-                  <modifiers>
-                    <modifier type="set" value="x2" field="annotation"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Heavy Bolter" id="01ab-ff42-7bc6-0384" hidden="false" type="profile" targetId="e775-c918-ae40-40de"/>
+                <infoLink name="Heavy Bolter" id="b6ac-2586-20ea-6e49" hidden="false" type="profile" targetId="e775-c918-ae40-40de"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
@@ -1811,11 +1804,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2x Heavy Flamers" hidden="false" id="98ea-9643-bbc7-4ff2" sortIndex="2">
               <infoLinks>
-                <infoLink name="Heavy Flamer" id="c437-34ca-425e-13c0" hidden="false" type="profile" targetId="985a-d278-19b1-e82f">
-                  <modifiers>
-                    <modifier type="set" value="x2" field="annotation"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Heavy Flamer" id="c437-34ca-425e-13c0" hidden="false" type="profile" targetId="985a-d278-19b1-e82f"/>
+                <infoLink name="Heavy Flamer" id="5cb5-d0b9-bb38-a900" hidden="false" type="profile" targetId="985a-d278-19b1-e82f"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
@@ -1826,11 +1816,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2x Multi-meltas" hidden="false" id="15db-4791-b781-aacf" sortIndex="3">
               <infoLinks>
-                <infoLink name="Multi-melta" id="faa9-24cc-e9ce-1c3e" hidden="false" type="profile" targetId="e050-2bb4-dfd4-af46">
-                  <modifiers>
-                    <modifier type="set" value="x2" field="annotation"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Multi-melta" id="faa9-24cc-e9ce-1c3e" hidden="false" type="profile" targetId="e050-2bb4-dfd4-af46"/>
+                <infoLink name="Multi-melta" id="11b6-db5f-c17c-c445" hidden="false" type="profile" targetId="e050-2bb4-dfd4-af46"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
@@ -1841,11 +1828,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2x Plasma Cannons" hidden="false" id="9248-a24f-7156-e58b" sortIndex="4">
               <infoLinks>
-                <infoLink name="Plasma Cannon" id="091a-828d-775e-521c" hidden="false" type="profile" targetId="cb14-99fa-6f75-747a">
-                  <modifiers>
-                    <modifier type="set" value="x2" field="annotation"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Plasma Cannon" id="091a-828d-775e-521c" hidden="false" type="profile" targetId="cb14-99fa-6f75-747a"/>
+                <infoLink name="Plasma Cannon" id="02b0-1f8e-81fc-0b30" hidden="false" type="profile" targetId="cb14-99fa-6f75-747a"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
@@ -2054,7 +2038,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Jungle Veteran" hidden="false" id="8078-f8e5-4b4d-3bbe" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Jungle Veteran" hidden="false" id="8078-f8e5-4b4d-3bbe" sortIndex="1">
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="acb4-8d7d-387f-18af-min"/>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="acb4-8d7d-387f-18af-max"/>
@@ -2305,7 +2289,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Scion Veteran" hidden="false" id="60a5-d379-b272-1eb8" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Scion Veteran" hidden="false" id="60a5-d379-b272-1eb8" sortIndex="1">
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f409-58ce-d751-0f0a-min"/>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f409-58ce-d751-0f0a-max"/>
@@ -2572,7 +2556,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Infantry Veteran" hidden="false" id="41a4-f4c1-0752-047f" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Infantry Veteran" hidden="false" id="41a4-f4c1-0752-047f" sortIndex="1">
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="df5d-42d8-60b1-9d49-min"/>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="df5d-42d8-60b1-9d49-max"/>
@@ -3077,8 +3061,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">240&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d6</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d3</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">8</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect</characteristic>
       </characteristics>
@@ -3087,18 +3071,18 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">100&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d6</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">4d3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">6</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect, One-Shot</characteristic>
       </characteristics>
     </profile>
     <profile name="Storm Eagle Rockets" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="504d-19a1-4c9a-7a0d">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">120&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d6</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">9</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect</characteristic>
       </characteristics>
@@ -3313,9 +3297,9 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
     <entryLink import="true" name="Scout Sentinels" hidden="false" id="7028-d1ba-75ec-454f" type="selectionEntry" targetId="cbc3-ef28-2049-bc09"/>
     <entryLink import="true" name="Chimera" hidden="false" id="9301-c87f-93cb-c0ac" type="selectionEntry" targetId="29f9-aa80-9405-d24e"/>
     <entryLink import="true" name="Taurox" hidden="false" id="82c1-905f-fe79-89c7" type="selectionEntry" targetId="aa6b-35b8-f20c-fad3"/>
-    <entryLink import="true" name="Ordinance Battery" hidden="false" id="71cd-2577-f36e-fc79" type="selectionEntry" targetId="e96a-9251-7d2e-bb5d"/>
-    <entryLink import="true" name="Hydra" hidden="false" id="002e-e996-d4dd-1627" type="selectionEntry" targetId="19be-d01c-0442-c028"/>
-    <entryLink import="true" name="Hellhound" hidden="false" id="4f97-77db-0e15-0707" type="selectionEntry" targetId="7fcf-2a3a-6061-c061"/>
+    <entryLink import="true" name="Ordinance Battery Array" hidden="false" id="71cd-2577-f36e-fc79" type="selectionEntry" targetId="e96a-9251-7d2e-bb5d"/>
+    <entryLink import="true" name="Hydra Squadron" hidden="false" id="002e-e996-d4dd-1627" type="selectionEntry" targetId="19be-d01c-0442-c028"/>
+    <entryLink import="true" name="Hellhound Squadron" hidden="false" id="4f97-77db-0e15-0707" type="selectionEntry" targetId="7fcf-2a3a-6061-c061"/>
     <entryLink import="true" name="Leman Russ Squadron" hidden="false" id="475f-ac0e-9c39-6344" type="selectionEntry" targetId="3feb-fbee-23a2-ed49"/>
     <entryLink import="true" name="Tank Commander" hidden="false" id="7e4d-a70f-adf7-9291" type="selectionEntry" targetId="d665-4a31-cf65-fc30"/>
     <entryLink import="true" name="Lord Commissar" hidden="false" id="1423-2a75-1634-62f5" type="selectionEntry" targetId="ba87-c8aa-b770-6bbd"/>
@@ -3480,28 +3464,30 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="2161-508a-1b78-9abb" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Melta Grenades" hidden="false" id="6cea-cf57-ed69-9f89">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Melta Grenades" id="069c-df23-f90b-3738" hidden="false" type="profile" targetId="a50b-4c70-a82c-ecf7">
+                  <modifiers>
+                    <modifier type="set" value="Sergeant only" field="annotation">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ce7b-7bf5-3b56-3b0e" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32d0-22fe-d9df-eb45"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Melta Grenades" hidden="false" id="6cea-cf57-ed69-9f89" sortIndex="3">
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Melta Grenades" id="069c-df23-f90b-3738" hidden="false" type="profile" targetId="a50b-4c70-a82c-ecf7">
-              <modifiers>
-                <modifier type="set" value="Sergeant only" field="annotation">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ce7b-7bf5-3b56-3b0e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32d0-22fe-d9df-eb45"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Psykana Discipline" id="efcf-8a0e-8d3a-49b0" hidden="false">
       <selectionEntries>
@@ -3733,4 +3719,9 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="One-Shot" id="3932-7b65-10e7-9385" hidden="false">
+      <description>This weapon can only be fired once per game</description>
+    </rule>
+  </sharedRules>
 </catalogue>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <rules>
     <rule name="Children of the Chaos Gods" id="f631-f11a-b827-50f2" hidden="false">
       <description>All Chaos Daemons automatically get the Boon associated with their god as per the table below:
 Slaanesh     Boon of Swiftness
 Nurgle         Boon of Pestilence
 Khorne        Boon of Rage
-Tzeentch     Boon of Trickery
-</description>
+Tzeentch     Boon of Trickery</description>
     </rule>
     <rule name="Warp Rifts" id="558b-418f-6d4f-84ea" hidden="false">
       <description>Up to one third of the units in an army may be given the Deep Strike special rule, however they must be placed on the battlefield so that at least one model is within 12” of another Daemon unit that started the turn on the battlefield.</description>
@@ -365,9 +364,9 @@ Tzeentch     Boon of Trickery
     <profile name="Great Axe of Khorne" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="21e0-79f9-1336-ff16">
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
-        <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">Ux2</characteristic>
+        <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+4</characteristic>
         <characteristic name="AP" typeId="b61b-983a-90e6-48fc">5</characteristic>
-        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Cumbersome</characteristic>
+        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Cumbersome, Melta</characteristic>
       </characteristics>
       <comment>Khorne</comment>
     </profile>
