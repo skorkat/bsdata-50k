@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -126,13 +126,20 @@
   <sharedRules>
     <rule name="Infiltrate" id="f6d2-4715-f8a6-5a6b" hidden="false">
       <comment>Deployment</comment>
-      <description>If every model in this model’s unit has this rule, it can be deployed anywhere that is at least 12” away from enemy units and more than 3” away from any Objective Marker during Deployment. Alternatively, if placed in reserves, it may enter from any board edge outside of the opponent’s deployment zone and outside of 6&quot; of enemy models.</description>
+      <description>If every model in this model’s unit has this rule, it can be deployed anywhere that is at least 12” away from enemy units and more than 3” away from any Objective Marker during Deployment. Alternatively, if placed in reserves, it may enter from any board edge outside of the opponent’s deployment zone and outside of 6&quot; of enemy models.
+
+
+Units which arrive in this fashion may fire Assault weapons but suffer the same impact as Advancing Fire would apply.</description>
     </rule>
     <rule name="Deep Strike" id="2f62-8a76-e9b0-d6e9" hidden="false">
       <comment>Deployment</comment>
       <description>If every model in this model’s unit has this rule, then when arriving from reserves, it can choose to Deep Strike instead of moving on from the board edge.
 
-They may instead be placed anywhere on the battlefield where they would be able to move to (ie. not on impassible terrain, not in base contact with other models, etc.) but all models must be in base contact with each other (or as close as possible). They must be outside of 6&quot; of any enemy models.</description>
+They may instead be placed anywhere on the battlefield where they would be able to move to (ie. not on impassible terrain, not in base contact with other models, etc.) but all models must be in base contact with each other (or as close as possible). They must be outside of 6&quot; of any enemy models.
+
+For every model that arrives via Deep Strike into terrain, roll a d6. For every result of 1, the unit suffers a Mortal Wound (which must be allocated to one of those models).
+
+Units which arrive in this fashion may fire Assault weapons but suffer the same impact as Advancing Fire would apply.</description>
     </rule>
     <rule name="Fly" id="9802-fb17-c1b0-872b" hidden="false">
       <description>If every model in this model’s unit has this rule, then they can all add 3” to the Movement characteristic of the model. They may move over terrain and enemy models with no penalty to movement, but must account for vertical/diagonal distance to move over them.</description>
@@ -171,7 +178,7 @@ They may instead be placed anywhere on the battlefield where they would be able 
       <comment>Weapon</comment>
     </rule>
     <rule name="Melta" id="f96d-d15b-8c08-65cd" hidden="false">
-      <description>When in Half Range or in Combat, add 1 to To Wound rolls. In addition, natural rolls of 2 can wound AV.</description>
+      <description>When in Half Range or in Combat, add 1 to To Wound rolls.</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Sniper" id="e56f-ad5a-3951-8020" hidden="false">
@@ -405,6 +412,12 @@ If the weapon also has Poison, Lance, or Warpbane, roll To Hit rolls regardless 
     <rule name="Large" id="b104-bf24-10a2-e9a4" hidden="false">
       <description>Counts as 2 models for the purpose of Transport capacity.</description>
     </rule>
+    <rule name="Penetrating" id="7420-80d9-b1e2-eaf9" hidden="false">
+      <description>When targeting a unit with AV, for each point you beat the To Wound value by, the target takes an additional wound. Roll to save against each would individually.
+
+
+For example, a S10 weapon vs AV 9 requires a 3+ to hit. If a 4 is rolled, the target will take 2 wounds. If a 6 is rolled, the target will take 4 wounds. If a 6 is rolled and the weapon has Melta and is within half range, then the target will take 5 wounds.</description>
+    </rule>
   </sharedRules>
   <costTypes>
     <costType name="Points" id="b109-6551-e41a-f1f7" defaultCostLimit="2000"/>
@@ -471,6 +484,9 @@ Models in a unit can never voluntarily move outside of coherency with their unit
 - Only Infantry can move through models in their own squad.
 - Can never end in base contact with an enemy model, unless both model’s units are engaged
 - If any model in a unit moves, then all models in that unit count as having moved, even if an individual model itself did not.</description>
+    </rule>
+    <rule name="One-Shot" id="3932-7b65-10e7-9385" hidden="false">
+      <description>This weapon can only be fired once per game</description>
     </rule>
   </rules>
   <publications>

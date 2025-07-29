@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Honoured Brethren" id="ba83-6a23-709e-c810" hidden="false">
       <constraints>
@@ -1043,7 +1043,7 @@
           <entryLinks>
             <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="0049-dfc2-7c7a-74ad" type="selectionEntry" targetId="6c90-d8ba-42e7-5cd2" sortIndex="2">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="509c-03e3-0147-971f" includeChildSelections="false"/>
@@ -1138,7 +1138,7 @@
         </entryLink>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="3b0f-e4f6-e085-c1ef" type="selectionEntry" targetId="6c90-d8ba-42e7-5cd2" sortIndex="2">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c0b-483e-f02a-54e7" includeChildSelections="false"/>
@@ -1180,7 +1180,7 @@
         </entryLink>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="b42e-36ab-78b5-3bda" type="selectionEntry" targetId="6c90-d8ba-42e7-5cd2" sortIndex="2">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bde-747f-dae1-2b08" includeChildSelections="false"/>
@@ -1491,7 +1491,7 @@
         </entryLink>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="5f5f-5a40-fb61-2e85" type="selectionEntry" targetId="6c90-d8ba-42e7-5cd2" sortIndex="2">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f34f-ba48-8afc-0eeb" includeChildSelections="false"/>
@@ -1595,7 +1595,7 @@
         </entryLink>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="fe21-0ac7-ac68-6fe6" type="selectionEntry" targetId="6c90-d8ba-42e7-5cd2" sortIndex="2">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b48-c652-f015-a127" includeChildSelections="false"/>
@@ -1632,7 +1632,7 @@
         </entryLink>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="af29-8c01-adb4-8801" type="selectionEntry" targetId="6c90-d8ba-42e7-5cd2" sortIndex="2">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da69-70bd-60cc-6a70" includeChildSelections="false"/>
@@ -1662,7 +1662,7 @@
           <entryLinks>
             <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="0d61-d82e-4390-a651" type="selectionEntry" targetId="6c90-d8ba-42e7-5cd2">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5893-7220-0296-a35c" includeChildSelections="false"/>
@@ -1738,7 +1738,7 @@
         </entryLink>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="9819-a22f-46e9-19d8" type="selectionEntry" targetId="6c90-d8ba-42e7-5cd2">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaac-adea-fa1d-89ea" includeChildSelections="false"/>

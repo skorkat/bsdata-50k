@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -382,7 +382,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               </constraints>
               <infoLinks>
                 <infoLink name="Guardsman" id="2147-24b3-f6f9-9745" hidden="false" type="profile" targetId="45b5-f114-90cd-7ce0"/>
-                <infoLink name="Hot-shot Lasgun" id="3c75-5a8c-ec15-41d0" hidden="false" type="profile" targetId="f4dd-7f67-0df7-370e"/>
+                <infoLink name="Lasgun" id="3c75-5a8c-ec15-41d0" hidden="false" type="profile" targetId="adc0-6fe3-4450-2225"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
@@ -2135,7 +2135,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <categoryLink name="Leader" hidden="false" id="ed79-9494-6e24-77df" targetId="default-category" primary="true"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Infiltrate" id="2f6d-c292-cd0e-0981" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+        <infoLink name="Deep Strike" id="2f6d-c292-cd0e-0981" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
         <infoLink name="Frag Grenades" id="2fff-99b7-6a25-3885" hidden="false" type="rule" targetId="8744-17e2-4104-733d"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2162,6 +2162,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                     <modifier type="set" value="Commander only" field="annotation"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Krak Grenades" id="0e93-7d6b-f02b-aca2" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
@@ -2296,6 +2297,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               </constraints>
               <infoLinks>
                 <infoLink name="Scion Veteran" id="f25b-d997-b769-c568" hidden="false" type="profile" targetId="08fe-e9cd-0799-241a"/>
+                <infoLink name="Krak Grenades" id="ef68-5140-5c34-c607" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
@@ -2411,7 +2413,6 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <categoryLink name="Leader" hidden="false" id="9d35-3ec8-bf7b-1e19" targetId="default-category" primary="true"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Infiltrate" id="dcfa-4b3e-a297-23b6" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
         <infoLink name="Frag Grenades" id="bb79-2f7c-684e-0b26" hidden="false" type="rule" targetId="8744-17e2-4104-733d"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2716,7 +2717,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
     <profile name="Scion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f1c0-aab2-0e91-adb3">
       <characteristics>
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
-        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">2</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
@@ -3073,8 +3074,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">4d3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">6</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect, One-Shot</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">5</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect, One-Shot, Delayed Launch</characteristic>
       </characteristics>
     </profile>
     <profile name="Storm Eagle Rockets" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="504d-19a1-4c9a-7a0d">
@@ -3197,8 +3198,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">12</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Melta</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">4</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Melta, Penetrating</characteristic>
       </characteristics>
     </profile>
     <profile name="Nova Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="388f-2386-e76b-3fe3">
@@ -3622,7 +3623,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55a2-0129-1827-382f"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3720,8 +3721,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule name="One-Shot" id="3932-7b65-10e7-9385" hidden="false">
-      <description>This weapon can only be fired once per game</description>
+    <rule name="Delayed Launch" id="a658-e3f8-865b-16f1" hidden="false">
+      <description>When choosing to fire this weapon, you must first roll a d6. If you roll less than your current round number, then you can fire the weapon. Otherwise, you cannot fire it this turn.</description>
     </rule>
   </sharedRules>
 </catalogue>

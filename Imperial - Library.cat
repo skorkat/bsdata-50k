@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0d98-1036-43bc-85f0" name="aLib - Imperial - Base" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="true" id="0d98-1036-43bc-85f0" name="aLib - Imperial - Base" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <sharedProfiles>
     <profile name="Assault Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="176f-7ee7-5ee4-347f">
       <characteristics>
@@ -108,7 +108,7 @@
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">One-Shot</characteristic>
       </characteristics>
     </profile>
     <profile name="Hurricane Bolter" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="3fbb-b6a7-502f-f574">

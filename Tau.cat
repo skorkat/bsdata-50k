@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Battlesuit" id="b083-7a5c-1d92-5ca6" hidden="false">
       <constraints>
@@ -14,11 +14,11 @@
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="1b3a-1ae6-4ced-671f-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="0cb9-a10a-133f-927e" targetId="default-category"/>
         <categoryLink name="Core" hidden="false" id="3ef8-0c30-876b-a169" targetId="b6c8-a4d5-23c0-3606"/>
         <categoryLink name="Elite" hidden="false" id="13a1-9695-ee77-e2a5" targetId="6297-a84f-a103-e2ac"/>
-        <categoryLink name="Transport" hidden="false" id="8e58-5468-aa42-48c6" targetId="57f8-02cb-ea36-4d85"/>
-        <categoryLink name="Leader" hidden="false" id="0cb9-a10a-133f-927e" targetId="default-category"/>
         <categoryLink name="Battlesuit" hidden="false" id="b04e-638b-eb2a-8e93" targetId="b083-7a5c-1d92-5ca6"/>
+        <categoryLink name="Transport" hidden="false" id="8e58-5468-aa42-48c6" targetId="57f8-02cb-ea36-4d85"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -148,8 +148,8 @@
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">60&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">9</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">5</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">4</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
@@ -339,8 +339,8 @@
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">12</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">6</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">4</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Penetrating</characteristic>
       </characteristics>
     </profile>
     <profile name="Seeker Missile" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="00e4-43ca-417f-5eda">
@@ -571,7 +571,11 @@
     <selectionEntry type="upgrade" import="true" name="Gun Drone" hidden="false" id="6c2b-cb77-3548-396e">
       <infoLinks>
         <infoLink name="Twin Pulse Carbine" id="775a-638c-b357-b557" hidden="false" type="profile" targetId="891a-6edc-ad9e-0cef"/>
-        <infoLink name="Hover" id="81f0-700f-f932-28ad" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Hover" id="81f0-700f-f932-28ad" hidden="false" type="rule" targetId="3277-2533-ac2b-057c">
+          <modifiers>
+            <modifier type="set" value="Drones only" field="annotation"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
@@ -609,7 +613,11 @@
             <modifier type="set" value="Marker Drones only" field="annotation"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Hover" id="4bf0-9479-d3fc-7604" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Hover" id="4bf0-9479-d3fc-7604" hidden="false" type="rule" targetId="3277-2533-ac2b-057c">
+          <modifiers>
+            <modifier type="set" value="Drones only" field="annotation"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -645,7 +653,11 @@
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
       </costs>
       <infoLinks>
-        <infoLink name="Hover" id="86d2-bfb3-4403-ee76" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Hover" id="86d2-bfb3-4403-ee76" hidden="false" type="rule" targetId="3277-2533-ac2b-057c">
+          <modifiers>
+            <modifier type="set" value="Drones only" field="annotation"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Shield Drone" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="5544-0c0a-bd71-58ea">
@@ -2401,17 +2413,29 @@ If Gun Drones undock from multiple Tanks in a single unit in the same Command Ph
       <entryLinks>
         <entryLink import="true" name="Gun Drone" hidden="false" id="ff97-4005-b2e7-6bc1" type="selectionEntry" targetId="6c2b-cb77-3548-396e" defaultAmount="0">
           <infoLinks>
-            <infoLink name="Insignificant" id="f6da-ef85-761b-9311" hidden="false" type="rule" targetId="478e-0095-8a92-1233"/>
+            <infoLink name="Insignificant" id="f6da-ef85-761b-9311" hidden="false" type="rule" targetId="478e-0095-8a92-1233">
+              <modifiers>
+                <modifier type="set" value="Dones only" field="annotation"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </entryLink>
         <entryLink import="true" name="Marker Drone" hidden="false" id="8733-ba3e-2b75-4e50" type="selectionEntry" targetId="68a3-54f1-2376-898d">
           <infoLinks>
-            <infoLink name="Insignificant" id="44e0-8123-949a-0456" hidden="false" type="rule" targetId="478e-0095-8a92-1233"/>
+            <infoLink name="Insignificant" id="44e0-8123-949a-0456" hidden="false" type="rule" targetId="478e-0095-8a92-1233">
+              <modifiers>
+                <modifier type="set" value="Dones only" field="annotation"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </entryLink>
         <entryLink import="true" name="Shield Drone" hidden="false" id="b7b2-3416-8717-89e4" type="selectionEntry" targetId="d763-7643-1910-c9b6">
           <infoLinks>
-            <infoLink name="Insignificant" id="9034-8da1-b9c8-657f" hidden="false" type="rule" targetId="478e-0095-8a92-1233"/>
+            <infoLink name="Insignificant" id="9034-8da1-b9c8-657f" hidden="false" type="rule" targetId="478e-0095-8a92-1233">
+              <modifiers>
+                <modifier type="set" value="Dones only" field="annotation"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </entryLink>
       </entryLinks>
