@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -208,16 +208,6 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Heavy Autocannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="baba-8ace-447a-72e8">
-      <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">48&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">4</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">8</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Inferno Bolt Pistol" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="41b6-a2cb-4456-838b">
@@ -459,7 +449,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
         <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
@@ -476,7 +466,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -495,7 +485,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -534,7 +524,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -553,7 +543,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -572,7 +562,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -591,7 +581,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -610,7 +600,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -768,7 +758,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -978,7 +968,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1120,8 +1110,6 @@ A model aligned with a particular god cannot join units aligned with a different
         </profile>
         <profile name="Rhino" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="15a7-c4d7-f178-8834">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -1129,7 +1117,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -1247,7 +1235,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1389,7 +1377,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1573,7 +1561,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1692,7 +1680,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1775,7 +1763,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1877,7 +1865,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -1943,7 +1931,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -1973,7 +1961,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -2031,7 +2019,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2103,7 +2091,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2133,7 +2121,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2193,7 +2181,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2277,7 +2265,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2307,7 +2295,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2343,8 +2331,6 @@ A model aligned with a particular god cannot join units aligned with a different
       <profiles>
         <profile name="Helbrute" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="74d4-8ff8-af1e-652a">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -2352,7 +2338,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2471,7 +2457,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2498,7 +2484,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2547,7 +2533,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2611,7 +2597,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2640,7 +2626,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2744,8 +2730,6 @@ A model aligned with a particular god cannot join units aligned with a different
       <profiles>
         <profile name="Chaos Vindicator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="f102-e639-cf3a-869a">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -2753,7 +2737,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2790,8 +2774,6 @@ A model aligned with a particular god cannot join units aligned with a different
         </profile>
         <profile name="Chaos Land Raider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="575e-aad2-2a15-2c62">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
@@ -2799,7 +2781,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2928,8 +2910,6 @@ A model aligned with a particular god cannot join units aligned with a different
       <profiles>
         <profile name="Chaos Predator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4e90-5669-c6b4-2052">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -2937,7 +2917,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2950,8 +2930,6 @@ A model aligned with a particular god cannot join units aligned with a different
       <profiles>
         <profile name="Defiler" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b1a4-dd83-aaf9-ee4b">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
@@ -2959,7 +2937,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">1+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
@@ -3091,7 +3069,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3124,7 +3102,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3165,8 +3143,6 @@ A model aligned with a particular god cannot join units aligned with a different
       <profiles>
         <profile name="Maulerfiend" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="09a7-e67b-0dd4-5f98">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -3174,7 +3150,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">1+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
@@ -3222,8 +3198,6 @@ A model aligned with a particular god cannot join units aligned with a different
       <profiles>
         <profile name="Forgefiend" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="757b-5044-b00e-37a0">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
@@ -3231,7 +3205,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">1+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
@@ -3298,7 +3272,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3331,7 +3305,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3369,8 +3343,6 @@ A model aligned with a particular god cannot join units aligned with a different
       <profiles>
         <profile name="Venomcrawler" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5afe-bb31-7549-6d21">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">D</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -3378,7 +3350,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
@@ -3416,7 +3388,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3469,7 +3441,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
@@ -3501,7 +3473,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
@@ -3542,7 +3514,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
@@ -3605,7 +3577,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3634,7 +3606,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3672,7 +3644,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3833,7 +3805,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3862,7 +3834,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -3900,7 +3872,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -4033,7 +4005,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -4081,7 +4053,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>

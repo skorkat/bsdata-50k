@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Honoured Brethren" id="ba83-6a23-709e-c810" hidden="false">
       <constraints>
@@ -9,7 +9,7 @@
   </categoryEntries>
   <rules>
     <rule name="And They Shall Know No Fear" id="9ee3-ce6c-2a0b-d50b" hidden="false">
-      <description>When making Leadership Tests (excluding Psychic Tests), Firstborn Space Marine units can roll two dice and can choose which one to use as the result.</description>
+      <description>When making Leadership Tests (excluding Psychic Tests), Firstborn Space Marine units can roll three dice and can drop the lowest.</description>
     </rule>
     <rule name="Combat Squads" id="b451-cd16-a6fd-44a0" hidden="false">
       <description>In any Command Phase, a Firstborn Space Marine unit containing 10 models can be split into two squads of 5 models (distributing any models with upgrades as the player sees fit). They then act as independent squads for the duration of the battle, counting as separate squads of 5 models for scoring purposes, and cannot recombine. This can be done even if the squad is embarked in a transport or is currently in reserves.</description>
@@ -2406,7 +2406,7 @@
     <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Equipment" id="95e6-9236-b184-1329" targetId="0e97-bb9e-538e-d4e5"/>
   </catalogueLinks>
   <forceEntries>
-    <forceEntry name="Force" id="9393-a693-72ff-2981" hidden="false">
+    <forceEntry name="Firstborn Marines" id="9393-a693-72ff-2981" hidden="false">
       <constraints>
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="0069-eee9-7ee1-5c2b-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="0069-eee9-7ee1-5c2b-max" includeChildSelections="false"/>

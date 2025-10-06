@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Baleblast" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="0768-d8dd-e4dd-620b">
       <characteristics>
@@ -392,7 +392,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -418,7 +418,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -434,7 +434,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -450,7 +450,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -466,7 +466,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -492,7 +492,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -508,7 +508,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -524,7 +524,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -540,7 +540,7 @@
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -556,7 +556,7 @@
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -572,7 +572,7 @@
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -588,7 +588,7 @@
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -604,7 +604,7 @@
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -620,7 +620,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -636,7 +636,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -652,7 +652,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -668,7 +668,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">9+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -684,7 +684,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -700,7 +700,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -716,7 +716,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -732,7 +732,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -748,7 +748,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -764,7 +764,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">9+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -780,7 +780,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -796,7 +796,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">7</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -812,7 +812,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">9</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -828,7 +828,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -944,7 +944,7 @@
                 <infoLink name="Kabalite Warrior" id="625e-be9e-e026-986c" hidden="false" type="profile" targetId="92a4-f6bf-332a-c51e">
                   <modifiers>
                     <modifier type="set" value="Sybarite" field="name"/>
-                    <modifier type="set" value="2+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                     <modifier type="set" value="2+" field="4a75-e14b-051b-c0f1"/>
                   </modifiers>
                 </infoLink>
@@ -1315,6 +1315,7 @@
                     <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71"/>
                     <modifier type="set" value="8" field="1509-720c-2a2f-ed46"/>
                     <modifier type="set" value="Hekatrix" field="name"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -1659,7 +1660,7 @@
                     <modifier type="set" value="Acothyst" field="name"/>
                     <modifier type="set" value="4" field="229e-fdb9-4bbc-f6ff"/>
                     <modifier type="set" value="2" field="ae75-aaa4-f9b6-8a71"/>
-                    <modifier type="set" value="2+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                   </modifiers>
                 </infoLink>
                 <infoLink name="Wrack Blades" id="3f47-84e1-8a26-bee7" hidden="false" type="profile" targetId="c5c4-22e3-84b5-e756"/>
@@ -1763,7 +1764,7 @@
                     <modifier type="set" value="Helliarch" field="name"/>
                     <modifier type="set" value="8" field="1509-720c-2a2f-ed46"/>
                     <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71"/>
-                    <modifier type="set" value="2+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                   </modifiers>
                 </infoLink>
                 <infoLink name="Splinter Pods" id="fbf2-d138-eb06-b8af" hidden="false" type="profile" targetId="65e0-a6c7-28a8-b93b"/>
@@ -1904,7 +1905,7 @@
                     <modifier type="set" value="Arena Champion" field="name"/>
                     <modifier type="set" value="8" field="1509-720c-2a2f-ed46"/>
                     <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71"/>
-                    <modifier type="set" value="2+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                   </modifiers>
                 </infoLink>
                 <infoLink name="Splinter Rifle" id="2953-18c1-ebf2-248f" hidden="false" type="profile" targetId="d008-7759-4774-f0c2"/>
@@ -2595,7 +2596,7 @@
                   <modifiers>
                     <modifier type="set" value="Solarite" field="name"/>
                     <modifier type="set" value="2+" field="4a75-e14b-051b-c0f1"/>
-                    <modifier type="set" value="2+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                   </modifiers>
                 </infoLink>
                 <infoLink name="Shardcarbine" id="cf7e-b376-a46f-aad0" hidden="false" type="profile" targetId="f3f7-90de-c0ca-39e8"/>

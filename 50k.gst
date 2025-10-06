@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -46,6 +46,11 @@
     <categoryEntry name="Psyker" id="c759-da28-35c5-802b" hidden="false">
       <infoLinks>
         <infoLink name="Psyker (X)" id="7802-e7da-9ecc-0742" hidden="false" type="rule" targetId="b70e-0d63-3b19-cc70"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Titanic" id="6527-3e3d-8902-74fd" hidden="false">
+      <infoLinks>
+        <infoLink name="Titanic" id="ec88-c4d4-decb-3a8b" hidden="false" type="rule" targetId="a3f2-b825-1ebf-c4fa"/>
       </infoLinks>
     </categoryEntry>
   </categoryEntries>
@@ -126,39 +131,35 @@
   <sharedRules>
     <rule name="Infiltrate" id="f6d2-4715-f8a6-5a6b" hidden="false">
       <comment>Deployment</comment>
-      <description>If every model in this model’s unit has this rule, it can be deployed anywhere that is at least 12” away from enemy units and more than 3” away from any Objective Marker during Deployment. Alternatively, if placed in reserves, it may enter from any board edge outside of the opponent’s deployment zone and outside of 6&quot; of enemy models.
+      <description>If every model in this model’s unit has this rule, it can be deployed anywhere that is at least 9” away from enemy units at the end of Deployment (after both players have Deployed). If it does so, it counts as having arrived from reserves (so cannot Move or Run on the first turn). 
 
 
-Units which arrive in this fashion may fire Assault weapons but suffer the same impact as Advancing Fire would apply.</description>
+Alternatively, if placed in reserves, it may enter from any board edge outside of the opponent’s deployment zone.</description>
     </rule>
     <rule name="Deep Strike" id="2f62-8a76-e9b0-d6e9" hidden="false">
       <comment>Deployment</comment>
       <description>If every model in this model’s unit has this rule, then when arriving from reserves, it can choose to Deep Strike instead of moving on from the board edge.
 
-They may instead be placed anywhere on the battlefield where they would be able to move to (ie. not on impassible terrain, not in base contact with other models, etc.) but all models must be in base contact with each other (or as close as possible). They must be outside of 6&quot; of any enemy models.
-
-For every model that arrives via Deep Strike into terrain, roll a d6. For every result of 1, the unit suffers a Mortal Wound (which must be allocated to one of those models).
-
-Units which arrive in this fashion may fire Assault weapons but suffer the same impact as Advancing Fire would apply.</description>
+All models which arrive via Deep Strike into terrain must make a Hazard Test. Wounds must be allocated to models which arrived in terrain.</description>
     </rule>
     <rule name="Fly" id="9802-fb17-c1b0-872b" hidden="false">
       <description>If every model in this model’s unit has this rule, then they can all add 3” to the Movement characteristic of the model. They may move over terrain and enemy models with no penalty to movement, but must account for vertical/diagonal distance to move over them.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Hover" id="3277-2533-ac2b-057c" hidden="false">
-      <description>This model ignores movement penalties imposed by terrain types other than Ruins and Buildings, but cannot be deployed on, or end its move on, a piece of terrain it would not otherwise be able to. It may move over enemy Infantry and Mounted units, but cannot end its move on top of either.</description>
+      <description>This model ignores movement penalties imposed by Low and Dense terrain, but cannot be deployed on, or end its move on, a piece of terrain it would not otherwise be able to. It may move over enemy Infantry and Mounted units, but cannot end its move on top of either.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Bulky" id="bdeb-e59a-e173-9286" hidden="false">
-      <description>Reduce movement by 2”, but ignore movement penalties imposed by all terrain types. Cannot benefit from any movement rules/abilities (such as Psychic Powers, Agile, or Fleet).</description>
+      <description>Always count as remaining stationary for the purpose of Actions. Cannot run. Cannot benefit from any movement rules/abilities (such as Agile, Fleet, Full Speed, or Psychic Powers).</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Agile" id="6248-ab86-68c5-20f4" hidden="false">
-      <description>May move up to 3” either before or after making a Shoot or Psychic action. If they do so, they suffer -1 To Hit for the purpose of Shooting.</description>
+      <description>May move up to 3” either before or after making a Shoot or Psychic action. If they do so, they count as moving for the purpose of Shooting.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Fleet" id="10f1-6b51-74e1-9df4" hidden="false">
-      <description>Can move an additional 2” when making a standard Move. Can charge 3 + 2d3” instead of 3 + d6”.</description>
+      <description>Each activation, you can choose to either move an additional 2” when making a standard Move, or charge 3 + 2d3” instead of 3 + d6”.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Immobile" id="7267-fda0-76c1-676e" hidden="false">
@@ -166,7 +167,7 @@ Units which arrive in this fashion may fire Assault weapons but suffer the same 
       <comment>Movement</comment>
     </rule>
     <rule name="Blast" id="dea7-ea35-acd5-89da" hidden="false">
-      <description>Fires 1 additional shot for every 5 models in the target unit (rounding down). Ignores cover.</description>
+      <description>Fire 1 additional shot for every 5 models in the target unit (rounding down).</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Template" id="c38c-dc1d-c4f5-572e" hidden="false">
@@ -174,7 +175,7 @@ Units which arrive in this fashion may fire Assault weapons but suffer the same 
       <description>Automatically hits the target unit. Ignores Cover.</description>
     </rule>
     <rule name="Indirect" id="a6e9-4ebe-ee95-acd8" hidden="false">
-      <description>May target units within range that are not within Line of Sight, but if it does, only hits of a natural 6 count as a hit.</description>
+      <description>May target units within range that are not within Line of Sight, but if it does, suffer -1 To Hit.</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Melta" id="f96d-d15b-8c08-65cd" hidden="false">
@@ -183,21 +184,21 @@ Units which arrive in this fashion may fire Assault weapons but suffer the same 
     </rule>
     <rule name="Sniper" id="e56f-ad5a-3951-8020" hidden="false">
       <comment>Weapon</comment>
-      <description>Does not suffer the penalty for Targeting a Character, and can target a Character even if they are within a unit (you must declare this before firing any shots).</description>
+      <description>Can target a Character even if they are within a unit (must be declared this before firing any shots). If the Character is not in a unit, ignore the -1 To Hit penalty for Targeting a Character.</description>
     </rule>
     <rule name="Poison (X)" id="7aa9-7da5-798b-3b53" hidden="false">
       <comment>Weapon</comment>
-      <description>To Hit rolls of X automatically wound Biological</description>
+      <description>To Hit rolls of X automatically wound Biological units.</description>
       <alias>Poison</alias>
     </rule>
     <rule name="Lance (X)" id="bead-be37-bfb9-d554" hidden="false">
       <comment>Weapon</comment>
-      <description>To Hit rolls of X automatically wound Mechanical</description>
+      <description>To Hit rolls of X automatically wound Mechanical units.</description>
       <alias>Lance</alias>
     </rule>
     <rule name="Cumbersome" id="5a6e-a9ab-0476-a128" hidden="false">
       <comment>Weaopn</comment>
-      <description>Halves the Initiative value of models attacking with this weapon.</description>
+      <description>Halve the Initiative value of models attacking with this weapon (before applying the +2 Charge bonus).</description>
     </rule>
     <rule name="Warpbane (X)" id="f966-9e70-fb4f-2da1" hidden="false">
       <comment>Weapon</comment>
@@ -206,31 +207,31 @@ Units which arrive in this fashion may fire Assault weapons but suffer the same 
     </rule>
     <rule name="Dangerous" id="764b-9d80-9510-108d" hidden="false">
       <comment>Weapon</comment>
-      <description>After attacking with this weapon, roll a D6. On a 1, the model suffers 1 Mortal Wound. If this model is in a squad, then all dangerous rolls are made at the same time, and Mortal Wounds must be applied only to models which fired a Dangerous weapon, even if another model in the unit has already lost wounds.</description>
+      <description>After attacking with this weapon, make a Hazard Test for this model. If this model is in a squad, then all Hazard Test rolls are made at the same time, and the Mortal Wounds must be applied only to models which fired a Dangerous weapon, even if another model in the unit has already lost wounds.</description>
     </rule>
     <rule name="Fear" id="44c6-55b7-292f-99ef" hidden="false">
-      <description>All enemy units within 6” reduce their Leadership by 1.</description>
+      <description>All enemy units within 6” worsen their Leadership by 1.</description>
     </rule>
     <rule name="Character" id="cbbc-99b6-4371-e441" hidden="false">
       <description>Characters may Join or Leave units in the Command Phase. They may only join a unit of the same Size and Composition. They may not join a unit that already contains a Character. Characters do not count towards the transport capacity of a vehicle if they are Joined with a unit.</description>
     </rule>
     <rule name="Psyker (X)" id="b70e-0d63-3b19-cc70" hidden="false">
-      <description>A unit with this special rule knows X Psychic Powers from any available discipline, chosen in the Build Armies step. It may attempt to cast any number of them each turn</description>
+      <description>A unit with this special rule knows X Psychic Powers from any available discipline, chosen in the Build Armies step. It may attempt to cast any number of them each turn.</description>
       <alias>Psyker</alias>
     </rule>
     <rule name="Stealth" id="c1af-e857-e57d-b4f3" hidden="false">
       <description>Enemy units suffer -1 To Hit this target using ranged Shooting attacks.</description>
     </rule>
     <rule name="Transport (X)" id="13aa-c030-2dbd-16fd" hidden="false">
-      <description>This model may transport up to X Infantry models (using the Embark / Disembark rules). Any units inside can be activated independently of the transport, however if the transport has moved then all models inside count as having performed the same type of movement. The only movement activation these units can use is Disembark.
+      <description>This model may transport up to X Infantry models. Any units inside can be activated independently of the transport, however if the transport has moved then all models inside count as having performed the same type of movement.
 
 
-If a transport is destroyed, all models inside must immediately take a Dangerous Terrain test (Mortal Wounds on a 6). Then all surviving models must immediately make an Emergency Disembark move. The transport model is then removed. Finally, all disembarked units must take a Break test.</description>
+If a transport is destroyed, all models inside must immediately make a Hazard Test. Then all surviving models must immediately make an Emergency Disembark. The transport model is then removed. All disembarked units then take a Break test.</description>
       <alias>Transport</alias>
       <alias>Transports</alias>
     </rule>
     <rule name="Firing Deck (X)" id="d111-e063-4372-fe92" hidden="false">
-      <description>Up to X transported models may choose targets outside of the transport in the Action Phase. They cannot do this if the transport moves at Full Speed.</description>
+      <description>Up to X transported models may choose targets outside of the transport in the Action Phase. They cannot do this if the transport ran.</description>
     </rule>
     <rule name="Unique" id="17f1-244a-b389-bd77" hidden="false">
       <description>Only one of these units may be included in an army.</description>
@@ -256,30 +257,45 @@ A1, S0, AP0, Lance (4+), Poison (4+), Warpbane (4+), Cumbersome, Dangerous</de
     </rule>
     <rule name="Leadership Test" id="0174-0bdf-8a78-479c" hidden="false">
       <alias>Leadership Tests</alias>
-      <description>To make a Leadership Test, roll a D6, adding 1 for every 5 models in the unit (rounding down), and adding an additional 1 if the unit is wholly within its deployment zone. If the result meets or exceeds the Leadership value, then the test is passed. Unless otherwise specified, this test uses the lowest Leadership in the unit.</description>
+      <description>To make a Leadership Test, roll a 2d6, adding 1 for every 10 models in the unit (rounding down), and adding an additional 1 if the unit is wholly within its deployment zone. If the result meets or exceeds the Leadership value, then the test is passed. Unless otherwise specified, this test uses the lowest Leadership in the unit.</description>
     </rule>
     <rule name="Psychic Test" id="8c7e-df05-d1de-621e" hidden="false">
       <alias>Psychic Tests</alias>
-      <description>To cast a Psychic Power, select a model to cast and a target unit. Make a Leadership Test using the Leadership value of the model casting the power (this may be different to the best Leadership in the unit). No modifiers can be applied to this test based on unit size or deployment zone.
+      <description>To cast a Psychic Power, select a model to cast and a target unit. Make a Leadership Test using the unmodified Leadership value of the model casting the power.
 
-
-If the test is passed, the Psychic Power is successfully cast. If the test is failed, the Psychic Power is not successfully cast. In addition, if a natural 1 was rolled, roll another D6 and consult the Warp Effects table.
-
+If the test is passed, the Psychic Power is successfully cast. If the test is failed, the Psychic Power is not successfully cast. In addition, if a natural 2 was rolled, roll another D6 and consult the Warp Effects table.
 
 1      -   The caster is slain
 2      -   The caster takes 1 Mortal Wound and cannot cast any more Psychic Powers this phase
 3      -   The caster cannot cast any more Psychic Powers this phase
 4-6   -   No effect
 
+Note that Psychic Powers which target a unit (friend or enemy) require Line of Sight and are affected by terrain. They can target friendly units which are in Engaged, but cannot target enemy units if either the target or the casting unit are Engaged (unless otherwise specified). A unit’s characteristics (including movement distance) can only ever be affected by the same Psychic Power once, even though it can be targeted (and damaged) by the same Psychic Power multiple times.
 
-Note that Psychic Powers which target a unit (friend or enemy) require Line of Sight. However, they can target units which are in Engaged (unless otherwise specified). A unit’s characteristics (including movement distance) can only ever be affected by the same Psychic Power once, even though it can be targeted (and damaged) by the same Psychic Power multiple times.</description>
+
+If it chooses to cast the same power multiple times within a round, it is subject to the following rules:
+- For each subsequent cast of the power, roll an additional d6, taking the lowest result
+- For each subsequent cast of the power, subtract 1 to the Warp Effects table
+- If the power fails to be cast, it cannot be cast again in that round</description>
     </rule>
     <rule name="Reserve Move" id="b5ff-b5f5-d4ee-f860" hidden="false">
       <alias>Reserves</alias>
-      <description>Restrictions: Cannot be the first turn. Must be in reserves.
+      <description>Restrictions: Cannot be your first turn. Must be in reserves.
 
 
-A unit that is currently held in reserve may move onto the battlefield from any point on the edge of the board which is within the owning player’s deployment zone and outside of 6&quot; of enemy models. Each model in the unit moves as though disembarking from that point (place the model in base contact with the point, move it, and ensure it does not end more than 6” away from that point).</description>
+A unit that is currently held in reserve may move onto the battlefield from any point on the edge of the board which is within the owning player’s deployment zone. Each model in the unit moves as though disembarking from that point (place the model in base contact with the point, move it, and ensure it does not end more than 6” away from that point).
+
+
+If all models in a unit have the Infiltrate special rule, then they may instead arrive from any point on the edge of the board that is outside of the opposing player’s deployment zone.
+
+
+If all models in the unit have the Deep Strike special rule, then they may instead be placed anywhere on the battlefield where they would be able to move to (ie. not on impassible terrain, not in base contact with other models, etc.) but all models must be in base contact with each other (or as close as possible).
+
+
+Regardless of how the unit moves onto the battlefield, all models must end outside of 6” of any enemy models. 
+
+
+Units which arrive in this fashion may not run.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Take Cover" id="ffb4-aedf-9400-f4d8" hidden="false">
@@ -294,17 +310,15 @@ Do not move. In the Action phase, this unit cannot voluntarily move (eg. Run/Cha
       <comment>Movement</comment>
       <description>Restrictions: Cannot be Broken, Engaged, or Embarked. Must be Infantry. Transport cannot be Broken or Engaged. Other units cannot have Disembarked in this transport in this turn.
 
+
 If all models in an Infantry unit can move such that they end within base contact of a transport which is not engaged and has sufficient capacity for the whole unit, the unit can choose to embark in that transport.</description>
     </rule>
     <rule name="Disembark" id="233b-f740-61d4-ed11" hidden="false">
       <comment>Movement</comment>
-      <description>Restrictions: Cannot be Broken or Engaged. Must be Infantry. Must be Embarked. Transport cannot be Broken or Engaged. Transport cannot have made a Reserve Move. Other units cannot have Embarked in this transport in this turn.
+      <description>Restrictions: Cannot be Broken or Engaged. Must be Infantry. Must be Embarked. Transport cannot be Broken or Engaged. Transport cannot have moved. Other units cannot have Embarked in this transport in this turn.
 
 
-A unit which is currently embarked in a transport can disembark by placing each model on the battlefield in base contact with the transport, and then moving them as per a standard move. However, they cannot end more than 6” away from the transport.
-
-
-If the whole unit cannot be placed within these restrictions and maintain coherency, then it cannot disembark.</description>
+A unit which is currently embarked in a transport can disembark by placing each model on the battlefield in base contact with the transport, and then moving them as per a standard move. However, they cannot end more than 6” away from the transport.</description>
     </rule>
     <rule name="Emergency Disembark" id="968d-ed32-6c87-cc00" hidden="false">
       <description>If a squad is forced to disembark (such as through the destruction of the transport), then all models must be placed as close to the transport as possible (ie. within base contact if possible). Any model which cannot be placed in coherency with the rest of the squad and outside of base contact with models in other units is slain.</description>
@@ -321,92 +335,87 @@ The unit then immediately becomes Broken.</description>
     </rule>
     <rule name="Pistol" id="f318-474d-5d79-175e" hidden="false">
       <comment>Weapon</comment>
-      <description>Can shoot in combat. Cannot be used if other non-Pistol weapons are used</description>
+      <description>Can be fired when engaged without taking the -1 To Hit penalty</description>
     </rule>
     <rule name="Assault" id="d0b6-0c6b-c28a-cc2a" hidden="false">
-      <description>Can use choose to use Advancing Fire:
-    * Can only target the closest unit
-    * Suffer -1 To Hit
-    * Once shooting is complete, move up to 3”
-    * Must end closer to the unit you targeted (if that unit was destroyed, you can move in any direction)</description>
+      <description>Do not suffer the -1 To Hit penalty when shooting after moving</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Rapid Fire" id="caa5-5eff-4834-78d2" hidden="false">
-      <description>Can choose to fire 2 shots at half range, but if you do so you can only target the closest unit</description>
+      <description>Can fire double shots when in half range but only at the closest target</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Heavy" id="5080-657a-2368-b490" hidden="false">
       <comment>Weapon</comment>
-      <description>Cannot perform any other actions (such as psychic powers that allow you to immediately shoot) or benefit from any movement rules/abilities (such as Agile, transport movement, etc.) when fired</description>
+      <description>Infantry and Mounted cannot fire after moving</description>
     </rule>
     <rule name="Run" id="5852-841f-6fe7-77a3" hidden="false">
       <comment>Action</comment>
-      <description>Restrictions: Cannot be Broken, Engaged, or Embarked. Cannot be Bulky
+      <description>Restrictions: Cannot be Broken, Engaged, or Embarked. Cannot be Bulky. Cannot have arrived from reserves.
 
 
-A run counts as a standard move, but models can only move 6” regardless or Size or the Fly special rule.</description>
+Units can run 3”. This distance is not impacted by any rules (eg. Fly, Fleet, Full Speed), but the movement itself is impacted by rules (eg. Hover, Fly).</description>
+      <alias>Ran</alias>
     </rule>
     <rule name="Charge" id="f9c1-075e-f29d-1b0b" hidden="false">
       <comment>Action</comment>
       <description>Restrictions: Cannot be Broken, Engaged, or Embarked. Each target unit must be within 9” of at least one model in the unit and within Line of Sight.
 
+All models in the unit can move 3 + d6&quot; towards the target unit(s). Units which successfully charged gain +2 Initiative (to a maximum of 10, applied after any other modifiers).
 
-Multiple units can be the target of a single charge. If the charge is not sufficient to reach any of the target units, then the unit moves 3” directly towards the nearest target. If the charge is sufficient to reach some, but not all, of the target units, then the charging unit will not gain the benefit of doubled Initiative in the first round of combat.
-
-
-All models in the charging unit must end as close as possible to a model in at least one of the target units.</description>
+Multiple units can be the target of a single charge. All models in the charging unit must end as close as possible to a model in at least one of the target units. If the charge is sufficient to reach some, but not all, of the target units, then the charging unit will not gain the benefit of doubled Initiative in the first round of combat. If the charge is insufficient to reach all of the target units, then the unit does not move at all.</description>
     </rule>
     <rule name="Break Test" id="3803-5760-b37a-5781" hidden="false">
-      <description>A unit can only make one Break Test per phase. Rolls of 6 are always successful.
-
+      <description>A unit can only make one Break Test per phase. Rolls of 12 are always successful.
 
 If a unit has taken 25% casualties in the Action Phase (ie. 25% or more of the models that were in the unit at the start of the Action Phase are slain), then a unit must make a Break Test. This is done immediately after the end of the activation that causes the 25% loss. Similarly, if a unit is on the side that lost Combat, it must make a Break Test.
 
-
-If the test is failed, the unit must immediately make an Involuntary Fall Back move.</description>
+If the test is failed, the unit is Broken and must immediately make an Involuntary Fall Back move.</description>
     </rule>
     <rule name="Mortal Wound" id="5878-414f-f540-2b4e" hidden="false">
       <alias>Mortal Wounds</alias>
       <description>No saves of any type can be made against Mortal Wounds - they bypass Armour, Invulnerable, Psychic, and Feel No Pain saves.</description>
     </rule>
     <rule name="Broken" id="ccae-1cf2-e93b-a9ee" hidden="false">
-      <description>Units which are broken cannot act in the Command, Move, or Action phases, and halve their Weapon Skill in the Fight phase.</description>
+      <description>Units which are broken cannot perform Additional Command Phase abilities or be selected in the Activations Phase. They also halve their Weapon Skill in the Fight phase (before applying the +2 Charge bonus).</description>
     </rule>
     <rule name="Engaged" id="ef09-925e-b43b-b70d" hidden="false">
-      <description>A unit is said to be engaged with an enemy unit if any of its models are in base contact with a model in the enemy unit (ie. their bases are touching, or they are as close to touching as possible given the poses, limbs, and weapons of the models allow). A unit can be engaged with multiple enemy units at once.
+      <description>A unit is said to be engaged with an enemy unit if any of its models are in base contact with a model in the enemy unit (ie. their bases are touching, or they are as close to touching as possible given as the models allow). A unit can be engaged with multiple enemy units at once.
 
 
-Infantry and Mounted units which are engaged with other Infantry or Mounted units have additional restrictions on their actions:
+Engaged models:
 - They must take a Fall Back move to leave engagement range
-- They cannot shoot with any weapons other than pistols, and cannot shoot at any units other than those they are engaged with
+- Infantry and Mounted can only shoot Pistol weapons
+- Walkers cannot shoot Heavy weapons
+- Cannot shoot at or be shot by units other than those they are engaged with
+- Cannot shoot with or be shot by Blast weapons
 
 
-Blast weapons can never be used to shoot at any engaged models, regardless of the attacker or target types.</description>
+Tank and Titanic models never count towards units being engaged for the purpose of the above restrictions. ie.
+* Tank/Titanic models can always freely shoot and be shot at
+* Enemy units in base contact with only Tank/Titanic models can move freely and can shoot and be shot at
+* Tank/Titanic models still attack and can be attacked in the Combat phase if in base contact with enemy units</description>
     </rule>
     <rule name="Involuntary Fall Back Move" id="638a-61b4-8f4f-1dc9" hidden="false">
       <alias>Involuntary Fall Back Moves</alias>
       <description>An Involuntary Fall Back move counts as a Fall Back move, but it has additional restrictions on how the unit moves. The unit must move move up to its full Movement value, stopping only if:
-- There is Impassable terrain it cannot move around (it must end in base contact with this terrain)
-- There are friendly units it cannot move around (it must end 1” away from these units) - note that Infantry units can still move through friendly Infantry units, as long as they end 1” away from each other
-- There are enemy units that it cannot move around (it must end outside of Combat with these units)
+
+
+There is Impassable terrain it cannot move around (it must end in base contact with this terrain)
+There are friendly units it cannot move around (it must end 1” away from these units) - note that Infantry units can still move through friendly Infantry units, as long as they end 1” away from each other
+There are enemy units that it cannot move around (it must end outside of Combat with these units)
 
 
 If this movement is caused by a Break Test, the unit must attempt to end its move as far away from all units that damaged it in this Phase. Otherwise, it must move as directly as possible toward the closest point on its board edge.
 
 
-If this movement takes the unit into contact with the edge of the board, then it is destroyed.
-
-
-If a unit which is Engaged is forced to make an Involuntary Fall Back Move, but it is not possible to end this move all models outside of Engagement range, then the unit cannot Fall Back. Instead, roll one D6 for each model in the unit. For every result of 1, the unit suffers a Mortal Wound. The unit then remains in Combat but remains Broken.</description>
+If this movement takes the unit into contact with the edge of the board, then it is destroyed.</description>
     </rule>
     <rule name="Full Speed" id="1725-7fd4-0d06-70b0" hidden="false">
       <description>Can move an additional 3&quot;, as long as the entire move is in a straight line.</description>
     </rule>
     <rule name="Torrent" id="5f8d-1ad7-3fc2-4d72" hidden="false">
-      <description>Automatically hits the target unit. Ignore Cover. If the model moves for any reason (eg via Agile, Deep Strike, a transport movement, etc.), they instead hit on 4+ but do not apply any To Hit modifiers.
-
-
-If the weapon also has Poison, Lance, or Warpbane, roll To Hit rolls regardless to see if any of them auto-wound, and then roll To Wound on any dice which don&apos;t auto-wound.</description>
+      <description>Always hit automatically if stationary, or on natural rolls of 4+ after moving</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Large" id="b104-bf24-10a2-e9a4" hidden="false">
@@ -417,6 +426,18 @@ If the weapon also has Poison, Lance, or Warpbane, roll To Hit rolls regardless 
 
 
 For example, a S10 weapon vs AV 9 requires a 3+ to hit. If a 4 is rolled, the target will take 2 wounds. If a 6 is rolled, the target will take 4 wounds. If a 6 is rolled and the weapon has Melta and is within half range, then the target will take 5 wounds.</description>
+    </rule>
+    <rule name="Titanic" id="a3f2-b825-1ebf-c4fa" hidden="false">
+      <description>Units containing only Titanic models add 3” to their maximum move. However, Titanic units cannot Run.
+
+
+Titanic units cannot gain cover from terrain features, but are not slowed or damaged by terrain.
+
+
+Units shooting at Titanic units gain +1 To Hit.</description>
+    </rule>
+    <rule name="Ordinance" id="b210-3852-97b3-dd98" hidden="false">
+      <description>Cannot fire after moving</description>
     </rule>
   </sharedRules>
   <costTypes>

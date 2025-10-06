@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Battlesuit" id="b083-7a5c-1d92-5ca6" hidden="false">
       <constraints>
@@ -47,9 +47,9 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">18&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">6</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">0</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
@@ -137,7 +137,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">36&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">12</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">6</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
@@ -277,7 +277,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">14&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">6</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
@@ -287,7 +287,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">24&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">0</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
@@ -337,7 +337,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">72&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">12</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">4</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Penetrating</characteristic>
@@ -443,7 +443,7 @@
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -523,7 +523,7 @@
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -590,7 +590,7 @@
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -632,7 +632,7 @@
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -669,7 +669,7 @@
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -765,7 +765,7 @@
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -869,7 +869,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -899,7 +899,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1011,7 +1011,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1043,7 +1043,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1075,7 +1075,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1162,7 +1162,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1204,7 +1204,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1266,7 +1266,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1328,7 +1328,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1362,7 +1362,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1407,7 +1407,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">1</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1479,7 +1479,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1518,7 +1518,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1565,7 +1565,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1608,7 +1608,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1640,7 +1640,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1694,7 +1694,7 @@
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1752,7 +1752,7 @@
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1833,16 +1833,14 @@
       <profiles>
         <profile name="Riptide" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="abbd-1794-0564-8471">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -1927,16 +1925,14 @@
       <profiles>
         <profile name="Ghostkeel" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="9b3c-bce4-3ae0-100c">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2024,8 +2020,6 @@
           <profiles>
             <profile name="Piranha" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="988a-492b-88cc-fce0">
               <characteristics>
-                <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-                <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
                 <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
                 <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
                 <characteristic name="S" typeId="cd7c-e257-6d0e-3291">4</characteristic>
@@ -2033,7 +2027,7 @@
                 <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
                 <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
                 <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
                 <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
                 <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
                 <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2176,8 +2170,6 @@
       <profiles>
         <profile name="Hammerhead" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b1c4-f56e-4491-40dd">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -2185,7 +2177,7 @@
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2255,8 +2247,6 @@
       <profiles>
         <profile name="Sky Ray" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="1eea-b902-45e5-996d">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -2264,7 +2254,7 @@
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2333,8 +2323,6 @@
       <profiles>
         <profile name="Devilfish" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="cc7e-b8cf-d43e-34a0">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -2342,7 +2330,7 @@
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>

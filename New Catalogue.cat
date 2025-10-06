@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="86c1-35b4-c984-858a" name="aLib - Chaos" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="86c1-35b4-c984-858a" name="aLib - Chaos" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Khorne: Boon of Rage" id="6dd3-7c64-ea26-063b" hidden="false">
       <description>Natural rolls of 6 to hit in the Fight Phase count as 2 hits.</description>
       <alias>Boon of Rage</alias>
     </rule>
     <rule name="Nurgle: Boon of Pestilence" id="85a2-9959-0d31-39d0" hidden="false">
-      <description>Always count as being in Soft Cover</description>
+      <description>Always count as being in Soft Cover. This is not cumulative with other Soft / Hard / Fortified cover.</description>
       <alias>Boon of Pestilence</alias>
     </rule>
     <rule name="Slaanesh: Boon of Swiftness" id="6f24-d2c5-2c7f-32b6" hidden="false">

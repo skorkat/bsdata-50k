@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -539,7 +539,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -558,7 +558,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -623,7 +623,7 @@ The unit gains the following special rules:
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -685,7 +685,7 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">10+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -700,7 +700,7 @@ The unit gains the following special rules:
             <infoLink name="Grot Blasta" id="14fe-d56b-1abf-7aae" hidden="false" type="profile" targetId="a6f9-7c56-4fb6-4e3b"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Runtherd" hidden="false" id="e823-7c5a-afec-b350">
@@ -772,8 +772,6 @@ The unit gains the following special rules:
       <profiles>
         <profile name="Trukk" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5d23-4902-f24a-94ab">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -781,7 +779,7 @@ The unit gains the following special rules:
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -830,7 +828,7 @@ The unit gains the following special rules:
                 <infoLink name="Shoota" id="8310-a4e3-09d9-37b6" hidden="false" type="profile" targetId="6169-2203-4d90-885d"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <constraints>
                 <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="7331-ecb2-acfb-8f16" includeChildSelections="false"/>
@@ -871,7 +869,7 @@ The unit gains the following special rules:
                 <infoLink name="Ork Boy" id="b38f-3c74-aa18-41b0" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8cc1-8df3-0b28-c09d" includeChildSelections="false"/>
@@ -969,7 +967,7 @@ The unit gains the following special rules:
                 <infoLink name="Choppa" id="8ce3-56fb-2c5e-a964" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
               </costs>
               <constraints>
                 <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="bf15-21b7-9df9-9002" includeChildSelections="false"/>
@@ -1057,7 +1055,7 @@ The unit gains the following special rules:
             <infoLink name="Burna [Shooting]" id="060a-32ae-5034-fb41" hidden="false" type="profile" targetId="1226-5a68-4220-9bf4"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mek" hidden="false" id="de09-7191-428d-c005">
@@ -1069,7 +1067,7 @@ The unit gains the following special rules:
             <infoLink name="Choppa" id="c76a-9e99-fa97-18e0" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="5fd5-76f8-7433-9982" hidden="false">
@@ -1122,7 +1120,7 @@ The unit gains the following special rules:
             <infoLink name="Deffgun" id="e21f-5d5c-8c9b-ed67" hidden="false" type="profile" targetId="141e-f7ec-4f61-fee1"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mek" hidden="false" id="8236-a591-ffe1-c838">
@@ -1134,7 +1132,7 @@ The unit gains the following special rules:
             <infoLink name="Choppa" id="6fcf-c915-b19d-fc48" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="1fbc-56ba-7118-cc0c" hidden="false">
@@ -1179,7 +1177,7 @@ The unit gains the following special rules:
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Tankbusta" hidden="false" id="b5eb-16fd-2bae-eb1a">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
           </costs>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d0bd-e1c8-b73d-94f0" includeChildSelections="false"/>
@@ -1248,7 +1246,7 @@ The unit gains the following special rules:
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
               </costs>
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3de2-55e3-5882-5b43" includeChildSelections="false"/>
@@ -1275,7 +1273,7 @@ The unit gains the following special rules:
                 <infoLink name="Ork Boy" id="7006-3967-fbc3-955b" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="132"/>
               </costs>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c684-82ec-9044-e5a9" includeChildSelections="false"/>
@@ -1416,7 +1414,7 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">1</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">9+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1500,8 +1498,6 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Killa Kan" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="029f-339c-a51f-3d93">
               <characteristics>
-                <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-                <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
                 <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
                 <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
                 <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
@@ -1509,7 +1505,7 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
                 <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
                 <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">9+</characteristic>
                 <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
                 <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
                 <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -1536,8 +1532,6 @@ The unit gains the following special rules:
       <profiles>
         <profile name="Deff Dread" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="0d07-49d1-667a-f333">
           <characteristics>
-            <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Wa</characteristic>
-            <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
@@ -1545,7 +1539,7 @@ The unit gains the following special rules:
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -1647,7 +1641,7 @@ The unit gains the following special rules:
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Squig Hog Boy" hidden="false" id="1783-19fb-ea23-7f14">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="29"/>
           </costs>
           <profiles>
             <profile name="Squig Hog Boy" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="966e-2cdc-5564-bd84">
@@ -1737,7 +1731,7 @@ The unit gains the following special rules:
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -1968,8 +1962,6 @@ The unit gains the following special rules:
           <profiles>
             <profile name="Buggy" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="67a0-a363-05e3-4c0d">
               <characteristics>
-                <characteristic name="Size" typeId="dac7-90ac-f062-7ecc">Ta</characteristic>
-                <characteristic name="Type" typeId="c454-f65a-d979-6cda">M</characteristic>
                 <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
                 <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
                 <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
@@ -1977,7 +1969,7 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
                 <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
                 <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">8+</characteristic>
                 <characteristic name="OC" typeId="288a-146b-8aa9-78b1">1</characteristic>
                 <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">5+</characteristic>
                 <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2030,7 +2022,7 @@ The unit gains the following special rules:
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="4238-741d-4379-56a5" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Storm Boy Nob" hidden="false" id="1b72-eb35-cac3-0e79">
@@ -2086,7 +2078,7 @@ The unit gains the following special rules:
             <infoLink name="Choppa" id="991e-067b-165a-ca48" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="26"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a755-8ca6-7131-769e" includeChildSelections="false"/>
@@ -2162,7 +2154,7 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2313,6 +2305,8 @@ The unit gains the following special rules:
                 </modifier>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
+                <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Squig Hog" hidden="false" id="88dd-aedf-8656-d049" sortIndex="4">
@@ -2324,6 +2318,8 @@ The unit gains the following special rules:
                 </modifier>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="6" field="229e-fdb9-4bbc-f6ff" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
+                <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
@@ -2464,6 +2460,8 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="7" field="229e-fdb9-4bbc-f6ff" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="7" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
+                <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="cf29-1bf1-d733-0827" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
@@ -2493,6 +2491,8 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="7" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
+                <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
+                <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="300f-e108-ac61-a892" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
@@ -2528,7 +2528,7 @@ The unit gains the following special rules:
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">5</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2598,6 +2598,8 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="6" field="229e-fdb9-4bbc-f6ff" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
+                <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="37a6-2b3b-0d65-5611" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
@@ -2627,6 +2629,8 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
+                <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
+                <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="a1df-b712-2ea5-ff1c" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
@@ -2684,7 +2688,7 @@ The unit gains the following special rules:
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2754,6 +2758,8 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="6" field="229e-fdb9-4bbc-f6ff" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
+                <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="9f2d-6286-8c63-3db4" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
@@ -2777,6 +2783,8 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
+                <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
+                <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="a847-8667-e42d-ceec" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
@@ -2803,7 +2811,7 @@ The unit gains the following special rules:
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>

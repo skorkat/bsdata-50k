@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -100,7 +100,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="071e-4491-ac86-a982"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="8"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -136,7 +136,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Flamer" id="bf0f-34d1-5e5c-a782" hidden="false" type="profile" targetId="91be-b5b3-c375-8fbb"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Jungle Fighter Sergeant" hidden="false" id="abae-b479-9c5a-02aa" sortIndex="3">
@@ -147,13 +147,13 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <infoLinks>
                 <infoLink name="Jungle Fighter" id="4d40-345a-c0d3-5a22" hidden="false" type="profile" targetId="3c6d-9b09-636e-32b1">
                   <modifiers>
-                    <modifier type="set" value="3+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="6+" field="d131-a398-ad21-bb05"/>
                     <modifier type="set" value="Sergeant" field="name"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="8"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="4cd5-f6e3-9ec1-7c68" type="selectionEntryGroup" targetId="e23f-6f9f-ab2f-1957"/>
@@ -169,7 +169,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Laspistol" id="8720-b0b6-6454-198c" hidden="false" type="profile" targetId="fa1d-5cc8-457c-c5e4"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -202,7 +202,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Scion" id="8918-8c1d-ae6b-b58d" hidden="false" type="profile" targetId="f1c0-aab2-0e91-adb3"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon" id="2fbc-8c8a-909f-ff9a" hidden="false">
@@ -256,13 +256,13 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <infoLinks>
                 <infoLink name="Scion" id="4b2e-2611-e5d0-f9fe" hidden="false" type="profile" targetId="f1c0-aab2-0e91-adb3">
                   <modifiers>
-                    <modifier type="set" value="3+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="6+" field="d131-a398-ad21-bb05"/>
                     <modifier type="set" value="Sergeant" field="name"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="9f64-9d5f-8d1e-d1f4" type="selectionEntryGroup" targetId="e23f-6f9f-ab2f-1957"/>
@@ -278,7 +278,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Hot-shot Lasgun" id="b115-c1d6-9cc8-5b52" hidden="false" type="profile" targetId="f4dd-7f67-0df7-370e"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -309,7 +309,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Guardsman" id="12b8-7257-8755-db16" hidden="false" type="profile" targetId="45b5-f114-90cd-7ce0"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="8"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon" id="92b1-668f-30a6-e360" hidden="false">
@@ -363,13 +363,13 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <infoLinks>
                 <infoLink name="Guardsman" id="676f-c370-8edc-b0f1" hidden="false" type="profile" targetId="45b5-f114-90cd-7ce0">
                   <modifiers>
-                    <modifier type="set" value="3+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="6+" field="d131-a398-ad21-bb05"/>
                     <modifier type="set" value="Sergeant" field="name"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="4142-c984-947c-0656" type="selectionEntryGroup" targetId="e23f-6f9f-ab2f-1957"/>
@@ -385,12 +385,12 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Lasgun" id="3c75-5a8c-ec15-41d0" hidden="false" type="profile" targetId="adc0-6fe3-4450-2225"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="8"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heavy Weapon Team" hidden="false" id="6a31-ef40-be80-8f3d" sortIndex="3">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
               </costs>
               <infoLinks>
                 <infoLink name="Heavy Weapons Team" id="f7c7-b446-abf2-ee7e" hidden="false" type="profile" targetId="3d65-050f-ce21-f699"/>
@@ -591,7 +591,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e774-f1cf-5d14-9c8c"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -691,7 +691,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <modifiers>
                 <modifier type="set" value="Overseer" field="name"/>
                 <modifier type="set" value="3" field="1509-720c-2a2f-ed46"/>
-                <modifier type="set" value="3+" field="d131-a398-ad21-bb05"/>
+                <modifier type="set" value="6+" field="d131-a398-ad21-bb05"/>
                 <modifier type="set" value="3" field="5f1f-bbd0-4afe-2c55"/>
               </modifiers>
             </infoLink>
@@ -799,7 +799,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <modifiers>
                 <modifier type="set" value="Bone&apos;ead" field="name"/>
                 <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71"/>
-                <modifier type="set" value="3+" field="d131-a398-ad21-bb05"/>
+                <modifier type="set" value="6+" field="d131-a398-ad21-bb05"/>
                 <modifier type="set" value="2+" field="badd-cd3a-81ca-6883">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="self" childId="fb4c-f01d-0546-40a6" shared="true"/>
@@ -870,7 +870,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             <infoLink name="Sniper Rifle" id="2ecc-b39d-7680-0456" hidden="false" type="profile" targetId="41ee-f79d-43c3-1998"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="39ce-f2f7-53e8-8a05"/>
@@ -890,7 +890,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             <infoLink name="Rough Rider" id="9da9-ba39-a7ec-5a76" hidden="false" type="profile" targetId="a306-c5bc-ab15-bd8f">
               <modifiers>
                 <modifier type="set" value="Rough Rider Sergeant" field="name"/>
-                <modifier type="set" value="3+" field="d131-a398-ad21-bb05"/>
+                <modifier type="set" value="6+" field="d131-a398-ad21-bb05"/>
               </modifiers>
             </infoLink>
             <infoLink name="Lasgun" id="7992-6805-8191-56e7" hidden="false" type="profile" targetId="adc0-6fe3-4450-2225"/>
@@ -1860,7 +1860,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <modifiers>
                 <modifier type="set" value="Tank Commander" field="name"/>
                 <modifier type="set" value="3+" field="6ba5-adee-cf9c-7941"/>
-                <modifier type="set" value="2+" field="1749-ccde-02fe-ae92"/>
+                <modifier type="set" value="5+" field="1749-ccde-02fe-ae92"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -1931,7 +1931,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <infoLinks>
                 <infoLink name="Jungle Veteran" id="96f3-f086-140c-f68a" hidden="false" type="profile" targetId="f97f-2b61-ebd9-a071">
                   <modifiers>
-                    <modifier type="set" value="2+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                     <modifier type="set" value="Jungle Commander" field="name"/>
                     <modifier type="set" value="5++" field="4cb6-278f-f4f3-4747"/>
                     <modifier type="set" value="2" field="87c8-8544-6110-218d"/>
@@ -1946,7 +1946,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapon" id="fcd0-cc23-06dd-26af" hidden="false">
@@ -2047,7 +2047,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Jungle Veteran" id="aee9-5afa-397b-f9da" hidden="false" type="profile" targetId="f97f-2b61-ebd9-a071"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="8"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Ranged Weapon" id="f4ea-d705-0b60-0333" hidden="false">
@@ -2149,7 +2149,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <infoLinks>
                 <infoLink name="Scion Veteran" id="8456-1cb7-7406-cf82" hidden="false" type="profile" targetId="08fe-e9cd-0799-241a">
                   <modifiers>
-                    <modifier type="set" value="2+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                     <modifier type="set" value="Jungle Commander" field="name"/>
                     <modifier type="set" value="5++" field="4cb6-278f-f4f3-4747"/>
                     <modifier type="set" value="2" field="87c8-8544-6110-218d"/>
@@ -2165,7 +2165,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Krak Grenades" id="0e93-7d6b-f02b-aca2" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="19"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapon" id="f4fd-7ce9-a88e-735d" hidden="false">
@@ -2300,7 +2300,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Krak Grenades" id="ef68-5140-5c34-c607" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Ranged Weapon" id="2c52-465e-8a45-b36a" hidden="false">
@@ -2426,7 +2426,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
               <infoLinks>
                 <infoLink name="Infantry Veteran" id="1e3a-1ebe-04d3-baaf" hidden="false" type="profile" targetId="fc27-5ce1-989f-9410">
                   <modifiers>
-                    <modifier type="set" value="2+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
                     <modifier type="set" value="Infantry Commander" field="name"/>
                     <modifier type="set" value="5++" field="4cb6-278f-f4f3-4747"/>
                     <modifier type="set" value="2" field="1360-fc4d-7954-1f62"/>
@@ -2440,7 +2440,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapon" id="17f2-e805-543e-b985" hidden="false">
@@ -2566,7 +2566,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
                 <infoLink name="Infantry Veteran" id="12eb-d426-34aa-d355" hidden="false" type="profile" targetId="fc27-5ce1-989f-9410"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Ranged Weapon" id="6965-e812-1994-4cf2" hidden="false">
@@ -2691,7 +2691,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2707,7 +2707,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2723,7 +2723,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2749,7 +2749,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2765,7 +2765,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2777,8 +2777,8 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">48&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">4</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">0</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect</characteristic>
       </characteristics>
     </profile>
@@ -2791,7 +2791,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -2807,7 +2807,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -2823,7 +2823,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -2847,7 +2847,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2863,7 +2863,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2879,7 +2879,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2923,7 +2923,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2947,21 +2947,11 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Multi-laser" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="5f19-b2ac-d6b7-2654">
-      <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">36&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">4</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">6</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Chimera" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="09e2-f237-ad16-739b">
@@ -2973,7 +2963,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -2989,7 +2979,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -3005,7 +2995,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -3021,7 +3011,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -3097,7 +3087,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -3129,7 +3119,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -3175,21 +3165,11 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Battle Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="89e1-30ae-77cd-2d5b">
-      <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">72&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">8</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast</characteristic>
       </characteristics>
     </profile>
     <profile name="Vanquisher Battle Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="401c-c1c4-d2b0-8565">
@@ -3221,7 +3201,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">3</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
@@ -3237,7 +3217,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -3253,7 +3233,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -3269,7 +3249,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
