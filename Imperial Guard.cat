@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -1471,7 +1471,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b83f-549a-3302-1b59"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="100"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="90"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3051,7 +3051,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
     <profile name="Earthshaker Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="5acc-4a5c-e7c2-6b1e">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">240&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Ordinance</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">8</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
@@ -3061,7 +3061,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
     <profile name="Deathstrike Missile" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="55d2-9339-fa22-cee8">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">100&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Ordinance</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">4d3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">5</characteristic>
@@ -3071,7 +3071,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
     <profile name="Storm Eagle Rockets" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="504d-19a1-4c9a-7a0d">
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">120&quot;</characteristic>
-        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Ordinance</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
@@ -3702,7 +3702,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Delayed Launch" id="a658-e3f8-865b-16f1" hidden="false">
-      <description>When choosing to fire this weapon, you must first roll a d6. If you roll less than your current round number, then you can fire the weapon. Otherwise, you cannot fire it this turn.</description>
+      <description>When choosing to fire this weapon, you must first roll a d3. If you roll less than your current round number, then you can fire the weapon. Otherwise, you cannot fire it this turn.</description>
     </rule>
   </sharedRules>
 </catalogue>

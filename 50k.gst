@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -428,13 +428,16 @@ If this movement takes the unit into contact with the edge of the board, then it
 For example, a S10 weapon vs AV 9 requires a 3+ to hit. If a 4 is rolled, the target will take 2 wounds. If a 6 is rolled, the target will take 4 wounds. If a 6 is rolled and the weapon has Melta and is within half range, then the target will take 5 wounds.</description>
     </rule>
     <rule name="Titanic" id="a3f2-b825-1ebf-c4fa" hidden="false">
-      <description>Units containing only Titanic models add 3” to their maximum move. However, Titanic units cannot Run.
+      <description>Titanic models:
+- Add 3” to their maximum move
+- Cannot Run
+- Do not suffer the -1 To Hit penalty for moving &amp; shooting
+- Cannot gain cover from terrain features
+- Are not slowed or damaged by terrain
+- Can move over other non-Titanic units, but cannot end their move on top of them
 
 
-Titanic units cannot gain cover from terrain features, but are not slowed or damaged by terrain.
-
-
-Units shooting at Titanic units gain +1 To Hit.</description>
+In addition, units shooting at Titanic models gain +1 To Hit.</description>
     </rule>
     <rule name="Ordinance" id="b210-3852-97b3-dd98" hidden="false">
       <description>Cannot fire after moving</description>
