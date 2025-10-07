@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="524d-97ab-9591-2625" name="Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="7" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="524d-97ab-9591-2625" name="Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="7" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="85d2-18d7-c914-91d8" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="0158-d8ba-1955-bcb9" targetId="86c1-35b4-c984-858a"/>
@@ -270,18 +270,19 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Chaos Alignment" id="d2ad-6656-7b51-c0bc" hidden="false" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63ad-7d14-2d2d-fe7a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63ad-7d14-2d2d-fe7a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63ad-7d14-2d2d-fe7a-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="496b-8440-f5e0-b9d9" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="496b-8440-f5e0-b9d9" sortIndex="2">
               <infoLinks>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="f77b-d446-bbea-da35" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="9188-7377-34f2-d5cc" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="9188-7377-34f2-d5cc" sortIndex="3">
               <infoLinks>
                 <infoLink name="Nurgle: Boon of Pestilence" id="4c45-724c-6d57-43d2" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
               </infoLinks>
@@ -289,7 +290,7 @@
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="d19a-3bb8-b64f-6491" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="d19a-3bb8-b64f-6491" sortIndex="4">
               <infoLinks>
                 <infoLink name="Khorne: Boon of Rage" id="f061-b3c3-330a-188f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
@@ -297,7 +298,7 @@
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="b745-4eb8-e12c-9ebd" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="b745-4eb8-e12c-9ebd" sortIndex="5">
               <infoLinks>
                 <infoLink name="Tzeentch: Boon of Trickery" id="65e7-616e-9833-c3ff" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
               </infoLinks>
@@ -305,6 +306,7 @@
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="df6e-b513-b0bb-51fd" sortIndex="1"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -343,20 +345,20 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9053-da0d-50c4-ea4a-max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="2x Siegebreaker Cannons" hidden="false" id="c49b-b398-b9ea-b58b" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="2x Siegebreaker Cannons" hidden="false" id="c49b-b398-b9ea-b58b" sortIndex="2">
               <infoLinks>
                 <infoLink name="Siegebreaker Cannon" id="2ae8-bd4a-3f86-27c0" hidden="false" type="profile" targetId="dfd4-54ca-71d9-1689"/>
                 <infoLink name="Siegebreaker Cannon" id="891a-b479-073d-3a58" hidden="false" type="profile" targetId="dfd4-54ca-71d9-1689"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="2x Shieldbreaker Missiles" hidden="false" id="3d16-59b8-54e3-7dbe" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="2x Shieldbreaker Missiles" hidden="false" id="3d16-59b8-54e3-7dbe" sortIndex="1">
               <infoLinks>
                 <infoLink name="Shieldbreaker Missile" id="1cca-c5cc-acf5-35d5" hidden="false" type="profile" targetId="d10f-ee4b-c6f0-32c6"/>
                 <infoLink name="Shieldbreaker Missile" id="053f-49b1-46b4-cfc9" hidden="false" type="profile" targetId="d10f-ee4b-c6f0-32c6"/>
               </infoLinks>
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -388,18 +390,19 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Chaos Alignment" id="bf03-e3d8-dd2f-de22" hidden="false" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a23b-6017-bb4c-34bc" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a23b-6017-bb4c-34bc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a23b-6017-bb4c-34bc-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="c113-0554-8886-1cb8" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="c113-0554-8886-1cb8" sortIndex="2">
               <infoLinks>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="5b6a-b5d6-9fd0-4b23" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="c434-7d5c-3e07-918a" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="c434-7d5c-3e07-918a" sortIndex="3">
               <infoLinks>
                 <infoLink name="Nurgle: Boon of Pestilence" id="2fb6-93e7-87e3-6255" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
               </infoLinks>
@@ -407,21 +410,26 @@
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="87de-fc4d-9050-d57f" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="87de-fc4d-9050-d57f" sortIndex="4">
               <infoLinks>
                 <infoLink name="Khorne: Boon of Rage" id="cf07-6bb8-e393-93fa" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="1b4b-6ac0-b358-fcbb" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="1b4b-6ac0-b358-fcbb" sortIndex="5">
               <infoLinks>
                 <infoLink name="Tzeentch: Boon of Trickery" id="ee7e-b88d-be6a-b728" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="4029-fae6-df13-e208" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Titanic Focus" id="5691-a694-46a8-800b" hidden="false" type="rule" targetId="3a99-ccef-7fde-56b2"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -555,7 +563,7 @@
                 <infoLink name="Heavy Flamer" id="66c9-e0f2-fd5f-d4bf" hidden="false" type="profile" targetId="985a-d278-19b1-e82f"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="8"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="b4ea-f2da-16cf-c3d1" sortIndex="3">
@@ -568,7 +576,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="5bda-b3c5-415c-0780" sortIndex="4">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
               </costs>
               <infoLinks>
                 <infoLink name="Multi-laser" id="28f8-67d5-b247-524c" hidden="false" type="profile" targetId="5f19-b2ac-d6b7-2654"/>
@@ -610,18 +618,19 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Chaos Alignment" id="7a41-4c10-7ede-f95a" hidden="false" sortIndex="4">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5db8-c96a-8d94-33c8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5db8-c96a-8d94-33c8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5db8-c96a-8d94-33c8-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="07e7-d514-d524-f5e7" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="07e7-d514-d524-f5e7" sortIndex="2">
               <infoLinks>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="7114-9e7d-8193-2ee0" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="8c5b-fde5-234e-7226" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="8c5b-fde5-234e-7226" sortIndex="3">
               <infoLinks>
                 <infoLink name="Nurgle: Boon of Pestilence" id="1dd6-cc29-e429-afc9" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
               </infoLinks>
@@ -629,21 +638,26 @@
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="9fc4-bbdf-ed2e-3f53" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="9fc4-bbdf-ed2e-3f53" sortIndex="4">
               <infoLinks>
                 <infoLink name="Khorne: Boon of Rage" id="d90a-331c-6b64-05a6" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="6f59-11e9-afb2-ac88" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="6f59-11e9-afb2-ac88" sortIndex="5">
               <infoLinks>
                 <infoLink name="Tzeentch: Boon of Trickery" id="6977-912a-1a3d-8144" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="a157-662a-a265-eb3c" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Titanic Focus" id="409f-fcf5-a630-8d5e" hidden="false" type="rule" targetId="3a99-ccef-7fde-56b2"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -659,17 +673,15 @@
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
-  <rules>
-    <rule name="Objective Secured" id="e3c6-cecb-4285-6764" hidden="false">
-      <description>If a Knights unit holds an objective in its Command Phase, then it remains under its control even if it moves away, counting as being controlled by an OC 0 model from its army.
-
-
-In addition, Titanic Knights units are able to take mission Actions in addition to performing another standard action.</description>
-    </rule>
-  </rules>
   <sharedRules>
     <rule name="Ion Shield" id="9ac5-07ac-51f2-6f0e" hidden="false">
       <description>At the start of the turn, a Knight generates an Ion Shield. This provides a 5++ Invulnerable Save against ranged attacks. The first time this save is failed, the Ion Shield is dropped and cannot be used until the next turn.</description>
+    </rule>
+    <rule name="Objective Secured" id="e3c6-cecb-4285-6764" hidden="false">
+      <description>If a Knights unit holds an objective in its Command Phase, then it remains under its control even if it moves away, counting as being controlled by an OC 0 model from its army.</description>
+    </rule>
+    <rule name="Titanic Focus" id="3a99-ccef-7fde-56b2" hidden="false">
+      <description>Titanic Knights units are able to take mission Actions in addition to performing another standard action.</description>
     </rule>
   </sharedRules>
   <entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -159,7 +159,7 @@ All models which arrive via Deep Strike into terrain must make a Hazard Test. Wo
       <comment>Movement</comment>
     </rule>
     <rule name="Fleet" id="10f1-6b51-74e1-9df4" hidden="false">
-      <description>Each activation, you can choose to either move an additional 2” when making a standard Move, or charge 3 + 2d3” instead of 3 + d6”.</description>
+      <description>Each activation, you can choose to either move an additional 3” when making a Run action, or charge 3 + 2d3” instead of 3 + d6”.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Immobile" id="7267-fda0-76c1-676e" hidden="false">
@@ -354,7 +354,7 @@ The unit then immediately becomes Broken.</description>
       <description>Restrictions: Cannot be Broken, Engaged, or Embarked. Cannot be Bulky. Cannot have arrived from reserves.
 
 
-Units can run 3”. This distance is not impacted by any rules (eg. Fly, Fleet, Full Speed), but the movement itself is impacted by rules (eg. Hover, Fly).</description>
+Units can run 3”. This distance is not impacted by any rules except Fleet (eg. Fly, Full Speed), but the movement itself is impacted by rules (eg. Fly, Hover).</description>
       <alias>Ran</alias>
     </rule>
     <rule name="Charge" id="f9c1-075e-f29d-1b0b" hidden="false">
