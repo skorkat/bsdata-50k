@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Battlesuit" id="b083-7a5c-1d92-5ca6" hidden="false">
       <constraints>
@@ -260,7 +260,7 @@
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">8</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Dangerous</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
     <profile name="Pulse Blastcannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="0728-678c-4b98-8860">
@@ -275,11 +275,11 @@
     </profile>
     <profile name="Pulse Blaster" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="c033-22fe-4ed6-307e">
       <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">14&quot;</characteristic>
+        <characteristic name="Range" typeId="5bc1-f923-633a-2354">10&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">6</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
@@ -287,7 +287,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">24&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Assault</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">0</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
@@ -337,9 +337,9 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">72&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">12</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">4</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">5</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Penetrating</characteristic>
       </characteristics>
     </profile>
@@ -350,7 +350,7 @@
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">9</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
-        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">One-shot</characteristic>
       </characteristics>
     </profile>
     <profile name="Seeker Missile Rack" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="4e85-e717-4a9c-eda8">
@@ -516,7 +516,7 @@
       <profiles>
         <profile name="Cadre Fireblade" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="0bcb-a0ec-20d7-eb31">
           <characteristics>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">2</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -578,7 +578,7 @@
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
       </costs>
       <profiles>
         <profile name="Gun Drone" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2b03-ec9d-a9b2-7b7e">
@@ -689,7 +689,7 @@
       <profiles>
         <profile name="Kroot Shaper" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="66e9-a63a-4b8f-e05b">
           <characteristics>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -758,8 +758,8 @@
       <profiles>
         <profile name="Battlesuit Commander" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2132-ef25-86d1-12fe">
           <characteristics>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
-            <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+            <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
@@ -816,10 +816,6 @@
         <selectionEntryGroup name="Suit Upgrade" id="4a57-706c-b3bc-3c9b" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Coldstar Battlesuit" hidden="false" id="b3f3-63a8-ca07-0cca">
-              <modifiers>
-                <modifier type="set" value="5" field="1509-720c-2a2f-ed46" scope="parent" affects="profiles.Unit"/>
-                <modifier type="set" value="3+" field="4a75-e14b-051b-c0f1" scope="parent" affects="profiles.Unit"/>
-              </modifiers>
               <infoLinks>
                 <infoLink name="Fleet" id="9833-89b8-61bc-db60" hidden="false" type="rule" targetId="10f1-6b51-74e1-9df4"/>
               </infoLinks>
@@ -1155,7 +1151,7 @@
               <profiles>
                 <profile name="Crisis Battlesuit" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="5bdf-8c46-e82d-8432">
                   <characteristics>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">2</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1197,7 +1193,7 @@
               <profiles>
                 <profile name="Crisis Battlesuit Shas&apos;vre" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e6d8-37ac-f001-2052">
                   <characteristics>
-                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
+                    <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1259,7 +1255,7 @@
           <profiles>
             <profile name="Crisis Bodyguard" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7c53-5ebe-4c91-26c2">
               <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">4+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1321,7 +1317,7 @@
           <profiles>
             <profile name="Kroot" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ef54-4119-7822-38c3">
               <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
@@ -1511,7 +1507,7 @@
           <profiles>
             <profile name="Krootox Rider" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c31b-0679-3d48-60dc">
               <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
+                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
                 <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
                 <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">6</characteristic>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
@@ -1833,7 +1829,7 @@
       <profiles>
         <profile name="Riptide" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="abbd-1794-0564-8471">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
@@ -1925,7 +1921,7 @@
       <profiles>
         <profile name="Ghostkeel" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="9b3c-bce4-3ae0-100c">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
@@ -2038,7 +2034,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="0fc4-67a5-9ebf-e8fb" hidden="false" sortIndex="1">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Drone Dock" hidden="false" id="d4e9-429d-b859-2f93">
+                <selectionEntry type="upgrade" import="true" name="Drone Dock" hidden="false" id="d4e9-429d-b859-2f93" sortIndex="1">
                   <infoLinks>
                     <infoLink name="Drone Dock" id="ac54-7006-92f2-fc97" hidden="false" type="rule" targetId="6945-00e0-4393-578e"/>
                   </infoLinks>
@@ -2054,10 +2050,13 @@
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Smart Missile System" hidden="false" id="3f66-827d-e1cb-7cf5">
+                <selectionEntry type="upgrade" import="true" name="Smart Missile System" hidden="false" id="3f66-827d-e1cb-7cf5" sortIndex="2">
                   <infoLinks>
                     <infoLink name="Smart Missile System" id="1d18-f937-b5ac-5d3a" hidden="false" type="profile" targetId="5731-e6e0-4ce9-a680"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -2114,7 +2113,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Secondary Weapon" id="ac54-e087-05f9-6b1e" hidden="false" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Drone Dock" hidden="false" id="64cf-91e1-742b-12bb">
+            <selectionEntry type="upgrade" import="true" name="Drone Dock" hidden="false" id="64cf-91e1-742b-12bb" sortIndex="1">
               <infoLinks>
                 <infoLink name="Drone Dock" id="7f4d-8517-5065-566d" hidden="false" type="rule" targetId="6945-00e0-4393-578e"/>
               </infoLinks>
@@ -2130,10 +2129,13 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Smart Missile System" hidden="false" id="5894-3788-8522-84f5">
+            <selectionEntry type="upgrade" import="true" name="Smart Missile System" hidden="false" id="5894-3788-8522-84f5" sortIndex="2">
               <infoLinks>
                 <infoLink name="Smart Missile System" id="ed81-3e9f-2043-7708" hidden="false" type="profile" targetId="5731-e6e0-4ce9-a680"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2153,7 +2155,7 @@
                 <infoLink name="Ion Cannon" id="96c9-f8de-919e-0c48" hidden="false" type="profile" targetId="578c-1094-43f4-5723"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2186,7 +2188,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="135"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="145"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sky Ray" hidden="false" id="6242-981a-aa9d-cec5">
@@ -2211,7 +2213,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Secondary Weapon" id="1c84-1854-d9ab-c666" hidden="false" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Drone Dock" hidden="false" id="9f57-d2c8-9829-d2aa">
+            <selectionEntry type="upgrade" import="true" name="Drone Dock" hidden="false" id="9f57-d2c8-9829-d2aa" sortIndex="1">
               <infoLinks>
                 <infoLink name="Drone Dock" id="7a57-4f4b-6db4-7ca0" hidden="false" type="rule" targetId="6945-00e0-4393-578e"/>
               </infoLinks>
@@ -2227,10 +2229,13 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Smart Missile System" hidden="false" id="566a-a2af-bcd8-dc42">
+            <selectionEntry type="upgrade" import="true" name="Smart Missile System" hidden="false" id="566a-a2af-bcd8-dc42" sortIndex="2">
               <infoLinks>
                 <infoLink name="Smart Missile System" id="a3e6-38c2-0cc1-c719" hidden="false" type="profile" targetId="5731-e6e0-4ce9-a680"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2308,6 +2313,9 @@
               <infoLinks>
                 <infoLink name="Smart Missile System" id="af16-d545-8d40-9f30" hidden="false" type="profile" targetId="5731-e6e0-4ce9-a680"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2382,11 +2390,7 @@
       <description>In the Additional Command Phase Abilities sub-phase of the Command Phase, any model equipped with a Markerlight may shoot it as though it were the Action Phase (using its BS, applying relevant modifiers, and following the rules for models in a unit targeting separate units if applicable). Each successful To Hit roll adds a Markerlight Counter to the target unit.
 
 
-In the Action Phase, any Tau unit which Shoots may expend one or more Markerlight Counters on the target unit. Markerlight Counters cannot be used by a unit which is Engaged, or against an enemy unit which is Engaged. Each expenditure provides one of the following effects (the same effect cannot be chosen twice for the shooting unit):
-- Improve the Ballistic Skill of the unit by 1
-- Ignore negative To Hit modifiers due to cover
-- Ignore negative To Hit modifiers due to moving and shooting a Rapid Fire or Heavy weapon
-- Ignore negative To Hit modifiers due to targeting an Aircraft or Stealth unit</description>
+In the Action Phase, any Tau unit which Shoots may expend one or more Markerlight Counters on the target unit. Each expenditure allows the unit to re-roll a single To Hit roll. Markerlight Counters cannot be used by a unit which is Engaged, or against an enemy unit which is Engaged.</description>
     </rule>
     <rule name="Drone Dock" id="6945-00e0-4393-578e" hidden="false">
       <description>A Tank with this special rule starts the game with 2 Gun Drones docked. While docked, the Tank is counted as being equipped with the weapons of the Gun Drones (ie. with 2x Twin Pulse Rifles).
@@ -2430,12 +2434,12 @@ If Gun Drones undock from multiple Tanks in a single unit in the same Command Ph
     </selectionEntryGroup>
     <selectionEntryGroup name="Battlesuit Upgrades" id="537b-9b99-fd41-2cdc" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="a91f-7a64-9bd0-8048">
+        <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="a91f-7a64-9bd0-8048" sortIndex="2">
           <infoLinks>
             <infoLink name="Flamer" id="aacd-06a3-8b04-a15c" hidden="false" type="profile" targetId="91be-b5b3-c375-8fbb"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma Rifle" hidden="false" id="b7a7-5d12-d6b5-46fc">
+        <selectionEntry type="upgrade" import="true" name="Plasma Rifle" hidden="false" id="b7a7-5d12-d6b5-46fc" sortIndex="3">
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="1"/>
           </costs>
@@ -2443,7 +2447,7 @@ If Gun Drones undock from multiple Tanks in a single unit in the same Command Ph
             <infoLink name="Plasma Rifle" id="18fe-e912-1c4c-221d" hidden="false" type="profile" targetId="2e64-5be7-45d1-2667"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Fusion Blaster" hidden="false" id="b2bc-e8b5-9fdc-0f70">
+        <selectionEntry type="upgrade" import="true" name="Fusion Blaster" hidden="false" id="b2bc-e8b5-9fdc-0f70" sortIndex="4">
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
           </costs>
@@ -2451,31 +2455,36 @@ If Gun Drones undock from multiple Tanks in a single unit in the same Command Ph
             <infoLink name="Fusion Blaster" id="9e55-bc37-6eef-0114" hidden="false" type="profile" targetId="dc1d-a60b-4d9b-239f"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shield Generator" hidden="false" id="3fb5-1ce8-3247-832f">
+        <selectionEntry type="upgrade" import="true" name="Shield Generator" hidden="false" id="3fb5-1ce8-3247-832f" sortIndex="8">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
           </costs>
           <modifiers>
             <modifier type="set" value="5++" field="4cb6-278f-f4f3-4747" scope="parent" affects="profiles.Unit"/>
+            <modifier type="set" value="10" field="b109-6551-e41a-f1f7">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="1b63-a709-b5ee-25ca" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c238-6201-ec41-0b47" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Target Lock" hidden="false" id="4474-0444-5c4d-11a9">
+        <selectionEntry type="upgrade" import="true" name="Target Lock" hidden="false" id="4474-0444-5c4d-11a9" sortIndex="5">
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
           </costs>
           <rules>
             <rule name="Target Lock" id="9f0a-f3d5-fd4c-dee4" hidden="false">
-              <description>Do not suffer penalties to hit units in cover</description>
+              <description>Do not suffer To Hit penalties due to cover, Stealth, or Aircraft</description>
             </rule>
           </rules>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="124e-f9c8-0069-9791" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="7688-813d-6c83-93cf">
+        <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="7688-813d-6c83-93cf" sortIndex="6">
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
           </costs>
@@ -2483,7 +2492,7 @@ If Gun Drones undock from multiple Tanks in a single unit in the same Command Ph
             <infoLink name="Missile Pod" id="ab5f-4c0f-7aa5-4332" hidden="false" type="profile" targetId="e1f4-9f97-496f-e54d"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cyclic Ion Blaster" hidden="false" id="debe-e696-aa44-9e7b">
+        <selectionEntry type="upgrade" import="true" name="Cyclic Ion Blaster" hidden="false" id="debe-e696-aa44-9e7b" sortIndex="7">
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
           </costs>
@@ -2491,7 +2500,7 @@ If Gun Drones undock from multiple Tanks in a single unit in the same Command Ph
             <infoLink name="Cyclic Ion Blaster" id="e9b9-8ac9-ef29-efa3" hidden="false" type="profile" targetId="2046-7781-4484-984b"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Burst Cannon" hidden="false" id="fbca-8907-90b7-8d2e">
+        <selectionEntry type="upgrade" import="true" name="Burst Cannon" hidden="false" id="fbca-8907-90b7-8d2e" sortIndex="1">
           <infoLinks>
             <infoLink name="Burst Cannon" id="b6b5-3c83-4729-b3e7" hidden="false" type="profile" targetId="67a5-90de-468e-1d14"/>
           </infoLinks>

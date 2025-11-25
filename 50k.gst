@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -257,21 +257,19 @@ A1, S0, AP0, Lance (4+), Poison (4+), Warpbane (4+), Cumbersome, Dangerous</de
     </rule>
     <rule name="Leadership Test" id="0174-0bdf-8a78-479c" hidden="false">
       <alias>Leadership Tests</alias>
-      <description>To make a Leadership Test, roll a 2d6, adding 1 for every 10 models in the unit (rounding down), and adding an additional 1 if the unit is wholly within its deployment zone. If the result meets or exceeds the Leadership value, then the test is passed. Unless otherwise specified, this test uses the lowest Leadership in the unit.</description>
+      <description>To make a Leadership Test, roll a 2d6, adding 1 for every 10 models in the unit (rounding down), and adding an additional 1 if the unit is wholly within its deployment zone. If the result meets or exceeds the Leadership value, then the test is passed. Unless otherwise specified, this test uses the lowest Leadership in the unit.
+
+
+Natural results of 2 always fail, just like natural rolls of 1 would.</description>
     </rule>
     <rule name="Psychic Test" id="8c7e-df05-d1de-621e" hidden="false">
       <alias>Psychic Tests</alias>
+      <alias>cast</alias>
       <description>To cast a Psychic Power, select a model to cast and a target unit. Make a Leadership Test using the unmodified Leadership value of the model casting the power.
 
-If the test is passed, the Psychic Power is successfully cast. If the test is failed, the Psychic Power is not successfully cast. In addition, if a natural 2 was rolled, roll another D6 and consult the Warp Effects table.
-
-1      -   The caster is slain
-2      -   The caster takes 1 Mortal Wound and cannot cast any more Psychic Powers this phase
-3      -   The caster cannot cast any more Psychic Powers this phase
-4-6   -   No effect
+If the test is passed, the Psychic Power is successfully cast. If the test is failed, the Psychic Power is not successfully cast. In addition, if a double is rolled (before removing any additional dice), roll another d6 and consult the Warp Effects table, subtracting 1 from the result if double 1’s were rolled.
 
 Note that Psychic Powers which target a unit (friend or enemy) require Line of Sight and are affected by terrain. They can target friendly units which are in Engaged, but cannot target enemy units if either the target or the casting unit are Engaged (unless otherwise specified). A unit’s characteristics (including movement distance) can only ever be affected by the same Psychic Power once, even though it can be targeted (and damaged) by the same Psychic Power multiple times.
-
 
 If it chooses to cast the same power multiple times within a round, it is subject to the following rules:
 - For each subsequent cast of the power, roll an additional d6, taking the lowest result
@@ -441,6 +439,18 @@ In addition, units shooting at Titanic models gain +1 To Hit.</description>
     </rule>
     <rule name="Ordinance" id="b210-3852-97b3-dd98" hidden="false">
       <description>Cannot fire after moving</description>
+    </rule>
+    <rule name="Warp Effects" id="0b49-0110-18f2-5730" hidden="false">
+      <description>
+
+0 - The caster is slain
+1 - The caster takes 1 Mortal Wound and cannot cast any more Psychic Powers this phase
+2 - The caster cannot cast any more Psychic Powers this phase
+3+ - No effect
+
+Subtract 1 if a natural two or more 1&apos;s were rolled on the psychic test.
+
+Subtract 1 for each subsequent cast of a power.</description>
     </rule>
   </sharedRules>
   <costTypes>

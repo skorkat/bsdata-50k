@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -3532,7 +3532,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             <profile name="Terrifying Visions" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="6a8f-a3ae-a2a4-8c18">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Reduces Leadership by 1</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Worsen Leadership by 1</characteristic>
               </characteristics>
             </profile>
           </profiles>

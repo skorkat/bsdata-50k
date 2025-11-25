@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="524d-97ab-9591-2625" name="Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="7" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="524d-97ab-9591-2625" name="Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="7" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="85d2-18d7-c914-91d8" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="0158-d8ba-1955-bcb9" targetId="86c1-35b4-c984-858a"/>
@@ -454,7 +454,7 @@
       <profiles>
         <profile name="Knight" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4a94-db8b-4b3c-f16d">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
@@ -463,7 +463,7 @@
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">10</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
           </characteristics>
