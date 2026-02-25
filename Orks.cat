@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -571,7 +571,16 @@
   </sharedProfiles>
   <rules>
     <rule name="Waaagh!" id="c579-8d44-21ff-1354" hidden="false">
-      <description>Once per game, in the Additional Command Phase Abilities sub-phase of the Command Phase, the Ork player may choose to call a Waaagh!. If they do so, for the remainder of that turn, all Ork units improve their Strength, Attacks, and Leadership by 1, but reduce their Objective Control by 1. In addition, any Broken units immediately rally, unless they are not in coherency.</description>
+      <description>Once per game, in the Command Phase, the Ork player may choose to call a Waaagh!. If they do so, until your next Command Phase, all Ork units gain the (cumulative) bonuses listed below, but reduce their OC by 1. In addition, any Broken units immediately rally, unless they are not in coherency.
+
+
+Turn
+1: 6++ Sv
+2: +1 A
+3: +1 S
+4: Fleet
+5: +1 T (not AV)
+6: 5+ FnP</description>
     </rule>
     <rule name="Looted Tanks" id="adec-7f7a-625d-e8be" hidden="false">
       <description>When building an Ork list, you may add Mechanical Tank units from any army, as long as they are not a Character and are not Unique. If you do so, the unit is modified in the following ways:

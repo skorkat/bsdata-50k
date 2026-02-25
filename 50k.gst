@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -151,7 +151,7 @@ All models which arrive via Deep Strike into terrain must make a Hazard Test. Wo
       <comment>Movement</comment>
     </rule>
     <rule name="Bulky" id="bdeb-e59a-e173-9286" hidden="false">
-      <description>Always count as remaining stationary for the purpose of Actions. Cannot run. Cannot benefit from any movement rules/abilities (such as Agile, Fleet, Full Speed, or Psychic Powers).</description>
+      <description>Models with this rule always count as remaining stationary for the purpose of Actions. Units with any model with this rule cannot run, and cannot benefit from any movement rules/abilities (such as Agile, Fleet, Full Speed, or Psychic Powers).</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Agile" id="6248-ab86-68c5-20f4" hidden="false">
@@ -441,9 +441,7 @@ In addition, units shooting at Titanic models gain +1 To Hit.</description>
       <description>Cannot fire after moving</description>
     </rule>
     <rule name="Warp Effects" id="0b49-0110-18f2-5730" hidden="false">
-      <description>
-
-0 - The caster is slain
+      <description>0 - The caster is slain
 1 - The caster takes 1 Mortal Wound and cannot cast any more Psychic Powers this phase
 2 - The caster cannot cast any more Psychic Powers this phase
 3+ - No effect

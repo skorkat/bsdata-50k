@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <rules>
     <rule name="Children of the Chaos Gods" id="f631-f11a-b827-50f2" hidden="false">
       <description>All Chaos Daemons automatically get the Boon associated with their god as per the table below:
@@ -284,7 +284,7 @@ Tzeentch     Boon of Trickery</description>
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U</characteristic>
-        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">3</characteristic>
+        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">1</characteristic>
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667"/>
       </characteristics>
       <comment>Slaanesh</comment>
@@ -293,7 +293,7 @@ Tzeentch     Boon of Trickery</description>
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U+2</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U</characteristic>
-        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">4</characteristic>
+        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">2</characteristic>
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667"/>
       </characteristics>
       <comment>Slaanesh</comment>
@@ -302,7 +302,7 @@ Tzeentch     Boon of Trickery</description>
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+1</characteristic>
-        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">4</characteristic>
+        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">3</characteristic>
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Sniper, Daemonbane (6+)</characteristic>
       </characteristics>
       <comment>Slaanesh</comment>
@@ -338,7 +338,7 @@ Tzeentch     Boon of Trickery</description>
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+1</characteristic>
-        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">2</characteristic>
+        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">3</characteristic>
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667"/>
       </characteristics>
       <comment>Khorne</comment>
@@ -347,7 +347,7 @@ Tzeentch     Boon of Trickery</description>
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+2</characteristic>
-        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">3</characteristic>
+        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">4</characteristic>
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667"/>
       </characteristics>
       <comment>Khorne</comment>
@@ -495,6 +495,120 @@ Tzeentch     Boon of Trickery</description>
       </characteristics>
       <comment>Khorne</comment>
     </profile>
+    <profile name="Daemonette" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f5c4-79f3-e4b4-4109">
+      <characteristics>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
+    </profile>
+    <profile name="Bloodletter" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a5e9-7bac-4ba6-f602">
+      <characteristics>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
+    </profile>
+    <profile name="Plaguebearer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="9a5d-a7f9-3004-b922">
+      <characteristics>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
+    </profile>
+    <profile name="Warp Daemon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e112-fa19-ac79-0574">
+      <characteristics>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
+    </profile>
+    <profile name="Seeker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4ab6-8584-8f1a-81d5">
+      <characteristics>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
+    </profile>
+    <profile name="Bloodcrusher" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ec9c-f272-6b21-c1a7">
+      <characteristics>
+        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
+        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
+        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+        <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
+        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+      </attributes>
+    </profile>
   </sharedProfiles>
   <forceEntries>
     <forceEntry name="Daemons" id="8e81-d416-05e1-ed8f" hidden="false">
@@ -519,41 +633,6 @@ Tzeentch     Boon of Trickery</description>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Warp Daemons" hidden="false" id="0b7f-99ba-7aca-b0f8">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Warp Daemon" hidden="false" id="ff8f-aa01-6a50-4305">
-          <profiles>
-            <profile name="Warp Daemon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="23e6-25d0-4b54-2241">
-              <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
-                <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
-                <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
-                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
-                <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
-                <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
-                <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
-                <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
-              </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="28c3-6eb8-429e-5476" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="c5c0-fe4e-5115-a28d" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Malefic Talons" id="a444-e182-63d8-65d5" hidden="false" type="profile" targetId="7073-87ab-5784-3a34"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="b6c8-a4d5-23c0-3606" id="0900-09f7-852a-6eef" primary="true" name="Core"/>
         <categoryLink targetId="d354-6680-584e-943c" id="664e-b093-8236-8a3c" primary="false" name="Infantry"/>
@@ -562,43 +641,65 @@ Tzeentch     Boon of Trickery</description>
       <infoLinks>
         <infoLink name="Fear" id="9893-ffcb-174b-a7d3" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Warp Daemons" id="21ea-2d1e-91a8-623c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Warp Daemon" hidden="false" id="ff8f-aa01-6a50-4305" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="28c3-6eb8-429e-5476" includeChildSelections="false"/>
+                <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="c5c0-fe4e-5115-a28d" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Malefic Talons" id="a444-e182-63d8-65d5" hidden="false" type="profile" targetId="7073-87ab-5784-3a34"/>
+                <infoLink name="Warp Daemon" id="b7d1-1725-f40e-ae5a" hidden="false" type="profile" targetId="e112-fa19-ac79-0574"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Warp Daemon w/ Instrument" hidden="false" id="0173-5184-3cdd-a57a" defaultAmount="" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e69e-c9a6-b696-fc30"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Warp Daemon" id="3487-8b08-09c7-e1b3" hidden="false" type="profile" targetId="e112-fa19-ac79-0574">
+                  <modifiers>
+                    <modifier type="set" value="4+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="w/ instrument" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Malefic Talons" id="4fcb-5603-f669-9f06" hidden="false" type="profile" targetId="7073-87ab-5784-3a34"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Warp Daemon w/ Banner" hidden="false" id="176d-0956-7bca-2630" defaultAmount="" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45d1-fe5a-b895-1fe1"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="26"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Banner of Chaos" id="f12a-65cb-aa70-5b7f" hidden="false" type="rule" targetId="6a84-bd1e-d9b0-1604"/>
+                <infoLink name="Warp Daemon" id="8cd7-0bfd-4de9-85da" hidden="false" type="profile" targetId="e112-fa19-ac79-0574">
+                  <modifiers>
+                    <modifier type="set" value="w/ banner" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Malefic Talons" id="64c4-5253-9ed6-d14a" hidden="false" type="profile" targetId="7073-87ab-5784-3a34"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2065-9bf3-accd-c272" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="1a66-6f69-261f-ddc4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Daemonettes" hidden="false" id="ba93-c948-4a22-0e12">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Daemonette" hidden="false" id="de6f-6a1a-f6d9-28d8">
-          <profiles>
-            <profile name="Daemonette" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ef8d-23e6-d405-7332">
-              <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
-                <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
-                <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
-                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
-                <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
-                <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
-                <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
-                <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
-              </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="360b-36e2-0832-0092" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="7cf6-04c1-e55d-da84" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Daemonic Claws" id="7679-be65-a3e1-edb4" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="57ce-ee9e-2c6e-3098" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
         <categoryLink targetId="d354-6680-584e-943c" id="672e-fa97-da70-3a60" primary="false" name="Infantry"/>
@@ -609,43 +710,65 @@ Tzeentch     Boon of Trickery</description>
         <infoLink name="Slaanesh: Boon of Swiftness" id="ae7d-f7f4-944a-2b3d" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
         <infoLink name="Fear" id="f7c2-b6d0-b9cc-150a" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Daemonettes" id="ec26-b768-ec8c-70ab" hidden="false">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="360b-36e2-0832-0092" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="7cf6-04c1-e55d-da84" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Daemonette" hidden="false" id="de6f-6a1a-f6d9-28d8" defaultAmount="" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5426-6537-a8c1-908d" includeChildSelections="false"/>
+                <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="4dbd-f9bc-4354-e71f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Daemonic Claws" id="9f14-5f3a-d97e-6a18" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
+                <infoLink name="Daemonette" id="93fe-bbea-6232-1822" hidden="false" type="profile" targetId="f5c4-79f3-e4b4-4109"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Daemonette w/ Banner" hidden="false" id="34e7-9630-ecac-5b60" defaultAmount="" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2606-6aa1-f1d7-4d58"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="29"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Daemonic Claws" id="8bf3-e175-6762-44c1" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
+                <infoLink name="Banner of Chaos" id="1b69-8d7f-9958-a700" hidden="false" type="rule" targetId="6a84-bd1e-d9b0-1604"/>
+                <infoLink name="Daemonette" id="13dc-491f-d49f-3700" hidden="false" type="profile" targetId="f5c4-79f3-e4b4-4109">
+                  <modifiers>
+                    <modifier type="set" value="w/ banner" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Daemonette w/ Instrument" hidden="false" id="47a5-4560-6a04-9ad0" defaultAmount="" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4509-87c5-f8ca-6bb3"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="19"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Daemonic Claws" id="b52c-50fe-bde1-18e5" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
+                <infoLink name="Daemonette" id="94a1-4238-080f-87f7" hidden="false" type="profile" targetId="f5c4-79f3-e4b4-4109">
+                  <modifiers>
+                    <modifier type="set" value="4+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="w/ instrument" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plaguebearers" hidden="false" id="a4d8-fa7d-9e1d-4404">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Plaguebearer" hidden="false" id="53ae-8738-2361-57bd">
-          <profiles>
-            <profile name="Plaguebearer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="8ab9-ce03-57d4-6561">
-              <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
-                <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
-                <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
-                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
-                <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
-                <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
-                <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
-                <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
-              </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="0e13-edbe-8a2d-a58e" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="3a12-b80a-e955-8008" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Plague Weapon" id="3193-8986-9a35-69ab" hidden="false" type="profile" targetId="ced4-cc0a-80ea-72f1"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="4305-921e-5666-2df2" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
         <categoryLink targetId="d354-6680-584e-943c" id="8dc6-69db-553f-33b8" primary="false" name="Infantry"/>
@@ -656,43 +779,65 @@ Tzeentch     Boon of Trickery</description>
         <infoLink name="Nurgle: Boon of Pestilence" id="dd34-4815-0c89-694d" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
         <infoLink name="Fear" id="b755-1550-55dd-f3af" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Plaguebearers" id="e0c7-2349-563a-9d3c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Plaguebearer" hidden="false" id="53ae-8738-2361-57bd" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="0e13-edbe-8a2d-a58e" includeChildSelections="false"/>
+                <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="3a12-b80a-e955-8008" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Plague Weapon" id="3193-8986-9a35-69ab" hidden="false" type="profile" targetId="ced4-cc0a-80ea-72f1"/>
+                <infoLink name="Plaguebearer" id="7305-4b9c-c432-071c" hidden="false" type="profile" targetId="9a5d-a7f9-3004-b922"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plaguebearer w/ Instrument" hidden="false" id="f95c-0700-9731-be46" defaultAmount="" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e30e-533c-1daf-d245"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Plaguebearer" id="0f37-eca3-ee0c-620e" hidden="false" type="profile" targetId="9a5d-a7f9-3004-b922">
+                  <modifiers>
+                    <modifier type="set" value="4+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="w/ instrument" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Plague Weapon" id="186c-5244-9505-0b51" hidden="false" type="profile" targetId="ced4-cc0a-80ea-72f1"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plaguebearer w/ Banner" hidden="false" id="adbf-346a-3286-cb65" defaultAmount="" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c202-bf26-9126-9b0d"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Banner of Chaos" id="8d63-240e-6976-2b8b" hidden="false" type="rule" targetId="6a84-bd1e-d9b0-1604"/>
+                <infoLink name="Plaguebearer" id="b998-8843-e6a7-f50c" hidden="false" type="profile" targetId="9a5d-a7f9-3004-b922">
+                  <modifiers>
+                    <modifier type="set" value="w/ banner" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Plague Weapon" id="2aec-f537-26d2-80b5" hidden="false" type="profile" targetId="ced4-cc0a-80ea-72f1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e2db-fd39-b7c4-bca3" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="86cc-f7d3-923e-eebb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bloodletters" hidden="false" id="a1cb-248b-2419-15a9">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bloodletter" hidden="false" id="ef52-35c4-2463-d830">
-          <profiles>
-            <profile name="Bloodletter" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a5e9-7bac-4ba6-f602">
-              <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
-                <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
-                <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
-                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
-                <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
-                <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
-                <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
-                <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
-              </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d932-dddb-a73c-7685" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="ecae-b5dd-9541-0780" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Hellblade" id="2bc1-b198-cdeb-393b" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="9dd5-0590-b340-7296" targetId="b6c8-a4d5-23c0-3606" primary="true"/>
         <categoryLink targetId="d354-6680-584e-943c" id="0cf9-2bbf-c16c-1f68" primary="false" name="Infantry"/>
@@ -703,6 +848,63 @@ Tzeentch     Boon of Trickery</description>
         <infoLink name="Khorne: Boon of Rage" id="67ed-8db7-b58f-b38e" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
         <infoLink name="Fear" id="3757-a982-042f-716d" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Bloodletters" id="d2cf-9e58-6142-d33a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bloodletter" hidden="false" id="ef52-35c4-2463-d830" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d932-dddb-a73c-7685" includeChildSelections="false"/>
+                <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="ecae-b5dd-9541-0780" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Hellblade" id="2bc1-b198-cdeb-393b" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
+                <infoLink name="Bloodletter" id="a21d-4b19-e0bb-8282" hidden="false" type="profile" targetId="a5e9-7bac-4ba6-f602"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bloodletter w/ Instrument" hidden="false" id="6700-ae7f-5df9-9b8d" defaultAmount="" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="defe-fb42-3aef-21b5"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Bloodletter" id="c5e7-21fb-3489-474c" hidden="false" type="profile" targetId="a5e9-7bac-4ba6-f602">
+                  <modifiers>
+                    <modifier type="set" value="4+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="w/ instrument" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Hellblade" id="f129-fb82-4dba-2c53" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bloodletter w/ Banner" hidden="false" id="94a1-a54e-b150-bc10" defaultAmount="" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e756-24ef-c999-089b"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="28"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Banner of Chaos" id="0dbe-df7e-8ed7-b02e" hidden="false" type="rule" targetId="6a84-bd1e-d9b0-1604"/>
+                <infoLink name="Bloodletter" id="8684-2845-43cf-319d" hidden="false" type="profile" targetId="a5e9-7bac-4ba6-f602">
+                  <modifiers>
+                    <modifier type="set" value="w/ banner" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Hellblade" id="ce49-f86a-4a37-59d6" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="71b5-d15e-a9d8-00b8" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="8d87-16f8-ec5b-89c9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Horrors" hidden="false" id="e4a9-bc26-b8c5-67fe">
       <profiles>
@@ -785,7 +987,7 @@ Tzeentch     Boon of Trickery</description>
                 <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="da98-681a-8180-073d" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Pink Horror" hidden="false" id="9fc0-8944-ef53-493c" defaultAmount="5">
+                <selectionEntry type="upgrade" import="true" name="Pink Horror" hidden="false" id="9fc0-8944-ef53-493c" defaultAmount="5" sortIndex="3">
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
                   </costs>
@@ -793,7 +995,7 @@ Tzeentch     Boon of Trickery</description>
                     <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="8499-1930-6fa8-a504" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Brimstone Horror" hidden="false" id="0aa9-e155-189f-c397">
+                <selectionEntry type="upgrade" import="true" name="Brimstone Horror" hidden="false" id="0aa9-e155-189f-c397" sortIndex="1">
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
                   </costs>
@@ -801,13 +1003,57 @@ Tzeentch     Boon of Trickery</description>
                     <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="9dbe-8c76-78cc-03b4" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Blue Horror" hidden="false" id="0c8c-55b4-08eb-17fa">
+                <selectionEntry type="upgrade" import="true" name="Blue Horror" hidden="false" id="0c8c-55b4-08eb-17fa" sortIndex="2">
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="51d1-7a54-ddd0-6309" includeChildSelections="false"/>
                   </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pink Horror w/ Instrument" hidden="false" id="fb9a-0438-e9ba-b5a2" defaultAmount="5" sortIndex="4">
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47b9-a07d-f584-4c5b" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Pink Horror" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f093-b2a5-0511-6284">
+                      <characteristics>
+                        <characteristic name="WS" typeId="1509-720c-2a2f-ed46">3</characteristic>
+                        <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
+                        <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
+                        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
+                        <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
+                        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
+                        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
+                        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+                        <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
+                        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
+                        <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
+                        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                      </characteristics>
+                      <attributes>
+                        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
+                      </attributes>
+                      <modifiers>
+                        <modifier type="set" value="w/ instrument" field="annotation"/>
+                        <modifier type="set" value="4+" field="d131-a398-ad21-bb05"/>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pink Horror w/ Banner" hidden="false" id="8818-3f4d-67a3-18ff" defaultAmount="5" sortIndex="5">
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73e5-9def-0728-e162" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Banner of Chaos" id="5f91-a875-5f9b-5a86" hidden="false" type="rule" targetId="6a84-bd1e-d9b0-1604"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -840,7 +1086,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Fiend" hidden="false" id="96b7-f37d-5a98-0d78">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="28"/>
           </costs>
           <profiles>
             <profile name="Fiend" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="33a3-485c-048c-fa0f">
@@ -851,7 +1097,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
+                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
@@ -883,41 +1129,6 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Seekers" hidden="false" id="9de9-8ab3-70e3-4610">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Seeker" hidden="false" id="6cf8-b692-027c-d362">
-          <profiles>
-            <profile name="Seeker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="188b-cc2c-4673-7368">
-              <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
-                <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
-                <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
-                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
-                <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
-                <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
-                <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
-                <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
-              </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Daemonic Claws" id="a79e-ce0d-8dc0-45ed" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="19"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ec64-49d1-3e54-c0b9" includeChildSelections="false"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="7c69-8f20-03bb-0d41" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="c29b-d073-091b-6ee9" primary="true" name="Elite"/>
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="cc23-1400-1908-9fd4" primary="false" name="Mounted"/>
@@ -928,6 +1139,63 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         <infoLink name="Slaanesh: Boon of Swiftness" id="77a7-752a-c98f-1073" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
         <infoLink name="Fear" id="ee15-5d58-5c76-35f3" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Seekers" id="46e2-3556-0452-9771" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Seeker" hidden="false" id="6cf8-b692-027c-d362" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Daemonic Claws" id="a79e-ce0d-8dc0-45ed" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
+                <infoLink name="Seeker" id="8f7f-0b4a-977e-18af" hidden="false" type="profile" targetId="4ab6-8584-8f1a-81d5"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ec64-49d1-3e54-c0b9" includeChildSelections="false"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="7c69-8f20-03bb-0d41" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Seeker w/ Instrument" hidden="false" id="9f6d-a164-1ec5-fdcc" defaultAmount="" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0634-fd94-a1c7-7cae"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="26"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Daemonic Claws" id="54bb-d76e-0b9a-6b91" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
+                <infoLink name="Seeker" id="a352-1993-b8a8-c4a6" hidden="false" type="profile" targetId="4ab6-8584-8f1a-81d5">
+                  <modifiers>
+                    <modifier type="set" value="4+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="w/ instrument" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Seeker w/ Banner" hidden="false" id="51a6-a966-472e-ef97" defaultAmount="" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d2-de9c-71b6-6ceb"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="36"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Daemonic Claws" id="7614-34a1-8577-81e0" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
+                <infoLink name="Banner of Chaos" id="542d-e75d-0b1d-a667" hidden="false" type="rule" targetId="6a84-bd1e-d9b0-1604"/>
+                <infoLink name="Seeker" id="088f-42d9-cd1d-b327" hidden="false" type="profile" targetId="4ab6-8584-8f1a-81d5">
+                  <modifiers>
+                    <modifier type="set" value="w/ banner" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="0e84-e7d2-2f74-dba6" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="18f2-e6ce-cddc-ef7c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Seeker Chariot" hidden="false" id="513b-045d-ceb4-708b">
       <profiles>
@@ -939,7 +1207,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">5</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">5+</characteristic>
@@ -949,7 +1217,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
       </costs>
       <infoLinks>
         <infoLink name="Daemonic Claws" id="f31d-0c00-e947-15f4" hidden="false" type="profile" targetId="360f-3f8c-fb71-9663"/>
@@ -1110,46 +1378,68 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="0071-636a-a584-2610" primary="false" name="Mounted"/>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="4874-d2cb-9a52-ae9d" primary="false" name="Daemonic"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bloodcrusher" hidden="false" id="9a3e-d72b-2b46-c6e6">
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="32"/>
-          </costs>
-          <profiles>
-            <profile name="Bloodcrusher" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f73d-edda-5e3a-1584">
-              <characteristics>
-                <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
-                <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
-                <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
-                <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
-                <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
-                <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
-                <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
-                <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
-                <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
-              </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Hellblade" id="bcd2-d690-32d5-8372" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b54f-9db7-ace2-7c06" includeChildSelections="false"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b1f3-235f-3fbd-8c12" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <comment>Khorne</comment>
       <infoLinks>
         <infoLink name="Khorne: Boon of Rage" id="69d8-333d-3c11-a828" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
         <infoLink name="Fear" id="aef9-d00c-96fb-e65d" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Bloodcrushers" id="236c-065f-d0eb-a659" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bloodcrusher" hidden="false" id="9a3e-d72b-2b46-c6e6">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Hellblade" id="bcd2-d690-32d5-8372" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
+                <infoLink name="Bloodcrusher" id="0203-2714-1dd1-9bc4" hidden="false" type="profile" targetId="ec9c-f272-6b21-c1a7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b54f-9db7-ace2-7c06" includeChildSelections="false"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b1f3-235f-3fbd-8c12" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bloodcrusher w/ Instrument" hidden="false" id="e858-bd90-9d84-553e" defaultAmount="">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="925e-193f-f046-1726"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Bloodcrusher" id="c290-d1c5-96ad-cd73" hidden="false" type="profile" targetId="ec9c-f272-6b21-c1a7">
+                  <modifiers>
+                    <modifier type="set" value="4+" field="d131-a398-ad21-bb05"/>
+                    <modifier type="set" value="w/ instrument" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Hellblade" id="b067-2948-d40e-a44c" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bloodcrusher w/ Banner" hidden="false" id="943b-9148-556c-15d3" defaultAmount="">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae9a-3d94-6f5b-1368"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Banner of Chaos" id="c879-fee4-52af-f939" hidden="false" type="rule" targetId="6a84-bd1e-d9b0-1604"/>
+                <infoLink name="Bloodcrusher" id="ee72-026f-5502-55e5" hidden="false" type="profile" targetId="ec9c-f272-6b21-c1a7">
+                  <modifiers>
+                    <modifier type="set" value="w/ banner" field="annotation"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Hellblade" id="7144-5da8-96d4-3ead" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5d17-2803-fc55-ebe0" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4b1a-da9b-41f3-651a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flesh Hounds" hidden="false" id="8631-9b83-fbef-6382">
       <categoryLinks>
@@ -1206,7 +1496,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="8532-da70-812c-23cf" primary="false" name="Daemonic"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="95"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="90"/>
       </costs>
       <profiles>
         <profile name="Skull Cannon" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="e56a-888f-cb31-e0fb">
@@ -1217,7 +1507,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
@@ -1395,7 +1685,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">8</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">6</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -1410,7 +1700,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="420"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="450"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="0187-6848-4957-4093" primary="true" name="Greater Daemon"/>
@@ -1495,7 +1785,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bloodthirster" hidden="false" id="2588-791d-8a96-8b27">
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="380"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="350"/>
       </costs>
       <profiles>
         <profile name="Bloodthirster" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="0b3b-2096-c4fc-e031">
@@ -1506,7 +1796,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">7</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">6</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
@@ -1626,7 +1916,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Unaligned" hidden="false" id="926d-18fa-4237-ccdd" sortIndex="1">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
               </costs>
               <infoLinks>
                 <infoLink name="Daemonic Axe" id="ca27-936e-0a6e-0db0" hidden="false" type="profile" targetId="44eb-8f3f-99b2-8a44"/>
@@ -1671,6 +1961,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <modifiers>
                 <modifier type="set" value="8" field="1509-720c-2a2f-ed46" scope="parent" affects="profiles.Unit"/>
                 <modifier type="set" value="6" field="85f0-cca6-d69e-ffa2" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="4" field="ae75-aaa4-f9b6-8a71" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8c4-828d-4c18-a977" includeChildSelections="false"/>
@@ -1686,23 +1977,102 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <categoryLinks>
                 <categoryLink targetId="c759-da28-35c5-802b" id="b312-cec2-b06c-6b7e" primary="false" name="Psyker"/>
               </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Mount" id="f58e-9f75-ac6a-c152" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Seeker Mount" hidden="false" id="ecbf-e776-2ef2-dccf" sortIndex="1">
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
+                        <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd05-c269-2c30-30c1"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Seeker Chariot" hidden="false" id="fcdb-9055-feb8-b413" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="add" value="841c-6009-19bb-93fb" field="category"/>
+                        <modifier type="set" value="AV 10" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit" arg="T"/>
+                        <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
+                        <modifier type="set" value="5" field="ae75-aaa4-f9b6-8a71" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ab0-150c-db62-0291"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Lashes of Torment" id="7286-5a95-6ad1-e89a" hidden="false" type="profile" targetId="697f-69ff-f4ce-d031"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46be-90c9-3f1f-853c"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="8f25-0f57-0b7a-c4fd" sortIndex="4">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="60"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
               </costs>
               <modifiers>
-                <modifier type="set" value="6" field="229e-fdb9-4bbc-f6ff" scope="parent" affects="profiles.Unit"/>
-                <modifier type="set" value="4" field="ae75-aaa4-f9b6-8a71" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="5" field="229e-fdb9-4bbc-f6ff" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <infoLinks>
                 <infoLink name="Blade of Blood" id="e48f-3688-d18a-91af" hidden="false" type="profile" targetId="0e9d-8941-2837-00bb"/>
                 <infoLink name="Khorne: Boon of Rage" id="46da-59a1-4a25-4bb3" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Mount" id="fd05-401b-e341-7c1c" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Bloodcrusher Mount" hidden="false" id="c1a4-dca4-098c-4aae" sortIndex="1">
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
+                        <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category"/>
+                        <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcac-44dc-29d8-f255"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Blood Throne Chariot" hidden="false" id="80f6-7517-cd6f-a706" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="60"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="add" value="841c-6009-19bb-93fb" field="category"/>
+                        <modifier type="set" value="AV 11" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit" arg="T"/>
+                        <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
+                        <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="4" field="ae75-aaa4-f9b6-8a71" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="865a-dde4-1d13-8ae2"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13e9-acb7-6e30-c52c"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="9f62-fc1c-91e0-c0c0" sortIndex="5">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="85"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
               </costs>
               <modifiers>
                 <modifier type="set" value="4++" field="4cb6-278f-f4f3-4747" scope="parent" affects="profiles.Unit"/>
@@ -1730,13 +2100,57 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <categoryLinks>
                 <categoryLink targetId="c759-da28-35c5-802b" id="2d0e-9688-a30f-51fe" primary="false" name="Psyker"/>
               </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Mount" id="390e-e038-93ba-07cd" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Disc Mount" hidden="false" id="8015-42ab-7259-73ec" sortIndex="1">
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
+                        <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category"/>
+                        <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ed7-f1c5-6bef-0937"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Fly" id="f0d8-5330-5ae9-33f9" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Burning Chariot" hidden="false" id="6b04-e0c2-e1af-089f" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="60"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="add" value="841c-6009-19bb-93fb" field="category"/>
+                        <modifier type="set" value="AV 10" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit" arg="T"/>
+                        <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
+                        <modifier type="set" value="4" field="ae75-aaa4-f9b6-8a71" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6042-76b0-bdf6-d4eb"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Fly" id="322e-9531-9972-ace0" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bea-a5e2-571f-86db"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="f47c-62bd-e793-f90b" sortIndex="3">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="75"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="70"/>
               </costs>
               <modifiers>
-                <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="profiles.Unit"/>
                 <modifier type="set" value="6+++" field="c9d0-52c0-aa47-95c6" scope="parent" affects="profiles.Unit"/>
                 <modifier type="set" value="4" field="85f0-cca6-d69e-ffa2" scope="parent" affects="profiles.Unit"/>
               </modifiers>
@@ -1762,6 +2176,32 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <categoryLinks>
                 <categoryLink targetId="c759-da28-35c5-802b" id="278a-2d0f-c337-a025" primary="false" name="Psyker"/>
               </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Mount" id="701e-2348-9c26-5336" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Palanquin" hidden="false" id="ffe4-34dd-95e0-236b" sortIndex="1">
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="7" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
+                        <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category"/>
+                        <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf30-49df-c515-5052"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Bulky" id="ecd9-62e3-2407-227c" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d398-82c9-5e70-d30f"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1778,8 +2218,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           <characteristics>
             <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
-            <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
-            <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
+            <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
+            <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
@@ -1833,11 +2273,10 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="de8f-f4a7-69c5-8118" sortIndex="4">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="180"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="170"/>
               </costs>
               <modifiers>
                 <modifier type="set" value="7" field="cd7c-e257-6d0e-3291" scope="parent" affects="profiles.Vehicle"/>
-                <modifier type="set" value="5" field="ff82-d90f-34a9-9279" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <infoLinks>
                 <infoLink name="Khorne: Boon of Rage" id="55d7-7cd3-7c20-9484" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
@@ -1876,7 +2315,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="5884-f3e2-7aae-a8b0" sortIndex="2">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="190"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="200"/>
               </costs>
               <infoLinks>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="006a-3ae2-4431-3075" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
@@ -1891,6 +2330,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <modifiers>
                 <modifier type="set" value="9" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="7" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="5" field="ff82-d90f-34a9-9279" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3c9-d6e1-1996-4677" includeChildSelections="false"/>
@@ -1987,7 +2427,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                   <characteristics>
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">7+</characteristic>
-                    <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
+                    <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
@@ -2007,7 +2447,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Malefic Talons" id="3847-893d-6dd2-f5f3" hidden="false" type="profile" targetId="7073-87ab-5784-3a34"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2017,7 +2457,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <selectionEntry type="upgrade" import="true" name="Unaligned" hidden="false" id="a6ff-e917-af2d-2ec9" sortIndex="1"/>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="f8c1-0b25-9620-e1f6" sortIndex="2">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="-5"/>
               </costs>
               <infoLinks>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="b603-07b4-928e-9eb9" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
@@ -2025,35 +2465,64 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <modifiers>
                 <modifier type="set" value="6" field="1509-720c-2a2f-ed46" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="5" field="85f0-cca6-d69e-ffa2" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="increment" value="5" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d47a-7562-f437-9d63" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="458e-acd3-53d5-09c8" sortIndex="4">
               <modifiers>
-                <modifier type="set" value="4" field="229e-fdb9-4bbc-f6ff" scope="parent" affects="self.entries.profiles.Unit"/>
-                <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="5" field="229e-fdb9-4bbc-f6ff" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d47a-7562-f437-9d63" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <infoLinks>
                 <infoLink name="Khorne: Boon of Rage" id="d519-e24d-7e12-f765" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="-2"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="62da-91df-2eae-6dca" sortIndex="5">
               <modifiers>
                 <modifier type="set" value="4++" field="4cb6-278f-f4f3-4747" affects="self.entries.unit.profiles.Unit" scope="parent"/>
                 <modifier type="set" value="3" field="1509-720c-2a2f-ed46" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="increment" value="3" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d47a-7562-f437-9d63" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <infoLinks>
                 <infoLink name="Tzeentch: Boon of Trickery" id="f074-6ac0-7389-541f" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="-3"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="8832-684a-fb5d-35e8" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="6+++" field="c9d0-52c0-aa47-95c6" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="3" field="85f0-cca6-d69e-ffa2" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="increment" value="4" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d47a-7562-f437-9d63" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <infoLinks>
                 <infoLink name="Nurgle: Boon of Pestilence" id="ed2f-7126-2f42-d346" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="-4"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2083,11 +2552,10 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="f105-423b-5656-93c9" sortIndex="4">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <modifiers>
                 <modifier type="set" value="9" field="cd7c-e257-6d0e-3291" scope="parent" affects="profiles.Vehicle"/>
-                <modifier type="set" value="5" field="ff82-d90f-34a9-9279" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <infoLinks>
                 <infoLink name="Khorne: Boon of Rage" id="6166-b358-94f5-58fc" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
@@ -2108,7 +2576,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="6393-43b7-f6d0-690d" sortIndex="2">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
               </costs>
               <infoLinks>
                 <infoLink name="Slaanesh: Boon of Swiftness" id="58b1-9890-a035-9b96" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
@@ -2116,6 +2584,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               <modifiers>
                 <modifier type="set" value="6" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="5" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="5" field="ff82-d90f-34a9-9279" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="d6f3-1fce-241b-8a5e" sortIndex="5">
@@ -2229,4 +2698,12 @@ These rolls cannot be made if the unit was fully destroyed.</description>
     <infoLink name="Khorne: Boon of Rage" id="1962-cbac-99c7-5956" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
     <infoLink name="Tzeentch: Boon of Trickery" id="9d16-a31b-8b8b-c709" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
   </infoLinks>
+  <sharedRules>
+    <rule name="Banner of Chaos" id="6a84-bd1e-d9b0-1604" hidden="false">
+      <description>Units are able to use the Warp Rifts rule with 18” of a model holding a Banner of Chaos, instead of within 12” of a unit</description>
+    </rule>
+    <rule name="Instrument of Chaos" id="992a-d885-ab0f-4d48" hidden="false">
+      <description>The model holding an Instrument of Chaos improves their Ld by 1</description>
+    </rule>
+  </sharedRules>
 </catalogue>

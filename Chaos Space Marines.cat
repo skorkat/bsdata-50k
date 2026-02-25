@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -561,7 +561,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
-        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
+        <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
         <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
@@ -1347,7 +1347,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plague Marine Champion" hidden="false" id="205c-83ed-3d40-4240" sortIndex="3">
@@ -1389,7 +1389,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plague Marine w/ Special Weapon" hidden="false" id="6a9a-cfb9-72c6-0ce9" sortIndex="2">
@@ -1457,7 +1457,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1492,7 +1492,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 <infoLink name="Bolt Pistol" id="6c75-39a8-aeb0-47f9" hidden="false" type="profile" targetId="ce48-97e2-6275-db05"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne Berzerker w/ Special Weapon" hidden="false" id="e93d-437a-12f6-03b7" sortIndex="2">
@@ -1531,7 +1531,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne Berzerker Champion" hidden="false" id="d4b0-e37d-22ee-424e" sortIndex="3">
@@ -1560,7 +1560,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
-                    <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">4</characteristic>
+                    <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
                     <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
@@ -1573,7 +1573,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="24"/>
               </costs>
             </selectionEntry>
           </selectionEntries>

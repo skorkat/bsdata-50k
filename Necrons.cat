@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="504e-fd94-4621-eda1" name="Necrons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="false" id="504e-fd94-4621-eda1" name="Necrons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <categoryEntries>
     <categoryEntry name="Canoptek" id="be30-18f6-3a2a-0e55" hidden="false">
       <constraints>
@@ -469,7 +469,7 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
@@ -629,7 +629,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">0+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
@@ -676,7 +676,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -711,7 +711,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -743,7 +743,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">1+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">1</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
@@ -795,7 +795,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -834,7 +834,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
             <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
             <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">1+</characteristic>
+            <characteristic name="Ld" typeId="d131-a398-ad21-bb05">3+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -945,7 +945,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -995,6 +995,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </selectionEntries>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="d6fb-2cdd-4a9c-0be3" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="e9de-a6fc-caa4-78b3" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon" id="6bf5-888d-3ffe-0f49" hidden="false">
@@ -1038,7 +1039,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1050,7 +1051,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <infoLink name="Gauss Flayer" id="9c03-163f-3adc-0783" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
           </costs>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="a109-16a5-4ea1-d67a"/>
@@ -1060,6 +1061,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </selectionEntries>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="c9f9-60f8-0c98-847f" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="f6b0-89e1-1056-c52b" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Immortals" hidden="false" id="9eb8-bda2-43e6-e32b">
@@ -1080,7 +1082,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1119,16 +1121,17 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </selectionEntries>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="2d2f-d423-4775-48cf" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="427b-2359-597e-1cf1" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon" id="59a0-96c5-79aa-0a42" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Gauss Blaster" hidden="false" id="90d4-ef5c-7331-85a6" sortIndex="2">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="-2"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="-3"/>
               </costs>
               <modifiers>
-                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                <modifier type="increment" value="3" field="b109-6551-e41a-f1f7">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="9eb8-bda2-43e6-e32b" childId="any" shared="true" roundUp="false"/>
                   </repeats>
@@ -1160,7 +1163,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
@@ -1177,9 +1180,10 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <infoLink name="Doomsday Cannon [High Power]" id="6b1b-89e0-c89b-b718" hidden="false" type="profile" targetId="bf41-2abc-4017-12e3"/>
         <infoLink name="Doomsday Cannon [Low Power]" id="c2ca-68b4-a52e-2937" hidden="false" type="profile" targetId="98b4-b5fa-4772-ded0"/>
         <infoLink name="Hover" id="5d36-af59-0571-5cda" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Bulky" id="612b-6455-f9c3-3098" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="170"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="180"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deathmarks" hidden="false" id="3618-34f7-e67d-ca3f">
@@ -1200,7 +1204,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1216,13 +1220,14 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="883b-d694-f80c-9cd2"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="26"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="27"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="Deep Strike" id="289f-328b-c783-6e0e" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
         <infoLink name="Reanimation Protocols" id="d1cd-dc5d-a357-0f9b" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="7c67-0736-d3e9-2830" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flayed Ones" hidden="false" id="bbae-1f1a-f4bd-d611">
@@ -1244,7 +1249,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1265,6 +1270,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </categoryLinks>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="fcce-1272-210e-182f" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="c43e-44dc-9dc6-c1bb" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Triarch Praetorians" hidden="false" id="3641-b485-8d78-1e8e">
@@ -1275,6 +1281,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </categoryLinks>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="0422-5c97-2ec8-860d" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="c540-3568-b2eb-db77" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Triarch Praetorian" hidden="false" id="7883-09ab-c2a0-d534">
@@ -1291,7 +1298,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1378,7 +1385,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
@@ -1426,6 +1433,9 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="8468-508e-4620-79bb" primary="false" name="Mounted"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e2ce-7b48-d06d-0040" primary="false" name="Mechanical"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bulky" id="88ca-8976-347e-2d10" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tomb Blades" hidden="false" id="4c31-5509-f643-0905">
       <categoryLinks>
@@ -1447,7 +1457,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1582,7 +1592,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
@@ -1603,9 +1613,10 @@ Returned models must be placed in unit coherency and may not be placed in base c
           </modifiers>
         </infoLink>
         <infoLink name="Hover" id="ed8a-2147-dbbe-8cd6" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Bulky" id="fe8f-41f0-4246-aedb" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="130"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="135"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Annihilation Barge" hidden="false" id="42a7-e758-1d5d-33cc">
@@ -1622,7 +1633,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
@@ -1631,12 +1642,13 @@ Returned models must be placed in unit coherency and may not be placed in base c
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="135"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="140"/>
       </costs>
       <infoLinks>
         <infoLink name="Tesla Destructor" id="b737-59ea-27f5-7745" hidden="false" type="profile" targetId="7217-d9d1-4727-72a8"/>
         <infoLink name="Tesla Destructor" id="22f0-056b-0627-941c" hidden="false" type="profile" targetId="7217-d9d1-4727-72a8"/>
         <infoLink name="Hover" id="c712-7ccb-fdce-4c7b" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Bulky" id="709b-062c-305f-5cdd" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Primary Weapon" id="e217-4e29-c3be-c437" hidden="false">
@@ -1666,14 +1678,14 @@ Returned models must be placed in unit coherency and may not be placed in base c
       <profiles>
         <profile name="Monolith" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b938-6d6e-6a42-3027">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">10</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">10</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5+</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">1+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
@@ -1690,7 +1702,6 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <infoLink name="Gauss Flux Arc" id="92cd-7e43-d515-9f72" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
         <infoLink name="Gauss Flux Arc" id="3f2c-e683-8e37-3469" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
         <infoLink name="Gauss Flux Arc" id="4481-d272-c2e2-a051" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
-        <infoLink name="Portal of Exile" id="d22a-92d8-5156-1fee" hidden="false" type="profile" targetId="4841-dda0-4e56-bf2a"/>
         <infoLink name="Bulky" id="95c4-6f7b-242b-a0a2" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
         <infoLink name="Hover" id="988f-7f6f-c3e1-2cf2" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Deep Strike" id="67d5-ec06-1439-8036" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
@@ -1700,6 +1711,11 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="841c-6009-19bb-93fb" id="c1d2-2a35-eb67-1698" primary="false" name="Tank"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="0697-7521-064f-884c" primary="false" name="Mechanical"/>
       </categoryLinks>
+      <rules>
+        <rule name="Portal of Exile" id="fc4d-d0d1-c76a-f3ae" hidden="false">
+          <description>Any models attacking a Monolith in melee treat all of their weapons as Dangerous.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Reanimator" hidden="false" id="05b2-1b02-95ac-e97a">
       <categoryLinks>
@@ -1711,6 +1727,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <infoLink name="Hover" id="ffaf-99c5-f6d8-28e9" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Atomiser Beam" id="290f-e8cd-461d-3aa6" hidden="false" type="profile" targetId="ae5c-61f3-4ed8-fc54"/>
         <infoLink name="Atomiser Beam" id="696f-6a03-2a61-0229" hidden="false" type="profile" targetId="ae5c-61f3-4ed8-fc54"/>
+        <infoLink name="Bulky" id="55be-8dc5-6f17-df3c" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <profiles>
         <profile name="Reanimator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="48c2-3cfc-0fbd-7551">
@@ -1722,7 +1739,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -1752,7 +1769,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
                 <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
                 <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
                 <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
                 <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
                 <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
@@ -1771,7 +1788,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d077-940f-970a-d48c"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="85"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1782,6 +1799,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </categoryLinks>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="f85a-4326-f385-170f" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="16d5-25df-96fb-3c31" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wraiths" hidden="false" id="8632-7555-e1d8-1ce9">
@@ -1799,7 +1817,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
@@ -1872,7 +1890,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1917,6 +1935,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         </infoLink>
         <infoLink name="Hover" id="fc32-58eb-9e02-263c" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Reanimation Protocols" id="5a4d-b5ee-5bf2-4311" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="1cbb-d459-7bce-46fd" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <rules>
         <rule name="Scarab Hive" id="e1dd-6d34-0001-a8e3" hidden="false">
@@ -1949,7 +1968,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3+</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1976,7 +1995,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e40d-5e3b-1345-1c71"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="60"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="65"/>
           </costs>
           <profiles>
             <profile name="Hexmark Destroyer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="0a24-c39b-a2e6-0465">
@@ -1988,7 +2007,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2003,6 +2022,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </selectionEntries>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="3901-8b1f-f22c-9fe8" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="2835-12de-3b44-cb42" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="b4d6-9a3a-1f28-5dc9" id="e5a4-8f7f-f05d-0dd6" primary="true" name="Destroyer"/>
@@ -2028,7 +2048,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2050,6 +2070,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </selectionEntries>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="da26-3d9b-1150-c388" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="7035-cd66-84bc-7749" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ophydian Destroyers" hidden="false" id="9379-3387-811e-8911">
@@ -2074,7 +2095,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2093,6 +2114,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="1981-39ab-0a9a-ab08" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
         <infoLink name="Deep Strike" id="3f24-4738-aa3a-08c3" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Bulky" id="c31b-c7ae-2a43-a131" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lokhust Destroyers" hidden="false" id="4dd6-0676-2f7a-913c">
@@ -2115,7 +2137,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2127,7 +2149,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <infoLink name="Gauss Cannon" id="1484-8ab1-7c98-9449" hidden="false" type="profile" targetId="3f41-e614-4817-6c61"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lokhust Heavy Destroyer" hidden="false" id="17b7-2395-3434-b1c6">
@@ -2141,7 +2163,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">2+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -2192,6 +2214,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       <infoLinks>
         <infoLink name="Hover" id="fc2c-05d4-fab6-585c" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Reanimation Protocols" id="d650-9455-bb68-189e" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Bulky" id="b562-ce08-8226-0339" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Deceiver" hidden="false" id="fa82-44db-0baf-d0ec">
