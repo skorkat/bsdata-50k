@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="dc6f-b0e6-dbca-b789" name="Tyranids" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="dc6f-b0e6-dbca-b789" name="Tyranids" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Synapse" id="8e40-1aab-fb83-9431" hidden="false">
       <description>While a Tyranid unit is within 12” of a unit with this special rule, it can use the Leadership characteristic of that model.
@@ -155,8 +155,7 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
     </profile>
     <profile name="Acid Spray" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="8132-9dcf-3135-01e9">
       <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">18&quot;
-</characteristic>
+        <characteristic name="Range" typeId="5bc1-f923-633a-2354">18&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Torrent</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6+6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">4</characteristic>
@@ -737,8 +736,8 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
       <entryLinks>
         <entryLink import="true" name="Hivemind Discipline" hidden="false" id="4677-e2e2-cad7-6aa7" type="selectionEntryGroup" targetId="1b3e-6e8f-74de-2585">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="823c-e06c-1864-a8ef-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="823c-e06c-1864-a8ef-max"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="823c-e06c-1864-a8ef-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="823c-e06c-1864-a8ef-max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -2831,7 +2830,7 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
       </profiles>
       <infoLinks>
         <infoLink name="Massive Toxic Lashes [Melee]" id="e2bc-6c94-a097-728a" hidden="false" type="profile" targetId="8056-b24d-d5fe-7643"/>
-        <infoLink name="Massive Toxic Lashes [ranged]" id="5a43-e06c-82c2-a803" hidden="false" type="profile" targetId="657f-504c-5b65-d39b"/>
+        <infoLink name="Massive Toxic Lashes [Ranged]" id="5a43-e06c-82c2-a803" hidden="false" type="profile" targetId="657f-504c-5b65-d39b"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="200"/>

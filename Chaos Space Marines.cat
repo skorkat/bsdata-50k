@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -15,13 +15,16 @@
       <description>Unless otherwise specified, each unit begins the battle as Unaligned. 
 
 
-As an action, any Unaligned unit may make a Dark Pact to align themselves to a specific god. At the end of that Action Phase, until the end of the battle, that unit is devoted to that god.
+As an action, any Unaligned unit may make a Dark Pact to align themselves to a specific god. At the end of that Action, until the end of the battle, that unit is devoted to that god.
 
 
 An unit which is aligned with a specific god gains the associated boon.
 
 
----
+Slaanesh: Boon of Swiftness
+Nurgle: Boon of Pestilence
+Khorne: Boon of Rage
+Tzeentch: Boon of Trickery
 
 
 A unit which is aligned with a particular god (ie. Noise Marines for Slaanesh, Plague Marines for Nurgle, Khorne Bezerkers for Khorne, Rubric Marines for Tzeentch) begins the battle aligned with that god.
@@ -114,7 +117,7 @@ A model aligned with a particular god cannot join units aligned with a different
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">24&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">8</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">6</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
@@ -447,9 +450,9 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
       </characteristics>
@@ -466,7 +469,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -648,7 +651,6 @@ A model aligned with a particular god cannot join units aligned with a different
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <infoLinks>
-                <infoLink name="Autopistol" id="42d5-5052-fc43-776e" hidden="false" type="profile" targetId="fb91-11f1-4afc-1bc5"/>
                 <infoLink name="Cultist" id="06dd-0576-644b-4983" hidden="false" type="profile" targetId="6f2e-9dc4-d7cb-8c24"/>
                 <infoLink name="Krak Grenades" id="ab85-3643-5579-97c3" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
               </infoLinks>
@@ -656,6 +658,36 @@ A model aligned with a particular god cannot join units aligned with a different
                 <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="ba49-b563-69ab-2a8a" includeChildSelections="false"/>
                 <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="5c23-ea24-cc9e-4a26" includeChildSelections="false"/>
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon" id="ded1-f5c1-f58b-d13c" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="f72d-b464-5497-15f0" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0790-bfa0-2a8a-7173"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Autopistol" id="42d5-5052-fc43-776e" hidden="false" type="profile" targetId="fb91-11f1-4afc-1bc5"/>
+                        <infoLink name="Autopistol" id="f55d-60fa-6100-ae8b" hidden="false" type="profile" targetId="fb91-11f1-4afc-1bc5"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Autogun" hidden="false" id="2efa-2048-ecbf-f922" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c02a-7e28-e04a-bd95"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Autogun" id="cc6b-45d6-99f4-c934" hidden="false" type="profile" targetId="0ee7-b404-462e-080c"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="1"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53b5-2862-99c7-213f-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53b5-2862-99c7-213f-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Cultist w/ Bolt Pistol" hidden="false" id="86a0-efda-1dc8-ebd9">
               <costs>
@@ -758,7 +790,7 @@ A model aligned with a particular god cannot join units aligned with a different
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
-                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
+                    <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                     <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
@@ -1054,7 +1086,7 @@ A model aligned with a particular god cannot join units aligned with a different
                         <infoLink name="Heavy Bolter" id="099d-a6e5-eb63-42fb" hidden="false" type="profile" targetId="e775-c918-ae40-40de"/>
                       </infoLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5a80-7a68-589d-e5fc" sortIndex="7">
+                    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5a80-7a68-589d-e5fc" sortIndex="8">
                       <costs>
                         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
                       </costs>
@@ -1062,9 +1094,9 @@ A model aligned with a particular god cannot join units aligned with a different
                         <infoLink name="Autocannon" id="072e-eb39-574f-8569" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
                       </infoLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Chaincannon" hidden="false" id="2345-cc13-14fb-9741" sortIndex="8">
+                    <selectionEntry type="upgrade" import="true" name="Chaincannon" hidden="false" id="2345-cc13-14fb-9741" sortIndex="7">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Chaincannon" id="3c9b-6cc5-adc1-3fce" hidden="false" type="profile" targetId="c929-39d4-4f88-b94a"/>
@@ -2224,7 +2256,7 @@ A model aligned with a particular god cannot join units aligned with a different
                         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="bd8b-369e-d059-941d" sortIndex="3">
+                    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="bd8b-369e-d059-941d" sortIndex="4">
                       <infoLinks>
                         <infoLink name="Autocannon" id="f706-6e5b-0e19-4e3c" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
                       </infoLinks>
@@ -2232,12 +2264,12 @@ A model aligned with a particular god cannot join units aligned with a different
                         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Chaincannon" hidden="false" id="2622-ff8e-e30a-fcf7" sortIndex="4">
+                    <selectionEntry type="upgrade" import="true" name="Chaincannon" hidden="false" id="2622-ff8e-e30a-fcf7" sortIndex="3">
                       <infoLinks>
                         <infoLink name="Chaincannon" id="543e-cb28-e269-2941" hidden="false" type="profile" targetId="c929-39d4-4f88-b94a"/>
                       </infoLinks>
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="3641-92c2-a79b-4499" sortIndex="5">

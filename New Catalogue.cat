@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="86c1-35b4-c984-858a" name="aLib - Chaos" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="86c1-35b4-c984-858a" name="aLib - Chaos" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Khorne: Boon of Rage" id="6dd3-7c64-ea26-063b" hidden="false">
       <description>Natural rolls of 6 to hit in the Fight Phase count as 2 hits.</description>
       <alias>Boon of Rage</alias>
     </rule>
     <rule name="Nurgle: Boon of Pestilence" id="85a2-9959-0d31-39d0" hidden="false">
-      <description>Always count as being in Soft Cover. This is not cumulative with other Soft / Hard / Fortified cover.</description>
+      <description>In the Fight Phase, at Initiative 0, each Nurgle unit inflicts 1 Psychic Wound on each enemy unit engaged with it. Note that Characters attached to a unit do not inflict an additional Psychic Wound.</description>
       <alias>Boon of Pestilence</alias>
     </rule>
     <rule name="Slaanesh: Boon of Swiftness" id="6f24-d2c5-2c7f-32b6" hidden="false">
@@ -14,7 +14,14 @@
       <alias>Boon of Swiftness</alias>
     </rule>
     <rule name="Tzeentch: Boon of Trickery" id="db16-98e7-5f3a-cd6f" hidden="false">
-      <description>Once per round, re-roll a single Armour Save, Invulnerable Save, Psychic Save, or Warp Effects result</description>
+      <description>In the Command Phase, roll a d6 for each Tzeentch unit. That dice can be used once during the round instead of rolling for any of the following:
+* To Hit
+* To Wound
+* Armour Save
+* Invulnerable Save
+* Psychic Save
+* Feel No Pain
+* Warp Effects</description>
       <alias>Boon of Trickery</alias>
     </rule>
   </sharedRules>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <rules>
     <rule name="Children of the Chaos Gods" id="f631-f11a-b827-50f2" hidden="false">
       <description>All Chaos Daemons automatically get the Boon associated with their god as per the table below:
@@ -657,7 +657,7 @@ Tzeentch     Boon of Trickery</description>
                 <infoLink name="Warp Daemon" id="b7d1-1725-f40e-ae5a" hidden="false" type="profile" targetId="e112-fa19-ac79-0574"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warp Daemon w/ Instrument" hidden="false" id="0173-5184-3cdd-a57a" defaultAmount="" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Warp Daemon w/ Instrument" hidden="false" id="0173-5184-3cdd-a57a" sortIndex="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e69e-c9a6-b696-fc30"/>
               </constraints>
@@ -674,7 +674,7 @@ Tzeentch     Boon of Trickery</description>
                 <infoLink name="Malefic Talons" id="4fcb-5603-f669-9f06" hidden="false" type="profile" targetId="7073-87ab-5784-3a34"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warp Daemon w/ Banner" hidden="false" id="176d-0956-7bca-2630" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Warp Daemon w/ Banner" hidden="false" id="176d-0956-7bca-2630" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45d1-fe5a-b895-1fe1"/>
               </constraints>
@@ -717,7 +717,7 @@ Tzeentch     Boon of Trickery</description>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="7cf6-04c1-e55d-da84" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Daemonette" hidden="false" id="de6f-6a1a-f6d9-28d8" defaultAmount="" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Daemonette" hidden="false" id="de6f-6a1a-f6d9-28d8" sortIndex="1">
               <constraints>
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5426-6537-a8c1-908d" includeChildSelections="false"/>
                 <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="4dbd-f9bc-4354-e71f" includeChildSelections="false"/>
@@ -730,7 +730,7 @@ Tzeentch     Boon of Trickery</description>
                 <infoLink name="Daemonette" id="93fe-bbea-6232-1822" hidden="false" type="profile" targetId="f5c4-79f3-e4b4-4109"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Daemonette w/ Banner" hidden="false" id="34e7-9630-ecac-5b60" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Daemonette w/ Banner" hidden="false" id="34e7-9630-ecac-5b60" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2606-6aa1-f1d7-4d58"/>
               </constraints>
@@ -747,7 +747,7 @@ Tzeentch     Boon of Trickery</description>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Daemonette w/ Instrument" hidden="false" id="47a5-4560-6a04-9ad0" defaultAmount="" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Daemonette w/ Instrument" hidden="false" id="47a5-4560-6a04-9ad0" sortIndex="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4509-87c5-f8ca-6bb3"/>
               </constraints>
@@ -795,7 +795,7 @@ Tzeentch     Boon of Trickery</description>
                 <infoLink name="Plaguebearer" id="7305-4b9c-c432-071c" hidden="false" type="profile" targetId="9a5d-a7f9-3004-b922"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plaguebearer w/ Instrument" hidden="false" id="f95c-0700-9731-be46" defaultAmount="" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Plaguebearer w/ Instrument" hidden="false" id="f95c-0700-9731-be46" sortIndex="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e30e-533c-1daf-d245"/>
               </constraints>
@@ -812,7 +812,7 @@ Tzeentch     Boon of Trickery</description>
                 <infoLink name="Plague Weapon" id="186c-5244-9505-0b51" hidden="false" type="profile" targetId="ced4-cc0a-80ea-72f1"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plaguebearer w/ Banner" hidden="false" id="adbf-346a-3286-cb65" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Plaguebearer w/ Banner" hidden="false" id="adbf-346a-3286-cb65" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c202-bf26-9126-9b0d"/>
               </constraints>
@@ -864,7 +864,7 @@ Tzeentch     Boon of Trickery</description>
                 <infoLink name="Bloodletter" id="a21d-4b19-e0bb-8282" hidden="false" type="profile" targetId="a5e9-7bac-4ba6-f602"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bloodletter w/ Instrument" hidden="false" id="6700-ae7f-5df9-9b8d" defaultAmount="" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Bloodletter w/ Instrument" hidden="false" id="6700-ae7f-5df9-9b8d" sortIndex="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="defe-fb42-3aef-21b5"/>
               </constraints>
@@ -881,7 +881,7 @@ Tzeentch     Boon of Trickery</description>
                 <infoLink name="Hellblade" id="f129-fb82-4dba-2c53" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bloodletter w/ Banner" hidden="false" id="94a1-a54e-b150-bc10" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Bloodletter w/ Banner" hidden="false" id="94a1-a54e-b150-bc10" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e756-24ef-c999-089b"/>
               </constraints>
@@ -1155,7 +1155,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="7c69-8f20-03bb-0d41" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Seeker w/ Instrument" hidden="false" id="9f6d-a164-1ec5-fdcc" defaultAmount="" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Seeker w/ Instrument" hidden="false" id="9f6d-a164-1ec5-fdcc" sortIndex="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0634-fd94-a1c7-7cae"/>
               </constraints>
@@ -1172,7 +1172,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Seeker w/ Banner" hidden="false" id="51a6-a966-472e-ef97" defaultAmount="" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Seeker w/ Banner" hidden="false" id="51a6-a966-472e-ef97" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d2-de9c-71b6-6ceb"/>
               </constraints>
@@ -1399,7 +1399,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b1f3-235f-3fbd-8c12" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bloodcrusher w/ Instrument" hidden="false" id="e858-bd90-9d84-553e" defaultAmount="">
+            <selectionEntry type="upgrade" import="true" name="Bloodcrusher w/ Instrument" hidden="false" id="e858-bd90-9d84-553e">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="925e-193f-f046-1726"/>
               </constraints>
@@ -1416,7 +1416,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <infoLink name="Hellblade" id="b067-2948-d40e-a44c" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bloodcrusher w/ Banner" hidden="false" id="943b-9148-556c-15d3" defaultAmount="">
+            <selectionEntry type="upgrade" import="true" name="Bloodcrusher w/ Banner" hidden="false" id="943b-9148-556c-15d3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae9a-3d94-6f5b-1368"/>
               </constraints>
