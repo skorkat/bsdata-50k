@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Baleblast" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="0768-d8dd-e4dd-620b">
       <characteristics>
@@ -565,7 +565,7 @@
     </profile>
     <profile name="Venom" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="a303-dd0f-2f5b-fca6">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
@@ -581,7 +581,7 @@
     </profile>
     <profile name="Ravager" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5c4d-3177-5c4e-fdb4">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
@@ -597,7 +597,7 @@
     </profile>
     <profile name="Raider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4608-34c1-29f9-df73">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
@@ -1734,6 +1734,9 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Bulky" id="15fe-cea5-d64a-1cf7" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hellions" hidden="false" id="b525-7b64-145a-93ff">
       <categoryLinks>
@@ -2089,6 +2092,7 @@
       <infoLinks>
         <infoLink name="Hover" id="6cce-0726-4a92-4513" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Fear" id="24b7-1199-de89-7c27" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+        <infoLink name="Bulky" id="054a-dd92-f716-852e" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="20f8-1bff-fa46-8555" primary="true" name="Elite"/>
@@ -2177,6 +2181,7 @@
       <infoLinks>
         <infoLink name="Hover" id="4941-4d16-fa6e-183d" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Fear" id="1072-5701-64a1-4530" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+        <infoLink name="Bulky" id="1e37-4622-c362-6c06" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="cd44-5401-1af0-a3c5" targetId="6297-a84f-a103-e2ac" primary="true"/>
@@ -2656,6 +2661,7 @@
         <infoLink name="Agile" id="598f-691a-c20a-a576" hidden="false" type="rule" targetId="6248-ab86-68c5-20f4"/>
         <infoLink name="Fly" id="828e-0bc3-af15-8525" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
         <infoLink name="Deep Strike" id="6122-4e1f-68e8-7c15" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Large" id="fe2f-94ab-49e7-6bd2" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Beast Pack" hidden="false" id="a346-0daa-da5b-6307">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -768,7 +768,7 @@ A model aligned with a particular god cannot join units aligned with a different
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Traitor Guardsman" hidden="false" id="ae15-3c61-1531-d7ea" defaultAmount="9">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
               </costs>
               <infoLinks>
                 <infoLink name="Lasgun" id="9aeb-2123-b510-126c" hidden="false" type="profile" targetId="adc0-6fe3-4450-2225"/>
@@ -802,7 +802,7 @@ A model aligned with a particular god cannot join units aligned with a different
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon" id="6f4a-5824-fdb7-005c" hidden="false">
@@ -878,7 +878,7 @@ A model aligned with a particular god cannot join units aligned with a different
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Traitor Guardsman w/ Special Weapon" hidden="false" id="9f69-710a-d081-2992">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
               </costs>
               <infoLinks>
                 <infoLink name="Traitor Guardsman" id="20c5-7de9-51d6-b507" hidden="false" type="profile" targetId="8147-5262-5877-6b85"/>
@@ -1148,7 +1148,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -1502,6 +1502,9 @@ A model aligned with a particular god cannot join units aligned with a different
       <entryLinks>
         <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="f66a-669f-f15c-088f" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Bulky" id="1bea-7d6d-ebfb-cd47" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Khorne Berzerkers" hidden="false" id="da5f-0e3f-89fb-48ab">
       <categoryLinks>
@@ -2017,7 +2020,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="3632-fa68-2f45-ce05" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Terminator Bulk" id="a854-4272-996d-5340" hidden="false" type="rule" targetId="9c62-2cea-63a4-ad2d"/>
+            <infoLink name="Large" id="01f9-41bb-890e-b730" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
           </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2184,6 +2187,9 @@ A model aligned with a particular god cannot join units aligned with a different
       <entryLinks>
         <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="e15c-bcb8-f07d-977e" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Large" id="02d3-2c82-9351-dfce" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Havocs" hidden="false" id="76e5-fa0a-2b50-52da">
       <categoryLinks>
@@ -2768,7 +2774,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -2948,7 +2954,7 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -3360,6 +3366,10 @@ A model aligned with a particular god cannot join units aligned with a different
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <infoLinks>
+            <infoLink name="Large" id="4d7e-5a4f-8dc3-66ee" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+            <infoLink name="Fly" id="82bf-d2c3-757a-04ab" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -3559,7 +3569,7 @@ A model aligned with a particular god cannot join units aligned with a different
               </profiles>
               <infoLinks>
                 <infoLink name="Deep Strike" id="389f-b0de-f941-654e" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
-                <infoLink name="Terminator Bulk" id="c1ac-a007-35fa-13ef" hidden="false" type="rule" targetId="9c62-2cea-63a4-ad2d"/>
+                <infoLink name="Large" id="68ac-ff5b-5723-3f1a" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Chosen Terminator Upgrades" hidden="false" id="62c5-3f27-c76c-e130" type="selectionEntryGroup" targetId="b3b6-0cf7-6d55-77a3"/>
@@ -3690,7 +3700,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Deep Strike" id="45eb-758c-aa19-3887" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
                 <infoLink name="Storm Bolter" id="7b72-5a43-4dcc-96bb" hidden="false" type="profile" targetId="9643-ded0-d7ae-ebdb"/>
-                <infoLink name="Terminator Bulk" id="bb42-1f07-042b-6eb6" hidden="false" type="rule" targetId="9c62-2cea-63a4-ad2d"/>
+                <infoLink name="Large" id="8723-4869-5569-7fe0" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
@@ -3918,7 +3928,7 @@ A model aligned with a particular god cannot join units aligned with a different
               <infoLinks>
                 <infoLink name="Deep Strike" id="e1e4-3d00-e29e-0cb7" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
                 <infoLink name="Storm Bolter" id="a3a5-249c-1c58-c505" hidden="false" type="profile" targetId="9643-ded0-d7ae-ebdb"/>
-                <infoLink name="Terminator Bulk" id="d4b4-062b-dfbe-40c0" hidden="false" type="rule" targetId="9c62-2cea-63a4-ad2d"/>
+                <infoLink name="Large" id="05b1-6e0c-f43d-a08a" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>

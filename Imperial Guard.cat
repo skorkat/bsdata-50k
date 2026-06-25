@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
-      <description>The target unit immediately regroups and takes the Move action, but it can only move up to 6”.
+      <description>The target unit immediately regroups and takes the Move action.
 
 Restrictions: Must be Broken</description>
     </rule>
@@ -41,7 +41,7 @@ Restrictions: Cannot be Broken</description>
     </rule>
     <rule name="Order - Move! Move! Move!" id="e52c-814b-8220-749a" hidden="false">
       <alias>Move! Move! Move!</alias>
-      <description>The unit immediately takes the Move action. It gains the Full Speed rule.
+      <description>The unit immediately makes a Move, but it can only move up to 6”. If it has not already activated, then it counts as moving during its activation even if it chooses to remain stationary.
 
 
 Restrictions: Cannot be Broken or Engaged. May only target units which are able to Move</description>
@@ -512,7 +512,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
         <categoryLink targetId="de72-13bd-1789-6816" id="bb2c-da1c-2640-82f7" primary="false" name="Biological"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Bulky" id="aa42-9110-a09a-d332" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+        <infoLink name="Large" id="aa42-9110-a09a-d332" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
         <infoLink name="Frag Grenades" id="fa1b-7fb8-2d18-b1e7" hidden="false" type="rule" targetId="8744-17e2-4104-733d"/>
       </infoLinks>
       <selectionEntries>
@@ -870,7 +870,7 @@ Target a friendly unit within 12” and nominate an Order from the list below. T
             <infoLink name="Sniper Rifle" id="2ecc-b39d-7680-0456" hidden="false" type="profile" targetId="41ee-f79d-43c3-1998"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="39ce-f2f7-53e8-8a05"/>

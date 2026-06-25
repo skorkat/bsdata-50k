@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="690b-a1f5-e4c6-b014" name="Mechanicus" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="6" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="690b-a1f5-e4c6-b014" name="Mechanicus" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="6" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Cult Mechanicus" id="7b50-fead-20b3-9019" hidden="false">
       <constraints>
@@ -1837,7 +1837,7 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Sicarian" hidden="false" id="bbc9-2bd7-6492-6bad" sortIndex="1" defaultAmount="4">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
               </costs>
               <profiles>
                 <profile name="Sicarian" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="eba6-6b06-fbbd-d0ae">
@@ -1845,7 +1845,7 @@
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
-                    <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
+                    <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
@@ -1926,7 +1926,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08b3-1ed3-1ffc-8336-min"/>
@@ -1938,7 +1938,7 @@
                     <characteristic name="WS" typeId="1509-720c-2a2f-ed46">4</characteristic>
                     <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">3+</characteristic>
                     <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">4</characteristic>
-                    <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
+                    <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
                     <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                     <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
                     <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>

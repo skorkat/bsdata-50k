@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5e13-1304-0d3d-42f9" name="Grey Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5e13-1304-0d3d-42f9" name="Grey Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Grey Knights" id="08b0-72fb-d1dd-b8c3" hidden="false">
       <constraints>
@@ -66,7 +66,7 @@
             <profile name="Gate of Infinity" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="78cd-c3c2-d82e-3999">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">A friendly unit within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit can immediately be placed anywhere on the battlefield as per the Deep Strike rules. If they are activated later in the round, they cannot Move in their Movement Phase.</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit can immediately be placed anywhere within line of sight on the battlefield as per the Deep Strike rules. This line of sight cannot pass into or through Obscuring terrain. If the target unit has not already been activated, they cannot Move in their Movement or Action Phases.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -181,7 +181,7 @@
     <profile name="Astral Aim" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="3fdb-b845-ba5e-5adf">
       <characteristics>
         <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">The caster&apos;s unit</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">Immediately take the Shoot action, applying the Indirect rule to ranged weapons</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">Immediately take the Shoot action, ignoring the Obscuring rule</characteristic>
       </characteristics>
     </profile>
     <profile name="Purifying Flame" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="d80e-d092-8125-3391">
@@ -321,7 +321,7 @@
   </sharedProfiles>
   <sharedRules>
     <rule name="Combat Psykers" id="d8fd-8c6a-5fa2-282a" hidden="false">
-      <description>A Grey Knights Psyker may cast a single psychic power before performing a Shoot action (unless casting Astral Aim) or a Run action (unless casting Ethereal Castigation or Gate of Infinity). However, they must roll an additional d6 as per the rules for casting a psychic power multiple times.</description>
+      <description>A Grey Knights Psyker may cast a single psychic power in addition to performing a Shoot action or a Run action. If they do so, they suffer penalties as though they were casting that psychic power multiple times. A unit cannot Shoot or Run twice in a single activation due to this rule.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
@@ -1495,7 +1495,7 @@
                 <infoLink name="Nemesis Force Weapon" id="aa0d-69b6-1f01-0281" hidden="false" type="profile" targetId="38e3-0cc6-c189-e181"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Terminator Justiciar" hidden="false" id="62a4-d1c2-7d9f-3049" sortIndex="3" defaultAmount="">
+            <selectionEntry type="upgrade" import="true" name="Terminator Justiciar" hidden="false" id="62a4-d1c2-7d9f-3049" sortIndex="3">
               <profiles>
                 <profile name="Terminator Justiciar" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="170a-6622-5d43-6a85">
                   <characteristics>

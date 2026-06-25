@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -475,7 +475,7 @@
     </profile>
     <profile name="Wrecking Ball" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="46d7-f204-424b-b5e3">
       <characteristics>
-        <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
+        <characteristic name="A" typeId="c13c-0d58-8215-8faa">U+1</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+1</characteristic>
         <characteristic name="AP" typeId="b61b-983a-90e6-48fc">1</characteristic>
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667"/>
@@ -888,7 +888,7 @@ The unit gains the following special rules:
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Big Shoota" hidden="false" id="3963-bf5c-19a6-6fd0">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Big Shoota" id="ef64-336f-0b05-d6fd" hidden="false" type="profile" targetId="5206-c566-4696-f077"/>
@@ -896,7 +896,7 @@ The unit gains the following special rules:
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Burna" hidden="false" id="bda3-7753-4ec2-9403">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Burna [Melee]" id="ef5a-3cbc-fb22-4798" hidden="false" type="profile" targetId="c49b-d725-4242-d30f"/>
@@ -905,7 +905,7 @@ The unit gains the following special rules:
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Rokkit Launcha" hidden="false" id="44e2-62be-fb37-81a4">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Rokkit Launcha" id="cb22-c9f0-58d1-e718" hidden="false" type="profile" targetId="ef04-4692-4093-714e"/>
@@ -1064,7 +1064,7 @@ The unit gains the following special rules:
             <infoLink name="Burna [Shooting]" id="060a-32ae-5034-fb41" hidden="false" type="profile" targetId="1226-5a68-4220-9bf4"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="13"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mek" hidden="false" id="de09-7191-428d-c005">
@@ -1076,7 +1076,7 @@ The unit gains the following special rules:
             <infoLink name="Choppa" id="c76a-9e99-fa97-18e0" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="5fd5-76f8-7433-9982" hidden="false">
@@ -1129,7 +1129,7 @@ The unit gains the following special rules:
             <infoLink name="Deffgun" id="e21f-5d5c-8c9b-ed67" hidden="false" type="profile" targetId="141e-f7ec-4f61-fee1"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mek" hidden="false" id="8236-a591-ffe1-c838">
@@ -1141,7 +1141,7 @@ The unit gains the following special rules:
             <infoLink name="Choppa" id="6fcf-c915-b19d-fc48" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="1fbc-56ba-7118-cc0c" hidden="false">
@@ -1186,7 +1186,7 @@ The unit gains the following special rules:
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Tankbusta" hidden="false" id="b5eb-16fd-2bae-eb1a">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="17"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
           </costs>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d0bd-e1c8-b73d-94f0" includeChildSelections="false"/>
@@ -1292,7 +1292,7 @@ The unit gains the following special rules:
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Big Shoota" hidden="false" id="061a-79e3-b804-d6b3">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Big Shoota" id="1966-5d26-bd9b-21df" hidden="false" type="profile" targetId="5206-c566-4696-f077"/>
@@ -1300,7 +1300,7 @@ The unit gains the following special rules:
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Burna" hidden="false" id="41b0-2055-ffa6-02af">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Burna [Melee]" id="cebd-be72-817d-2580" hidden="false" type="profile" targetId="c49b-d725-4242-d30f"/>
@@ -1309,7 +1309,7 @@ The unit gains the following special rules:
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Rokkit Launcha" hidden="false" id="b20d-523a-6829-069f">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Rokkit Launcha" id="85be-b7c1-c6f3-b420" hidden="false" type="profile" targetId="ef04-4692-4093-714e"/>
@@ -1447,6 +1447,11 @@ The unit gains the following special rules:
         <categoryLink targetId="d354-6680-584e-943c" id="fa0c-cb29-d466-67cd" primary="false" name="Infantry"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="a179-74a1-9b43-e3ce" primary="false" name="Mechanical"/>
       </categoryLinks>
+      <rules>
+        <rule name="Big Gun" id="ef53-bd34-99c9-59c6" hidden="false">
+          <description>Cannot embark in Transports</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Killa Kans" hidden="false" id="4c7b-19cc-1d6f-9430">
       <selectionEntries>
@@ -1839,7 +1844,7 @@ The unit gains the following special rules:
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Red Paint Job" hidden="false" id="ee98-69d3-0624-9b94">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
               </costs>
               <infoLinks>
                 <infoLink name="Red Paint Job" id="c42c-911f-a4f7-a24e" hidden="false" type="rule" targetId="b8df-f6cb-167f-1ee9"/>
@@ -2018,6 +2023,7 @@ The unit gains the following special rules:
       <infoLinks>
         <infoLink name="Fly" id="604c-fbeb-3c38-2880" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
         <infoLink name="Deep Strike" id="efad-b687-bf78-e17b" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Large" id="82c4-ed45-facd-8dee" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Storm Boy" hidden="false" id="b92b-fe94-c13a-79c7">

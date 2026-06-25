@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Lib - Imperial - Base" id="331b-005e-07b0-6041" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Equipment" id="b609-da18-63b6-2e95" targetId="0e97-bb9e-538e-d4e5"/>
@@ -235,7 +235,7 @@
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
         <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -251,7 +251,7 @@
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
         <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -438,7 +438,7 @@
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
         <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -454,7 +454,7 @@
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
         <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -470,7 +470,7 @@
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
         <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
         <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
         <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
@@ -484,7 +484,7 @@
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">1</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
         <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
         <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
         <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
@@ -793,8 +793,8 @@
       </costs>
       <infoLinks>
         <infoLink name="Deep Strike" id="97eb-ad5b-11dc-b862" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
-        <infoLink name="Terminator Bulk" id="a07b-a04f-a9d0-399c" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
         <infoLink name="Terminator" id="b92d-e362-f403-fcaf" hidden="false" type="profile" targetId="aa07-8fb3-1a5e-c7e4"/>
+        <infoLink name="Large" id="692c-d312-c9bc-a34f" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Terminator Sergeant" hidden="false" id="5367-700d-5299-8de9">
@@ -803,8 +803,9 @@
       </costs>
       <infoLinks>
         <infoLink name="Deep Strike" id="576f-399f-462c-c7c8" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
-        <infoLink name="Terminator Bulk" id="072a-41d2-e9d3-b2e2" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
         <infoLink name="Terminator Sergeant" id="d84e-d02c-66db-3c2f" hidden="false" type="profile" targetId="928f-31d9-400f-0db5"/>
+        <infoLink name="Large" id="dd70-f6bb-22da-d7b5" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+        <infoLink name="Large" id="9f17-d667-72ac-1531" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Scout Biker" hidden="false" id="4b18-b8ae-d50c-1717">
@@ -924,13 +925,15 @@
         <infoLink name="Centurion" id="c5fb-b9b6-3169-1612" hidden="false" type="profile" targetId="c626-b07b-7ea2-6c81"/>
         <infoLink name="Bulky" id="e879-5d6e-64bf-2fc1" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
         <infoLink name="Centurion Armour" id="f8a8-72ed-b077-e5f8" hidden="false" type="rule" targetId="ce90-cc29-ec2a-a78c"/>
+        <infoLink name="Large" id="d6e2-48db-9640-156f" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Centurion Sergeant" hidden="false" id="cb9d-c76f-f709-fbef">
       <infoLinks>
-        <infoLink name="Centurion Sereant" id="8066-bcf0-32df-9fe4" hidden="false" type="profile" targetId="af5b-a753-c73a-8d05"/>
+        <infoLink name="Centurion Sergeant" id="8066-bcf0-32df-9fe4" hidden="false" type="profile" targetId="af5b-a753-c73a-8d05"/>
         <infoLink name="Bulky" id="fb53-6dc3-ea78-59d7" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
         <infoLink name="Centurion Armour" id="be75-8249-e093-d556" hidden="false" type="rule" targetId="ce90-cc29-ec2a-a78c"/>
+        <infoLink name="Large" id="e1fd-fe45-1218-9a46" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

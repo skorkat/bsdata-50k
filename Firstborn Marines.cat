@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Honoured Brethren" id="ba83-6a23-709e-c810" hidden="false">
       <constraints>
@@ -267,6 +267,9 @@
         <categoryLink targetId="d354-6680-584e-943c" id="6468-76dd-e10f-e9b2" primary="false" name="Infantry"/>
         <categoryLink targetId="de72-13bd-1789-6816" id="81aa-678a-8119-9a53" primary="false" name="Biological"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Large" id="87e1-eb98-10cc-b7a7" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Devastator Squad" hidden="false" id="542d-e87c-aefc-6d23" flatten="false" collective="false" collapsible="false">
       <selectionEntryGroups>

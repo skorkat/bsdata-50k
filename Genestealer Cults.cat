@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e971-b31b-b278-5da6" name="Genestealer Cults" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="11" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e971-b31b-b278-5da6" name="Genestealer Cults" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="11" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="3f5a-473f-8878-4c9d" targetId="0d98-1036-43bc-85f0"/>
   </catalogueLinks>
@@ -366,6 +366,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
       <infoLinks>
         <infoLink name="Heavy Power Hammer" id="bc4f-e6d1-ef80-980c" hidden="false" type="profile" targetId="b807-7c7f-422a-ba41"/>
         <infoLink name="Bulky" id="0c3e-febb-c2cc-2983" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+        <infoLink name="Large" id="babd-8789-2f16-b557" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="7bc8-7b6d-7a1c-b30c" primary="false" name="Character"/>
@@ -382,6 +383,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
               <infoLinks>
                 <infoLink name="Bulky" id="6c0c-5a11-d528-5570" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
                 <infoLink name="Heavy Improvised Weapon" id="0d74-1a25-32c2-1612" hidden="false" type="profile" targetId="e0f2-636a-d068-5c78"/>
+                <infoLink name="Large" id="72b3-17d3-8063-eea8" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
               </infoLinks>
               <profiles>
                 <profile name="Aberrant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="dc7c-6423-8d41-b731">
@@ -1708,7 +1710,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <selectionEntry type="upgrade" import="true" name="Jackal" hidden="false" id="4bde-a1a2-ca66-89f3" sortIndex="1" defaultAmount="4">
               <infoLinks>
                 <infoLink name="Jackal" id="0716-0931-951c-db55" hidden="false" type="profile" targetId="bcf6-c262-f1f9-240c"/>
-                <infoLink name="Atlan Small Arms" id="f762-837a-380f-3fee" hidden="false" type="profile" targetId="9c5f-2ebe-d2aa-1c27"/>
+                <infoLink name="Jackal Small Arms" id="f762-837a-380f-3fee" hidden="false" type="profile" targetId="9c5f-2ebe-d2aa-1c27"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Demolition Charge" hidden="false" id="af96-9703-437f-deb8">

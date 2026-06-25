@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="dc6f-b0e6-dbca-b789" name="Tyranids" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="dc6f-b0e6-dbca-b789" name="Tyranids" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Synapse" id="8e40-1aab-fb83-9431" hidden="false">
       <description>While a Tyranid unit is within 12” of a unit with this special rule, it can use the Leadership characteristic of that model.

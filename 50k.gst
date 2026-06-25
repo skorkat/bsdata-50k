@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -151,7 +151,10 @@ All models which arrive via Deep Strike into terrain must make a Hazard Test. Wo
       <comment>Movement</comment>
     </rule>
     <rule name="Bulky" id="bdeb-e59a-e173-9286" hidden="false">
-      <description>Models with this rule always count as remaining stationary for the purpose of Actions. Units with any model with this rule cannot run, and cannot benefit from any movement rules/abilities (such as Agile, Fleet, Full Speed, or Psychic Powers).</description>
+      <description>Models with this rule do not suffer -1 To Hit to shooting due to moving. Infantry models with this rule can also shoot Heavy weapons after they move, but they suffer a -1 To Hit penalty if they do so. 
+
+
+Units with any model with this rule cannot benefit from any abilities or actions that increase movement (such as Agile, Fleet, Full Speed, or Psychic Powers). Hover and Fly still apply.</description>
       <comment>Movement</comment>
     </rule>
     <rule name="Agile" id="6248-ab86-68c5-20f4" hidden="false">
@@ -175,7 +178,10 @@ All models which arrive via Deep Strike into terrain must make a Hazard Test. Wo
       <description>Automatically hits the target unit. Ignores Cover.</description>
     </rule>
     <rule name="Indirect" id="a6e9-4ebe-ee95-acd8" hidden="false">
-      <description>May target units within range that are not within Line of Sight, but if it does, suffer -1 To Hit.</description>
+      <description>May target units within range that are not within Line of Sight, but if it does, suffer -1 To Hit.
+
+
+This weapon ignores the first piece of Obscuring terrain, and cannot have its range reduced by 100%.</description>
       <comment>Weapon</comment>
     </rule>
     <rule name="Melta" id="f96d-d15b-8c08-65cd" hidden="false">
@@ -184,7 +190,7 @@ All models which arrive via Deep Strike into terrain must make a Hazard Test. Wo
     </rule>
     <rule name="Sniper" id="e56f-ad5a-3951-8020" hidden="false">
       <comment>Weapon</comment>
-      <description>Can target a Character even if they are within a unit (must be declared this before firing any shots). If the Character is not in a unit, ignore the -1 To Hit penalty for Targeting a Character.</description>
+      <description>Can target a specific model profile (including a Character) within a unit (must be declared this before firing any shots). If there are multiple models with the same profile (eg. 2 weapons have the same special weapon upgrade), then the owning player chooses which order to allocate wounds in.</description>
     </rule>
     <rule name="Poison (X)" id="7aa9-7da5-798b-3b53" hidden="false">
       <comment>Weapon</comment>
@@ -345,7 +351,7 @@ The unit then immediately becomes Broken.</description>
     </rule>
     <rule name="Heavy" id="5080-657a-2368-b490" hidden="false">
       <comment>Weapon</comment>
-      <description>Infantry and Mounted cannot fire after moving</description>
+      <description>Infantry cannot fire after moving</description>
     </rule>
     <rule name="Run" id="5852-841f-6fe7-77a3" hidden="false">
       <comment>Action</comment>
