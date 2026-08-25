@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -147,7 +147,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">24&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">8</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">2</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast</characteristic>
@@ -387,7 +387,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">48&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">3d6</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Penetrating</characteristic>
@@ -571,16 +571,16 @@
   </sharedProfiles>
   <rules>
     <rule name="Waaagh!" id="c579-8d44-21ff-1354" hidden="false">
-      <description>Once per game, in the Command Phase, the Ork player may choose to call a Waaagh!. If they do so, until your next Command Phase, all Ork units gain the (cumulative) bonuses listed below, but reduce their OC by 1. In addition, any Broken units immediately rally, unless they are not in coherency.
+      <description>Each turn, Orks gain the benefits listed in the table below. Once per game, in the Command Phase, the Ork player may choose to call a Waaagh!. If they do so, count the turn number as 6, but reduce the OC of all Ork units by 1. In subsequent turns, Orks no longer gain any benefits from this rule.
 
 
 Turn
-1: 6++ Sv
-2: +1 A
-3: +1 S
+1: 6+++ FnP
+2: +1 S
+3: +1 A
 4: Fleet
-5: +1 T (not AV)
-6: 5+ FnP</description>
+5: 5++ Sv (biological), 6++ Sv (mechanical)
+6: 3+ Ld, auto-rally</description>
     </rule>
     <rule name="Looted Tanks" id="adec-7f7a-625d-e8be" hidden="false">
       <description>When building an Ork list, you may add Mechanical Tank units from any army, as long as they are not a Character and are not Unique. If you do so, the unit is modified in the following ways:
@@ -604,7 +604,7 @@ The unit gains the following special rules:
       <description>An Infantry model equipped with “Kombi-X” weapons count as being equipped with both the weapon “X”, and a Shoota. For example, “Kombi-Skorcha” counts as a Shoota and a Skorcha, so the model may fire either of them in their turn.</description>
     </rule>
     <rule name="Red Paint Job" id="b8df-f6cb-167f-1ee9" hidden="false">
-      <description>A Mechanical Tank with this rule can move a 1” further if they move in a straight line.</description>
+      <description>A Mechanical Tank with this rule can move an additional 2” if they move in a straight line</description>
     </rule>
   </rules>
   <sharedRules>
@@ -644,7 +644,7 @@ The unit gains the following special rules:
         </profile>
         <profile name="Weirdboy" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="b9af-4846-a0e6-4b0d">
           <characteristics>
-            <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">1</characteristic>
+            <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -654,15 +654,15 @@ The unit gains the following special rules:
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfba-a511-3462-cab4" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
           </costs>
           <modifiers>
-            <modifier type="set" value="2" field="2ae4-30d0-9f48-c672" affects="profiles.Psyker" scope="parent"/>
+            <modifier type="set" value="3" field="2ae4-30d0-9f48-c672" affects="profiles.Psyker" scope="parent"/>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="60"/>
       </costs>
       <infoLinks>
         <infoLink name="Weirdboy Staff" id="3816-9e4d-be39-fd86" hidden="false" type="profile" targetId="9e62-fb62-4248-2ef1"/>
@@ -722,7 +722,11 @@ The unit gains the following special rules:
           <infoLinks>
             <infoLink name="Slugga" id="d562-0e8c-5b86-b9f8" hidden="false" type="profile" targetId="2484-99f4-4d86-b604"/>
             <infoLink name="Grabba Stick" id="6e1c-9da5-7ce5-24b2" hidden="false" type="profile" targetId="5880-cef4-42f2-24b7"/>
-            <infoLink name="Ork Boy" id="f7f0-f975-e457-7fcf" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
+            <infoLink name="Ork Boy" id="f7f0-f975-e457-7fcf" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c">
+              <modifiers>
+                <modifier type="set" value="6+" field="d131-a398-ad21-bb05"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -757,7 +761,7 @@ The unit gains the following special rules:
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Red Paint Job" hidden="false" id="970e-fe61-8aa1-85b2" sortIndex="3">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
           </costs>
           <infoLinks>
             <infoLink name="Red Paint Job" id="ec36-feb7-b4da-a907" hidden="false" type="rule" targetId="b8df-f6cb-167f-1ee9"/>
@@ -1255,7 +1259,7 @@ The unit gains the following special rules:
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
               </costs>
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3de2-55e3-5882-5b43" includeChildSelections="false"/>
@@ -1331,7 +1335,18 @@ The unit gains the following special rules:
         </selectionEntryGroup>
         <selectionEntryGroup name="Weapons" id="2dd4-78f8-cb0b-7eef" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Slugga &amp; Choppa" hidden="false" id="5dab-1011-3a7e-ade5"/>
+            <selectionEntry type="upgrade" import="true" name="Slugga &amp; Choppa" hidden="false" id="5dab-1011-3a7e-ade5">
+              <modifiers>
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="97ab-1654-0594-d1d6" childId="e75b-defc-2eac-7b4f" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="-2"/>
+              </costs>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shoota" hidden="false" id="172a-1f1a-2f93-d1da"/>
           </selectionEntries>
           <constraints>
@@ -1519,7 +1534,7 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
                 <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
                 <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">9+</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
                 <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
                 <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
                 <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -1553,7 +1568,7 @@ The unit gains the following special rules:
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
             <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
@@ -1823,9 +1838,9 @@ The unit gains the following special rules:
         </selectionEntryGroup>
         <selectionEntryGroup name="Upgrades" id="53db-a7d8-730e-56c3" hidden="false" sortIndex="3">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Killkannon" hidden="false" id="9a2f-a998-974a-e1c2">
+            <selectionEntry type="upgrade" import="true" name="Killkannon" hidden="false" id="9a2f-a998-974a-e1c2" sortIndex="3">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
               </costs>
               <infoLinks>
                 <infoLink name="Killkannon" id="59dc-57af-98e2-2630" hidden="false" type="profile" targetId="536c-db6d-45a1-e90a"/>
@@ -1842,7 +1857,7 @@ The unit gains the following special rules:
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d940-cc23-b1fa-dd8a" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Red Paint Job" hidden="false" id="ee98-69d3-0624-9b94">
+            <selectionEntry type="upgrade" import="true" name="Red Paint Job" hidden="false" id="ee98-69d3-0624-9b94" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
               </costs>
@@ -1853,7 +1868,7 @@ The unit gains the following special rules:
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6716-f25b-af25-4bb5" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Wreckin&apos; Ball" hidden="false" id="d0c1-1cfe-6449-3dad">
+            <selectionEntry type="upgrade" import="true" name="Wreckin&apos; Ball" hidden="false" id="d0c1-1cfe-6449-3dad" sortIndex="4">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
@@ -1864,7 +1879,7 @@ The unit gains the following special rules:
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f6-4994-3490-83b1" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Deff Rolla" hidden="false" id="7c0e-3e78-df7e-33d1">
+            <selectionEntry type="upgrade" import="true" name="Deff Rolla" hidden="false" id="7c0e-3e78-df7e-33d1" sortIndex="5">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
@@ -1875,7 +1890,7 @@ The unit gains the following special rules:
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a125-8b61-dafb-7ecf" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="&apos;Ard Case" hidden="false" id="8c88-18e8-98cb-fee3">
+            <selectionEntry type="upgrade" import="true" name="&apos;Ard Case" hidden="false" id="8c88-18e8-98cb-fee3" sortIndex="2">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
@@ -2445,6 +2460,10 @@ The unit gains the following special rules:
         <categoryLink targetId="d354-6680-584e-943c" id="81af-e3a3-bf11-6c3d" primary="false" name="Infantry"/>
         <categoryLink targetId="de72-13bd-1789-6816" id="e982-23e0-c509-3552" primary="false" name="Biological"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bulky" id="3de7-84ca-a87b-1e0b" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+        <infoLink name="Large" id="9309-6a32-302b-7cd0" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warboss" hidden="false" id="1a13-b086-4661-0a44">
       <selectionEntryGroups>
@@ -2498,6 +2517,10 @@ The unit gains the following special rules:
               <categoryLinks>
                 <categoryLink targetId="d354-6680-584e-943c" id="329c-4ac4-6721-3a8c" primary="false" name="Infantry"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Large" id="4d6b-b898-a63f-2447" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+                <infoLink name="Bulky" id="d65c-868c-423c-63d0" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warbike" hidden="false" id="5d34-32bc-b98b-565d" sortIndex="3">
               <costs>
@@ -2636,6 +2659,10 @@ The unit gains the following special rules:
               <categoryLinks>
                 <categoryLink targetId="d354-6680-584e-943c" id="2bf3-c36f-872e-3d13" primary="false" name="Infantry"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Large" id="4426-6542-06b4-861e" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+                <infoLink name="Bulky" id="d6c9-b972-8417-b959" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warbike" hidden="false" id="5bed-7e66-c14a-fc06" sortIndex="3">
               <costs>
@@ -2790,6 +2817,10 @@ The unit gains the following special rules:
               <entryLinks>
                 <entryLink import="true" name="Meganob Weapons" hidden="false" id="442e-8de7-cfde-485e" type="selectionEntryGroup" targetId="672b-8e39-6e1f-c28e"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Large" id="1aee-0e22-5eca-65e9" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+                <infoLink name="Bulky" id="c10f-f653-5c5c-4dc2" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warbike" hidden="false" id="cbe7-28cf-a554-466a" sortIndex="3">
               <costs>
@@ -2953,12 +2984,12 @@ The unit gains the following special rules:
                 <infoLink name="Twin Shoota" id="7b47-b208-925b-3d1d" hidden="false" type="profile" targetId="f9a6-d0c2-480b-5eec"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Kombi-Rokkit Launcha" hidden="false" id="2ad5-ca0c-dd67-0c38" sortIndex="4">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="8"/>
               </costs>
               <infoLinks>
                 <infoLink name="Shoota" id="b433-1388-803f-f59c" hidden="false" type="profile" targetId="6169-2203-4d90-885d">
@@ -2976,7 +3007,7 @@ The unit gains the following special rules:
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Kombi-Skorcha" hidden="false" id="fe19-801a-3440-289a" sortIndex="5">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="8"/>
               </costs>
               <infoLinks>
                 <infoLink name="Shoota" id="6f0a-0ca3-cf8f-bada" hidden="false" type="profile" targetId="6169-2203-4d90-885d">
