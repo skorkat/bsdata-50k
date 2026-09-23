@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0d98-1036-43bc-85f0" name="aLib - Imperial - Base" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="true" id="0d98-1036-43bc-85f0" name="aLib - Imperial - Base" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <sharedProfiles>
     <profile name="Assault Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="176f-7ee7-5ee4-347f">
       <characteristics>
@@ -465,6 +465,16 @@
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
     </profile>
+    <profile name="Deathwind Launcher" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="2ec2-fb21-2ba5-3b10">
+      <characteristics>
+        <characteristic name="Range" typeId="5bc1-f923-633a-2354">12&quot;</characteristic>
+        <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d3</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">0</characteristic>
+        <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="d1ca-eb66-6300-8f2d">
@@ -642,6 +652,11 @@
     <selectionEntry type="upgrade" import="true" name="Twin Lascannon" hidden="false" id="411a-19d2-9b18-91fd">
       <infoLinks>
         <infoLink name="Lascannon" id="8d1f-45e1-18fb-2b84" hidden="false" type="profile" targetId="d729-2b11-1734-557a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathwind Launcher" hidden="false" id="4c3b-d66f-287e-3e9c">
+      <infoLinks>
+        <infoLink name="Deathwind Launcher" id="2d26-b6c5-257b-46c0" hidden="false" type="profile" targetId="2ec2-fb21-2ba5-3b10"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

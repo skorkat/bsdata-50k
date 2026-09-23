@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -695,7 +695,7 @@ The unit gains the following special rules:
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">1</characteristic>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">10+</characteristic>
-                <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
+                <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
