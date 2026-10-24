@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="f131-60bb-f9e3-aa47" name="Daemons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <rules>
     <rule name="Children of the Chaos Gods" id="f631-f11a-b827-50f2" hidden="false">
       <description>All Chaos Daemons automatically get the Boon associated with their god as per the table below:
 Slaanesh     Boon of Swiftness
 Nurgle         Boon of Pestilence
-Khorne        Boon of Rage
-Tzeentch     Boon of Trickery</description>
+Khorne        Boon of Blood
+Tzeentch     Boon of Trickery
+
+A model aligned with a particular god cannot join units aligned with a different god, and unaligned models/units cannot join with or be joined by aligned models/units.</description>
     </rule>
     <rule name="Warp Rifts" id="558b-418f-6d4f-84ea" hidden="false">
       <description>Up to one third of the units in an army may be given the Deep Strike special rule, however they must be placed on the battlefield so that at least one model is within 12” of another Daemon unit that started the turn on the battlefield.</description>
+    </rule>
+    <rule name="Chosen of a Chaos God" id="80fb-3e4a-d320-99e0" hidden="false">
+      <description>When an unaligned unit (Daemon Prince, Soulgrinder, or Furies) chooses an allegiance to a god, they update their profile as per the table below. Note that for ease, these values are already included in the profiles of units dedicated to a specific god.
+Slaanesh: +2 WS, +1 I, +1 A
+Nurgle: +1 T or AV, 6+++ Feel No Pain, -1 Initiative
+Khorne: +1 S, Remove Psyker
+Tzeentch: -1 WS, +1 Invulnerable Save, +1 Psyker level (if applicable)</description>
     </rule>
   </rules>
   <sharedSelectionEntryGroups>
@@ -102,7 +111,7 @@ Tzeentch     Boon of Trickery</description>
             <profile name="Nurgle’s Rot" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="5b68-9e8f-a0cd-1124">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">All enemy units within 7&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit rolls a D6 and subtracts its Toughness (to a minimum of 1). The result is the number of Psychic Wounds they take</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Each unit rolls a D6 and subtracts its Toughness (to a minimum result of 1). The result is the number of Psychic Wounds they take</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -158,7 +167,7 @@ Tzeentch     Boon of Trickery</description>
             <profile name="Flickering Flames" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="272e-869d-e585-e62e">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">This unit gains Stealth.</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">The unit gains Stealth.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -221,17 +230,13 @@ Tzeentch     Boon of Trickery</description>
     <profile name="Coruscating Flames" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="3a5f-0d4a-8cbe-2e38">
       <characteristics>
         <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">1 Psychic Wound for every 5 models in the casting unit (rounding down), to a minimum of 1. Blue Horrors count as 1/2 of a model. Brimstone Horrors count as 1/4 of a model</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">1 Psychic Wound for every 5 Unit Strength in the casting unit (rounding down), to a minimum of 1.</characteristic>
       </characteristics>
     </profile>
     <profile name="Pink Fire of Tzeentch" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="bdcb-7029-bf9f-6b68">
       <characteristics>
         <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 12”</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll a number of dice equal to the number of models in the target unit. The target suffers 1 Psychic Wound for result which is less than or equal to half the models in the casting unit (rounding up). Rolls of 1 always inflict a wound.
-* 1-2 models: 2+
-* 3-4 models: 3+
-* 5-6 models: 4+
-* 7 models: 5+</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll a number of dice equal to the number of models in the target unit. The target suffers 1 Psychic Wound for result which is less than or equal to half the models in the casting unit (rounding up). Rolls of 1 always inflict a wound.</characteristic>
       </characteristics>
     </profile>
     <profile name="Blue Fire of Tzeentch" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="e823-39f2-4f68-79f9">
@@ -303,7 +308,7 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+1</characteristic>
         <characteristic name="AP" typeId="b61b-983a-90e6-48fc">3</characteristic>
-        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Sniper, Daemonbane (6+)</characteristic>
+        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Sniper, Warpbane (6+)</characteristic>
       </characteristics>
       <comment>Slaanesh</comment>
     </profile>
@@ -364,9 +369,9 @@ Tzeentch     Boon of Trickery</description>
     <profile name="Great Axe of Khorne" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="21e0-79f9-1336-ff16">
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
-        <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+4</characteristic>
+        <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">Ux2</characteristic>
         <characteristic name="AP" typeId="b61b-983a-90e6-48fc">5</characteristic>
-        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Cumbersome, Melta</characteristic>
+        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Cumbersome</characteristic>
       </characteristics>
       <comment>Khorne</comment>
     </profile>
@@ -375,7 +380,7 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U</characteristic>
         <characteristic name="AP" typeId="b61b-983a-90e6-48fc">2</characteristic>
-        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Sniper, Daemonbane (6+)</characteristic>
+        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Warpbane (6+)</characteristic>
       </characteristics>
       <comment>Khorne</comment>
     </profile>
@@ -393,7 +398,7 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+1</characteristic>
         <characteristic name="AP" typeId="b61b-983a-90e6-48fc">3</characteristic>
-        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Daemonbane (5+)</characteristic>
+        <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Warpbane (5+)</characteristic>
       </characteristics>
       <comment>Tzeentch</comment>
     </profile>
@@ -509,10 +514,9 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Bloodletter" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a5e9-7bac-4ba6-f602">
       <characteristics>
@@ -528,10 +532,9 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Plaguebearer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="9a5d-a7f9-3004-b922">
       <characteristics>
@@ -547,10 +550,9 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Warp Daemon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e112-fa19-ac79-0574">
       <characteristics>
@@ -566,10 +568,9 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Seeker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4ab6-8584-8f1a-81d5">
       <characteristics>
@@ -585,10 +586,9 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Bloodcrusher" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="ec9c-f272-6b21-c1a7">
       <characteristics>
@@ -604,10 +604,9 @@ Tzeentch     Boon of Trickery</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
   </sharedProfiles>
   <forceEntries>
@@ -845,7 +844,7 @@ Tzeentch     Boon of Trickery</description>
       </categoryLinks>
       <comment>Khorne</comment>
       <infoLinks>
-        <infoLink name="Khorne: Boon of Rage" id="67ed-8db7-b58f-b38e" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+        <infoLink name="Khorne: Boon of Blood" id="67ed-8db7-b58f-b38e" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
         <infoLink name="Fear" id="3757-a982-042f-716d" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -922,10 +921,9 @@ Tzeentch     Boon of Trickery</description>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Brimstone Horror" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1250-7dcd-010e-ff01">
           <characteristics>
@@ -941,10 +939,9 @@ Tzeentch     Boon of Trickery</description>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Horrors" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="933a-ed29-1637-ee83">
           <characteristics>
@@ -965,10 +962,9 @@ Tzeentch     Boon of Trickery</description>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <selectionEntries>
@@ -982,6 +978,28 @@ Tzeentch     Boon of Trickery</description>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Horrors" id="34ec-5846-ad59-703b" hidden="false">
+              <modifiers>
+                <modifier type="increment" value="0.5" field="a577-1e64-ee4a-712d">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="34ec-5846-ad59-703b" childId="0c8c-55b4-08eb-17fa" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="0.75" field="a577-1e64-ee4a-712d">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="34ec-5846-ad59-703b" childId="0aa9-e155-189f-c397" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="0.5" field="da98-681a-8180-073d">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="34ec-5846-ad59-703b" childId="0c8c-55b4-08eb-17fa" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="0.75" field="da98-681a-8180-073d">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="34ec-5846-ad59-703b" childId="0aa9-e155-189f-c397" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a577-1e64-ee4a-712d" includeChildSelections="false"/>
                 <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="da98-681a-8180-073d" includeChildSelections="false"/>
@@ -1011,7 +1029,7 @@ Tzeentch     Boon of Trickery</description>
                     <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="51d1-7a54-ddd0-6309" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Pink Horror w/ Instrument" hidden="false" id="fb9a-0438-e9ba-b5a2" defaultAmount="5" sortIndex="4">
+                <selectionEntry type="upgrade" import="true" name="Pink Horror w/ Instrument" hidden="false" id="fb9a-0438-e9ba-b5a2" sortIndex="4">
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
                   </costs>
@@ -1033,10 +1051,9 @@ Tzeentch     Boon of Trickery</description>
                         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+                        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                       </characteristics>
-                      <attributes>
-                        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-                      </attributes>
                       <modifiers>
                         <modifier type="set" value="w/ instrument" field="annotation"/>
                         <modifier type="set" value="4+" field="d131-a398-ad21-bb05"/>
@@ -1044,7 +1061,7 @@ Tzeentch     Boon of Trickery</description>
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Pink Horror w/ Banner" hidden="false" id="8818-3f4d-67a3-18ff" defaultAmount="5" sortIndex="5">
+                <selectionEntry type="upgrade" import="true" name="Pink Horror w/ Banner" hidden="false" id="8818-3f4d-67a3-18ff" sortIndex="5">
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
                   </costs>
@@ -1074,10 +1091,18 @@ Tzeentch     Boon of Trickery</description>
       </infoLinks>
       <rules>
         <rule name="Split" id="6e65-a77e-fe44-65ee" hidden="false">
-          <description>At the end of a phase, roll 2d6 for every Pink Horror that was slain. For each 5+, add a Blue Horror to the unit. In addition, roll a d6 for every Blue Horror that was slain. For each 5+, add a Brimstone Horror to the unit. These models must be placed in coherency with the unit, and cannot be placed in base contact with enemy models.
-
-
+          <description>At the end of a phase, roll 2d6 for every Pink Horror model that was slain. For each 5+, add a Blue Horror model to the unit.
+In addition, roll a 1d6 for every Blue Horror model that was slain. For each 5+, add a Brimstone Horror model to the unit.
+These models must be placed in coherency with the unit, and cannot be placed in base contact with enemy models.
 These rolls cannot be made if the unit was fully destroyed.</description>
+        </rule>
+        <rule name="Spells" id="4a36-a4b1-709e-2a47" hidden="false">
+          <description>This unit must always choose the Coruscating Flames psychic power.</description>
+        </rule>
+        <rule name="Unit Strength" id="d28e-8d1e-ddd2-9595" hidden="false">
+          <description>Each Pink Horror adds 1 Unit Strength
+Each Blue Horror adds 1/2 Unit Strength
+Each Brimstone Horror adds 1/4 Unit Strength</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -1103,10 +1128,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1213,6 +1237,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">5+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1254,10 +1280,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1303,10 +1328,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1346,10 +1370,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -1380,7 +1403,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </categoryLinks>
       <comment>Khorne</comment>
       <infoLinks>
-        <infoLink name="Khorne: Boon of Rage" id="69d8-333d-3c11-a828" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+        <infoLink name="Khorne: Boon of Blood" id="69d8-333d-3c11-a828" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
         <infoLink name="Fear" id="aef9-d00c-96fb-e65d" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -1404,7 +1427,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="925e-193f-f046-1726"/>
               </constraints>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
               </costs>
               <infoLinks>
                 <infoLink name="Bloodcrusher" id="c290-d1c5-96ad-cd73" hidden="false" type="profile" targetId="ec9c-f272-6b21-c1a7">
@@ -1421,7 +1444,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae9a-3d94-6f5b-1368"/>
               </constraints>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
               </costs>
               <infoLinks>
                 <infoLink name="Banner of Chaos" id="c879-fee4-52af-f939" hidden="false" type="rule" targetId="6a84-bd1e-d9b0-1604"/>
@@ -1467,10 +1490,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1484,7 +1506,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
       </selectionEntries>
       <comment>Khorne</comment>
       <infoLinks>
-        <infoLink name="Khorne: Boon of Rage" id="a552-1572-94d1-8690" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+        <infoLink name="Khorne: Boon of Blood" id="a552-1572-94d1-8690" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
         <infoLink name="Fear" id="c9a4-e919-314e-2f56" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
       </infoLinks>
     </selectionEntry>
@@ -1509,10 +1531,12 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1520,7 +1544,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         <infoLink name="Skull Cannon" id="a025-5a8f-f5f5-34a9" hidden="false" type="profile" targetId="6c96-2d20-94c2-46cf"/>
         <infoLink name="Fear" id="f717-27c5-35ac-4a06" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Hellblade" id="3208-94da-6323-805e" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
-        <infoLink name="Khorne: Boon of Rage" id="6c46-0d7d-f696-143f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+        <infoLink name="Khorne: Boon of Blood" id="6c46-0d7d-f696-143f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flamers" hidden="false" id="51f3-3436-531b-464d">
@@ -1547,10 +1571,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -1579,6 +1602,11 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule name="Spells" id="5b47-c2a1-7043-53e4" hidden="false">
+          <description>This unit must always choose the Pink Flames of Tzeentch psychic power.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Exalted Flamer" hidden="false" id="8b81-7c35-7e45-4803">
       <categoryLinks>
@@ -1606,10 +1634,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Exalted Flamer" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="d46c-c854-b2bf-822c">
           <characteristics>
@@ -1617,6 +1644,11 @@ These rolls cannot be made if the unit was fully destroyed.</description>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule name="Spells" id="4a0c-689a-64dc-b6f9" hidden="false">
+          <description>This unit must always choose the Pink Flames of Tzeentch and Blue Flames of Tzeentch psychic powers.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink name="Fear" id="634b-290c-581d-8257" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Tzeentch: Boon of Trickery" id="62be-74b7-a826-9108" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
@@ -1653,13 +1685,12 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
-                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
+                <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1691,6 +1722,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Keeper of Secrets" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="abac-04d5-0657-f0ce">
@@ -1745,6 +1778,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">5+++</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">120mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Great Unclean One" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="10de-11fc-63c4-a1b7">
@@ -1779,7 +1814,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         <categoryLink targetId="0a55-7a17-c9ed-92d7" id="a41a-47c1-2cde-e51a" primary="true" name="Greater Daemon"/>
         <categoryLink targetId="b625-812b-ea6f-c45f" id="0160-9b3b-ccad-34eb" primary="false" name="Daemonic"/>
         <categoryLink targetId="c759-da28-35c5-802b" id="3010-90b5-9928-675e" primary="false" name="Psyker"/>
-        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="250b-fa64-6fa5-f73f" primary="false" name="Mounted"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="250b-fa64-6fa5-f73f" primary="false" name="Walker"/>
       </categoryLinks>
       <comment>Nurgle</comment>
     </selectionEntry>
@@ -1802,6 +1837,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1811,7 +1848,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
         <infoLink name="Fear" id="7f17-f541-fab9-aef4" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Fly" id="4012-ae20-7bce-8ad2" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
         <infoLink name="Unique" id="04cb-756e-a177-d59f" hidden="false" type="rule" targetId="17f1-244a-b389-bd77"/>
-        <infoLink name="Khorne: Boon of Rage" id="0953-c315-7f6b-c32a" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+        <infoLink name="Khorne: Boon of Blood" id="0953-c315-7f6b-c32a" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Axe" id="f489-d43c-d762-45dd" hidden="false">
@@ -1864,6 +1901,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Lord of Change" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="a4a3-45ac-3158-052d">
@@ -1986,6 +2025,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                       </costs>
                       <modifiers>
                         <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
                         <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category"/>
                       </modifiers>
@@ -2000,6 +2040,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                       <modifiers>
                         <modifier type="add" value="841c-6009-19bb-93fb" field="category"/>
                         <modifier type="set" value="AV 10" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit" arg="T"/>
+                        <modifier type="set" value="115mm x 75mm" field="febd-8847-ba6a-7c26" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="80mm" field="f243-a8fc-2b9d-a27f" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
                         <modifier type="set" value="5" field="ae75-aaa4-f9b6-8a71" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
@@ -2027,7 +2069,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               </modifiers>
               <infoLinks>
                 <infoLink name="Blade of Blood" id="e48f-3688-d18a-91af" hidden="false" type="profile" targetId="0e9d-8941-2837-00bb"/>
-                <infoLink name="Khorne: Boon of Rage" id="46da-59a1-4a25-4bb3" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="46da-59a1-4a25-4bb3" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Mount" id="fd05-401b-e341-7c1c" hidden="false">
@@ -2038,6 +2080,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                       </costs>
                       <modifiers>
                         <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
                         <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category"/>
                         <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
@@ -2054,6 +2097,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                       <modifiers>
                         <modifier type="add" value="841c-6009-19bb-93fb" field="category"/>
                         <modifier type="set" value="AV 11" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit" arg="T"/>
+                        <modifier type="set" value="115mm x 75mm" field="febd-8847-ba6a-7c26" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="80mm" field="f243-a8fc-2b9d-a27f" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
                         <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="set" value="4" field="ae75-aaa4-f9b6-8a71" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
@@ -2109,6 +2154,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                       </costs>
                       <modifiers>
                         <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
                         <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category"/>
                         <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
@@ -2127,6 +2173,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                       <modifiers>
                         <modifier type="add" value="841c-6009-19bb-93fb" field="category"/>
                         <modifier type="set" value="AV 10" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit" arg="T"/>
+                        <modifier type="set" value="115mm x 75mm" field="febd-8847-ba6a-7c26" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="80mm" field="f243-a8fc-2b9d-a27f" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
                         <modifier type="set" value="4" field="ae75-aaa4-f9b6-8a71" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
@@ -2151,6 +2199,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               </costs>
               <modifiers>
                 <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="40mm" field="febd-8847-ba6a-7c26" scope="parent" affects="profiles.Unit"/>
                 <modifier type="set" value="6+++" field="c9d0-52c0-aa47-95c6" scope="parent" affects="profiles.Unit"/>
                 <modifier type="set" value="4" field="85f0-cca6-d69e-ffa2" scope="parent" affects="profiles.Unit"/>
               </modifiers>
@@ -2185,6 +2234,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                       </costs>
                       <modifiers>
                         <modifier type="set" value="7" field="5f1f-bbd0-4afe-2c55" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
+                        <modifier type="set" value="60mm" field="febd-8847-ba6a-7c26" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
                         <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="0f79-d0f9-4705-6401"/>
                         <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category"/>
                         <modifier type="set" value="3" field="1360-fc4d-7954-1f62" scope="0f79-d0f9-4705-6401" affects="profiles.Unit"/>
@@ -2228,10 +2278,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -2279,7 +2328,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <modifier type="set" value="7" field="cd7c-e257-6d0e-3291" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <infoLinks>
-                <infoLink name="Khorne: Boon of Rage" id="55d7-7cd3-7c20-9484" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="55d7-7cd3-7c20-9484" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="1033-a284-4511-4218" sortIndex="3">
@@ -2288,6 +2337,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
               </costs>
               <modifiers>
                 <modifier type="set" value="12" field="d456-0ff3-8a75-eb52" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="80mm" field="72e3-2ba4-4e7f-b1c1" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="6+++" field="3c92-8b17-10bf-a7a5" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="5" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
@@ -2404,6 +2454,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -2437,10 +2489,9 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2483,7 +2534,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 </modifier>
               </modifiers>
               <infoLinks>
-                <infoLink name="Khorne: Boon of Rage" id="d519-e24d-7e12-f765" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="d519-e24d-7e12-f765" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="-2"/>
@@ -2509,6 +2560,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="8832-684a-fb5d-35e8" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="32mm" field="febd-8847-ba6a-7c26" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="6+++" field="c9d0-52c0-aa47-95c6" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="3" field="85f0-cca6-d69e-ffa2" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="increment" value="4" field="b109-6551-e41a-f1f7">
@@ -2558,15 +2610,16 @@ These rolls cannot be made if the unit was fully destroyed.</description>
                 <modifier type="set" value="9" field="cd7c-e257-6d0e-3291" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <infoLinks>
-                <infoLink name="Khorne: Boon of Rage" id="6166-b358-94f5-58fc" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="6166-b358-94f5-58fc" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="b593-00ba-edcc-90c2" sortIndex="3">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
               </costs>
               <modifiers>
                 <modifier type="set" value="13" field="d456-0ff3-8a75-eb52" scope="parent" affects="profiles.Vehicle"/>
+                <modifier type="set" value="100mm" field="72e3-2ba4-4e7f-b1c1" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="6+++" field="3c92-8b17-10bf-a7a5" scope="parent" affects="profiles.Vehicle"/>
                 <modifier type="set" value="3" field="7c98-ceb5-4506-0af7" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
@@ -2654,6 +2707,8 @@ These rolls cannot be made if the unit was fully destroyed.</description>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -2695,7 +2750,7 @@ These rolls cannot be made if the unit was fully destroyed.</description>
   <infoLinks>
     <infoLink name="Slaanesh: Boon of Swiftness" id="c889-8ffa-e31f-4317" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
     <infoLink name="Nurgle: Boon of Pestilence" id="4cf6-d22c-7503-a8b1" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
-    <infoLink name="Khorne: Boon of Rage" id="1962-cbac-99c7-5956" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+    <infoLink name="Khorne: Boon of Blood" id="1962-cbac-99c7-5956" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
     <infoLink name="Tzeentch: Boon of Trickery" id="9d16-a31b-8b8b-c709" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
   </infoLinks>
   <sharedRules>

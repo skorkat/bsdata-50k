@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5e13-1304-0d3d-42f9" name="Grey Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5e13-1304-0d3d-42f9" name="Grey Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Grey Knights" id="08b0-72fb-d1dd-b8c3" hidden="false">
       <constraints>
@@ -92,7 +92,7 @@
             <profile name="Sanctuary" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="d78e-2b19-fd72-b881">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">A friendly unit within 12”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit gains a 6++ Invulnerable Save. If it already has an Invulnerable Save, it is instead improved by 1 (to a maximum of 4++)</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit gains a 6++ Invulnerable Save. If it already has an Invulnerable Save, it is instead improved by 1 (to a max of 4++)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -105,7 +105,7 @@
             <profile name="Vortex of Doom" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="04a0-7911-551a-2dde">
               <characteristics>
                 <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">An enemy unit within 12”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit, and each other unit (friend or foe) within 3” suffers a Psychic Wound</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">1 Psychic Wound. Roll a D6 for each other enemy unit within 6” of that unit. On a 4+, they suffer 1 Psychic Wound.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -257,7 +257,7 @@
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">12&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Torrent</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">d6</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">6</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">1</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93"/>
       </characteristics>
@@ -300,6 +300,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Justiciar" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="15fb-dcc1-633e-56a4">
@@ -316,6 +318,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -350,7 +354,7 @@
         <categoryLink name="Mechanical" hidden="false" id="ed22-e528-ace5-d312" targetId="05d8-53ff-1ca8-52b0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="85"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Storm Bolter" hidden="false" id="8053-d70b-f48f-4130" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="1">
@@ -438,7 +442,7 @@
         <categoryLink name="Mechanical" hidden="false" id="fc42-bb8f-e4cf-e974" targetId="05d8-53ff-1ca8-52b0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="90"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="95"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Storm Bolter" hidden="false" id="077a-a33f-187a-8c45" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="1">
@@ -506,6 +510,9 @@
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="4x Lascannon" hidden="false" id="259d-bf46-a977-feb0">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+              </costs>
               <entryLinks>
                 <entryLink import="true" name="Lascannon" hidden="false" id="1f03-0f15-f029-369f" type="selectionEntry" targetId="e9e1-b958-e8fa-2bc5">
                   <constraints>
@@ -547,6 +554,9 @@
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2x Assault Cannon" hidden="false" id="47b4-8937-4591-98ce">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+              </costs>
               <entryLinks>
                 <entryLink import="true" name="Assault Cannon" hidden="false" id="778a-2a4c-e500-8fef" type="selectionEntry" targetId="d1ca-eb66-6300-8f2d">
                   <constraints>
@@ -604,7 +614,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nemesis Greatsword" hidden="false" id="5516-45f6-1a71-7ab8" sortIndex="3">
               <infoLinks>
-                <infoLink name="Nemesis Daemon Hammer" id="a31e-32fa-aca1-4816" hidden="false" type="profile" targetId="0f71-9386-c3cc-06fb"/>
+                <infoLink name="Nemesis Greatsword" id="a31e-32fa-aca1-4816" hidden="false" type="profile" targetId="2316-1161-4eb0-5711"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0759-6426-7021-de73"/>
@@ -670,6 +680,7 @@
       <infoLinks>
         <infoLink name="Power Fist" id="2476-21b2-a8cf-65ba" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
         <infoLink name="Hammerhand" id="482b-2f80-a9cd-f35c" hidden="false" type="profile" targetId="b330-86f9-844a-1c20"/>
+        <infoLink name="Combat Psykers" id="ee6f-aaf7-59d7-5642" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="145"/>
@@ -689,6 +700,8 @@
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Dreadknight" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="8c3c-eb69-f905-efad">
@@ -804,9 +817,10 @@
       <infoLinks>
         <infoLink name="Dreadnought" id="2128-dacb-bd6a-5bc2" hidden="false" type="profile" targetId="773f-88c1-f007-3b18"/>
         <infoLink name="Armoured Resilience" id="efc7-26a7-1954-015b" hidden="false" type="profile" targetId="d5d3-71fc-ca5c-f1e1"/>
+        <infoLink name="Combat Psykers" id="8a7e-bc1b-2131-7285" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="145"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="130"/>
       </costs>
       <profiles>
         <profile name="Dreadnought" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="03b5-0537-6994-00a1">
@@ -822,9 +836,10 @@
       </costs>
       <infoLinks>
         <infoLink name="Narthecium" id="1a9c-e293-84cf-f2b2" hidden="false" type="rule" targetId="1024-9a93-6840-6547"/>
-        <infoLink name="Terminator Bulk" id="90b5-0ce0-5a24-9992" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Large" id="90b5-0ce0-5a24-9992" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
         <infoLink name="Storm Bolter" id="e511-71b4-626a-470e" hidden="false" type="profile" targetId="9643-ded0-d7ae-ebdb"/>
         <infoLink name="Nemesis Force Weapon" id="71d8-acce-3a1a-41a5" hidden="false" type="profile" targetId="38e3-0cc6-c189-e181"/>
+        <infoLink name="Combat Psykers" id="9293-43e7-596a-2aab" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Dominus Discipline" hidden="false" id="0b13-70ac-dd94-4a3c" type="selectionEntryGroup" targetId="c935-8194-c6c1-69cc">
@@ -861,6 +876,8 @@
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -903,6 +920,8 @@
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
                 <profile name="Paladin" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="ad9d-59db-39f9-6af1">
@@ -963,6 +982,8 @@
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
                 <profile name="Paladin Ancient" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="a12f-e0a9-374e-3ce4">
@@ -1027,6 +1048,8 @@
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
                 <profile name="Paladin" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="205d-9cf8-b111-2244">
@@ -1085,7 +1108,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Terminator Bulk" id="7e48-ad26-e13f-8b9d" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Large" id="7e48-ad26-e13f-8b9d" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+        <infoLink name="Combat Psykers" id="ca97-394c-89a9-c2d9" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
+        <infoLink name="Deep Strike" id="84c8-6108-f0aa-a533" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Purgation Squad" hidden="false" id="1fe0-5a04-7610-4754">
@@ -1170,6 +1195,7 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Astral Aim" id="c8b2-3415-408c-5d08" hidden="false" type="profile" targetId="3fdb-b845-ba5e-5adf"/>
+        <infoLink name="Combat Psykers" id="4b7c-3d5c-e892-b7d9" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Purifier Squad" hidden="false" id="cbb9-8a75-0e1a-73cf">
@@ -1261,6 +1287,7 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Purifying Flame" id="2948-e2b9-6421-61b1" hidden="false" type="profile" targetId="d80e-d092-8125-3391"/>
+        <infoLink name="Combat Psykers" id="1600-1b25-d2ef-024f" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Interceptor Squad" hidden="false" id="8ace-2e7e-c757-d5a0">
@@ -1352,6 +1379,7 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Ethereal Castigation" id="ccd2-6884-50f2-7718" hidden="false" type="profile" targetId="e1f5-edfa-1837-631f"/>
+        <infoLink name="Combat Psykers" id="7f66-7182-0281-bfc8" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Strike Squad" hidden="false" id="d102-62cc-8fd3-4278">
@@ -1443,6 +1471,7 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Hammerhand" id="e664-0bfa-7d5a-462e" hidden="false" type="profile" targetId="b330-86f9-844a-1c20"/>
+        <infoLink name="Combat Psykers" id="119e-b54b-05d5-7b70" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Brotherhood Terminator Squad" hidden="false" id="55db-f15d-9b6b-1529">
@@ -1480,6 +1509,8 @@
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -1516,6 +1547,8 @@
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -1552,6 +1585,8 @@
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
                 <profile name="Terminator" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="0806-34f1-9eea-e32e">
@@ -1568,6 +1603,8 @@
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -1596,7 +1633,9 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Hammerhand" id="7fb8-2407-e079-73ca" hidden="false" type="profile" targetId="b330-86f9-844a-1c20"/>
-        <infoLink name="Terminator Bulk" id="47fb-737a-a323-a645" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Large" id="47fb-737a-a323-a645" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+        <infoLink name="Combat Psykers" id="99f2-2938-95fd-38df" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
+        <infoLink name="Deep Strike" id="5ff1-5c03-4815-e852" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Brotherhood Techmarine" hidden="false" id="5101-3406-1787-e235">
@@ -1611,6 +1650,7 @@
         <infoLink name="Krak Grenades" id="8fcc-10d6-f256-e2ce" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
         <infoLink name="Servo-harness" id="34fb-ed67-4da9-cf38" hidden="false" type="rule" targetId="77f5-bdde-0161-f4da"/>
         <infoLink name="Repair" id="621b-8356-a7ea-654a" hidden="false" type="rule" targetId="4f57-16f9-b581-ef59"/>
+        <infoLink name="Combat Psykers" id="e0c0-6901-7e88-f3d9" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="6cbc-9f8d-39de-5d30" targetId="default-category" primary="true"/>
@@ -1632,8 +1672,10 @@
             <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
-            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Brotherhood Techmarine" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="0baf-11c9-b24b-4ba2">
@@ -1662,8 +1704,9 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Storm Bolter" id="a1af-55b9-8079-4576" hidden="false" type="profile" targetId="9643-ded0-d7ae-ebdb"/>
-        <infoLink name="Terminator Bulk" id="6051-da00-960d-0e14" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Large" id="6051-da00-960d-0e14" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
         <infoLink name="Crozius" id="096e-ce25-63cd-01cf" hidden="false" type="profile" targetId="abac-eaa6-52db-cc10"/>
+        <infoLink name="Combat Psykers" id="06f4-0b15-19ad-5688" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
       <profiles>
         <profile name="Brotherhood Chaplain" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="0707-20f8-a06a-9af0">
@@ -1680,6 +1723,8 @@
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Brotherhood Chaplain" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="6d15-9f81-c41b-5f4e">
@@ -1710,7 +1755,8 @@
       <infoLinks>
         <infoLink name="Storm Bolter" id="934b-be76-d585-c8aa" hidden="false" type="profile" targetId="9643-ded0-d7ae-ebdb"/>
         <infoLink name="Nemesis Force Weapon" id="b43d-5558-91ba-df7e" hidden="false" type="profile" targetId="38e3-0cc6-c189-e181"/>
-        <infoLink name="Terminator Bulk" id="03e3-ef4d-5f87-1020" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Large" id="03e3-ef4d-5f87-1020" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+        <infoLink name="Combat Psykers" id="3102-c917-3896-6efe" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
       <profiles>
         <profile name="Brotherhood Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="dc56-af67-b34e-7270">
@@ -1727,6 +1773,8 @@
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Brotherhood Champion" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="bf32-e23f-c404-5659">
@@ -1773,6 +1821,8 @@
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Brother-Captain" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="b50d-83da-b3ba-150e">
@@ -1782,7 +1832,9 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Terminator Bulk" id="f61d-4712-6306-c0f5" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Large" id="f61d-4712-6306-c0f5" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
+        <infoLink name="Combat Psykers" id="3879-49d8-f487-ad79" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
+        <infoLink name="Unique" id="58cf-5771-9da6-add8" hidden="false" type="rule" targetId="17f1-244a-b389-bd77"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Dominus Discipline" hidden="false" id="4872-f59b-53ab-5a49" type="selectionEntryGroup" targetId="c935-8194-c6c1-69cc">
@@ -1892,6 +1944,8 @@
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Brotherhood Librarian" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="b4f4-defe-d287-eacd">
@@ -1901,9 +1955,10 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Terminator Bulk" id="1f29-6e77-9f55-7f87" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Large" id="1f29-6e77-9f55-7f87" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
         <infoLink name="Storm Bolter" id="cbcf-1c6c-dd9d-d492" hidden="false" type="profile" targetId="9643-ded0-d7ae-ebdb"/>
-        <infoLink name="Nemesis Force Weapon" id="f1c7-fa39-d3b1-0f62" hidden="false" type="profile" targetId="38e3-0cc6-c189-e181"/>
+        <infoLink name="Force Stave" id="f1c7-fa39-d3b1-0f62" hidden="false" type="profile" targetId="6233-dc10-e535-4124"/>
+        <infoLink name="Combat Psykers" id="8244-cc5f-b7f2-79cc" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="default-category" id="5599-a274-4059-e9e1" primary="true" name="Leader"/>
@@ -1930,6 +1985,7 @@
         <categoryLink targetId="d354-6680-584e-943c" id="a69b-fe6e-03ad-848d" primary="false" name="Infantry"/>
         <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="b474-7b85-127a-3b9c" primary="false" name="Character"/>
         <categoryLink targetId="c759-da28-35c5-802b" id="4bc0-220d-930a-e4c5" primary="false" name="Psyker"/>
+        <categoryLink targetId="de72-13bd-1789-6816" id="f730-7971-24a5-a20d" primary="false" name="Biological"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dad7-ec85-e1e4-b378"/>
@@ -1953,11 +2009,13 @@
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Terminator Bulk" id="e42f-4b0a-f735-f987" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+                <infoLink name="Large" id="e42f-4b0a-f735-f987" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapon" id="4e34-19eb-4a8e-0e61" hidden="false">
@@ -2062,6 +2120,8 @@
                     <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
                     <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
                     <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -2082,7 +2142,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Nemesis Greatsword" hidden="false" id="3f90-54e5-a954-25ec" sortIndex="3">
                       <infoLinks>
-                        <infoLink name="Nemesis Daemon Hammer" id="52d1-4925-95c4-10b3" hidden="false" type="profile" targetId="0f71-9386-c3cc-06fb"/>
+                        <infoLink name="Nemesis Greatsword" id="52d1-4925-95c4-10b3" hidden="false" type="profile" targetId="2316-1161-4eb0-5711"/>
                       </infoLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a2-d282-968f-bdac"/>
@@ -2181,6 +2241,10 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Combat Psykers" id="3330-1a93-9026-dd51" hidden="false" type="rule" targetId="d8fd-8c6a-5fa2-282a"/>
+        <infoLink name="Unique" id="3498-a599-164f-b142" hidden="false" type="rule" targetId="17f1-244a-b389-bd77"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

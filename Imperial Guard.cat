@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -23,7 +23,7 @@ Restrictions: Cannot be Broken. Cannot be Engaged unless targeting your own unit
     </rule>
     <rule name="Order - First Rank, Fire! Second Rank, Fire!" id="4ffb-6e78-bfdb-78a4" hidden="false">
       <alias>First Rank, Fire! Second Rank, Fire!</alias>
-      <description>The unit increases the number of shots of all Rapid Fire and Assault weapons by 1.
+      <description>The unit immediately increases the number of shots of all Assault and Rapid Fire weapons by 1.
 
 Restrictions: Cannot be Broken or Engaged</description>
     </rule>
@@ -44,7 +44,7 @@ Restrictions: Cannot be Broken</description>
       <description>The unit gains Fleet.
 
 
-Restrictions: Cannot be Broken or Engaged.</description>
+Restrictions: Cannot be Broken or Engaged. May only target units which are able to Move.</description>
     </rule>
     <rule name="Orders" id="62d1-ade6-18cc-3a14" hidden="false">
       <description>In the Command Phase, a model with this rule generates one Order token.
@@ -138,7 +138,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <infoLink name="Flamer" id="bf0f-34d1-5e5c-a782" hidden="false" type="profile" targetId="91be-b5b3-c375-8fbb"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Jungle Fighter Sergeant" hidden="false" id="abae-b479-9c5a-02aa" sortIndex="3">
@@ -318,7 +318,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="353a-4c3d-5157-1cbb" sortIndex="1">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Flamer" id="1584-2106-577d-80d2" hidden="false" type="profile" targetId="91be-b5b3-c375-8fbb"/>
@@ -530,7 +530,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <infoLink name="Mortar" id="c5e3-f8a0-80fe-32fe" hidden="false" type="profile" targetId="a225-f73e-0639-1015"/>
                   </infoLinks>
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="1"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97db-e96e-1bd9-4498"/>
@@ -541,7 +541,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <infoLink name="Autocannon" id="bd37-839f-cadf-9eee" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
                   </infoLinks>
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c46c-824a-e271-a3f7"/>
@@ -552,7 +552,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <infoLink name="Heavy Bolter" id="3f06-8086-b54e-cdea" hidden="false" type="profile" targetId="e775-c918-ae40-40de"/>
                   </infoLinks>
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b85-8e12-d9d3-718e"/>
@@ -564,7 +564,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <infoLink name="Missile Launcher (Krak)" id="6e48-c7aa-5201-4376" hidden="false" type="profile" targetId="be03-18ba-52d2-acd4"/>
                   </infoLinks>
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="1"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6fa-8717-1162-940b"/>
@@ -575,7 +575,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <infoLink name="Lascannon" id="f358-80f0-2e49-54f9" hidden="false" type="profile" targetId="d729-2b11-1734-557a"/>
                   </infoLinks>
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5432-be8e-b8fa-8ec5"/>
@@ -609,7 +609,7 @@ Unused Order tokens are lost at the end of the turn.</description>
         <infoLink name="Commissar" id="49ae-6504-c967-329e" hidden="false" type="profile" targetId="5d23-6abb-4d48-52a1"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="18"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="247b-f333-1ac6-2b53" primary="true" name="Elite"/>
@@ -627,7 +627,7 @@ Unused Order tokens are lost at the end of the turn.</description>
         <infoLink name="Priest" id="4d35-6885-1b4e-7555" hidden="false" type="profile" targetId="f559-d6f3-e7c0-fb57"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="22"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="63ef-0fb1-ade2-09b1" targetId="6297-a84f-a103-e2ac" primary="true"/>
@@ -874,7 +874,7 @@ Unused Order tokens are lost at the end of the turn.</description>
             <infoLink name="Sniper Rifle" id="2ecc-b39d-7680-0456" hidden="false" type="profile" targetId="41ee-f79d-43c3-1998"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="39ce-f2f7-53e8-8a05"/>
@@ -1230,7 +1230,7 @@ Unused Order tokens are lost at the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="51bd-a7ed-7589-2739" sortIndex="4">
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5d5-f16f-82de-8854"/>
@@ -1696,7 +1696,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <infoLink name="Vanquisher Battle Cannon" id="27fc-dd16-231a-fa28" hidden="false" type="profile" targetId="401c-c1c4-d2b0-8565"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Eradicator" hidden="false" id="ed84-4100-4813-22cb" sortIndex="6">
@@ -1800,7 +1800,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <infoLink name="Heavy Bolter" id="b6ac-2586-20ea-6e49" hidden="false" type="profile" targetId="e775-c918-ae40-40de"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="4"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b3c-8a7a-bd56-b73e"/>
@@ -1812,7 +1812,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <infoLink name="Heavy Flamer" id="5cb5-d0b9-bb38-a900" hidden="false" type="profile" targetId="985a-d278-19b1-e82f"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8bb-c2a6-1c0e-c81a"/>
@@ -1824,7 +1824,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <infoLink name="Multi-melta" id="11b6-db5f-c17c-c445" hidden="false" type="profile" targetId="e050-2bb4-dfd4-af46"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71c4-c19c-cb90-6959"/>
@@ -1836,7 +1836,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <infoLink name="Plasma Cannon" id="02b0-1f8e-81fc-0b30" hidden="false" type="profile" targetId="cb14-99fa-6f75-747a"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="311f-2c47-3511-f172"/>
@@ -1906,7 +1906,7 @@ Unused Order tokens are lost at the end of the turn.</description>
         <entryLink import="true" name="Sergeant Upgrades" hidden="false" id="65a8-8f68-ecf7-0856" type="selectionEntryGroup" targetId="e23f-6f9f-ab2f-1957"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="38"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
       </costs>
       <rules>
         <rule name="Voice of Command" id="04a5-659f-6776-7f29" hidden="false">
@@ -2154,11 +2154,11 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <infoLink name="Scion Veteran" id="8456-1cb7-7406-cf82" hidden="false" type="profile" targetId="08fe-e9cd-0799-241a">
                   <modifiers>
                     <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
-                    <modifier type="set" value="Jungle Commander" field="name"/>
+                    <modifier type="set" value="Scion Commander" field="name"/>
                     <modifier type="set" value="5++" field="4cb6-278f-f4f3-4747"/>
                     <modifier type="set" value="2" field="87c8-8544-6110-218d"/>
                     <modifier type="set" value="2" field="1360-fc4d-7954-1f62"/>
-                    <modifier type="set" value="3" field="ae75-aaa4-f9b6-8a71"/>
+                    <modifier type="set" value="2" field="ae75-aaa4-f9b6-8a71"/>
                   </modifiers>
                 </infoLink>
                 <infoLink name="Orders" id="5bdc-d637-7730-883b" hidden="false" type="rule" targetId="62d1-ade6-18cc-3a14">
@@ -2243,7 +2243,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="909f-4eb5-eaf2-e688">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Flamer" id="8aea-434b-9731-20fb" hidden="false" type="profile" targetId="91be-b5b3-c375-8fbb"/>
@@ -2615,7 +2615,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="8595-3284-d560-ff7c" sortIndex="4">
                       <costs>
-                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="2"/>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
                       </costs>
                       <infoLinks>
                         <infoLink name="Flamer" id="0f42-34ee-7c80-0340" hidden="false" type="profile" targetId="91be-b5b3-c375-8fbb"/>
@@ -2700,6 +2700,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Jungle Fighter" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3c6d-9b09-636e-32b1">
@@ -2716,6 +2718,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Scion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f1c0-aab2-0e91-adb3">
@@ -2732,6 +2736,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Hot-shot Lasgun" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="f4dd-7f67-0df7-370e">
@@ -2758,6 +2764,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Heavy Weapons Team" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3d65-050f-ce21-f699">
@@ -2774,6 +2782,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Mortar" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="a225-f73e-0639-1015">
@@ -2800,6 +2810,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Priest" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f559-d6f3-e7c0-fb57">
@@ -2816,6 +2828,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Tech-Priest Enginseer" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="53e0-ee57-0cb3-198b">
@@ -2832,6 +2846,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Eviscerator" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="0520-fb90-bb5e-32bd">
@@ -2856,6 +2872,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Imperial Psyker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="fe09-13f2-82d2-db5f">
@@ -2872,6 +2890,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Ogryn" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="bc27-9af7-b471-4b71">
@@ -2888,6 +2908,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Ripper Gun" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="cb5a-28b2-ee30-85f6">
@@ -2932,6 +2954,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Hunting Lance" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="6cb2-7e9e-0e52-4f4f">
@@ -2956,6 +2980,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Chimera" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="09e2-f237-ad16-739b">
@@ -2972,6 +2998,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Armoured Sentinel" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b2a5-669b-81d0-2caa">
@@ -2988,6 +3016,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Scout Sentinel" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5d45-53f1-bd19-b7b8">
@@ -3004,6 +3034,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Taurox" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="ce39-2ee9-a696-d4d7">
@@ -3020,6 +3052,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Hot-shot Volley Gun" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="11bf-2b65-ce29-1d29">
@@ -3056,8 +3090,8 @@ Unused Order tokens are lost at the end of the turn.</description>
       <characteristics>
         <characteristic name="Range" typeId="5bc1-f923-633a-2354">240&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Ordinance</characteristic>
-        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d3</characteristic>
-        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">8</characteristic>
+        <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">2d6</characteristic>
+        <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">9</characteristic>
         <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect</characteristic>
       </characteristics>
@@ -3068,7 +3102,7 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Ordinance</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">4d3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">10</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">5</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">6</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect, One-Shot, Delayed Launch</characteristic>
       </characteristics>
     </profile>
@@ -3096,6 +3130,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Hydra" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="456d-5c30-a116-6074">
@@ -3112,6 +3148,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Hellhound" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="1967-b1a1-fd28-b724">
@@ -3128,6 +3166,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Inferno Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="6cc0-d39a-9dcf-e593">
@@ -3174,6 +3214,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Vanquisher Battle Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="401c-c1c4-d2b0-8565">
@@ -3182,7 +3224,7 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">1</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">12</characteristic>
-        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">4</characteristic>
+        <characteristic name="AP" typeId="bec7-95b2-78ac-c2cf">3</characteristic>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Melta, Penetrating</characteristic>
       </characteristics>
     </profile>
@@ -3210,6 +3252,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Jungle Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f97f-2b61-ebd9-a071">
@@ -3226,6 +3270,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Infantry Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="fc27-5ce1-989f-9410">
@@ -3242,6 +3288,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Scion Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="08fe-e9cd-0799-241a">
@@ -3258,6 +3306,8 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Ripper Gun" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="4ac3-d8b0-466a-2974">
@@ -3653,7 +3703,7 @@ Unused Order tokens are lost at the end of the turn.</description>
             <infoLink name="Vanquisher Battle Cannon" id="5efc-93cf-1f6f-32e0" hidden="false" type="profile" targetId="401c-c1c4-d2b0-8565"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Eradicator" hidden="false" id="4add-c28d-98af-3453" sortIndex="6">

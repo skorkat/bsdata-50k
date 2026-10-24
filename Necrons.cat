@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="504e-fd94-4621-eda1" name="Necrons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="false" id="504e-fd94-4621-eda1" name="Necrons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <categoryEntries>
     <categoryEntry name="Canoptek" id="be30-18f6-3a2a-0e55" hidden="false">
       <constraints>
@@ -340,7 +340,7 @@
     </profile>
     <profile name="Heavy Gauss Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="71da-d3ae-40a1-2ddd">
       <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">48&quot;</characteristic>
+        <characteristic name="Range" typeId="5bc1-f923-633a-2354">30&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">4</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">7</characteristic>
@@ -474,6 +474,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Golden Fists" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="af38-863b-6089-6e60">
@@ -504,7 +506,7 @@
   </forceEntries>
   <sharedRules>
     <rule name="Mindshackle Scarabs" id="5cdd-34a6-8256-f760" hidden="false">
-      <description>Any unit engaged with a model with this rule reduces its Weapon Skill by 2.</description>
+      <description>Any unit engaged with a model with this rule halves its Weapon Skill.</description>
     </rule>
     <rule name="Improved Resurrection" id="f4a5-a610-72fb-6bbe" hidden="false">
       <description>Reanimation Protocols for the unit bring back a model on a single wound on a 4 as well as 5.</description>
@@ -514,6 +516,12 @@
 
 
 Returned models must be placed in unit coherency and may not be placed in base contact with enemy units (even if its unit is Engaged with that enemy). If there is no room to place the model with these restrictions, then it is not returned.</description>
+    </rule>
+    <rule name="C’tan" id="9ef8-a84a-6bee-8a58" hidden="false">
+      <description>All C’tan units share their Unique restriction, ie. you may only use one C’tan unit in an army list. In addition, rather than Biological/Mechanical/Daemonic, C’tan shards are made out of a completely different otherworldly material - they have a type of C’tan and as such are not affected by any auto-wound rules like Poison/Lance/Warpbane/Grenades.</description>
+    </rule>
+    <rule name="Repair" id="ef5f-2e58-4796-300b" hidden="false">
+      <description>In the Action Phase, can take an action to repair a Mechanical Walker/Tank model within 3” which is below its starting Wounds. That model regains 1 wound. Models can only be repaired once per turn. Only one Tomb Spider in a unit may Repair each turn.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
@@ -634,6 +642,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -681,11 +691,13 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="65"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="75"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lokhust Lord" hidden="false" id="499d-7a06-b7ad-9346">
@@ -716,6 +728,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -748,6 +762,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -800,6 +816,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -839,6 +857,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -862,6 +882,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="default-category" id="b0ce-7335-4b9b-e0ad" primary="true" name="Leader"/>
         <categoryLink targetId="d354-6680-584e-943c" id="d8e2-6cd8-f156-1a5e" primary="false" name="Infantry"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="b95c-f7f3-4d0d-df19" primary="false" name="Mechanical"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="907a-5050-87ad-2c96" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chronomancer" hidden="false" id="281a-eea0-7c40-8c8f">
@@ -883,6 +904,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="default-category" id="4881-bdd3-8048-af75" primary="true" name="Leader"/>
         <categoryLink targetId="d354-6680-584e-943c" id="e2a6-2184-ef55-addc" primary="false" name="Infantry"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="f5d8-f983-42bc-09a0" primary="false" name="Mechanical"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="0cc3-7fcc-626f-0f93" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Psychomancer" hidden="false" id="514b-8d09-2e5c-79e6">
@@ -904,6 +926,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="default-category" id="64d9-b0c2-2bcc-331d" primary="true" name="Leader"/>
         <categoryLink targetId="d354-6680-584e-943c" id="b9aa-5454-b608-7d39" primary="false" name="Infantry"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="f289-ebb9-ad6e-07e7" primary="false" name="Mechanical"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="c428-85fd-f141-20c2" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasmancer" hidden="false" id="463a-2c91-d24b-5d8a">
@@ -925,6 +948,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="default-category" id="5b48-fb49-bcd3-458b" primary="true" name="Leader"/>
         <categoryLink targetId="d354-6680-584e-943c" id="74d8-9dd8-ad0b-2217" primary="false" name="Infantry"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="a08d-2e65-69e9-6cbd" primary="false" name="Mechanical"/>
+        <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="329a-a292-f53a-1b2f" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lychguard" hidden="false" id="5d86-bf91-0150-b47b">
@@ -950,6 +974,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -1044,6 +1070,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -1087,6 +1115,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -1168,6 +1198,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1209,6 +1241,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -1254,6 +1288,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -1271,6 +1307,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="fcce-1272-210e-182f" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
         <infoLink name="Bulky" id="c43e-44dc-9dc6-c1bb" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+        <infoLink name="Deep Strike" id="4402-5aa1-5e9e-a3de" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Triarch Praetorians" hidden="false" id="3641-b485-8d78-1e8e">
@@ -1303,6 +1340,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -1390,6 +1429,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1430,7 +1471,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </costs>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="1216-e5b3-4f10-3d8b" primary="true" name="Elite"/>
-        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="8468-508e-4620-79bb" primary="false" name="Mounted"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="8468-508e-4620-79bb" primary="false" name="Walker"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e2ce-7b48-d06d-0040" primary="false" name="Mechanical"/>
       </categoryLinks>
       <infoLinks>
@@ -1462,6 +1503,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                   <modifiers>
                     <modifier type="set" value="3+" field="badd-cd3a-81ca-6883">
@@ -1597,6 +1640,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Ghost Ark" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="d973-dd33-8ea4-adc0">
@@ -1622,6 +1667,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
     <selectionEntry type="upgrade" import="true" name="Annihilation Barge" hidden="false" id="42a7-e758-1d5d-33cc">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="78a1-bd9b-cde1-20bf" primary="true" name="Elite"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="c6f0-5da1-a9b8-a499" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="94ef-5b6a-bdbc-2bbf" primary="false" name="Mechanical"/>
       </categoryLinks>
       <profiles>
         <profile name="Annihilation Barge" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5ae4-8fc8-0161-8fc0">
@@ -1638,6 +1685,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1686,10 +1735,12 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
             <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">1+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1744,6 +1795,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1774,6 +1827,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
                 <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
                 <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -1822,6 +1877,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -1895,6 +1952,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -1926,7 +1985,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Repair" id="0c76-0fd4-da91-be71" hidden="false" type="rule" targetId="4f57-16f9-b581-ef59">
+        <infoLink name="Repair" id="0c76-0fd4-da91-be71" hidden="false" type="rule" targetId="ef5f-2e58-4796-300b">
           <modifiers>
             <modifier type="prepend" value="Only one Tomb Spider in a unit may Repair each turn." field="description" join=" 
 
@@ -1967,12 +2026,14 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">2</characteristic>
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">3</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">2</characteristic>
-                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3+</characteristic>
+                <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
                 <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -2012,6 +2073,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -2053,6 +2116,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -2100,6 +2165,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -2142,6 +2209,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -2168,6 +2237,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -2225,10 +2296,10 @@ Returned models must be placed in unit coherency and may not be placed in base c
       <profiles>
         <profile name="The Deceiver" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="87b8-ef49-2946-4efe">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">9</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">6</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
@@ -2237,6 +2308,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -2245,6 +2318,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <infoLink name="Hover" id="1872-80c1-6e37-12ce" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Fear" id="2b4c-7d6c-8d3f-b1b5" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Mindshackle Scarabs" id="f585-a6ae-385b-e15d" hidden="false" type="rule" targetId="5cdd-34a6-8256-f760"/>
+        <infoLink name="C’tan" id="6fc7-8cc2-3248-b14e" hidden="false" type="rule" targetId="9ef8-a84a-6bee-8a58"/>
       </infoLinks>
       <rules>
         <rule name="Cosmic Insanity" id="6023-5bcb-f7ad-d078" hidden="false">
@@ -2262,7 +2336,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">10</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
@@ -2271,6 +2345,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -2278,6 +2354,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <infoLink name="Fear" id="bc00-5ed0-03da-b037" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Hover" id="8bd1-74ac-e85d-ae31" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Scythe of the Nightbringer" id="b9b1-9776-e361-35d2" hidden="false" type="profile" targetId="1811-6055-4ecb-7d6e"/>
+        <infoLink name="C’tan" id="c3ca-e0fd-736c-74a1" hidden="false" type="rule" targetId="9ef8-a84a-6bee-8a58"/>
       </infoLinks>
       <rules>
         <rule name="Gaze of Death" id="559d-940e-4d62-6d99" hidden="false">
@@ -2303,7 +2380,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">1+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
             <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
             <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
             <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
@@ -2312,6 +2389,8 @@ Returned models must be placed in unit coherency and may not be placed in base c
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -2320,6 +2399,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <infoLink name="Hover" id="0a62-dd40-9c38-fbb4" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
         <infoLink name="Spear of the Void Dragon (Melee)" id="55b6-020e-25c8-9e02" hidden="false" type="profile" targetId="6f08-cc47-4a4d-5ffa"/>
         <infoLink name="Spear of the Void Dragon (Shooting)" id="8f87-a84c-c876-e5a7" hidden="false" type="profile" targetId="3643-badf-4bfe-2d28"/>
+        <infoLink name="C’tan" id="646a-c66d-db1d-4775" hidden="false" type="rule" targetId="9ef8-a84a-6bee-8a58"/>
       </infoLinks>
       <rules>
         <rule name="Matter Absorption" id="622b-c3e9-30a5-8729" hidden="false">

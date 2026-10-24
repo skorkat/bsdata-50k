@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="524d-97ab-9591-2625" name="Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="7" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="524d-97ab-9591-2625" name="Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="7" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="85d2-18d7-c914-91d8" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="0158-d8ba-1955-bcb9" targetId="86c1-35b4-c984-858a"/>
@@ -215,12 +215,16 @@
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">110mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Ion Shield" id="9576-5753-f839-4757" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e"/>
         <infoLink name="Objective Secured" id="da5e-4551-a743-e889" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764"/>
+        <infoLink name="Knight Household" id="77e6-a75b-1edd-3fa8" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067"/>
+        <infoLink name="Chaos Allegiance" id="4379-f887-ce96-2e54" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Primary Weapons" id="d7be-5e4e-8e24-56b2" hidden="false" sortIndex="1">
@@ -292,7 +296,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="d19a-3bb8-b64f-6491" sortIndex="4">
               <infoLinks>
-                <infoLink name="Khorne: Boon of Rage" id="f061-b3c3-330a-188f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="f061-b3c3-330a-188f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -335,6 +339,8 @@
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">170mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">170mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -412,7 +418,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="87de-fc4d-9050-d57f" sortIndex="4">
               <infoLinks>
-                <infoLink name="Khorne: Boon of Rage" id="cf07-6bb8-e393-93fa" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="cf07-6bb8-e393-93fa" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -445,6 +451,8 @@
         <infoLink name="Meltagun" id="186a-04a5-e09e-8eea" hidden="false" type="profile" targetId="8e3f-3c2f-5170-2c98"/>
         <infoLink name="Ion Shield" id="53e4-39a6-2337-09ae" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e"/>
         <infoLink name="Objective Secured" id="3526-c3c5-a037-cb66" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764"/>
+        <infoLink name="Knight Household" id="502b-bfaf-2238-a9dc" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067"/>
+        <infoLink name="Chaos Allegiance" id="d4f8-18c2-95df-054e" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Knight" hidden="false" id="c537-2ba3-000a-aecf">
@@ -454,7 +462,7 @@
       <profiles>
         <profile name="Knight" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4a94-db8b-4b3c-f16d">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
             <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
             <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
             <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
@@ -466,6 +474,8 @@
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">170mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">170mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -509,7 +519,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2x Battle Cannon &amp; Heavy Stubber" hidden="false" id="65fc-a757-a08b-7171" sortIndex="5">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
               </costs>
               <infoLinks>
                 <infoLink name="Heavy Stubber" id="1854-35a3-823a-b6fe" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
@@ -522,7 +532,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Thermal Cannon" hidden="false" id="d2e5-c2aa-3200-c728" sortIndex="4">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
               </costs>
               <infoLinks>
                 <infoLink name="Thermal Cannon" id="ab4f-d0b4-a651-c081" hidden="false" type="profile" targetId="6c3c-d7d0-845a-889e"/>
@@ -640,7 +650,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="9fc4-bbdf-ed2e-3f53" sortIndex="4">
               <infoLinks>
-                <infoLink name="Khorne: Boon of Rage" id="d90a-331c-6b64-05a6" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="d90a-331c-6b64-05a6" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
@@ -665,6 +675,8 @@
       <infoLinks>
         <infoLink name="Ion Shield" id="da1f-a33e-10f0-904b" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e"/>
         <infoLink name="Objective Secured" id="283e-f67e-889f-94bf" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764"/>
+        <infoLink name="Knight Household" id="32bc-9c88-e757-0e34" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067"/>
+        <infoLink name="Chaos Allegiance" id="75fb-77f6-4754-55a4" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6527-3e3d-8902-74fd" id="6ac6-3530-ff68-ccae" primary="false" name="Titanic"/>
@@ -681,7 +693,13 @@
       <description>If a Knights unit holds an objective in its Command Phase, then it remains under its control even if it moves away, counting as being controlled by an OC 0 model from its army.</description>
     </rule>
     <rule name="Titanic Focus" id="3a99-ccef-7fde-56b2" hidden="false">
-      <description>Titanic Knights units are able to take mission Actions in addition to performing another standard action. However, they can only target one unit during this action.</description>
+      <description>Titanic Knights units are able to take mission Actions in addition to performing another standard action that does not involve movement. However, they can only target one unit during this action.</description>
+    </rule>
+    <rule name="Knight Household" id="2b29-5afe-9d07-1067" hidden="false">
+      <description>Rather than the standard categories, Knights have 3 categories: Armigers, Knights, and Commander. There are no minimum requirements for any category, but you can have at most 1 Commander.</description>
+    </rule>
+    <rule name="Chaos Allegiance" id="122c-adea-02e4-f2a3" hidden="false">
+      <description>If taken as a Chaos army, Knights may devote themselves to a Chaos God before the battle, as per the Dark Pact rules of Chaos Space Marines. They cannot do so during a battle. This cost depends on the Knight (see the Chaos Alignment options). If they choose to Dark Pact, they lose the Titanic Focus special rule.</description>
     </rule>
   </sharedRules>
   <entryLinks>

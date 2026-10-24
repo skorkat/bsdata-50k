@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e971-b31b-b278-5da6" name="Genestealer Cults" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="11" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e971-b31b-b278-5da6" name="Genestealer Cults" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="11" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="3f5a-473f-8878-4c9d" targetId="0d98-1036-43bc-85f0"/>
   </catalogueLinks>
@@ -267,6 +267,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Acolyte Hybrid" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="6b50-0c4c-8a75-b14a">
@@ -283,6 +285,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Neophyte Hybrid" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="aecb-2233-adbb-d9c2">
@@ -299,6 +303,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Jackal" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="bcf6-c262-f1f9-240c">
@@ -315,6 +321,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -356,7 +364,9 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
-            <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6++</characteristic>
+            <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -400,6 +410,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                     <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
                     <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                     <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
                   </characteristics>
                 </profile>
               </profiles>
@@ -442,6 +454,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -479,6 +493,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -522,6 +538,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -564,6 +582,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -608,6 +628,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -645,6 +667,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -666,7 +690,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
       </costs>
       <rules>
         <rule name="Strategic Coordinator" id="d4dd-5912-bb91-3885" hidden="false">
-          <description>f you have used any number of Cult Ambush tokens in the Command Phase while this model is on the battlefield, or during Deployment, roll a d6. On a 5+, you gain an additional Cult Ambush token. You cannot use this token until the following Command Phase.</description>
+          <description>If you have used any number of Cult Ambush tokens in the Command Phase while this model is on the battlefield, or during Deployment, roll a d6. On a 5+, you gain an additional Cult Ambush token. You cannot use this token until the following Command Phase.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -686,6 +710,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -725,6 +751,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -743,7 +771,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd59-16ed-248c-1ffd"/>
       </constraints>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon" id="ade3-3494-21e7-e9f2" hidden="false">
@@ -788,6 +816,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Goliath Truck" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="d987-ebc8-b815-6910">
@@ -827,6 +857,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -924,6 +956,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Patriarch" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="9de3-a504-51c5-b22e">
@@ -933,7 +967,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="95"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Broodmind Discipline" hidden="false" id="4a91-d343-9b42-2ee5" type="selectionEntryGroup" targetId="37b8-d1fe-29f9-b05f">
@@ -971,6 +1005,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1009,6 +1045,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
             <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1044,8 +1082,10 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
-            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1084,8 +1124,10 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
             <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
-            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm x 50mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1432,7 +1474,13 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Neophyte Leader" hidden="false" id="4106-3547-4429-0cea" sortIndex="5" defaultAmount="1">
               <infoLinks>
-                <infoLink name="Neophyte Hybrid" id="32ed-2311-0794-e6d5" hidden="false" type="profile" targetId="aecb-2233-adbb-d9c2"/>
+                <infoLink name="Neophyte Hybrid" id="32ed-2311-0794-e6d5" hidden="false" type="profile" targetId="aecb-2233-adbb-d9c2">
+                  <modifiers>
+                    <modifier type="set" value="Neophyte Leader" field="name"/>
+                    <modifier type="set" value="2" field="ae75-aaa4-f9b6-8a71"/>
+                    <modifier type="set" value="5+" field="d131-a398-ad21-bb05"/>
+                  </modifiers>
+                </infoLink>
                 <infoLink name="Autopistol" id="9b78-5518-6f35-871e" hidden="false" type="profile" targetId="fb91-11f1-4afc-1bc5"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -1749,7 +1797,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="21"/>
               </costs>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6ed0-bb68-aede-e910"/>
@@ -1849,7 +1897,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Ridgerunner" hidden="false" id="798a-79c4-0d58-09ee">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
               </costs>
               <infoLinks>
                 <infoLink name="Heavy Stubber" id="f0af-b7c3-8903-3913" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
@@ -1911,6 +1959,9 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c59-b2d3-34c0-74c2"/>
                       </constraints>
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Spotter" hidden="false" id="0987-18cf-f5ed-ef83" sortIndex="2">
                       <rules>
@@ -1921,6 +1972,9 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f1b-a1d1-dac6-e568"/>
                       </constraints>
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -1942,6 +1996,8 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
                         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
                         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+                        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
                       </characteristics>
                       <modifiers>
                         <modifier type="set" value="6++" field="5681-e76b-dcac-f4ea">

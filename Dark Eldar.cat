@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Baleblast" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="0768-d8dd-e4dd-620b">
       <characteristics>
@@ -251,7 +251,7 @@
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">Ux2</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">2</characteristic>
-        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">-2</characteristic>
+        <characteristic name="AP" typeId="b61b-983a-90e6-48fc">2</characteristic>
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667">Poison (5+)</characteristic>
       </characteristics>
     </profile>
@@ -397,6 +397,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Shredder" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="2138-ceb6-9ab8-3872">
@@ -423,6 +425,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Wych" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e351-6723-eaf6-3422">
@@ -439,6 +443,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Bloodbride" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c4cd-b968-2de3-b861">
@@ -455,6 +461,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Wrack" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2d60-76f5-581d-d96a">
@@ -471,6 +479,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Hexrifle" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="cfdf-cf0e-159f-92e5">
@@ -497,6 +507,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Reaver" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="13e0-c255-0f30-6dd6">
@@ -513,6 +525,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Grotesque" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1432-bf45-b846-3267">
@@ -529,6 +543,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Chronos" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="d14b-746d-3feb-ed27">
@@ -545,6 +561,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Talos" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="1ea1-7168-5d51-eec3">
@@ -561,6 +579,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Venom" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="a303-dd0f-2f5b-fca6">
@@ -577,6 +597,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Ravager" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5c4d-3177-5c4e-fdb4">
@@ -593,6 +615,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Raider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4608-34c1-29f9-df73">
@@ -609,6 +633,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Lhamaean" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="9045-4f7e-dc30-75e2">
@@ -625,6 +651,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Medusae" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="eedf-8caf-fb25-70de">
@@ -641,6 +669,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Sslyth" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="6314-4c0e-82e2-8cd6">
@@ -657,6 +687,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Ur-Ghul" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7174-4e99-2bda-6748">
@@ -673,6 +705,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Mandrake" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c768-6de2-251e-0da5">
@@ -689,6 +723,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Incubus" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f70f-7f6a-9b0e-e663">
@@ -705,6 +741,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Scourge" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="9497-b1bc-7b20-7995">
@@ -721,6 +759,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Clawed Fiend" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="13b2-855b-2202-d711">
@@ -732,11 +772,13 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
-        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
+        <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">8+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Khymera" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="838b-7245-90ed-8ca4">
@@ -748,11 +790,13 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Razorwing Flock" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="d18e-26f4-94c7-e848">
@@ -764,11 +808,13 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">9+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">7+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">0</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Beastmaster" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f433-3177-0688-3481">
@@ -785,6 +831,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Archon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2955-b239-e275-e5ee">
@@ -801,6 +849,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Succubus" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4438-3693-bc07-7811">
@@ -817,6 +867,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Haemonculus" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1228-6f89-b679-458a">
@@ -824,7 +876,7 @@
         <characteristic name="WS" typeId="1509-720c-2a2f-ed46">7</characteristic>
         <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">2+</characteristic>
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
-        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">4</characteristic>
+        <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">5</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
@@ -833,6 +885,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">5+++</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Dracon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="8b19-31f1-4837-557b">
@@ -842,13 +896,15 @@
         <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">3</characteristic>
         <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">3</characteristic>
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
-        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">7</characteristic>
+        <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">6</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
         <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Syren" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="76b0-6d2f-623a-12ab">
@@ -865,6 +921,8 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -1181,6 +1239,25 @@
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4a0b-f1a4-5add-4912" includeChildSelections="false"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="0552-bb0a-64b7-44c0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Upgrade" id="5d4a-79ae-2220-e232" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Haywire Grenades" hidden="false" id="35e6-4902-3508-5ed2">
+              <modifiers>
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="fbf5-9750-ad9a-512f" childId="014c-28dc-4e3f-f9aa" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Haywire Grenades" id="5545-1b31-2a82-48ac" hidden="false" type="rule" targetId="de21-afe6-8d24-ab96"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0b1-3c77-a5c7-5213" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2553,8 +2630,8 @@
                 <infoLink name="Claws and Talons" id="21e7-ced8-840e-a924" hidden="false" type="profile" targetId="ab9b-a907-ca92-563b"/>
               </infoLinks>
               <rules>
-                <rule name="Mixed Types" id="cc1c-06cb-8fb7-0d21" hidden="false">
-                  <description>The Khymera replaces Biological with Daemonic. For the purpose of Poison and Warpbane, the whole squad counts as whichever type the majority of the squad is composed of (using Biological in the case of a tie).</description>
+                <rule name="Mixed type" id="cc1c-06cb-8fb7-0d21" hidden="false">
+                  <description>The Khymera replaces Biological with Daemonic. For the purpose of Poison and Warpbane, the whole squad counts as whichever type the majority of the squad is composed of (using Biological in a tie).</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -2642,8 +2719,8 @@
         </infoLink>
       </infoLinks>
       <rules>
-        <rule name="Mixed Squad" id="63a7-2727-3d13-96a7" hidden="false">
-          <description>Both the Beastmaster and Razorwing Flock have Hover.</description>
+        <rule name="Mixed squad" id="63a7-2727-3d13-96a7" hidden="false">
+          <description>Both the Beastmaster and Razorwing Flock have Hover</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -2966,6 +3043,7 @@
               </infoLinks>
               <modifiers>
                 <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="25mm x 50mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
               </modifiers>
@@ -3073,6 +3151,7 @@
               </infoLinks>
               <modifiers>
                 <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="25mm x 50mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
               </modifiers>
@@ -3358,6 +3437,7 @@
               </infoLinks>
               <modifiers>
                 <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="25mm x 50mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
               </modifiers>
@@ -3462,6 +3542,7 @@
               </infoLinks>
               <modifiers>
                 <modifier type="set" value="4" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="25mm x 50mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
               </modifiers>
@@ -3597,15 +3678,15 @@
 If a Character with this ability has joined a unit, it must dispense its Combat Drugs separately to the rest of the unit, even if the unit itself has this ability (ie. you may choose which effects to apply, but must roll separately for the Character, and the Character must take the Mortal Wounds if it rolls a double or triple). Any effects applied to the unit (eg. Hypex) are not applied to the Character unless the Character also chooses the same effect.
 
 
-* +2 Weapon Skill
-* +1 Ballistic Skill
-* +1 Strength
-* +1 Attack
-* Set Initiative to 10
-* Set Leadership to 3+</description>
+Painbringer: +2 Weapon Skill
+Serpentin: +1 Ballistic Skill
+Grave Lotus: +1 Strength
+Adrenalite: +1 Attack
+Hypex: Set Initiative to 10
+Splintermind: Set Leadership to 3+</description>
     </rule>
     <rule name="Dodge" id="c10d-d754-535a-3b2b" hidden="false">
-      <description>Gain 4++ Invulnerable Save against Melee attacks</description>
+      <description>Gain a 4++ Invulnerable Save against Melee attacks</description>
     </rule>
     <rule name="Vexator Mask" id="bf52-8d6c-2d52-c88c" hidden="false">
       <description>Units in combat with a model wearing a Vexator Mask must roll three dice and drop the lowest when making Leadership Tests.</description>
@@ -3613,7 +3694,10 @@ If a Character with this ability has joined a unit, it must dispense its Combat 
   </sharedRules>
   <rules>
     <rule name="Raiders of the Dark City" id="46b0-8b6c-29af-3a49" hidden="false">
-      <description>If a Dark Eldar unit makes a Standard Move, Disembark, or Charge move, or if they use the Agile or Assault rules to move, they gain Stealth until their next Command Phase.</description>
+      <description>If a Dark Eldar unit makes a Standard Move, Disembark, or Reserve Move, or if they use the Agile rule to move, they gain Stealth until their next Command Phase.</description>
+    </rule>
+    <rule name="Phantasm Grenade Launcher" id="c6e9-058c-b09e-be27" hidden="false">
+      <description>Gain Fear</description>
     </rule>
   </rules>
   <entryLinks>

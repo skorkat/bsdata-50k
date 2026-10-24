@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -104,6 +104,8 @@
         <characteristicType name="Sv+" id="badd-cd3a-81ca-6883"/>
         <characteristicType name="Sv++" id="4cb6-278f-f4f3-4747"/>
         <characteristicType name="FNP" id="c9d0-52c0-aa47-95c6"/>
+        <characteristicType name="Base" id="febd-8847-ba6a-7c26" kind="annotation"/>
+        <characteristicType name="Height" id="f243-a8fc-2b9d-a27f" kind="longText"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Vehicle" id="a397-0d29-a6e4-23e6" hidden="false" sortIndex="2">
@@ -120,6 +122,8 @@
         <characteristicType name="Sv+" id="183a-8a11-c349-ae14"/>
         <characteristicType name="Sv++" id="5681-e76b-dcac-f4ea"/>
         <characteristicType name="FNP" id="3c92-8b17-10bf-a7a5"/>
+        <characteristicType name="Base" id="72e3-2ba4-4e7f-b1c1"/>
+        <characteristicType name="Height" id="326f-b1ed-a380-71dc"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Grenades" id="ee67-1829-4789-204c" hidden="false" sortIndex="8">

@@ -55,7 +55,7 @@
     </profile>
     <profile name="Dakkagun" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="b998-6987-4083-058a">
       <characteristics>
-        <characteristic name="Range" typeId="5bc1-f923-633a-2354">18&quot;</characteristic>
+        <characteristic name="Range" typeId="5bc1-f923-633a-2354">48&quot;</characteristic>
         <characteristic name="Type" typeId="dcc9-6607-c648-bdfe">Heavy</characteristic>
         <characteristic name="A" typeId="cd9b-b8f6-5a5a-1de4">3</characteristic>
         <characteristic name="S" typeId="cc8b-edaa-9381-1bfd">5</characteristic>
@@ -473,7 +473,7 @@
         <characteristic name="Rules" typeId="3404-6a3b-d1a0-7667"/>
       </characteristics>
     </profile>
-    <profile name="Wrecking Ball" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="46d7-f204-424b-b5e3">
+    <profile name="Wreckin’ Ball" typeId="4437-4cfe-f1f5-8c41" typeName="Melee Weapon" hidden="false" id="46d7-f204-424b-b5e3">
       <characteristics>
         <characteristic name="A" typeId="c13c-0d58-8215-8faa">U+1</characteristic>
         <characteristic name="S" typeId="0b9b-c8bb-fdb9-1cb9">U+1</characteristic>
@@ -527,7 +527,7 @@
     <profile name="6. &apos;Ere We Go" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="d05f-8067-d563-4812">
       <characteristics>
         <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">A friendly unit within 12&quot;</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit can immediately be placed anywhere on the battlefield within 36&quot; of the caster as per the Deep Strike rules</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit can immediately be placed on the battlefield within 36&quot; of the caster as per the Deep Strike rules</characteristic>
       </characteristics>
     </profile>
     <profile name="Ork Boy" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1aa5-b539-7a27-1d1c">
@@ -544,10 +544,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Nob" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c0eb-f9fb-e5c2-60aa">
       <characteristics>
@@ -563,10 +562,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
   </sharedProfiles>
   <rules>
@@ -575,12 +573,12 @@
 
 
 Turn
-1: 6+++ FnP
-2: +1 S
-3: +1 A
-4: Fleet
-5: 5++ Sv (biological), 6++ Sv (mechanical)
-6: 3+ Ld, auto-rally</description>
+1+: 6+++ FnP
+2+: +1 S
+3+: +1 A
+4+: Fleet
+5+: 5++ Sv (biological), 6++ Sv (mechanical)
+6: 3+ Ld</description>
     </rule>
     <rule name="Looted Tanks" id="adec-7f7a-625d-e8be" hidden="false">
       <description>When building an Ork list, you may add Mechanical Tank units from any army, as long as they are not a Character and are not Unique. If you do so, the unit is modified in the following ways:
@@ -619,13 +617,24 @@ The unit gains the following special rules:
 5. Fists of Gork
 6. &apos;Ere We Go</description>
     </rule>
+    <rule name="Looted Tank" id="65ed-2228-cfdf-73d3" hidden="false">
+      <description>When building an Ork list, you may add Walker or Tank units from any army, as long as they are Mechanical, not a Character, and not Unique. If you do so, the unit is modified as follows:
+The unit loses any of the following special rules if it has them:
+Psyker | Deep Strike | Infiltrate | Stealth | Fear | Any army special rules
+BS is set to 5+, Ld is set to 7+
+The unit gains the following special rules:
+Bulky | Waaagh!</description>
+    </rule>
+    <rule name="Mek’s Tools" id="06d5-ca88-27cc-e0c8" hidden="false">
+      <description>In the Action Phase, can take an action to repair a Mechanical Walker/Tank model within 3” which is below its starting Wounds. That model regains 1 wound. Models can only be repaired once per turn.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Weirdboy" hidden="false" id="aa01-69ae-bc08-5f3b">
       <profiles>
         <profile name="Weirdboy" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7bf9-8439-fa24-a99a">
           <characteristics>
-            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">5</characteristic>
+            <characteristic name="WS" typeId="1509-720c-2a2f-ed46">6</characteristic>
             <characteristic name="BS" typeId="4a75-e14b-051b-c0f1">5+</characteristic>
             <characteristic name="S" typeId="229e-fdb9-4bbc-f6ff">5</characteristic>
             <characteristic name="T" typeId="5f1f-bbd0-4afe-2c55">5</characteristic>
@@ -635,12 +644,11 @@ The unit gains the following special rules:
             <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
-            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Weirdboy" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="b9af-4846-a0e6-4b0d">
           <characteristics>
@@ -699,10 +707,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">7+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -775,7 +782,7 @@ The unit gains the following special rules:
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Wrecking Ball" id="3b22-ee2e-0fdf-0eb3" hidden="false" type="profile" targetId="46d7-f204-424b-b5e3"/>
+            <infoLink name="Wreckin’ Ball" id="3b22-ee2e-0fdf-0eb3" hidden="false" type="profile" targetId="46d7-f204-424b-b5e3"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99c2-35b5-c28b-0a20" includeChildSelections="false"/>
@@ -797,6 +804,8 @@ The unit gains the following special rules:
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Trukk" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="7411-dc7a-0fd0-b63c">
@@ -822,6 +831,9 @@ The unit gains the following special rules:
               <infoLinks>
                 <infoLink name="Rokkit Launcha" id="092e-c2db-16de-9d5a" hidden="false" type="profile" targetId="ef04-4692-4093-714e"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -841,7 +853,7 @@ The unit gains the following special rules:
                 <infoLink name="Shoota" id="8310-a4e3-09d9-37b6" hidden="false" type="profile" targetId="6169-2203-4d90-885d"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
               </costs>
               <constraints>
                 <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="7331-ecb2-acfb-8f16" includeChildSelections="false"/>
@@ -882,7 +894,7 @@ The unit gains the following special rules:
                 <infoLink name="Ork Boy" id="b38f-3c74-aa18-41b0" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8cc1-8df3-0b28-c09d" includeChildSelections="false"/>
@@ -940,7 +952,7 @@ The unit gains the following special rules:
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Skarboyz" hidden="false" id="9062-079b-0d99-2af8">
               <modifiers>
-                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                <modifier type="increment" value="1" field="b109-6551-e41a-f1f7">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="e175-3392-4b5f-48c7" childId="ce1a-2437-2399-4a37" shared="true" roundUp="false"/>
                   </repeats>
@@ -949,7 +961,7 @@ The unit gains the following special rules:
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="&apos;ard Boyz" hidden="false" id="57ef-fecc-70a2-25bc">
               <modifiers>
-                <modifier type="increment" value="1" field="b109-6551-e41a-f1f7">
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="e175-3392-4b5f-48c7" childId="ce1a-2437-2399-4a37" shared="true" roundUp="false"/>
                   </repeats>
@@ -1026,7 +1038,7 @@ The unit gains the following special rules:
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Skarboyz" hidden="false" id="c0a2-a4a9-3e41-1d87">
               <modifiers>
-                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
+                <modifier type="increment" value="1" field="b109-6551-e41a-f1f7">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="eab7-a0b4-0ba2-86ab" childId="9f99-f402-c8cf-2a56" shared="true" roundUp="false"/>
                   </repeats>
@@ -1035,7 +1047,7 @@ The unit gains the following special rules:
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="&apos;ard Boyz" hidden="false" id="a20f-e049-019b-e1b4">
               <modifiers>
-                <modifier type="increment" value="1" field="b109-6551-e41a-f1f7">
+                <modifier type="increment" value="2" field="b109-6551-e41a-f1f7">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="eab7-a0b4-0ba2-86ab" childId="9f99-f402-c8cf-2a56" shared="true" roundUp="false"/>
                   </repeats>
@@ -1141,7 +1153,11 @@ The unit gains the following special rules:
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ca12-dcb9-4126-cf51" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Ork Boy" id="eedf-9862-49ac-3a77" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
+            <infoLink name="Ork Boy" id="eedf-9862-49ac-3a77" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c">
+              <modifiers>
+                <modifier type="set" value="7+" field="d131-a398-ad21-bb05"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Choppa" id="6fcf-c915-b19d-fc48" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
           <costs>
@@ -1286,7 +1302,7 @@ The unit gains the following special rules:
                 <infoLink name="Ork Boy" id="7006-3967-fbc3-955b" hidden="false" type="profile" targetId="1aa5-b539-7a27-1d1c"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="132"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="11"/>
               </costs>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c684-82ec-9044-e5a9" includeChildSelections="false"/>
@@ -1443,10 +1459,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">5+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">50mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1539,6 +1554,8 @@ The unit gains the following special rules:
                 <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
                 <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
                 <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -1556,7 +1573,7 @@ The unit gains the following special rules:
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deff Dread" hidden="false" id="7cc5-e34a-ef40-7fd7">
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="84"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="78"/>
       </costs>
       <profiles>
         <profile name="Deff Dread" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="0d07-49d1-667a-f333">
@@ -1573,6 +1590,8 @@ The unit gains the following special rules:
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -1682,15 +1701,14 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1717,15 +1735,14 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -1765,6 +1782,8 @@ The unit gains the following special rules:
             <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
             <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
             <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Battlewagon" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="c039-3bbb-7174-9df5">
@@ -1873,7 +1892,7 @@ The unit gains the following special rules:
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <infoLinks>
-                <infoLink name="Wrecking Ball" id="7f96-59fc-1d85-ea61" hidden="false" type="profile" targetId="46d7-f204-424b-b5e3"/>
+                <infoLink name="Wreckin’ Ball" id="7f96-59fc-1d85-ea61" hidden="false" type="profile" targetId="46d7-f204-424b-b5e3"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f6-4994-3490-83b1" includeChildSelections="false"/>
@@ -1908,7 +1927,7 @@ The unit gains the following special rules:
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="7e6b-123e-96b1-f9c2" primary="true" name="Elite"/>
-        <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="7fdc-3830-8174-94d0" primary="false" name="Mounted"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="7fdc-3830-8174-94d0" primary="false" name="Tank"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="3702-66a4-572b-8eff" primary="false" name="Mechanical"/>
       </categoryLinks>
     </selectionEntry>
@@ -2003,6 +2022,8 @@ The unit gains the following special rules:
                 <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">5+</characteristic>
                 <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
                 <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -2052,7 +2073,7 @@ The unit gains the following special rules:
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="4238-741d-4379-56a5" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="16"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Storm Boy Nob" hidden="false" id="1b72-eb35-cac3-0e79">
@@ -2090,15 +2111,14 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">8+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -2126,15 +2146,14 @@ The unit gains the following special rules:
                 <characteristic name="W" typeId="1360-fc4d-7954-1f62">2</characteristic>
                 <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">3</characteristic>
                 <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">3</characteristic>
-                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
+                <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
                 <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -2189,10 +2208,9 @@ The unit gains the following special rules:
                 <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
                 <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
                 <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+                <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
               </characteristics>
-              <attributes>
-                <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -2249,7 +2267,13 @@ The unit gains the following special rules:
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="9449-47c5-8e2f-df3d" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Nob" id="a7d1-1364-728c-6ca4" hidden="false" type="profile" targetId="c0eb-f9fb-e5c2-60aa"/>
+            <infoLink name="Nob" id="a7d1-1364-728c-6ca4" hidden="false" type="profile" targetId="c0eb-f9fb-e5c2-60aa">
+              <modifiers>
+                <modifier type="set" value="Flash Git" field="name"/>
+                <modifier type="set" value="4+" field="4a75-e14b-051b-c0f1"/>
+                <modifier type="set" value="4+" field="badd-cd3a-81ca-6883"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Snazzgun" id="58bd-e748-1827-69cd" hidden="false" type="profile" targetId="7aea-dad9-493d-c8cf"/>
             <infoLink name="Choppa" id="f794-3c63-8804-7450" hidden="false" type="profile" targetId="3a5d-124d-41c6-984f"/>
           </infoLinks>
@@ -2258,7 +2282,7 @@ The unit gains the following special rules:
             <modifier type="set" value="4" field="4a75-e14b-051b-c0f1" affects="profiles.Unit"/>
           </modifiers>
           <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="31"/>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="29"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shootier (+1 S)" hidden="false" id="7ed1-6d1b-207b-7cdd" sortIndex="2">
@@ -2334,6 +2358,7 @@ The unit gains the following special rules:
                   </repeats>
                 </modifier>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
@@ -2347,6 +2372,7 @@ The unit gains the following special rules:
                   </repeats>
                 </modifier>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" scope="parent" affects="self.entries.profiles.Unit"/>
+                <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="set" value="6" field="229e-fdb9-4bbc-f6ff" scope="parent" affects="self.entries.profiles.Unit"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
@@ -2494,6 +2520,7 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="7" field="229e-fdb9-4bbc-f6ff" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="7" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
               </modifiers>
@@ -2528,6 +2555,7 @@ The unit gains the following special rules:
               </costs>
               <modifiers>
                 <modifier type="set" value="7" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
@@ -2569,12 +2597,11 @@ The unit gains the following special rules:
             <characteristic name="Ld" typeId="d131-a398-ad21-bb05">4+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
-            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <selectionEntries>
@@ -2605,6 +2632,7 @@ The unit gains the following special rules:
         <categoryLink targetId="default-category" id="96b1-bcc7-b87d-48a4" primary="true" name="Leader"/>
         <categoryLink targetId="de72-13bd-1789-6816" id="f4cf-d904-113d-4960" primary="false" name="Biological"/>
         <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="c8f6-7e78-509e-e734" primary="false" name="Character"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="79c2-4a7b-013e-8f54" primary="false" name="Infantry"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Big Mek" hidden="false" id="6549-f339-87b7-4e85">
@@ -2636,6 +2664,7 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="6" field="229e-fdb9-4bbc-f6ff" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
@@ -2670,6 +2699,7 @@ The unit gains the following special rules:
               </costs>
               <modifiers>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
@@ -2733,12 +2763,11 @@ The unit gains the following special rules:
             <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
-            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <selectionEntries>
@@ -2769,9 +2798,10 @@ The unit gains the following special rules:
         <categoryLink name="Leader" hidden="false" id="ccc4-72ba-c3d3-54bb" targetId="default-category" primary="true"/>
         <categoryLink targetId="de72-13bd-1789-6816" id="a247-8352-d3e3-a92c" primary="false" name="Biological"/>
         <categoryLink targetId="ce7b-7bf5-3b56-3b0e" id="ea50-a6b6-a275-4681" primary="false" name="Character"/>
+        <categoryLink targetId="d354-6680-584e-943c" id="0e84-fe8a-5869-61e8" primary="false" name="Infantry"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Repair" id="40e7-24a8-7135-7e40" hidden="false" type="rule" targetId="4f57-16f9-b581-ef59"/>
+        <infoLink name="Mek’s Tools" id="40e7-24a8-7135-7e40" hidden="false" type="rule" targetId="06d5-ca88-27cc-e0c8"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Painboss" hidden="false" id="c2c1-6a7e-1986-d4a3">
@@ -2800,6 +2830,7 @@ The unit gains the following special rules:
               <modifiers>
                 <modifier type="set" value="6" field="229e-fdb9-4bbc-f6ff" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
@@ -2828,6 +2859,7 @@ The unit gains the following special rules:
               </costs>
               <modifiers>
                 <modifier type="set" value="6" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
                 <modifier type="set" value="4+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
@@ -2860,12 +2892,11 @@ The unit gains the following special rules:
             <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
             <characteristic name="OC" typeId="87c8-8544-6110-218d">1</characteristic>
             <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">6+</characteristic>
-            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
+            <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">6++</characteristic>
             <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+            <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
-          <attributes>
-            <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <selectionEntries>

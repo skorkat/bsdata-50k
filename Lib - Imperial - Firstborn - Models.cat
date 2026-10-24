@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Lib - Imperial - Base" id="331b-005e-07b0-6041" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Equipment" id="b609-da18-63b6-2e95" targetId="0e97-bb9e-538e-d4e5"/>
@@ -19,10 +19,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Space Marine Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="1fbe-e6ba-b13c-d0f8">
       <characteristics>
@@ -38,10 +37,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Scout" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="f156-6774-c01f-eafa">
       <characteristics>
@@ -57,10 +55,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Scout Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="3f7b-3050-8870-152c">
       <characteristics>
@@ -76,10 +73,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Sternguard Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="80ff-bd80-4286-bd4b">
       <characteristics>
@@ -95,10 +91,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Sternguard Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="290c-8cbd-8457-0775">
       <characteristics>
@@ -114,10 +109,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Vanguard Veteran" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7a43-dc47-3f29-869b">
       <characteristics>
@@ -133,10 +127,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Vanguard Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="7175-0ed4-b896-e946">
       <characteristics>
@@ -152,10 +145,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Terminator" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="aa07-8fb3-1a5e-c7e4">
       <characteristics>
@@ -171,10 +163,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Terminator Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="928f-31d9-400f-0db5">
       <characteristics>
@@ -190,10 +181,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">1+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Dreadnought" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="773f-88c1-f007-3b18">
       <characteristics>
@@ -209,6 +199,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Drop Pod" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="19a8-eee4-ca93-8741">
@@ -225,6 +217,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Rhino" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4a75-a220-2562-a611">
@@ -241,6 +235,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Razorback" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="f630-210e-776c-eec6">
@@ -257,6 +253,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Apothecary" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="222c-e928-8fb7-d55a">
@@ -268,15 +266,14 @@
         <characteristic name="W" typeId="1360-fc4d-7954-1f62">1</characteristic>
         <characteristic name="I" typeId="85f0-cca6-d69e-ffa2">4</characteristic>
         <characteristic name="A" typeId="ae75-aaa4-f9b6-8a71">2</characteristic>
-        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">5+</characteristic>
+        <characteristic name="Ld" typeId="d131-a398-ad21-bb05">6+</characteristic>
         <characteristic name="OC" typeId="87c8-8544-6110-218d">2</characteristic>
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
-        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6++</characteristic>
+        <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Ancient" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="260f-914b-9c9c-0a02">
       <characteristics>
@@ -292,10 +289,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Champion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="e3b0-26ad-a2e6-71d9">
       <characteristics>
@@ -311,10 +307,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5+</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Scout Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="a1c4-c99f-a1c5-3ac1">
       <characteristics>
@@ -330,10 +325,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Scout Biker Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="004b-044a-23f3-4b82">
       <characteristics>
@@ -349,10 +343,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">4+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Attack Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="31bd-5b56-5716-3020" noindex="true">
       <characteristics>
@@ -368,10 +361,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Biker Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="4151-17b5-3e86-ef22">
       <characteristics>
@@ -387,10 +379,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Biker" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="bc15-d4b1-2b53-fb44" noindex="true">
       <characteristics>
@@ -406,10 +397,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">30mm x 60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Thunderfire Cannon" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="b259-f03a-a4cf-4b45">
       <characteristics>
@@ -425,10 +415,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Predator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="6a89-5f10-ad5f-f2dc">
       <characteristics>
@@ -444,6 +433,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Vindicator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="8ec9-a28d-4a3d-7a46">
@@ -460,6 +451,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Whirlwind" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="fdf5-324b-aafc-fb6f">
@@ -476,11 +469,13 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Land Speeder" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="38fa-a157-e3ad-7ea8">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
         <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
         <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
         <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
@@ -492,6 +487,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Land Raider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="291b-b3f7-f990-c5b6">
@@ -508,6 +505,8 @@
         <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
         <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
         <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Captain" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2197-21e7-05b2-7f26">
@@ -524,10 +523,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">4++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Librarian" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="920f-a9a6-b0a8-07aa">
       <characteristics>
@@ -543,10 +541,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Lieutenant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="33f2-b875-6d2f-de10">
       <characteristics>
@@ -562,10 +559,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Chaplain" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="22f7-85c5-721e-8ae8">
       <characteristics>
@@ -581,10 +577,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">3+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">5++</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Techmarine" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c2a5-e051-cb9c-c214">
       <characteristics>
@@ -600,10 +595,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">32mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Centurion" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="c626-b07b-7ea2-6c81">
       <characteristics>
@@ -619,10 +613,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Centurion Sergeant" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="af5b-a753-c73a-8d05">
       <characteristics>
@@ -638,10 +631,9 @@
         <characteristic name="Sv+" typeId="badd-cd3a-81ca-6883">2+</characteristic>
         <characteristic name="Sv++" typeId="4cb6-278f-f4f3-4747">-</characteristic>
         <characteristic name="FNP" typeId="c9d0-52c0-aa47-95c6">-</characteristic>
+        <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">40mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
-      <attributes>
-        <attribute typeId="e8ac-49be-7396-630c" name="New Attribute Type"/>
-      </attributes>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
@@ -1070,7 +1062,7 @@
             </entryLink>
             <entryLink import="true" name="Thunderhammer" hidden="false" id="3f3e-fb1e-e8a4-5b8c" type="selectionEntry" targetId="fbb7-7ab3-e1a4-106c" sortIndex="14">
               <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="12"/>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="14"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Storm Bolter" hidden="false" id="3f71-fb6e-36b3-4d98" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="4">

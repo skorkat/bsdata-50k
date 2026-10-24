@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0e97-bb9e-538e-d4e5" name="aLib - Imperial - Firstborn - Equipment" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="true" id="0e97-bb9e-538e-d4e5" name="aLib - Imperial - Firstborn - Equipment" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <sharedRules>
     <rule name="Storm Shield" id="1732-a04f-527e-d259" hidden="false">
       <description>Increase Sv+ by 1</description>
-    </rule>
-    <rule name="Terminator Bulk" id="69aa-f2da-5a33-e375" hidden="false">
-      <description>Can only embark in Land Raiders, and count as 2 models.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -73,19 +70,21 @@
       <modifiers>
         <modifier type="set" value="Mo" field="db89-3815-8161-5287" affects="profiles.Unit" scope="parent"/>
         <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+        <modifier type="set" value="30mm x 60mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Terminator Armour" hidden="false" id="024d-6468-c7f7-f79c">
       <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
       </costs>
       <modifiers>
         <modifier type="set" value="1+" field="badd-cd3a-81ca-6883" affects="profiles.Unit" scope="parent"/>
         <modifier type="set" value="5" field="5f1f-bbd0-4afe-2c55" affects="profiles.Unit" scope="parent"/>
+        <modifier type="set" value="40mm" field="febd-8847-ba6a-7c26" affects="profiles.Unit" scope="parent"/>
       </modifiers>
       <infoLinks>
         <infoLink name="Deep Strike" id="0a0e-1bae-e627-fce4" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
-        <infoLink name="Terminator Bulk" id="93a8-e02d-bafa-a854" hidden="false" type="rule" targetId="69aa-f2da-5a33-e375"/>
+        <infoLink name="Large" id="93a8-e02d-bafa-a854" hidden="false" type="rule" targetId="b104-bf24-10a2-e9a4"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -117,7 +116,7 @@
     <profile name="Vortex of Doom" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="133d-c039-17c5-999c">
       <characteristics>
         <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 12”</characteristic>
-        <characteristic name="Details" typeId="577b-53c9-886f-0871">D3 Psychic Wounds. Roll a D6 for each other enemy unit within 6” of that unit. On a 4+, they suffer 1 Psychic Wound.</characteristic>
+        <characteristic name="Details" typeId="577b-53c9-886f-0871">1 Psychic Wound. Roll a D6 for each other enemy unit within 6” of that unit. On a 4+, they suffer 1 Psychic Wound.</characteristic>
       </characteristics>
     </profile>
     <profile name="Null Zone" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="4ad3-cf83-1d5c-aaa8">
