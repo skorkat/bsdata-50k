@@ -24,17 +24,9 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="Infantry" id="d354-6680-584e-943c" hidden="false"/>
-    <categoryEntry name="Mounted" id="0f1f-1b81-c12f-ff5f" hidden="false">
-      <infoLinks>
-        <infoLink name="Full Speed" id="ed08-9d78-94e0-c2a8" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
-      </infoLinks>
-    </categoryEntry>
+    <categoryEntry name="Mounted" id="0f1f-1b81-c12f-ff5f" hidden="false"/>
     <categoryEntry name="Walker" id="b9c1-ec26-9c02-2026" hidden="false"/>
-    <categoryEntry name="Tank" id="841c-6009-19bb-93fb" hidden="false">
-      <infoLinks>
-        <infoLink name="Full Speed" id="0043-395a-7952-fb14" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
-      </infoLinks>
-    </categoryEntry>
+    <categoryEntry name="Tank" id="841c-6009-19bb-93fb" hidden="false"/>
     <categoryEntry name="Biological" id="de72-13bd-1789-6816" hidden="false"/>
     <categoryEntry name="Mechanical" id="05d8-53ff-1ca8-52b0" hidden="false"/>
     <categoryEntry name="Daemonic" id="b625-812b-ea6f-c45f" hidden="false"/>

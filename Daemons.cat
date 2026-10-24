@@ -1150,6 +1150,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
       <infoLinks>
         <infoLink name="Slaanesh: Boon of Swiftness" id="46ec-268a-d58a-1d5c" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
         <infoLink name="Fear" id="67e4-d944-f812-625b" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+        <infoLink name="Full Speed" id="a009-e634-5b09-48f4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Seekers" hidden="false" id="9de9-8ab3-70e3-4610">
@@ -1162,6 +1163,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
       <infoLinks>
         <infoLink name="Slaanesh: Boon of Swiftness" id="77a7-752a-c98f-1073" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
         <infoLink name="Fear" id="ee15-5d58-5c76-35f3" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+        <infoLink name="Full Speed" id="6933-2b10-a1f3-489d" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Seekers" id="46e2-3556-0452-9771" hidden="false">
@@ -1250,6 +1252,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
         <infoLink name="Lashes of Torment" id="e789-0614-b3f2-9a49" hidden="false" type="profile" targetId="697f-69ff-f4ce-d031"/>
         <infoLink name="Slaanesh: Boon of Swiftness" id="dde4-3c2d-caf4-c7af" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
         <infoLink name="Fear" id="02cd-654c-c3f8-a661" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+        <infoLink name="Full Speed" id="c1bb-674d-0aff-4f7f" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="fe67-aa7c-da03-ea6e" primary="true" name="Elite"/>
@@ -1304,6 +1307,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
         <infoLink name="Nurgle: Boon of Pestilence" id="7b31-31d8-d952-227c" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
         <infoLink name="Fear" id="afb1-7d90-0042-9ad4" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Fly" id="d155-f2e1-1344-e198" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+        <infoLink name="Full Speed" id="1125-43bd-9bb1-4088" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Beasts of Nurgle" hidden="false" id="8207-0458-3cdb-64bf">
@@ -1350,6 +1354,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
       <infoLinks>
         <infoLink name="Nurgle: Boon of Pestilence" id="3765-6a9e-e83f-dbb2" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
         <infoLink name="Fear" id="1e23-8b8e-f51e-a76b" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+        <infoLink name="Full Speed" id="b74f-8de5-94c7-4c95" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Nurglings" hidden="false" id="9261-775e-7312-da5d">
@@ -1405,6 +1410,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
       <infoLinks>
         <infoLink name="Khorne: Boon of Blood" id="69d8-333d-3c11-a828" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
         <infoLink name="Fear" id="aef9-d00c-96fb-e65d" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+        <infoLink name="Full Speed" id="33fa-02cd-aaf2-40c6" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Bloodcrushers" id="236c-065f-d0eb-a659" hidden="false">
@@ -1508,6 +1514,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
       <infoLinks>
         <infoLink name="Khorne: Boon of Blood" id="a552-1572-94d1-8690" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
         <infoLink name="Fear" id="c9a4-e919-314e-2f56" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+        <infoLink name="Full Speed" id="527b-b933-52f4-4cee" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Skull Cannon" hidden="false" id="4216-32fa-725f-257b">
@@ -1545,6 +1552,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
         <infoLink name="Fear" id="f717-27c5-35ac-4a06" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Hellblade" id="3208-94da-6323-805e" hidden="false" type="profile" targetId="389d-1feb-e064-dad1"/>
         <infoLink name="Khorne: Boon of Blood" id="6c46-0d7d-f696-143f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+        <infoLink name="Full Speed" id="9639-5b1b-da89-4ac0" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flamers" hidden="false" id="51f3-3436-531b-464d">
@@ -1594,6 +1602,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
         <infoLink name="Pink Fire of Tzeentch" id="18e2-fe2e-66c9-6abf" hidden="false" type="profile" targetId="bdcb-7029-bf9f-6b68"/>
         <infoLink name="Fear" id="86ab-25e9-28f9-0559" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Hover" id="0c41-4b3e-4861-ecff" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Full Speed" id="425e-663c-f2bf-4aef" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <profiles>
         <profile name="Flamer" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="21c5-7b65-6019-5a2d">
@@ -1656,6 +1665,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
         <infoLink name="Blue Fire of Tzeentch" id="07dc-1e80-4509-4011" hidden="false" type="profile" targetId="e823-39f2-4f68-79f9"/>
         <infoLink name="Pink Fire of Tzeentch" id="4158-6ccf-64b3-9afa" hidden="false" type="profile" targetId="bdcb-7029-bf9f-6b68"/>
         <infoLink name="Character" id="9212-19b6-326c-2a20" hidden="false" type="rule" targetId="cbbc-99b6-4371-e441"/>
+        <infoLink name="Full Speed" id="7a51-58d4-6a09-4333" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Screamers" hidden="false" id="1f49-669c-f7cd-e4f2">
@@ -1703,6 +1713,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
         <infoLink name="Tzeentch: Boon of Trickery" id="312a-b46b-eb0c-462d" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
         <infoLink name="Fear" id="2a26-e604-24de-ea4b" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
         <infoLink name="Fly" id="de5c-f846-6b72-e0bc" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+        <infoLink name="Full Speed" id="5b63-f6ba-df00-4488" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Keeper of Secrets" hidden="false" id="cd5b-c1df-361e-4493">
@@ -2032,6 +2043,9 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd05-c269-2c30-30c1"/>
                       </constraints>
+                      <infoLinks>
+                        <infoLink name="Full Speed" id="b823-915b-d9db-4612" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Seeker Chariot" hidden="false" id="fcdb-9055-feb8-b413" sortIndex="2">
                       <costs>
@@ -2051,6 +2065,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
                       </constraints>
                       <infoLinks>
                         <infoLink name="Lashes of Torment" id="7286-5a95-6ad1-e89a" hidden="false" type="profile" targetId="697f-69ff-f4ce-d031"/>
+                        <infoLink name="Full Speed" id="5f19-e1d9-3a9e-40bd" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
                       </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
@@ -2089,6 +2104,9 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcac-44dc-29d8-f255"/>
                       </constraints>
+                      <infoLinks>
+                        <infoLink name="Full Speed" id="89ad-f1d8-e30c-4c10" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Blood Throne Chariot" hidden="false" id="80f6-7517-cd6f-a706" sortIndex="2">
                       <costs>
@@ -2107,6 +2125,9 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="865a-dde4-1d13-8ae2"/>
                       </constraints>
+                      <infoLinks>
+                        <infoLink name="Full Speed" id="129d-d555-7ebf-4ff4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+                      </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -2164,6 +2185,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
                       </constraints>
                       <infoLinks>
                         <infoLink name="Fly" id="f0d8-5330-5ae9-33f9" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+                        <infoLink name="Full Speed" id="12db-3460-a167-4aeb" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
                       </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Burning Chariot" hidden="false" id="6b04-e0c2-e1af-089f" sortIndex="2">
@@ -2184,6 +2206,7 @@ Each Brimstone Horror adds 1/4 Unit Strength</description>
                       </constraints>
                       <infoLinks>
                         <infoLink name="Fly" id="322e-9531-9972-ace0" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+                        <infoLink name="Full Speed" id="020a-a841-b7f4-4650" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
                       </infoLinks>
                     </selectionEntry>
                   </selectionEntries>

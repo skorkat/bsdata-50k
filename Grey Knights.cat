@@ -339,6 +339,7 @@
         <infoLink name="Rhino" id="249e-9bfd-18e4-754a" hidden="false" type="profile" targetId="4a75-a220-2562-a611"/>
         <infoLink name="Firing Deck (X)" id="53cf-08b0-b908-aa59" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="1231-0ce1-bdad-ec0e" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Full Speed" id="e040-d53c-32c8-4cc4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <profiles>
         <profile name="Rhino" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="0539-0aa5-8798-315c">
@@ -381,6 +382,7 @@
         <infoLink name="Razorback" id="db15-e169-3cee-d51f" hidden="false" type="profile" targetId="f630-210e-776c-eec6"/>
         <infoLink name="Firing Deck (X)" id="499e-8cae-db0c-d96d" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="e833-bb85-98ad-21ed" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Full Speed" id="394e-c429-b129-45b4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <profiles>
         <profile name="Razorback" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="fb85-b7d5-f955-0248">
@@ -469,6 +471,7 @@
         <infoLink name="Land Raider" id="0b8f-e453-c3fa-dc8f" hidden="false" type="profile" targetId="291b-b3f7-f990-c5b6"/>
         <infoLink name="Firing Deck (X)" id="8ed7-3f76-194d-64dc" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="7c7a-69aa-0a0d-70de" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Full Speed" id="d293-1d78-616f-46f6" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Storm Bolter" hidden="false" id="b1aa-b2f0-a7f8-7362" type="selectionEntry" targetId="eb52-302e-e11b-dcf6">

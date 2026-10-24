@@ -1081,6 +1081,15 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Full Speed" id="5a50-b00b-56b5-4955" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Drop Pod" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="542f-4250-7501-d14c">
@@ -1140,6 +1149,15 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         </infoLink>
         <infoLink name="Firing Deck (X)" id="701a-e848-092b-2f7d" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="6fb7-d4c4-0e14-cd6d" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Full Speed" id="d9e6-a89d-52e0-402d" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Razorback" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="06c1-2ef2-8d72-1709">
@@ -1241,6 +1259,15 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         </infoLink>
         <infoLink name="Firing Deck (X)" id="c4c6-6823-4c50-00c2" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="5e5d-ba60-1406-0add" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Full Speed" id="4604-1c26-c8f4-42cf" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Rhino" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="fe2f-bef5-8455-9dc9">
@@ -1386,6 +1413,9 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
           </constraints>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="860b-bb5a-2be2-41f8" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bikers" hidden="false" id="cc3f-3d0b-c06b-45f4">
       <entryLinks>
@@ -1504,6 +1534,9 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Full Speed" id="a483-4017-6aed-4759" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Attack Bikers" hidden="false" id="56cb-1f7a-234f-a5c2">
       <entryLinks>
@@ -1542,6 +1575,9 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="436a-4a06-1826-07b5" primary="false" name="Mounted"/>
         <categoryLink targetId="de72-13bd-1789-6816" id="6b20-ed0e-c5f6-d232" primary="false" name="Biological"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="1f0e-a39e-656a-41a4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Thunderfire Cannon" hidden="false" id="7158-0c01-407f-235d">
       <costs>
@@ -1576,6 +1612,15 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
               </conditions>
             </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Full Speed" id="f4ef-1a07-6d41-40e5" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1698,6 +1743,15 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Full Speed" id="7a91-7627-aa43-477b" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Storm Bolter" hidden="false" id="71ad-14e2-741a-2fac" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="1">
@@ -1743,6 +1797,15 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
               </conditions>
             </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Full Speed" id="6826-09b3-29ac-42a6" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1862,6 +1925,17 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Full Speed" id="b375-2f40-c644-4fd4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Land Raider" hidden="false" id="76f0-0537-1ce1-d50a">
       <infoLinks>
@@ -1881,6 +1955,15 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         </infoLink>
         <infoLink name="Firing Deck (X)" id="64c2-232e-140f-b8cd" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="e381-6b5c-18c1-f1cc" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Full Speed" id="a1a1-3dea-b259-4afe" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Storm Bolter" hidden="false" id="a06d-d2dc-15be-9e6a" type="selectionEntry" targetId="eb52-302e-e11b-dcf6">
@@ -2077,6 +2160,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <infoLink name="Chaplain" id="d79a-4d29-589d-74de" hidden="false" type="profile" targetId="22f7-85c5-721e-8ae8"/>
                 <infoLink name="Crozius" id="716b-4c57-28cd-22ff" hidden="false" type="profile" targetId="abac-eaa6-52db-cc10"/>
                 <infoLink name="Krak Grenades" id="da96-1741-6e87-d4ca" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
+                <infoLink name="Full Speed" id="6176-0284-7996-4671" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Bike" hidden="false" id="eb51-dd46-7de2-a487" type="selectionEntry" targetId="480c-3726-6f47-38fc">
@@ -2157,6 +2241,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
               <infoLinks>
                 <infoLink name="Captain" id="c791-74b1-78d3-aa06" hidden="false" type="profile" targetId="2197-21e7-05b2-7f26"/>
                 <infoLink name="Krak Grenades" id="34a9-11f9-fda6-1d06" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
+                <infoLink name="Full Speed" id="2031-a4cc-5995-4a00" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Bike" hidden="false" id="d409-7107-2693-d96f" type="selectionEntry" targetId="480c-3726-6f47-38fc">
@@ -2234,6 +2319,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
               <infoLinks>
                 <infoLink name="Krak Grenades" id="f70e-adbd-e973-6eaf" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Librarian" id="0522-80eb-6739-3e60" hidden="false" type="profile" targetId="920f-a9a6-b0a8-07aa"/>
+                <infoLink name="Full Speed" id="a9ec-c24f-1278-484b" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Bike" hidden="false" id="85bb-8ec6-fa2a-8599" type="selectionEntry" targetId="480c-3726-6f47-38fc">

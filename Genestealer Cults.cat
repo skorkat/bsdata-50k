@@ -1006,6 +1006,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
       <infoLinks>
         <infoLink name="Autopistol" id="58a9-19e6-829f-d4f0" hidden="false" type="profile" targetId="fb91-11f1-4afc-1bc5"/>
         <infoLink name="Sniper Rifle" id="f377-e7c8-9671-f796" hidden="false" type="profile" targetId="41ee-f79d-43c3-1998"/>
+        <infoLink name="Full Speed" id="bff7-fb8f-294c-43ce" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hybrid Metamorphs" hidden="false" id="6a74-7cbf-5eed-88cd">
@@ -1757,6 +1758,9 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="fa70-00d6-01b2-2ffb" primary="false" name="Mounted"/>
         <categoryLink targetId="de72-13bd-1789-6816" id="bff3-c03e-cfd1-614e" primary="false" name="Biological"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="920d-48d4-ac74-40e1" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -1872,6 +1876,15 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
       <infoLinks>
         <infoLink name="Heavy Stubber" id="75e8-4a29-8257-c6d4" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
         <infoLink name="Drilldozer Blade" id="3acd-0cff-37d1-4451" hidden="false" type="profile" targetId="e1c5-9184-0162-c736"/>
+        <infoLink name="Full Speed" id="1b1d-8cd5-a1ad-49bb" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Tank" hidden="false" id="37c8-df4b-c9a8-1c08" targetId="841c-6009-19bb-93fb" primary="false"/>
@@ -1978,6 +1991,15 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         <infoLink name="Autocannon" id="bfbb-ac35-226d-f9d6" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
         <infoLink name="Autocannon" id="f1b4-b658-4219-7efe" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
         <infoLink name="Heavy Stubber" id="5816-6b38-9419-33b8" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
+        <infoLink name="Full Speed" id="c90d-220a-29c8-4ce1" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="841c-6009-19bb-93fb" id="9604-704c-5122-80e6" primary="false" name="Tank"/>
@@ -2130,6 +2152,17 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Full Speed" id="c381-d5ab-b579-4697" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

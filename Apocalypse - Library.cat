@@ -335,7 +335,15 @@ When the Titanic model is destroyed, its Void Shields are also destroyed. The Sn
         <categoryLink name="Mechanical" targetId="05d8-53ff-1ca8-52b0" hidden="false" primary="false" id="237a-51e5-f947-da96"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Full Speed" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0" id="f962-1220-859c-74e3"/>
+        <infoLink name="Full Speed" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0" id="f962-1220-859c-74e3">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="3d31-789b-a05f-879e" sortIndex="5">

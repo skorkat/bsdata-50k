@@ -928,6 +928,9 @@ Unused Order tokens are lost at the end of the turn.</description>
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="16e3-f6ae-3220-8253" primary="false" name="Mounted"/>
         <categoryLink targetId="de72-13bd-1789-6816" id="cddf-0d53-73cc-1462" primary="false" name="Biological"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="8620-d070-44f8-42b6" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scout Sentinels" hidden="false" id="cbc3-ef28-2049-bc09">
       <selectionEntries>
@@ -1201,6 +1204,15 @@ Unused Order tokens are lost at the end of the turn.</description>
             <modifier type="set" value="x6" field="annotation"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Full Speed" id="ce5a-3c68-db5c-4921" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon 1" id="7197-1e79-48df-0af0" hidden="false" sortIndex="1">
@@ -1322,6 +1334,15 @@ Unused Order tokens are lost at the end of the turn.</description>
               </conditions>
             </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Full Speed" id="e0e2-3c56-bf45-4f87" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1547,6 +1568,17 @@ Unused Order tokens are lost at the end of the turn.</description>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Full Speed" id="70bd-949a-870e-4812" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hydra Squadron" hidden="false" id="19be-d01c-0442-c028">
       <categoryLinks>
@@ -1618,6 +1650,17 @@ Unused Order tokens are lost at the end of the turn.</description>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Full Speed" id="5313-ba31-060b-447d" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hellhound Squadron" hidden="false" id="7fcf-2a3a-6061-c061">
       <categoryLinks>
@@ -1733,6 +1776,17 @@ Unused Order tokens are lost at the end of the turn.</description>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Full Speed" id="3f45-4577-9df4-409c" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leman Russ Squadron" hidden="false" id="3feb-fbee-23a2-ed49">
       <categoryLinks>
@@ -1767,6 +1821,17 @@ Unused Order tokens are lost at the end of the turn.</description>
           </costs>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="826b-dadd-8481-469c" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leman Russ" hidden="false" id="a435-4040-e220-f03d">
       <selectionEntryGroups>
@@ -1985,6 +2050,7 @@ Unused Order tokens are lost at the end of the turn.</description>
       <infoLinks>
         <infoLink name="Orders" id="45b1-b862-d36b-d0e8" hidden="false" type="rule" targetId="62d1-ade6-18cc-3a14"/>
         <infoLink name="Unique" id="cc52-c073-bd75-4d5b" hidden="false" type="rule" targetId="17f1-244a-b389-bd77"/>
+        <infoLink name="Full Speed" id="057d-e4e1-77dd-4623" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="230"/>

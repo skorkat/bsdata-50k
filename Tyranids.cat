@@ -1790,6 +1790,7 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
       <infoLinks>
         <infoLink name="Deep Strike" id="757e-e133-5b70-8f62" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
         <infoLink name="Multi-Limbed" id="6576-f6a8-9655-e51c" hidden="false" type="rule" targetId="4484-4970-0f6c-f945"/>
+        <infoLink name="Full Speed" id="b87e-f0cb-e4ff-4685" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ravener" hidden="false" id="fb88-fe34-133b-dd7d">
@@ -2531,6 +2532,7 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
       <infoLinks>
         <infoLink name="Stinger Salvoes" id="221f-4d5b-c975-392f" hidden="false" type="profile" targetId="0921-be41-af74-f2f8"/>
         <infoLink name="Fly" id="5642-7dd3-efa3-d036" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+        <infoLink name="Full Speed" id="2aba-9c1d-6b2d-4aa4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon" id="649f-cfa0-0e01-d665" hidden="false">
@@ -2594,6 +2596,7 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <infoLink name="Scything Talons" id="d8ac-514b-25de-be7a" hidden="false" type="profile" targetId="c5e4-d9a1-2340-9739"/>
         <infoLink name="Tentaclids" id="50a8-db04-6a20-237d" hidden="false" type="profile" targetId="1e5d-e404-04b3-aca6"/>
         <infoLink name="Fly" id="06ba-c80c-960a-5047" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
+        <infoLink name="Full Speed" id="7cb6-e16c-620b-4773" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="841c-6009-19bb-93fb" id="7449-fd43-23c4-d0cd" primary="false" name="Tank"/>

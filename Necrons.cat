@@ -709,6 +709,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </categoryLinks>
       <infoLinks>
         <infoLink name="Hover" id="d574-1990-8737-b52d" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Full Speed" id="16cc-e6df-24a4-447e" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Lord Wargear" hidden="false" id="88c8-dcc7-6a63-15ee" type="selectionEntryGroup" targetId="5f07-41b5-2831-7fc4"/>
@@ -793,6 +794,9 @@ Returned models must be placed in unit coherency and may not be placed in base c
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Full Speed" id="0089-5340-4606-4025" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Skorpekh Lord" hidden="false" id="b574-1f6d-9e75-d89f">
       <categoryLinks>
@@ -1511,6 +1515,7 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="8546-584b-691a-8be9" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
+        <infoLink name="Full Speed" id="af9b-48bd-b8e0-4e8b" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wraiths" hidden="false" id="8632-7555-e1d8-1ce9">

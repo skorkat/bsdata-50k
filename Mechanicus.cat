@@ -1001,7 +1001,15 @@
       <infoLinks>
         <infoLink name="Cognis Heavy Stubber" id="bcec-7d45-dfd9-55b6" hidden="false" type="profile" targetId="b1af-9002-fcf9-7f8a"/>
         <infoLink name="Hover" id="c54a-29c8-a891-8813" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Full Speed" id="1c29-63dd-5ce1-f49b" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+        <infoLink name="Full Speed" id="1c29-63dd-5ce1-f49b" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Cognis Heavy Stubber" id="247e-fa4c-68af-8034" hidden="false" type="profile" targetId="b1af-9002-fcf9-7f8a"/>
         <infoLink name="Cognis Heavy Stubber" id="0ab5-96fb-84c5-1ec2" hidden="false" type="profile" targetId="b1af-9002-fcf9-7f8a"/>
         <infoLink name="Cognis Heavy Stubber" id="dbe8-00a9-93e7-f0cb" hidden="false" type="profile" targetId="b1af-9002-fcf9-7f8a"/>
@@ -1831,6 +1839,9 @@
         <categoryLink name="Biological" hidden="false" id="211e-4a02-3293-21c9" targetId="de72-13bd-1789-6816" primary="false"/>
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="3f18-e806-c9df-0d9a" primary="false" name="Mounted"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="3509-76f8-b0ac-4c8c" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cerberus Sulphurhounds" hidden="false" id="9b40-47d5-c928-1ee1">
       <selectionEntryGroups>
@@ -1890,6 +1901,7 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Rad Saturation" id="a839-156f-dbbc-7dc4" hidden="false" type="rule" targetId="59d4-4d8e-5865-624e"/>
+        <infoLink name="Full Speed" id="7bc2-c993-3dcb-4cee" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="9087-bb7d-80ed-1ad8" targetId="6297-a84f-a103-e2ac" primary="true"/>
@@ -2553,6 +2565,15 @@
         <infoLink name="Cognis Heavy Stubber" id="c093-68ae-896a-8b48" hidden="false" type="profile" targetId="b1af-9002-fcf9-7f8a"/>
         <infoLink name="Cognis Heavy Stubber" id="879d-527f-0f84-6ac9" hidden="false" type="profile" targetId="b1af-9002-fcf9-7f8a"/>
         <infoLink name="Cognis Heavy Stubber" id="6884-8904-00a5-d58a" hidden="false" type="profile" targetId="b1af-9002-fcf9-7f8a"/>
+        <infoLink name="Full Speed" id="b5b5-98dc-bc08-4f4e" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Disintegrator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5682-424d-5e66-4e5b">

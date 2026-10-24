@@ -833,6 +833,7 @@ Bulky | Waaagh!</description>
       <infoLinks>
         <infoLink name="Transport (X)" id="630a-6d1e-49b6-645c" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
         <infoLink name="Firing Deck (X)" id="e4b7-5586-b903-1211" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
+        <infoLink name="Full Speed" id="d9b0-5b3d-6461-45f4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shoota Boyz" hidden="false" id="e175-3392-4b5f-48c7">
@@ -1754,6 +1755,9 @@ Bulky | Waaagh!</description>
         <categoryLink targetId="de72-13bd-1789-6816" id="5add-e2b7-af9b-9f58" primary="false" name="Biological"/>
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="b4ce-5a37-63d0-29ea" primary="false" name="Mounted"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="3045-b376-4628-47fd" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Battlewagon" hidden="false" id="1ae4-82ca-5f30-8254">
       <costs>
@@ -1922,6 +1926,9 @@ Bulky | Waaagh!</description>
         <categoryLink targetId="841c-6009-19bb-93fb" id="7fdc-3830-8174-94d0" primary="false" name="Tank"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="3702-66a4-572b-8eff" primary="false" name="Mechanical"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="43a9-9013-ff34-434d" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Buggies" hidden="false" id="4b0c-a462-e9b1-1adc">
       <selectionEntries>
@@ -2046,6 +2053,9 @@ Bulky | Waaagh!</description>
         <categoryLink targetId="841c-6009-19bb-93fb" id="5218-0e43-f540-4aff" primary="false" name="Tank"/>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="28f2-bd64-0180-e6cb" primary="false" name="Mechanical"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="3b85-7d1b-e3d6-4d91" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Storm Boyz" hidden="false" id="2c62-9246-190c-ba63">
       <infoLinks>
@@ -2169,6 +2179,9 @@ Bulky | Waaagh!</description>
         <categoryLink targetId="de72-13bd-1789-6816" id="2a8c-a0da-8976-1499" primary="false" name="Biological"/>
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="f239-2c83-6b68-628d" primary="false" name="Mounted"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="bb88-6dfe-7b94-4bbe" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deffkoptas" hidden="false" id="c821-0ee0-eb46-05ec">
       <selectionEntries>
@@ -2245,6 +2258,9 @@ Bulky | Waaagh!</description>
         <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="e3ab-ddaf-6795-6ebd" primary="false" name="Mounted"/>
         <categoryLink targetId="de72-13bd-1789-6816" id="1072-a3ff-190f-6cd2" primary="false" name="Biological"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="80a4-66ef-15fd-4000" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flash Gitz" hidden="false" id="6e0e-32a0-97e7-e403">
       <categoryLinks>
@@ -2355,6 +2371,9 @@ Bulky | Waaagh!</description>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
+              <infoLinks>
+                <infoLink name="Full Speed" id="0c1d-8a05-1a4b-4ba1" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Squig Hog" hidden="false" id="88dd-aedf-8656-d049" sortIndex="4">
               <modifiers>
@@ -2369,6 +2388,9 @@ Bulky | Waaagh!</description>
                 <modifier type="remove" value="d354-6680-584e-943c" field="category" scope="parent"/>
                 <modifier type="add" value="0f1f-1b81-c12f-ff5f" field="category" scope="parent"/>
               </modifiers>
+              <infoLinks>
+                <infoLink name="Full Speed" id="04a4-470b-c395-43d4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2522,6 +2544,9 @@ Bulky | Waaagh!</description>
               <categoryLinks>
                 <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="06f8-5633-10e2-6a4a" primary="false" name="Mounted"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Full Speed" id="485f-bcc8-6003-41de" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mega Armour" hidden="false" id="f3b0-6990-3e0d-7ad0" sortIndex="5">
               <costs>
@@ -2558,6 +2583,9 @@ Bulky | Waaagh!</description>
               <categoryLinks>
                 <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="9597-6046-a863-d180" primary="false" name="Mounted"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Full Speed" id="5835-47b6-5555-482f" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warboss" hidden="false" id="3f25-06a1-e962-f479" sortIndex="1">
               <entryLinks>
@@ -2666,6 +2694,9 @@ Bulky | Waaagh!</description>
               <categoryLinks>
                 <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="e893-e7b7-41b2-70bb" primary="false" name="Mounted"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Full Speed" id="66f8-183d-2ae5-4f90" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mega Armour" hidden="false" id="514b-002e-42f5-977f" sortIndex="5">
               <costs>
@@ -2702,6 +2733,9 @@ Bulky | Waaagh!</description>
               <categoryLinks>
                 <categoryLink targetId="0f1f-1b81-c12f-ff5f" id="eec7-dfca-0abc-8789" primary="false" name="Mounted"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Full Speed" id="b021-fb6d-e8ec-41a5" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Big Mek" hidden="false" id="fe48-2f9f-ace5-0ccc" sortIndex="1">
               <entryLinks>
@@ -2829,6 +2863,9 @@ Bulky | Waaagh!</description>
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="9f2d-6286-8c63-3db4" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Full Speed" id="33b3-59a3-852c-4526" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mega Armour" hidden="false" id="de22-61fd-3e56-aedb" sortIndex="5">
               <costs>
@@ -2859,6 +2896,9 @@ Bulky | Waaagh!</description>
               <entryLinks>
                 <entryLink import="true" name="Leader Weapons" hidden="false" id="a847-8667-e42d-ceec" type="selectionEntryGroup" targetId="2041-d177-02cb-e09e"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Full Speed" id="0a7a-048c-4ff2-40bf" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Painboss" hidden="false" id="3871-6488-25cb-5ceb" sortIndex="1">
               <entryLinks>

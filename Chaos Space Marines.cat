@@ -1189,6 +1189,7 @@ A model aligned with a particular god cannot join units aligned with a different
       <infoLinks>
         <infoLink name="Firing Deck (X)" id="dc69-3f31-9e64-5912" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="2713-e61e-06d1-57ae" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Full Speed" id="e6d2-72d7-ab5e-4074" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Drop Pod" hidden="false" id="fd3c-6600-684d-0341">
@@ -1206,6 +1207,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <infoLink name="Transport (X)" id="c4db-3028-0a7d-bec5" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
         <infoLink name="Firing Deck (X)" id="6b55-196f-323f-ee71" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Infiltrate" id="d80d-a7bc-67df-e0de" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+        <infoLink name="Full Speed" id="d4d5-7fd6-283e-46d3" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <profiles>
         <profile name="Chaos Drop Pod" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="037a-231d-c006-efb2">
@@ -2799,6 +2801,9 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
       <entryLinks>
         <entryLink import="true" name="Chaos Alignment (Character)" hidden="false" id="c9a6-44ce-04be-16af" type="selectionEntryGroup" targetId="828a-02f3-1faf-37c2"/>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Full Speed" id="351a-2873-e24d-45a1" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Vindicator" hidden="false" id="8fae-e176-df21-061a">
       <costs>
@@ -2806,6 +2811,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
       </costs>
       <infoLinks>
         <infoLink name="Demolisher Cannon" id="c847-3073-da89-0142" hidden="false" type="profile" targetId="b890-4359-361a-bfe3"/>
+        <infoLink name="Full Speed" id="cc1b-0988-dfcb-4f8d" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="0018-a335-d02e-ba9b" targetId="6297-a84f-a103-e2ac" primary="true"/>
@@ -2867,6 +2873,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         <infoLink name="Lascannon" id="7f29-c888-94b1-4644" hidden="false" type="profile" targetId="d729-2b11-1734-557a"/>
         <infoLink name="Firing Deck (X)" id="6947-ad82-d10f-033c" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="b1b3-01e3-7c80-32da" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Full Speed" id="b8f6-a76e-ccff-47fa" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Elite" hidden="false" id="5c7b-6eda-1adf-b4b6" targetId="6297-a84f-a103-e2ac" primary="true"/>
@@ -3040,6 +3047,9 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Full Speed" id="5e56-bcd0-a2ff-4bd4" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Defiler" hidden="false" id="725f-f3dd-1aa8-ba71">
       <profiles>
@@ -3612,6 +3622,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <infoLink name="Krak Grenades" id="bae9-c302-0db8-9b1d" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Boltgun" id="e48d-4a60-1545-6976" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="ffe4-2ba5-2f04-fec8" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
+                <infoLink name="Full Speed" id="9042-6451-fdfc-456d" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Chosen Upgrades" hidden="false" id="0665-ef40-fab6-0b37" type="selectionEntryGroup" targetId="b291-6453-337b-d16f"/>
@@ -3742,6 +3753,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <infoLink name="Krak Grenades" id="2b98-2f2b-7d6e-61fc" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Boltgun" id="1406-68ae-ae3e-6132" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="da17-ac01-f070-dd8c" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
+                <infoLink name="Full Speed" id="aa71-c804-b08b-4da0" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -3967,6 +3979,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <infoLink name="Krak Grenades" id="511b-187a-c236-9882" hidden="false" type="profile" targetId="87c9-b0d4-c233-55b5"/>
                 <infoLink name="Boltgun" id="891f-029a-2e7f-b63e" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
                 <infoLink name="Boltgun" id="58dc-9c84-4787-c3ae" hidden="false" type="profile" targetId="12b3-49fc-59a0-d30b"/>
+                <infoLink name="Full Speed" id="e0dd-574f-37d3-46cf" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
