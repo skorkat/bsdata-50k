@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -53,6 +53,8 @@
         <infoLink name="Titanic" id="ec88-c4d4-decb-3a8b" hidden="false" type="rule" targetId="a3f2-b825-1ebf-c4fa"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Apocalypse" id="58d2-1cc8-0227-0a42" hidden="false"/>
+    <categoryEntry name="Aircraft" id="b069-0f73-de64-e741" hidden="false"/>
   </categoryEntries>
   <profileTypes>
     <profileType name="Melee Weapon" id="4437-4cfe-f1f5-8c41" hidden="false" sortIndex="7">

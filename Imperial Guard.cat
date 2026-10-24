@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -81,6 +81,7 @@ Unused Order tokens are lost at the end of the turn.</description>
           </constraints>
         </categoryLink>
         <categoryLink name="Transport" hidden="false" id="5d9e-5ce1-705b-232e" targetId="57f8-02cb-ea36-4d85"/>
+        <categoryLink name="Apocalypse" hidden="false" id="6c42-1d90-7c85-dd36" targetId="58d2-1cc8-0227-0a42"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -3321,6 +3322,7 @@ Unused Order tokens are lost at the end of the turn.</description>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperial - Library" id="3790-c352-aa32-b8b6" targetId="0d98-1036-43bc-85f0"/>
+    <catalogueLink type="catalogue" name="aLib - Apocalypse" id="1770-abf9-64a0-b29f" targetId="efa0-300e-3f94-8853" importRootEntries="false"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Conscript Squad" hidden="false" id="1007-e9aa-fb30-8be3" type="selectionEntry" targetId="4be5-f77b-73c6-d948"/>
@@ -3349,6 +3351,10 @@ Unused Order tokens are lost at the end of the turn.</description>
     <entryLink import="true" name="Jungle Command Squad" hidden="false" id="a050-db94-999d-fe4a" type="selectionEntry" targetId="00d3-316e-8cbe-b6ef"/>
     <entryLink import="true" name="Scion Command Squad" hidden="false" id="132c-82d5-869e-c3ba" type="selectionEntry" targetId="5da6-016e-a7a8-cf76"/>
     <entryLink import="true" name="Infantry Command Squad" hidden="false" id="06bc-1d3b-762d-08f6" type="selectionEntry" targetId="45e5-6f39-eed2-b116"/>
+    <entryLink import="true" name="Baneblade" hidden="false" id="8552-84fa-626d-8a71" type="selectionEntry" targetId="9b34-6ec8-d034-79dc"/>
+    <entryLink import="true" name="Warhound" hidden="false" id="b423-f71d-9f8e-2e06" type="selectionEntry" targetId="1cf0-ffd8-e3c7-2f25"/>
+    <entryLink import="true" name="Stormraven" hidden="false" id="39d2-da90-0e0b-ff34" type="selectionEntry" targetId="015a-c823-5db1-6135"/>
+    <entryLink import="true" name="Thunderhawk" hidden="false" id="daa2-d5d4-b850-ad02" type="selectionEntry" targetId="637d-8d7d-eb0a-ba2b"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Sergeant Upgrades" id="e23f-6f9f-ab2f-1957" hidden="false">

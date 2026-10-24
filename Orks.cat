@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -19,6 +19,7 @@
         <categoryLink name="Elite" hidden="false" id="5b5a-6013-d505-2a41" targetId="6297-a84f-a103-e2ac"/>
         <categoryLink name="Speed Freeks" hidden="false" id="d01a-b65f-aa49-152b" targetId="2f5d-36c5-eab9-d7e2"/>
         <categoryLink name="Transport" hidden="false" id="2736-fe94-2081-53e4" targetId="57f8-02cb-ea36-4d85"/>
+        <categoryLink name="Apocalypse" hidden="false" id="dbcc-41b2-bf45-c3ed" targetId="58d2-1cc8-0227-0a42"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -2961,6 +2962,11 @@ Bulky | Waaagh!</description>
     <entryLink import="true" name="Warboss" hidden="false" id="b9b1-4489-5b11-7f44" type="selectionEntry" targetId="1a13-b086-4661-0a44"/>
     <entryLink import="true" name="Big Mek" hidden="false" id="90c0-5dde-b1f5-43db" type="selectionEntry" targetId="6549-f339-87b7-4e85"/>
     <entryLink import="true" name="Painboss" hidden="false" id="ebff-af71-edfb-69d0" type="selectionEntry" targetId="c2c1-6a7e-1986-d4a3"/>
+    <entryLink import="true" name="Stompa" hidden="false" id="c1c8-1c69-72f7-af48" type="selectionEntry" targetId="850b-800b-bc76-3ff5"/>
+    <entryLink import="true" name="Dakkajet" hidden="false" id="8211-b470-3ce7-760f" type="selectionEntry" targetId="e8ee-1db7-f85d-75bb"/>
+    <entryLink import="true" name="Chinork Warkopta" hidden="false" id="d665-0510-37eb-18e8" type="selectionEntry" targetId="1991-f168-849c-16f1"/>
+    <entryLink import="true" name="Squiggoth" hidden="false" id="d611-873f-7e69-1b11" type="selectionEntry" targetId="f4bf-a9fe-d055-bafd"/>
+    <entryLink import="true" name="Gargantuan Squiggoth" hidden="false" id="de0f-cdff-c44d-906d" type="selectionEntry" targetId="ce79-f66c-3aae-1440"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Leader Weapons" id="2041-d177-02cb-e09e" hidden="false">
@@ -3115,4 +3121,7 @@ Bulky | Waaagh!</description>
       </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="aLib - Apocalypse" id="12e2-c580-71aa-9c19" targetId="efa0-300e-3f94-8853" importRootEntries="false"/>
+  </catalogueLinks>
 </catalogue>

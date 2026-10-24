@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
+    <catalogueLink type="catalogue" name="aLib - Apocalypse" id="0211-d315-af82-2fa8" targetId="efa0-300e-3f94-8853" importRootEntries="false"/>
   </catalogueLinks>
   <infoLinks>
     <infoLink name="Slaanesh: Boon of Swiftness" id="e792-e339-0ed0-9e8b" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
@@ -628,6 +629,7 @@ A model aligned with a particular god cannot join units aligned with a different
         <categoryLink name="Elite" hidden="false" id="7983-664e-04d9-0040" targetId="6297-a84f-a103-e2ac"/>
         <categoryLink name="Daemonspawn" hidden="false" id="121c-bca2-d867-829d" targetId="be0a-badc-4087-52e3"/>
         <categoryLink name="Transport" hidden="false" id="446d-b402-82bc-546c" targetId="57f8-02cb-ea36-4d85"/>
+        <categoryLink name="Apocalypse" hidden="false" id="a8c9-9d10-f7d5-7c43" targetId="58d2-1cc8-0227-0a42"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -4257,6 +4259,178 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
     <entryLink import="true" name="Dark Apostle" hidden="false" id="6bdf-7d55-8e9a-dcea" type="selectionEntry" targetId="e324-95b9-6855-fde7"/>
     <entryLink import="true" name="Exalted Champion" hidden="false" id="1e62-2f5d-ebf8-83e3" type="selectionEntry" targetId="3350-0034-8db6-8034"/>
     <entryLink import="true" name="Warpsmith" hidden="false" id="ed82-c1e4-1569-b842" type="selectionEntry" targetId="8cb8-ec8f-7fe4-f509"/>
+    <entryLink import="true" name="Baneblade" hidden="false" id="a05a-89dc-5d4e-2705" type="selectionEntry" targetId="9b34-6ec8-d034-79dc">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chaos Alignment" id="acdd-ace7-ed06-0eab" hidden="false" sortIndex="8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78f7-2f7d-7c37-28c5" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Slaanesh" hidden="false" id="15e4-b1e9-151a-a76f" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24a8-4513-f62b-c4d7" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Khorne" hidden="false" id="71cf-b7df-2773-1395" targetId="cd12-93c2-c39a-ed77" type="selectionEntry" sortIndex="2" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68fe-ed25-8468-9651" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Nurgle" hidden="false" id="c670-659c-8fe6-64df" targetId="f5c3-5c40-b234-2465" type="selectionEntry" sortIndex="3" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4861-c6e1-8743-b815" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Tzeentch" hidden="false" id="a44c-6e73-c445-b0fc" targetId="6c71-fac7-b298-335a" type="selectionEntry" sortIndex="4" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="561a-fd3d-4853-5d23" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Warhound" hidden="false" id="9c9b-47f6-3b70-dcfc" type="selectionEntry" targetId="1cf0-ffd8-e3c7-2f25">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chaos Alignment" id="c600-5432-c696-570c" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea47-7656-0e79-c288" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Slaanesh" hidden="false" id="0d71-5b10-a1e1-e235" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16f5-b747-91f1-dede" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="65"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Khorne" hidden="false" id="ce27-85ee-f35b-3fec" targetId="cd12-93c2-c39a-ed77" type="selectionEntry" sortIndex="2" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36e5-61ab-5385-96e3" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Nurgle" hidden="false" id="8389-b440-aebf-2658" targetId="f5c3-5c40-b234-2465" type="selectionEntry" sortIndex="3" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faf3-8009-a33f-c640" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="100"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Tzeentch" hidden="false" id="07bc-9bae-0208-08f3" targetId="6c71-fac7-b298-335a" type="selectionEntry" sortIndex="4" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdc3-3f94-da39-e290" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="100"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Stormraven" hidden="false" id="b66a-8346-b850-354a" type="selectionEntry" targetId="015a-c823-5db1-6135">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chaos Alignment" id="bb97-ae08-7d4e-cfaa" hidden="false" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d786-8b3f-4e77-3532" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Slaanesh" hidden="false" id="83b7-299a-2783-8498" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a548-ad0b-d9d3-4367" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Khorne" hidden="false" id="392d-3942-5d75-bc48" targetId="cd12-93c2-c39a-ed77" type="selectionEntry" sortIndex="2" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7397-066a-2814-8a79" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Nurgle" hidden="false" id="bdf4-f7dc-d1f2-5a62" targetId="f5c3-5c40-b234-2465" type="selectionEntry" sortIndex="3" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="923e-a9ab-4baf-d2c6" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Tzeentch" hidden="false" id="04b1-e1a8-90cc-7d77" targetId="6c71-fac7-b298-335a" type="selectionEntry" sortIndex="4" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ac8-eeb3-3812-899c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Thunderhawk" hidden="false" id="69ab-3392-5091-9dd4" type="selectionEntry" targetId="637d-8d7d-eb0a-ba2b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chaos Alignment" id="4e91-f268-86fa-2cc1" hidden="false" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1e4-8f73-19e4-a0b2" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Slaanesh" hidden="false" id="77c1-0719-3d6c-aeb0" targetId="54c0-f131-2e95-3f0f" type="selectionEntry" sortIndex="1" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1915-c61c-d58d-8721" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="45"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Khorne" hidden="false" id="1b65-d3b3-f9ef-822e" targetId="cd12-93c2-c39a-ed77" type="selectionEntry" sortIndex="2" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fe0-5f37-089d-6a4c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Nurgle" hidden="false" id="6945-bf5a-5872-8bcf" targetId="f5c3-5c40-b234-2465" type="selectionEntry" sortIndex="3" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6327-368c-5ce0-0a2f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Tzeentch" hidden="false" id="4876-0481-406a-8cfe" targetId="6c71-fac7-b298-335a" type="selectionEntry" sortIndex="4" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73ac-fa66-9a00-92a1" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Chosen Terminator Upgrades" id="b3b6-0cf7-6d55-77a3" hidden="false">

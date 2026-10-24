@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Honoured Brethren" id="ba83-6a23-709e-c810" hidden="false">
       <constraints>
@@ -50,6 +50,10 @@
     <entryLink import="true" name="Librarian" hidden="false" id="0b97-3d64-fbb3-ef99" type="selectionEntry" targetId="2b68-8a2b-fffa-3539"/>
     <entryLink import="true" name="Assault Centurion Squad" hidden="false" id="ead1-53e3-8c7a-abb8" type="selectionEntry" targetId="350c-fdda-1b77-da29"/>
     <entryLink import="true" name="Devastator Centurion Squad" hidden="false" id="e8a4-1a0c-8534-cbac" type="selectionEntry" targetId="c0e0-aba4-369e-709a"/>
+    <entryLink import="true" name="Baneblade" hidden="false" id="4bff-a0ca-774c-5c16" type="selectionEntry" targetId="9b34-6ec8-d034-79dc"/>
+    <entryLink import="true" name="Warhound" hidden="false" id="8c17-4a2c-704a-616f" type="selectionEntry" targetId="1cf0-ffd8-e3c7-2f25"/>
+    <entryLink import="true" name="Stormraven" hidden="false" id="ed49-363c-61bd-5dd3" type="selectionEntry" targetId="015a-c823-5db1-6135"/>
+    <entryLink import="true" name="Thunderhawk" hidden="false" id="d5e0-f145-1bad-c306" type="selectionEntry" targetId="637d-8d7d-eb0a-ba2b"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Tactical Squad" hidden="false" id="aab8-ced7-282a-4871" flatten="false" collective="false" collapsible="false">
@@ -2428,6 +2432,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
     <catalogueLink type="catalogue" name="Imperial - Library" id="a5cf-6d41-36bc-03d6" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Models" id="31b7-db96-835e-9fde" targetId="f909-d379-3a93-cb16"/>
     <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Equipment" id="95e6-9236-b184-1329" targetId="0e97-bb9e-538e-d4e5"/>
+    <catalogueLink type="catalogue" name="aLib - Apocalypse" id="5cc1-ea91-230d-ae42" targetId="efa0-300e-3f94-8853" importRootEntries="false"/>
   </catalogueLinks>
   <forceEntries>
     <forceEntry name="Firstborn Marines" id="9393-a693-72ff-2981" hidden="false">
@@ -2441,6 +2446,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         <categoryLink name="Elite" hidden="false" id="3037-190c-4cd4-a02c" targetId="6297-a84f-a103-e2ac"/>
         <categoryLink name="Honoured Brethren" hidden="false" id="972b-473b-ad10-71d2" targetId="ba83-6a23-709e-c810"/>
         <categoryLink name="Transport" hidden="false" id="38ba-18e4-f07e-b4fa" targetId="57f8-02cb-ea36-4d85"/>
+        <categoryLink name="Apocalypse" hidden="false" id="3470-077e-06ed-ba2e" targetId="58d2-1cc8-0227-0a42"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
