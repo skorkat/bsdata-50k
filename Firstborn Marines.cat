@@ -1072,7 +1072,7 @@
           <description>Units cannot embark into a Drop Pod.
 
 
-When a Drop Pod arrives from reserves, units within it can disembark during their activation. If they do so, they must use the minimum move possible to disembark the squad. They then count as having arrived from reserves, so cannot run.</description>
+When a Drop Pod arrives from reserves, units within it can disembark during their activation. If they do so, they must use the minimum move possible to disembark the squad. They then count as having arrived from reserves, so cannot run. If they charge on this turn, they measure distance from the of the Drop Pod, not their own bases.</description>
         </rule>
       </rules>
     </selectionEntry>

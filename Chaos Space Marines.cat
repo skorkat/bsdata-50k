@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -1188,6 +1188,85 @@ A model aligned with a particular god cannot join units aligned with a different
         <infoLink name="Firing Deck (X)" id="dc69-3f31-9e64-5912" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
         <infoLink name="Transport (X)" id="2713-e61e-06d1-57ae" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chaos Drop Pod" hidden="false" id="fd3c-6600-684d-0341">
+      <categoryLinks>
+        <categoryLink targetId="57f8-02cb-ea36-4d85" id="4461-0a66-3401-fcd4" primary="true" name="Transport"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="b1f0-ffd2-ddea-4da4" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="4fa8-a04b-e34c-7019" primary="false" name="Mechanical"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Immobile" id="92f3-9ec6-57c8-2948" hidden="false" type="rule" targetId="7267-fda0-76c1-676e"/>
+        <infoLink name="Deep Strike" id="3a43-8911-24b1-b1bc" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Transport (X)" id="c4db-3028-0a7d-bec5" hidden="false" type="rule" targetId="13aa-c030-2dbd-16fd"/>
+        <infoLink name="Firing Deck (X)" id="6b55-196f-323f-ee71" hidden="false" type="rule" targetId="d111-e063-4372-fe92"/>
+        <infoLink name="Infiltrate" id="d80d-a7bc-67df-e0de" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Chaos Drop Pod" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="037a-231d-c006-efb2">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">0</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">0</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+          </characteristics>
+        </profile>
+        <profile name="Chaos Drop Pod" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="73dc-6bdf-f143-0ebe">
+          <characteristics>
+            <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
+            <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="6677-be8d-b606-531e" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b196-81da-4edf-bd50" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="596c-6534-f676-16c5" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Havoc Launcher" hidden="false" sortIndex="3" id="87fb-72c8-40ea-6f48">
+              <infoLinks>
+                <infoLink name="Havoc Launcher" id="6af2-0a70-a8f3-7c7e" hidden="false" type="profile" targetId="669f-7e10-4fad-8738"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d203-1edb-8e17-94d4" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="017a-e5eb-cbe5-2925" type="selectionEntry" targetId="eb52-302e-e11b-dcf6" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="409e-a42e-c21a-f970" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Drop Pod" id="0a6d-93c3-4c46-ea87" hidden="false">
+          <description>Units cannot embark into a Drop Pod.
+
+
+When a Drop Pod arrives from reserves, units within it can disembark during their activation. If they do so, they must use the minimum move possible to disembark the squad. They then count as having arrived from reserves, so cannot run. If they charge on this turn, they measure distance from the of the Drop Pod, not their own bases.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Noise Marines" hidden="false" id="797a-e4f9-2951-7e41">
       <categoryLinks>
@@ -4151,6 +4230,7 @@ A model aligned with a particular god cannot join units aligned with a different
     <entryLink import="true" name="Legionnaires" hidden="false" id="32a8-e41b-0048-289a" type="selectionEntry" targetId="262a-000c-6156-8970"/>
     <entryLink import="true" name="Traitor Guardsmen" hidden="false" id="5f8e-be28-462e-601f" type="selectionEntry" targetId="0adb-fa38-a216-fe0c"/>
     <entryLink import="true" name="Chaos Rhino" hidden="false" id="663d-9edf-2efd-b2ac" type="selectionEntry" targetId="86b6-b938-dc90-c23c"/>
+    <entryLink import="true" name="Chaos Drop Pod" hidden="false" id="ce62-8239-faaa-83f4" type="selectionEntry" targetId="fd3c-6600-684d-0341"/>
     <entryLink import="true" name="Noise Marines" hidden="false" id="f2c2-382d-23e4-b860" type="selectionEntry" targetId="797a-e4f9-2951-7e41"/>
     <entryLink import="true" name="Plague Marines" hidden="false" id="bae2-a781-3d9e-9649" type="selectionEntry" targetId="c443-7dfc-66ce-aed2"/>
     <entryLink import="true" name="Khorne Berzerkers" hidden="false" id="62f3-98d3-5758-9b3b" type="selectionEntry" targetId="da5f-0e3f-89fb-48ab"/>
