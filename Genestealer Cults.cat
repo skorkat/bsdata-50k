@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e971-b31b-b278-5da6" name="Genestealer Cults" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="11" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e971-b31b-b278-5da6" name="Genestealer Cults" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="11" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="3f5a-473f-8878-4c9d" targetId="0d98-1036-43bc-85f0"/>
   </catalogueLinks>
@@ -799,134 +799,6 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Goliath Truck" hidden="false" id="07b9-1f04-7de0-0a94">
-      <profiles>
-        <profile name="Goliath Truck" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="26f2-5ed2-5682-cf49">
-          <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
-          </characteristics>
-        </profile>
-        <profile name="Goliath Truck" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="d987-ebc8-b815-6910">
-          <characteristics>
-            <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
-            <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">10</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Autocannon" id="bfbb-ac35-226d-f9d6" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
-        <infoLink name="Autocannon" id="f1b4-b658-4219-7efe" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
-        <infoLink name="Heavy Stubber" id="5816-6b38-9419-33b8" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="841c-6009-19bb-93fb" id="9604-704c-5122-80e6" primary="false" name="Tank"/>
-        <categoryLink targetId="57f8-02cb-ea36-4d85" id="8b3f-5b3a-5107-5506" primary="true" name="Transport"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="d55c-0604-882e-4803" primary="false" name="Mechanical"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="130"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Goliath Rockgrinder" hidden="false" id="190c-4098-1787-2fb7">
-      <profiles>
-        <profile name="Goliath Rockgrinder" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5487-18d6-2406-f828">
-          <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Heavy Stubber" id="75e8-4a29-8257-c6d4" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
-        <infoLink name="Drilldozer Blade" id="3acd-0cff-37d1-4451" hidden="false" type="profile" targetId="e1c5-9184-0162-c736"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink name="Tank" hidden="false" id="37c8-df4b-c9a8-1c08" targetId="841c-6009-19bb-93fb" primary="false"/>
-        <categoryLink targetId="6297-a84f-a103-e2ac" id="48f0-e453-8117-dd0b" primary="true" name="Elite"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="7fae-a162-f409-90c9" primary="false" name="Mechanical"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="150"/>
-      </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon" id="15dc-e035-f2ca-9e25" hidden="false" sortIndex="1">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heavy Mining Laser" hidden="false" id="e119-7064-30a8-b84f" sortIndex="1">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04c3-d9d4-f49d-6665"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy Mining Laser" id="8c4b-7f40-7557-6596" hidden="false" type="profile" targetId="be4d-c4a7-dd91-f5ae"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heavy Seismic Cannon" hidden="false" id="53d7-b8e6-2b64-a28b" sortIndex="2">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d801-388e-ffbb-eef6"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy Seismic Cannon" id="7cc1-894d-5344-03ce" hidden="false" type="profile" targetId="89e3-543c-239a-d715"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Clearance Incinerator" hidden="false" id="efed-e1d2-0739-31d2" sortIndex="3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe41-dd65-8a7c-0d34"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Clearance Incinerator" id="cd88-f033-4763-f6ee" hidden="false" type="profile" targetId="e566-7a64-84ff-4500"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44f2-c70a-0147-1c83-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44f2-c70a-0147-1c83-max"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Cache of Demolition Charges" hidden="false" id="ff0f-5325-afd1-de35" sortIndex="2">
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Cache of Demolition Charges" id="5057-d6c3-e48a-d45f" hidden="false" type="profile" targetId="cb44-4ce2-c761-df56"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27d2-5c71-ddc7-59e9"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Patriarch" hidden="false" id="9cfc-a3be-bdc5-0f5c">
       <categoryLinks>
@@ -1886,6 +1758,236 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         <categoryLink targetId="de72-13bd-1789-6816" id="bff3-c03e-cfd1-614e" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Broodmind Discipline" id="37b8-d1fe-29f9-b05f" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mass Hypnosis" hidden="false" id="bbaa-304a-ffd6-f4c8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca47-9c31-8381-a0a7"/>
+          </constraints>
+          <profiles>
+            <profile name="Mass Hypnosis" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="c6d8-9570-f1fb-bf0b">
+              <characteristics>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit worsens its Attacks by 1 to a minimum of 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mind Control" hidden="false" id="bec6-4806-ae67-fb34">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec67-8193-bedd-dd6d"/>
+          </constraints>
+          <profiles>
+            <profile name="Mind Control" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="cafe-d5ce-1650-1bf9">
+              <characteristics>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy Character within 18”</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit suffers -1 To Hit on all ranged and melee attacks</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mental Onslaught" hidden="false" id="bf89-06f0-44cc-92c1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a323-3db8-9037-ae79"/>
+          </constraints>
+          <profiles>
+            <profile name="Mental Onslaught" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="f038-8d06-9cc7-4e7f">
+              <characteristics>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll four D6. For each result of 6, the unit suffers a Psychic Wound. If any models were destroyed, roll three D6 and repeat. Continue doing so (rolling two D6 and then one D6) until no models are destroyed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Psionic Blast" hidden="false" id="b4df-dc53-5dbf-2816">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc7e-b6ee-7cdd-220a"/>
+          </constraints>
+          <profiles>
+            <profile name="Psionic Blast" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="067b-3fee-59f5-b646">
+              <characteristics>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit must take a Leadership test. If it fails, it suffers D6 Psychic Wounds</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Might from Beyond" hidden="false" id="c1b4-3768-a031-c564">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e705-7e49-5f80-c14b"/>
+          </constraints>
+          <profiles>
+            <profile name="Might from Beyond" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="ca02-ce02-dbce-c1ff">
+              <characteristics>
+                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18&quot;</characteristic>
+                <characteristic name="Details" typeId="577b-53c9-886f-0871">+1 Strength</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Goliath Rockgrinder" hidden="false" id="f564-6383-9567-bde9" type="selectionEntry" targetId="190c-4098-1787-2fb7"/>
+    <entryLink import="true" name="Goliath Truck" hidden="false" id="8b90-2db6-f108-01eb" type="selectionEntry" targetId="07b9-1f04-7de0-0a94"/>
+    <entryLink import="true" name="Ridgerunners" hidden="false" id="795b-4171-289a-55d5" type="selectionEntry" targetId="350d-ac22-804f-f0a8"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Goliath Rockgrinder" hidden="false" id="190c-4098-1787-2fb7">
+      <profiles>
+        <profile name="Goliath Rockgrinder" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5487-18d6-2406-f828">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy Stubber" id="75e8-4a29-8257-c6d4" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
+        <infoLink name="Drilldozer Blade" id="3acd-0cff-37d1-4451" hidden="false" type="profile" targetId="e1c5-9184-0162-c736"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Tank" hidden="false" id="37c8-df4b-c9a8-1c08" targetId="841c-6009-19bb-93fb" primary="false"/>
+        <categoryLink targetId="6297-a84f-a103-e2ac" id="48f0-e453-8117-dd0b" primary="true" name="Elite"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="7fae-a162-f409-90c9" primary="false" name="Mechanical"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="150"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="15dc-e035-f2ca-9e25" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Mining Laser" hidden="false" id="e119-7064-30a8-b84f" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04c3-d9d4-f49d-6665"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Heavy Mining Laser" id="8c4b-7f40-7557-6596" hidden="false" type="profile" targetId="be4d-c4a7-dd91-f5ae"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Seismic Cannon" hidden="false" id="53d7-b8e6-2b64-a28b" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d801-388e-ffbb-eef6"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Heavy Seismic Cannon" id="7cc1-894d-5344-03ce" hidden="false" type="profile" targetId="89e3-543c-239a-d715"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Clearance Incinerator" hidden="false" id="efed-e1d2-0739-31d2" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe41-dd65-8a7c-0d34"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Clearance Incinerator" id="cd88-f033-4763-f6ee" hidden="false" type="profile" targetId="e566-7a64-84ff-4500"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44f2-c70a-0147-1c83-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44f2-c70a-0147-1c83-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cache of Demolition Charges" hidden="false" id="ff0f-5325-afd1-de35" sortIndex="2">
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Cache of Demolition Charges" id="5057-d6c3-e48a-d45f" hidden="false" type="profile" targetId="cb44-4ce2-c761-df56"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27d2-5c71-ddc7-59e9"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Goliath Truck" hidden="false" id="07b9-1f04-7de0-0a94">
+      <profiles>
+        <profile name="Goliath Truck" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="26f2-5ed2-5682-cf49">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Goliath Truck" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="d987-ebc8-b815-6910">
+          <characteristics>
+            <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
+            <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Autocannon" id="bfbb-ac35-226d-f9d6" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
+        <infoLink name="Autocannon" id="f1b4-b658-4219-7efe" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
+        <infoLink name="Heavy Stubber" id="5816-6b38-9419-33b8" hidden="false" type="profile" targetId="8c4a-a725-b290-45ca"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="9604-704c-5122-80e6" primary="false" name="Tank"/>
+        <categoryLink targetId="57f8-02cb-ea36-4d85" id="8b3f-5b3a-5107-5506" primary="true" name="Transport"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="d55c-0604-882e-4803" primary="false" name="Mechanical"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="130"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ridgerunners" hidden="false" id="350d-ac22-804f-f0a8">
       <categoryLinks>
         <categoryLink targetId="841c-6009-19bb-93fb" id="5d05-da8d-141a-1392" primary="false" name="Tank"/>
@@ -1966,7 +2068,7 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                     <selectionEntry type="upgrade" import="true" name="Spotter" hidden="false" id="0987-18cf-f5ed-ef83" sortIndex="2">
                       <rules>
                         <rule name="Spotter" id="4de5-b84a-d31b-d0cc" hidden="false">
-                          <description>Increase range of weapons by 6&quot;</description>
+                          <description>Increase range of weapons by 6"</description>
                         </rule>
                       </rules>
                       <constraints>
@@ -2005,6 +2107,16 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="9c08-d604-5961-3e5f" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
+                        <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                     </profile>
                   </profiles>
@@ -2019,76 +2131,5 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-  </selectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Broodmind Discipline" id="37b8-d1fe-29f9-b05f" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Mass Hypnosis" hidden="false" id="bbaa-304a-ffd6-f4c8">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca47-9c31-8381-a0a7"/>
-          </constraints>
-          <profiles>
-            <profile name="Mass Hypnosis" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="c6d8-9570-f1fb-bf0b">
-              <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit worsens its Attacks by 1 to a minimum of 1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mind Control" hidden="false" id="bec6-4806-ae67-fb34">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec67-8193-bedd-dd6d"/>
-          </constraints>
-          <profiles>
-            <profile name="Mind Control" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="cafe-d5ce-1650-1bf9">
-              <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy Character within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit suffers -1 To Hit on all ranged and melee attacks</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mental Onslaught" hidden="false" id="bf89-06f0-44cc-92c1">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a323-3db8-9037-ae79"/>
-          </constraints>
-          <profiles>
-            <profile name="Mental Onslaught" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="f038-8d06-9cc7-4e7f">
-              <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">Roll four D6. For each result of 6, the unit suffers a Psychic Wound. If any models were destroyed, roll three D6 and repeat. Continue doing so (rolling two D6 and then one D6) until no models are destroyed</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Psionic Blast" hidden="false" id="b4df-dc53-5dbf-2816">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc7e-b6ee-7cdd-220a"/>
-          </constraints>
-          <profiles>
-            <profile name="Psionic Blast" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="067b-3fee-59f5-b646">
-              <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Enemy unit within 18”</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">That unit must take a Leadership test. If it fails, it suffers D6 Psychic Wounds</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Might from Beyond" hidden="false" id="c1b4-3768-a031-c564">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e705-7e49-5f80-c14b"/>
-          </constraints>
-          <profiles>
-            <profile name="Might from Beyond" typeId="764f-0077-fb59-1f3a" typeName="Psychic Power" hidden="false" id="ca02-ce02-dbce-c1ff">
-              <characteristics>
-                <characteristic name="Target" typeId="ba24-9d4b-0a5e-fb4b">Friendly unit within 18&quot;</characteristic>
-                <characteristic name="Details" typeId="577b-53c9-886f-0871">+1 Strength</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
+  </sharedSelectionEntries>
 </catalogue>

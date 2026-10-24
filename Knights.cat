@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="524d-97ab-9591-2625" name="Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="7" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="524d-97ab-9591-2625" name="Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="7" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="85d2-18d7-c914-91d8" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="0158-d8ba-1955-bcb9" targetId="86c1-35b4-c984-858a"/>
@@ -218,13 +218,57 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">110mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Ion Shield" id="9576-5753-f839-4757" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e"/>
-        <infoLink name="Objective Secured" id="da5e-4551-a743-e889" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764"/>
-        <infoLink name="Knight Household" id="77e6-a75b-1edd-3fa8" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067"/>
-        <infoLink name="Chaos Allegiance" id="4379-f887-ce96-2e54" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3"/>
+        <infoLink name="Ion Shield" id="9576-5753-f839-4757" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Objective Secured" id="da5e-4551-a743-e889" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Knight Household" id="77e6-a75b-1edd-3fa8" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Chaos Allegiance" id="4379-f887-ce96-2e54" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Primary Weapons" id="d7be-5e4e-8e24-56b2" hidden="false" sortIndex="1">
@@ -280,7 +324,15 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="496b-8440-f5e0-b9d9" sortIndex="2">
               <infoLinks>
-                <infoLink name="Slaanesh: Boon of Swiftness" id="f77b-d446-bbea-da35" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
+                <infoLink name="Slaanesh: Boon of Swiftness" id="f77b-d446-bbea-da35" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
@@ -288,7 +340,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="9188-7377-34f2-d5cc" sortIndex="3">
               <infoLinks>
-                <infoLink name="Nurgle: Boon of Pestilence" id="4c45-724c-6d57-43d2" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
+                <infoLink name="Nurgle: Boon of Pestilence" id="4c45-724c-6d57-43d2" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -296,7 +356,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="d19a-3bb8-b64f-6491" sortIndex="4">
               <infoLinks>
-                <infoLink name="Khorne: Boon of Blood" id="f061-b3c3-330a-188f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="f061-b3c3-330a-188f" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -304,7 +372,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="b745-4eb8-e12c-9ebd" sortIndex="5">
               <infoLinks>
-                <infoLink name="Tzeentch: Boon of Trickery" id="65e7-616e-9833-c3ff" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
+                <infoLink name="Tzeentch: Boon of Trickery" id="65e7-616e-9833-c3ff" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -312,6 +388,18 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="df6e-b513-b0bb-51fd" sortIndex="1"/>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="0" field="63ad-7d14-2d2d-fe7a-min">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -342,6 +430,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">170mm x 100mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">170mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -402,7 +502,15 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="c113-0554-8886-1cb8" sortIndex="2">
               <infoLinks>
-                <infoLink name="Slaanesh: Boon of Swiftness" id="5b6a-b5d6-9fd0-4b23" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
+                <infoLink name="Slaanesh: Boon of Swiftness" id="5b6a-b5d6-9fd0-4b23" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
@@ -410,7 +518,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="c434-7d5c-3e07-918a" sortIndex="3">
               <infoLinks>
-                <infoLink name="Nurgle: Boon of Pestilence" id="2fb6-93e7-87e3-6255" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
+                <infoLink name="Nurgle: Boon of Pestilence" id="2fb6-93e7-87e3-6255" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
@@ -418,7 +534,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="87de-fc4d-9050-d57f" sortIndex="4">
               <infoLinks>
-                <infoLink name="Khorne: Boon of Blood" id="cf07-6bb8-e393-93fa" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="cf07-6bb8-e393-93fa" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -426,7 +550,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="1b4b-6ac0-b358-fcbb" sortIndex="5">
               <infoLinks>
-                <infoLink name="Tzeentch: Boon of Trickery" id="ee7e-b88d-be6a-b728" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
+                <infoLink name="Tzeentch: Boon of Trickery" id="ee7e-b88d-be6a-b728" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="50"/>
@@ -434,10 +566,30 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="4029-fae6-df13-e208" sortIndex="1">
               <infoLinks>
-                <infoLink name="Titanic Focus" id="5691-a694-46a8-800b" hidden="false" type="rule" targetId="3a99-ccef-7fde-56b2"/>
+                <infoLink name="Titanic Focus" id="5691-a694-46a8-800b" hidden="false" type="rule" targetId="3a99-ccef-7fde-56b2">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="0" field="a23b-6017-bb4c-34bc-min">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -449,10 +601,42 @@
         <infoLink name="Meltagun" id="993b-2e4a-cf32-c5fe" hidden="false" type="profile" targetId="8e3f-3c2f-5170-2c98"/>
         <infoLink name="Meltagun" id="36dc-8726-0233-9f2c" hidden="false" type="profile" targetId="8e3f-3c2f-5170-2c98"/>
         <infoLink name="Meltagun" id="186a-04a5-e09e-8eea" hidden="false" type="profile" targetId="8e3f-3c2f-5170-2c98"/>
-        <infoLink name="Ion Shield" id="53e4-39a6-2337-09ae" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e"/>
-        <infoLink name="Objective Secured" id="3526-c3c5-a037-cb66" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764"/>
-        <infoLink name="Knight Household" id="502b-bfaf-2238-a9dc" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067"/>
-        <infoLink name="Chaos Allegiance" id="d4f8-18c2-95df-054e" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3"/>
+        <infoLink name="Ion Shield" id="53e4-39a6-2337-09ae" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Objective Secured" id="3526-c3c5-a037-cb66" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Knight Household" id="502b-bfaf-2238-a9dc" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Chaos Allegiance" id="d4f8-18c2-95df-054e" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Knight" hidden="false" id="c537-2ba3-000a-aecf">
@@ -477,6 +661,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">170mm x 100mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">170mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -634,7 +830,15 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="07e7-d514-d524-f5e7" sortIndex="2">
               <infoLinks>
-                <infoLink name="Slaanesh: Boon of Swiftness" id="7114-9e7d-8193-2ee0" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6"/>
+                <infoLink name="Slaanesh: Boon of Swiftness" id="7114-9e7d-8193-2ee0" hidden="false" type="rule" targetId="6f24-d2c5-2c7f-32b6">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
@@ -642,7 +846,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="8c5b-fde5-234e-7226" sortIndex="3">
               <infoLinks>
-                <infoLink name="Nurgle: Boon of Pestilence" id="1dd6-cc29-e429-afc9" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0"/>
+                <infoLink name="Nurgle: Boon of Pestilence" id="1dd6-cc29-e429-afc9" hidden="false" type="rule" targetId="85a2-9959-0d31-39d0">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
@@ -650,7 +862,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="9fc4-bbdf-ed2e-3f53" sortIndex="4">
               <infoLinks>
-                <infoLink name="Khorne: Boon of Blood" id="d90a-331c-6b64-05a6" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b"/>
+                <infoLink name="Khorne: Boon of Blood" id="d90a-331c-6b64-05a6" hidden="false" type="rule" targetId="6dd3-7c64-ea26-063b">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
@@ -658,7 +878,15 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="6f59-11e9-afb2-ac88" sortIndex="5">
               <infoLinks>
-                <infoLink name="Tzeentch: Boon of Trickery" id="6977-912a-1a3d-8144" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f"/>
+                <infoLink name="Tzeentch: Boon of Trickery" id="6977-912a-1a3d-8144" hidden="false" type="rule" targetId="db16-98e7-5f3a-cd6f">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
@@ -666,17 +894,69 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="a157-662a-a265-eb3c" sortIndex="1">
               <infoLinks>
-                <infoLink name="Titanic Focus" id="409f-fcf5-a630-8d5e" hidden="false" type="rule" targetId="3a99-ccef-7fde-56b2"/>
+                <infoLink name="Titanic Focus" id="409f-fcf5-a630-8d5e" hidden="false" type="rule" targetId="3a99-ccef-7fde-56b2">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="0" field="5db8-c96a-8d94-33c8-min">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Ion Shield" id="da1f-a33e-10f0-904b" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e"/>
-        <infoLink name="Objective Secured" id="283e-f67e-889f-94bf" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764"/>
-        <infoLink name="Knight Household" id="32bc-9c88-e757-0e34" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067"/>
-        <infoLink name="Chaos Allegiance" id="75fb-77f6-4754-55a4" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3"/>
+        <infoLink name="Ion Shield" id="da1f-a33e-10f0-904b" hidden="false" type="rule" targetId="9ac5-07ac-51f2-6f0e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Objective Secured" id="283e-f67e-889f-94bf" hidden="false" type="rule" targetId="e3c6-cecb-4285-6764">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Knight Household" id="32bc-9c88-e757-0e34" hidden="false" type="rule" targetId="2b29-5afe-9d07-1067">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Chaos Allegiance" id="75fb-77f6-4754-55a4" hidden="false" type="rule" targetId="122c-adea-02e4-f2a3">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6527-3e3d-8902-74fd" id="6ac6-3530-ff68-ccae" primary="false" name="Titanic"/>

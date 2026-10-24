@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -2446,6 +2446,18 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>

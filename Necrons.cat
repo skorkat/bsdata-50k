@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="504e-fd94-4621-eda1" name="Necrons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="false" id="504e-fd94-4621-eda1" name="Necrons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <categoryEntries>
     <categoryEntry name="Canoptek" id="be30-18f6-3a2a-0e55" hidden="false">
       <constraints>
@@ -1177,47 +1177,6 @@ Returned models must be placed in unit coherency and may not be placed in base c
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Doomsday Ark" hidden="false" id="53a6-fb8e-ab4f-cd99">
-      <categoryLinks>
-        <categoryLink targetId="841c-6009-19bb-93fb" id="7b29-95f1-3412-e62d" primary="false" name="Tank"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e466-32bf-5759-b525" primary="false" name="Mechanical"/>
-        <categoryLink targetId="6297-a84f-a103-e2ac" id="d351-5363-dcaf-89e3" primary="true" name="Elite"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Doomsday Ark" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="2e4b-192c-4e38-f3c4">
-          <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Gauss Flayer" id="0d20-91f8-75db-fa27" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101">
-          <modifiers>
-            <modifier type="set" value="x10" field="annotation"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Doomsday Cannon [High Power]" id="6b1b-89e0-c89b-b718" hidden="false" type="profile" targetId="bf41-2abc-4017-12e3"/>
-        <infoLink name="Doomsday Cannon [Low Power]" id="c2ca-68b4-a52e-2937" hidden="false" type="profile" targetId="98b4-b5fa-4772-ded0"/>
-        <infoLink name="Hover" id="5d36-af59-0571-5cda" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Bulky" id="612b-6455-f9c3-3098" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="180"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deathmarks" hidden="false" id="3618-34f7-e67d-ca3f">
       <categoryLinks>
         <categoryLink targetId="d354-6680-584e-943c" id="4e43-a037-8f32-a25c" primary="false" name="Infantry"/>
@@ -1413,71 +1372,6 @@ Returned models must be placed in unit coherency and may not be placed in base c
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Triarch Stalker" hidden="false" id="1793-5d5e-b8b1-3d54">
-      <profiles>
-        <profile name="Triarch Stalker" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="e5f3-0d0b-8a00-c537">
-          <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon" id="8939-1509-d7a0-e5d1" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="074e-6835-b763-4a89-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074e-6835-b763-4a89-max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heat Ray" hidden="false" id="dc98-271c-04fa-02d4" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Heat Ray [Dispersed]" id="11e6-157b-5a4f-13cc" hidden="false" type="profile" targetId="b639-aa19-4289-f068"/>
-                <infoLink name="Heat Ray [Focused]" id="a719-6a76-ace8-4bae" hidden="false" type="profile" targetId="245c-479b-4312-f3ca"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Particle Shredder" hidden="false" id="2ce9-e6de-0b82-426e" sortIndex="3">
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Particle Shredder" id="797a-0bff-77a7-ff8f" hidden="false" type="profile" targetId="cf9e-66d1-4a52-40d3"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heavy Gauss Cannon" hidden="false" id="d4c2-8563-23b1-a30f" sortIndex="2">
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Heavy Gauss Cannon" id="407f-a700-e601-8037" hidden="false" type="profile" targetId="71da-d3ae-40a1-2ddd"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="6297-a84f-a103-e2ac" id="1216-e5b3-4f10-3d8b" primary="true" name="Elite"/>
-        <categoryLink targetId="b9c1-ec26-9c02-2026" id="8468-508e-4620-79bb" primary="false" name="Walker"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e2ce-7b48-d06d-0040" primary="false" name="Mechanical"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Bulky" id="88ca-8976-347e-2d10" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tomb Blades" hidden="false" id="4c31-5509-f643-0905">
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="1c66-1c65-558d-0bc5" primary="true" name="Elite"/>
@@ -1617,244 +1511,6 @@ Returned models must be placed in unit coherency and may not be placed in base c
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Reanimation Protocols" id="8546-584b-691a-8be9" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ghost Ark" hidden="false" id="7fe2-aff9-05f4-c003">
-      <categoryLinks>
-        <categoryLink targetId="57f8-02cb-ea36-4d85" id="3aad-4aeb-e48d-219b" primary="true" name="Transport"/>
-        <categoryLink targetId="841c-6009-19bb-93fb" id="e412-0dc9-9832-bb74" primary="false" name="Tank"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e134-96e2-4789-5d24" primary="false" name="Mechanical"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Ghost Ark" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5507-f40a-0f27-e9dd">
-          <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
-          </characteristics>
-        </profile>
-        <profile name="Ghost Ark" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="d973-dd33-8ea4-adc0">
-          <characteristics>
-            <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
-            <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Gauss Flayer" id="a511-a263-7f5f-4d4e" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101">
-          <modifiers>
-            <modifier type="set" value="x10" field="annotation"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Hover" id="ed8a-2147-dbbe-8cd6" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Bulky" id="fe8f-41f0-4246-aedb" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="135"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Annihilation Barge" hidden="false" id="42a7-e758-1d5d-33cc">
-      <categoryLinks>
-        <categoryLink targetId="6297-a84f-a103-e2ac" id="78a1-bd9b-cde1-20bf" primary="true" name="Elite"/>
-        <categoryLink targetId="841c-6009-19bb-93fb" id="c6f0-5da1-a9b8-a499" primary="false" name="Tank"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="94ef-5b6a-bdbc-2bbf" primary="false" name="Mechanical"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Annihilation Barge" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5ae4-8fc8-0161-8fc0">
-          <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="140"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Tesla Destructor" id="b737-59ea-27f5-7745" hidden="false" type="profile" targetId="7217-d9d1-4727-72a8"/>
-        <infoLink name="Tesla Destructor" id="22f0-056b-0627-941c" hidden="false" type="profile" targetId="7217-d9d1-4727-72a8"/>
-        <infoLink name="Hover" id="c712-7ccb-fdce-4c7b" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Bulky" id="709b-062c-305f-5cdd" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Primary Weapon" id="e217-4e29-c3be-c437" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e8c-5b17-76d8-8479-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e8c-5b17-76d8-8479-max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tesla Cannon" hidden="false" id="510d-d4cd-3614-75ce" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Tesla Cannon" id="ef8e-268f-9c29-633b" hidden="false" type="profile" targetId="e50b-ffdf-4ee2-bb1e"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gauss Cannon" hidden="false" id="64ca-278e-7ee1-6d40" sortIndex="2">
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Gauss Cannon" id="68fd-09dc-4ef2-3da7" hidden="false" type="profile" targetId="3f41-e614-4817-6c61"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Monolith" hidden="false" id="ab28-1e66-94ec-a5de">
-      <profiles>
-        <profile name="Monolith" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b938-6d6e-6a42-3027">
-          <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">10</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">1+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="350"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Particle Whip" id="1acf-1bca-4be4-2a4a" hidden="false" type="profile" targetId="48b7-afef-42cc-edca"/>
-        <infoLink name="Gauss Flux Arc" id="67d4-c7bb-d8ce-ec43" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
-        <infoLink name="Gauss Flux Arc" id="92cd-7e43-d515-9f72" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
-        <infoLink name="Gauss Flux Arc" id="3f2c-e683-8e37-3469" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
-        <infoLink name="Gauss Flux Arc" id="4481-d272-c2e2-a051" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
-        <infoLink name="Bulky" id="95c4-6f7b-242b-a0a2" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
-        <infoLink name="Hover" id="988f-7f6f-c3e1-2cf2" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Deep Strike" id="67d5-ec06-1439-8036" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="6297-a84f-a103-e2ac" id="6592-5be6-3b75-6b69" primary="true" name="Elite"/>
-        <categoryLink targetId="841c-6009-19bb-93fb" id="c1d2-2a35-eb67-1698" primary="false" name="Tank"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="0697-7521-064f-884c" primary="false" name="Mechanical"/>
-      </categoryLinks>
-      <rules>
-        <rule name="Portal of Exile" id="fc4d-d0d1-c76a-f3ae" hidden="false">
-          <description>Any models attacking a Monolith in melee treat all of their weapons as Dangerous.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reanimator" hidden="false" id="05b2-1b02-95ac-e97a">
-      <categoryLinks>
-        <categoryLink targetId="be30-18f6-3a2a-0e55" id="74af-ad50-8469-144a" primary="true" name="Canoptek"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="308d-b74e-d3e5-b912" primary="false" name="Mechanical"/>
-        <categoryLink targetId="b9c1-ec26-9c02-2026" id="e02d-22b5-9019-50f5" primary="false" name="Walker"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hover" id="ffaf-99c5-f6d8-28e9" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Atomiser Beam" id="290f-e8cd-461d-3aa6" hidden="false" type="profile" targetId="ae5c-61f3-4ed8-fc54"/>
-        <infoLink name="Atomiser Beam" id="696f-6a03-2a61-0229" hidden="false" type="profile" targetId="ae5c-61f3-4ed8-fc54"/>
-        <infoLink name="Bulky" id="55be-8dc5-6f17-df3c" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
-      </infoLinks>
-      <profiles>
-        <profile name="Reanimator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="48c2-3cfc-0fbd-7551">
-          <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Nanoscarab Swarm" id="5b4a-8dc3-921e-e9eb" hidden="false">
-          <description>As an action, give Improved Resurrection to a Necron unit within 6&quot;.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="100"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Doomstalkers" hidden="false" id="7daa-1ee5-e710-5897">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Doomstalker" hidden="false" id="ff21-9577-fbce-0f0d">
-          <profiles>
-            <profile name="Doomstalker" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="3e40-08dc-5903-8eb1">
-              <characteristics>
-                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
-                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-                <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
-                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
-                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Doomsday Blaster [High Power]" id="755f-e910-d672-e037" hidden="false" type="profile" targetId="f6e4-a64a-4d1a-20d3"/>
-            <infoLink name="Doomsday Blaster [Low Power]" id="627c-5f55-cfb2-b76f" hidden="false" type="profile" targetId="0409-8cdc-477f-2933"/>
-            <infoLink name="Gauss Flayer" id="fc79-3286-df54-bccc" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101"/>
-            <infoLink name="Gauss Flayer" id="63c3-e9be-953b-2fb5" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="00a5-87b2-5121-c63e"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d077-940f-970a-d48c"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="85"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="b9c1-ec26-9c02-2026" id="e4fc-6cbf-2422-28c2" primary="false" name="Walker"/>
-        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="df9a-08b6-6323-37a2" primary="false" name="Mechanical"/>
-        <categoryLink targetId="be30-18f6-3a2a-0e55" id="3574-651a-2fa8-0517" primary="true" name="Canoptek"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Reanimation Protocols" id="f85a-4326-f385-170f" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
-        <infoLink name="Bulky" id="16d5-25df-96fb-3c31" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wraiths" hidden="false" id="8632-7555-e1d8-1ce9">
@@ -2414,4 +2070,459 @@ Returned models must be placed in unit coherency and may not be placed in base c
   <infoLinks>
     <infoLink name="Reanimation Protocols" id="48cc-2aa1-5481-7679" hidden="false" type="rule" targetId="91f5-e790-371d-07d8"/>
   </infoLinks>
+  <entryLinks>
+    <entryLink import="true" name="Annihilation Barge" hidden="false" id="93fe-7987-9203-7016" type="selectionEntry" targetId="42a7-e758-1d5d-33cc"/>
+    <entryLink import="true" name="Doomsday Ark" hidden="false" id="bbba-2fea-f137-0abf" type="selectionEntry" targetId="53a6-fb8e-ab4f-cd99"/>
+    <entryLink import="true" name="Doomstalkers" hidden="false" id="9a98-b926-a0b6-3cc3" type="selectionEntry" targetId="7daa-1ee5-e710-5897"/>
+    <entryLink import="true" name="Ghost Ark" hidden="false" id="d905-76f8-7dfc-d890" type="selectionEntry" targetId="7fe2-aff9-05f4-c003"/>
+    <entryLink import="true" name="Monolith" hidden="false" id="371b-0c7b-dee4-983d" type="selectionEntry" targetId="ab28-1e66-94ec-a5de"/>
+    <entryLink import="true" name="Reanimator" hidden="false" id="ed09-e876-2674-e550" type="selectionEntry" targetId="05b2-1b02-95ac-e97a"/>
+    <entryLink import="true" name="Triarch Stalker" hidden="false" id="7d5e-c519-a787-ef4b" type="selectionEntry" targetId="1793-5d5e-b8b1-3d54"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Annihilation Barge" hidden="false" id="42a7-e758-1d5d-33cc">
+      <categoryLinks>
+        <categoryLink targetId="6297-a84f-a103-e2ac" id="78a1-bd9b-cde1-20bf" primary="true" name="Elite"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="c6f0-5da1-a9b8-a499" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="94ef-5b6a-bdbc-2bbf" primary="false" name="Mechanical"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Annihilation Barge" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5ae4-8fc8-0161-8fc0">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="140"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tesla Destructor" id="b737-59ea-27f5-7745" hidden="false" type="profile" targetId="7217-d9d1-4727-72a8"/>
+        <infoLink name="Tesla Destructor" id="22f0-056b-0627-941c" hidden="false" type="profile" targetId="7217-d9d1-4727-72a8"/>
+        <infoLink name="Hover" id="c712-7ccb-fdce-4c7b" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Bulky" id="709b-062c-305f-5cdd" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Primary Weapon" id="e217-4e29-c3be-c437" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e8c-5b17-76d8-8479-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e8c-5b17-76d8-8479-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tesla Cannon" hidden="false" id="510d-d4cd-3614-75ce" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Tesla Cannon" id="ef8e-268f-9c29-633b" hidden="false" type="profile" targetId="e50b-ffdf-4ee2-bb1e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gauss Cannon" hidden="false" id="64ca-278e-7ee1-6d40" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Gauss Cannon" id="68fd-09dc-4ef2-3da7" hidden="false" type="profile" targetId="3f41-e614-4817-6c61"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Doomsday Ark" hidden="false" id="53a6-fb8e-ab4f-cd99">
+      <categoryLinks>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="7b29-95f1-3412-e62d" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e466-32bf-5759-b525" primary="false" name="Mechanical"/>
+        <categoryLink targetId="6297-a84f-a103-e2ac" id="d351-5363-dcaf-89e3" primary="true" name="Elite"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Doomsday Ark" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="2e4b-192c-4e38-f3c4">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Gauss Flayer" id="0d20-91f8-75db-fa27" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101">
+          <modifiers>
+            <modifier type="set" value="x10" field="annotation"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Doomsday Cannon [High Power]" id="6b1b-89e0-c89b-b718" hidden="false" type="profile" targetId="bf41-2abc-4017-12e3"/>
+        <infoLink name="Doomsday Cannon [Low Power]" id="c2ca-68b4-a52e-2937" hidden="false" type="profile" targetId="98b4-b5fa-4772-ded0"/>
+        <infoLink name="Hover" id="5d36-af59-0571-5cda" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Bulky" id="612b-6455-f9c3-3098" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="180"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Doomstalkers" hidden="false" id="7daa-1ee5-e710-5897">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Doomstalker" hidden="false" id="ff21-9577-fbce-0f0d">
+          <profiles>
+            <profile name="Doomstalker" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="3e40-08dc-5903-8eb1">
+              <characteristics>
+                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
+                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+                <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
+                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
+                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Doomsday Blaster [High Power]" id="755f-e910-d672-e037" hidden="false" type="profile" targetId="f6e4-a64a-4d1a-20d3"/>
+            <infoLink name="Doomsday Blaster [Low Power]" id="627c-5f55-cfb2-b76f" hidden="false" type="profile" targetId="0409-8cdc-477f-2933"/>
+            <infoLink name="Gauss Flayer" id="fc79-3286-df54-bccc" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101"/>
+            <infoLink name="Gauss Flayer" id="63c3-e9be-953b-2fb5" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="00a5-87b2-5121-c63e"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d077-940f-970a-d48c"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="85"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="e4fc-6cbf-2422-28c2" primary="false" name="Walker"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="df9a-08b6-6323-37a2" primary="false" name="Mechanical"/>
+        <categoryLink targetId="be30-18f6-3a2a-0e55" id="3574-651a-2fa8-0517" primary="true" name="Canoptek"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Reanimation Protocols" id="f85a-4326-f385-170f" hidden="false" type="rule" targetId="91f5-e790-371d-07d8">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky" id="16d5-25df-96fb-3c31" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ghost Ark" hidden="false" id="7fe2-aff9-05f4-c003">
+      <categoryLinks>
+        <categoryLink targetId="57f8-02cb-ea36-4d85" id="3aad-4aeb-e48d-219b" primary="true" name="Transport"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="e412-0dc9-9832-bb74" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e134-96e2-4789-5d24" primary="false" name="Mechanical"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ghost Ark" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5507-f40a-0f27-e9dd">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Ghost Ark" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="d973-dd33-8ea4-adc0">
+          <characteristics>
+            <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
+            <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Gauss Flayer" id="a511-a263-7f5f-4d4e" hidden="false" type="profile" targetId="7aa3-ad4a-4617-2101">
+          <modifiers>
+            <modifier type="set" value="x10" field="annotation"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hover" id="ed8a-2147-dbbe-8cd6" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Bulky" id="fe8f-41f0-4246-aedb" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="135"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Monolith" hidden="false" id="ab28-1e66-94ec-a5de">
+      <profiles>
+        <profile name="Monolith" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b938-6d6e-6a42-3027">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">10</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">1+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="350"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Particle Whip" id="1acf-1bca-4be4-2a4a" hidden="false" type="profile" targetId="48b7-afef-42cc-edca"/>
+        <infoLink name="Gauss Flux Arc" id="67d4-c7bb-d8ce-ec43" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
+        <infoLink name="Gauss Flux Arc" id="92cd-7e43-d515-9f72" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
+        <infoLink name="Gauss Flux Arc" id="3f2c-e683-8e37-3469" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
+        <infoLink name="Gauss Flux Arc" id="4481-d272-c2e2-a051" hidden="false" type="profile" targetId="7351-e79d-49f6-5b8d"/>
+        <infoLink name="Bulky" id="95c4-6f7b-242b-a0a2" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+        <infoLink name="Hover" id="988f-7f6f-c3e1-2cf2" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Deep Strike" id="67d5-ec06-1439-8036" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="6297-a84f-a103-e2ac" id="6592-5be6-3b75-6b69" primary="true" name="Elite"/>
+        <categoryLink targetId="841c-6009-19bb-93fb" id="c1d2-2a35-eb67-1698" primary="false" name="Tank"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="0697-7521-064f-884c" primary="false" name="Mechanical"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Portal of Exile" id="fc4d-d0d1-c76a-f3ae" hidden="false">
+          <description>Any models attacking a Monolith in melee treat all of their weapons as Dangerous.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reanimator" hidden="false" id="05b2-1b02-95ac-e97a">
+      <categoryLinks>
+        <categoryLink targetId="be30-18f6-3a2a-0e55" id="74af-ad50-8469-144a" primary="true" name="Canoptek"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="308d-b74e-d3e5-b912" primary="false" name="Mechanical"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="e02d-22b5-9019-50f5" primary="false" name="Walker"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Hover" id="ffaf-99c5-f6d8-28e9" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
+        <infoLink name="Atomiser Beam" id="290f-e8cd-461d-3aa6" hidden="false" type="profile" targetId="ae5c-61f3-4ed8-fc54"/>
+        <infoLink name="Atomiser Beam" id="696f-6a03-2a61-0229" hidden="false" type="profile" targetId="ae5c-61f3-4ed8-fc54"/>
+        <infoLink name="Bulky" id="55be-8dc5-6f17-df3c" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Reanimator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="48c2-3cfc-0fbd-7551">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Nanoscarab Swarm" id="5b4a-8dc3-921e-e9eb" hidden="false">
+          <description>As an action, give Improved Resurrection to a Necron unit within 6".</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="100"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Triarch Stalker" hidden="false" id="1793-5d5e-b8b1-3d54">
+      <profiles>
+        <profile name="Triarch Stalker" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="e5f3-0d0b-8a00-c537">
+          <characteristics>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="8939-1509-d7a0-e5d1" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="074e-6835-b763-4a89-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074e-6835-b763-4a89-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heat Ray" hidden="false" id="dc98-271c-04fa-02d4" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Heat Ray [Dispersed]" id="11e6-157b-5a4f-13cc" hidden="false" type="profile" targetId="b639-aa19-4289-f068"/>
+                <infoLink name="Heat Ray [Focused]" id="a719-6a76-ace8-4bae" hidden="false" type="profile" targetId="245c-479b-4312-f3ca"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Particle Shredder" hidden="false" id="2ce9-e6de-0b82-426e" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Particle Shredder" id="797a-0bff-77a7-ff8f" hidden="false" type="profile" targetId="cf9e-66d1-4a52-40d3"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Gauss Cannon" hidden="false" id="d4c2-8563-23b1-a30f" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Heavy Gauss Cannon" id="407f-a700-e601-8037" hidden="false" type="profile" targetId="71da-d3ae-40a1-2ddd"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6297-a84f-a103-e2ac" id="1216-e5b3-4f10-3d8b" primary="true" name="Elite"/>
+        <categoryLink targetId="b9c1-ec26-9c02-2026" id="8468-508e-4620-79bb" primary="false" name="Walker"/>
+        <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e2ce-7b48-d06d-0040" primary="false" name="Mechanical"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bulky" id="88ca-8976-347e-2d10" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>

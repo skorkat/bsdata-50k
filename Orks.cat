@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -20,6 +20,7 @@
         <categoryLink name="Speed Freeks" hidden="false" id="d01a-b65f-aa49-152b" targetId="2f5d-36c5-eab9-d7e2"/>
         <categoryLink name="Transport" hidden="false" id="2736-fe94-2081-53e4" targetId="57f8-02cb-ea36-4d85"/>
         <categoryLink name="Apocalypse" hidden="false" id="dbcc-41b2-bf45-c3ed" targetId="58d2-1cc8-0227-0a42"/>
+        <categoryLink name="Looted Tank" hidden="false" id="c541-992d-9af2-50d8" targetId="25a1-fdcd-3308-d901"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -582,22 +583,12 @@ Turn
 6: 3+ Ld</description>
     </rule>
     <rule name="Looted Tanks" id="adec-7f7a-625d-e8be" hidden="false">
-      <description>When building an Ork list, you may add Mechanical Tank units from any army, as long as they are not a Character and are not Unique. If you do so, the unit is modified in the following ways:
-
-
+      <description>When building an Ork list, you may add Mechanical Walker, Tank, Titanic, or Aircraft units from any other army, as long as they are not a Character and are not Unique. Looted Tank units cannot exceed 50% of the total points.
 The unit loses any of the following special rules if it has them:
-- Psyker
-- Deep Strike
-- Infiltrate
-- Stealth
-- Fear
-- Any special rules it would usually gain from its original army
-- BS is set to 5+
-
-
+Psyker | Deep Strike | Infiltrate | Stealth | Fear | Any army special rules
+BS is set to 5+, Ld is set to 7+
 The unit gains the following special rules:
-- Bulky
-- Waaagh!</description>
+Bulky | Waaagh!</description>
     </rule>
     <rule name="Kombi-Weapon" id="523d-dcea-3ccc-99ba" hidden="false">
       <description>An Infantry model equipped with “Kombi-X” weapons count as being equipped with both the weapon “X”, and a Shoota. For example, “Kombi-Skorcha” counts as a Shoota and a Skorcha, so the model may fire either of them in their turn.</description>
@@ -619,7 +610,7 @@ The unit gains the following special rules:
 6. &apos;Ere We Go</description>
     </rule>
     <rule name="Looted Tank" id="65ed-2228-cfdf-73d3" hidden="false">
-      <description>When building an Ork list, you may add Walker or Tank units from any army, as long as they are Mechanical, not a Character, and not Unique. If you do so, the unit is modified as follows:
+      <description>When building an Ork list, you may add Mechanical Walker, Tank, Titanic, or Aircraft units from any other army, as long as they are not a Character and are not Unique. Looted Tank units cannot exceed 50% of the total points.
 The unit loses any of the following special rules if it has them:
 Psyker | Deep Strike | Infiltrate | Stealth | Fear | Any army special rules
 BS is set to 5+, Ld is set to 7+
@@ -2967,6 +2958,498 @@ Bulky | Waaagh!</description>
     <entryLink import="true" name="Chinork Warkopta" hidden="false" id="d665-0510-37eb-18e8" type="selectionEntry" targetId="1991-f168-849c-16f1"/>
     <entryLink import="true" name="Squiggoth" hidden="false" id="d611-873f-7e69-1b11" type="selectionEntry" targetId="f4bf-a9fe-d055-bafd"/>
     <entryLink import="true" name="Gargantuan Squiggoth" hidden="false" id="de0f-cdff-c44d-906d" type="selectionEntry" targetId="ce79-f66c-3aae-1440"/>
+    <entryLink import="true" name="Annihilation Barge" hidden="false" id="ec91-96f2-4f2d-5522" type="selectionEntry" targetId="42a7-e758-1d5d-33cc">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="39d2-2e3b-543a-082c" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Armiger" hidden="false" id="60cd-138f-c5f8-99da" type="selectionEntry" targetId="28d4-58d0-511a-4fc2">
+      <modifiers>
+        <modifier type="remove" value="8a0e-490e-8f46-f269" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="ea68-74f8-f3df-0be6" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="caa6-8231-034d-0c4d" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Armoured Sentinels" hidden="false" id="6c76-ac27-7161-b25b" type="selectionEntry" targetId="dcd1-2f3b-c810-be3a">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="38a2-baf5-f5e0-ea0d" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="4f21-bebf-0d82-bece" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Baneblade" hidden="false" id="3f93-02b9-0f45-f3dc" type="selectionEntry" targetId="9b34-6ec8-d034-79dc">
+      <modifiers>
+        <modifier type="remove" value="58d2-1cc8-0227-0a42" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="9be4-4551-feb6-31f4" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="3cc9-885f-a5a8-b308" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Chimera" hidden="false" id="d1b7-c5e8-85c0-850e" type="selectionEntry" targetId="29f9-aa80-9405-d24e">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="8048-fad5-c178-4895" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="d707-5ad6-1f55-b0da" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Devilfish" hidden="false" id="67a6-6d77-d639-dc5e" type="selectionEntry" targetId="2df8-3a8e-15c3-9f14">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="6a71-feae-013e-46c6" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="0311-be30-b224-882e" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Disintegrator" hidden="false" id="2ef7-df7a-f6d4-43ae" type="selectionEntry" targetId="19e2-5c63-3627-9532">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="0aeb-96a2-af6d-f739" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="6ebf-272e-c23c-249c" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Doomsday Ark" hidden="false" id="29e4-6594-1544-9b6f" type="selectionEntry" targetId="53a6-fb8e-ab4f-cd99">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="686d-406e-0e09-4c4c" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Doomstalkers" hidden="false" id="986c-54c6-aee6-375a" type="selectionEntry" targetId="7daa-1ee5-e710-5897">
+      <modifiers>
+        <modifier type="remove" value="be30-18f6-3a2a-0e55" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="fd1b-f50a-54e4-1197" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Dreadknight" hidden="false" id="e7c2-0eb6-7a0e-ab42" type="selectionEntry" targetId="637f-4fe3-f3ca-c9bb">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+        <modifier type="remove" value="c759-da28-35c5-802b" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="8476-6bf9-09c7-9739" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="fe69-b050-99fd-c4ad" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Dreadnought" hidden="false" id="828c-d3af-c6f1-79c4" type="selectionEntry" targetId="5f9a-0219-5a4b-faa9">
+      <modifiers>
+        <modifier type="remove" value="ba83-6a23-709e-c810" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="ec3d-373c-4113-4207" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="da96-05a0-ae5d-0f03" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Drop Pod" hidden="false" id="19be-5060-0a19-3aa0" type="selectionEntry" targetId="699d-6d1d-4ad8-1340">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="e400-447e-8787-d51c" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="1eb1-5445-aa4b-a633" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Dunecrawler" hidden="false" id="fe32-312b-d64f-8cbe" type="selectionEntry" targetId="9e73-9746-6cbb-ed76">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="f22e-32bb-1bb4-4cb1" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="35e5-4b49-afaa-1f35" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Dunerider" hidden="false" id="6e4b-e7c8-1657-e5b7" type="selectionEntry" targetId="09df-d787-c947-38c1">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="bb1d-8af4-58ff-9d46" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="23c7-895c-9c36-d07b" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Ghost Ark" hidden="false" id="198e-1556-92a6-f96a" type="selectionEntry" targetId="7fe2-aff9-05f4-c003">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="e920-3b11-28c8-0948" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Ghostkeel" hidden="false" id="b6dd-e9f6-0d38-e9a1" type="selectionEntry" targetId="ea10-04dd-7190-ed64">
+      <modifiers>
+        <modifier type="remove" value="b083-7a5c-1d92-5ca6" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="e118-3568-fffa-2ed1" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="2397-8dbc-0684-f439" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Goliath Rockgrinder" hidden="false" id="4194-0bda-cbd2-3a6f" type="selectionEntry" targetId="190c-4098-1787-2fb7">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="24c1-e208-327b-146f" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="e227-f8df-417d-41d3" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Goliath Truck" hidden="false" id="5830-4b80-bb4c-a57b" type="selectionEntry" targetId="07b9-1f04-7de0-0a94">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="affe-7c69-9ba2-5cee" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="2502-06da-10e6-b9c7" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Hammerhead" hidden="false" id="356e-6b30-74c3-e9e3" type="selectionEntry" targetId="73d8-ac0f-6339-3b15">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="018e-0b5f-ca35-3009" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="bb07-35be-5f6f-3f11" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Helbrute" hidden="false" id="eb10-f3f2-9f1a-8267" type="selectionEntry" targetId="1973-6041-df9b-444a">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="567e-6409-797a-b2c5" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="7674-f823-7a14-9351" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Hellhound Squadron" hidden="false" id="571c-f329-93b4-9209" type="selectionEntry" targetId="7fcf-2a3a-6061-c061">
+      <modifiers>
+        <modifier type="remove" value="672b-51c2-24b8-ea65" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="0a9e-0b94-8a48-a09b" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="b3dd-f5f5-a44e-2b26" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Hydra Squadron" hidden="false" id="2b34-0a88-97a2-763c" type="selectionEntry" targetId="19be-d01c-0442-c028">
+      <modifiers>
+        <modifier type="remove" value="672b-51c2-24b8-ea65" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="f787-338e-8dd2-324e" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="8981-affc-1ac9-c912" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Ironstriders" hidden="false" id="22e9-39ac-7099-b795" type="selectionEntry" targetId="e9c7-17d3-d7aa-e49a">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="727c-90c5-df3f-24c8" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="5ec8-4d0c-b41e-2324" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Kastelan Robots" hidden="false" id="0e70-9763-c634-9e7b" type="selectionEntry" targetId="3e7b-d62e-49fc-3b19">
+      <modifiers>
+        <modifier type="remove" value="7b50-fead-20b3-9019" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="6b4f-0005-745f-c5cc" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Knight" hidden="false" id="bee3-a528-e8ab-d675" type="selectionEntry" targetId="c537-2ba3-000a-aecf">
+      <modifiers>
+        <modifier type="remove" value="8223-007b-567e-1c49" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="fb15-f3ee-da0b-ed73" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="8b52-b94e-f55d-4c4a" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Knight Commander" hidden="false" id="b965-dadc-217a-fbf7" type="selectionEntry" targetId="5cee-a006-208a-9e70">
+      <modifiers>
+        <modifier type="remove" value="1292-db08-d421-463a" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="36ac-a076-6ed3-02c2" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="b54d-43cb-5d0b-55e9" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider" hidden="false" id="ff3c-02cc-a878-44cd" type="selectionEntry" targetId="76f0-0537-1ce1-d50a">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="296d-4ae4-3426-e3e0" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="edca-7146-431c-44fb" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="fdd7-a483-8bc2-413e" type="selectionEntry" targetId="e04d-b91a-3c77-2b99">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="fe19-7223-c30b-e81a" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="1b41-d6a3-c3c8-4616" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Leman Russ Squadron" hidden="false" id="a6d0-d561-bf11-907a" type="selectionEntry" targetId="3feb-fbee-23a2-ed49">
+      <modifiers>
+        <modifier type="remove" value="672b-51c2-24b8-ea65" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="757b-9395-cf15-1891" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="9cd4-6fdf-0b79-95aa" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Monolith" hidden="false" id="734f-f07a-ad0f-2948" type="selectionEntry" targetId="ab28-1e66-94ec-a5de">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="e6ed-3ece-e302-e666" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Ordinance Battery Array" hidden="false" id="52a3-80ad-9baf-7127" type="selectionEntry" targetId="e96a-9251-7d2e-bb5d">
+      <modifiers>
+        <modifier type="remove" value="672b-51c2-24b8-ea65" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="c8e8-63b2-67a3-9db1" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="f776-1d06-8cc1-90fb" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Piranha Squadron" hidden="false" id="c854-b630-e240-c2f1" type="selectionEntry" targetId="33cf-95ca-0870-8270">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="b122-f2b1-7671-af90" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="dc50-5d75-bf79-a9b6" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Predator" hidden="false" id="226a-de19-04ac-8669" type="selectionEntry" targetId="4780-d414-7b11-0cab">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="1fee-e676-803e-4e36" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="ffe4-1b68-ccab-1498" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Raider" hidden="false" id="0a56-7dad-4820-b3f1" type="selectionEntry" targetId="78ad-4aff-ba7b-9614">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="66fe-3e6d-34b7-e625" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="8e6e-987e-a21e-756f" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Ravager" hidden="false" id="2933-cf0c-9b0f-5283" type="selectionEntry" targetId="bdab-b181-37b8-6321">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="2687-bf4d-9d04-b6bd" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="385b-fa9c-8aeb-9524" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Razorback" hidden="false" id="3315-e348-32d6-742e" type="selectionEntry" targetId="b971-72f5-ac66-9297">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="edcf-2435-e6ae-f6d9" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="0f27-bc0f-c5e8-9da7" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Reanimator" hidden="false" id="9e42-0e3a-aa45-d431" type="selectionEntry" targetId="05b2-1b02-95ac-e97a">
+      <modifiers>
+        <modifier type="remove" value="be30-18f6-3a2a-0e55" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="303d-ca13-8d79-24bb" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Rhino" hidden="false" id="900f-3a50-d780-8cf6" type="selectionEntry" targetId="5ecf-0eed-7d23-d378">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="543b-154a-f98e-5ca0" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="2fe2-8f31-2ba7-63d7" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Ridgerunners" hidden="false" id="b120-4609-2259-a8a0" type="selectionEntry" targetId="350d-ac22-804f-f0a8">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="25da-d055-2a6a-0f8f" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="eb9b-3436-6d99-7658" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Riptide" hidden="false" id="64e4-b383-7a33-f585" type="selectionEntry" targetId="dd89-1d15-dd61-61e6">
+      <modifiers>
+        <modifier type="remove" value="b083-7a5c-1d92-5ca6" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="193f-c85e-fa07-0ffc" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Scout Sentinels" hidden="false" id="6b9c-4749-c8bd-0e35" type="selectionEntry" targetId="cbc3-ef28-2049-bc09">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="cc57-c613-5c58-c42a" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="c824-7ede-57cc-63bd" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Sky Ray" hidden="false" id="3465-4d94-296e-78f0" type="selectionEntry" targetId="6242-981a-aa9d-cec5">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="a0b9-3f75-eb09-f5f4" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="ba4d-6b6b-fd53-2be4" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Stormraven" hidden="false" id="056d-dce9-a88d-1f1b" type="selectionEntry" targetId="015a-c823-5db1-6135">
+      <modifiers>
+        <modifier type="remove" value="58d2-1cc8-0227-0a42" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="9175-1c45-f34e-c9a1" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="b7f3-ad17-7942-a010" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Taurox" hidden="false" id="f94e-a8f1-a02f-7df9" type="selectionEntry" targetId="aa6b-35b8-f20c-fad3">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="6ad7-2646-4574-19cb" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="b1a9-91ae-93be-57db" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Thunderhawk" hidden="false" id="90bb-4930-1e3d-ff30" type="selectionEntry" targetId="637d-8d7d-eb0a-ba2b">
+      <modifiers>
+        <modifier type="remove" value="58d2-1cc8-0227-0a42" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="4e63-0398-ee2c-d20f" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="474c-973b-c1c6-273b" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Triarch Stalker" hidden="false" id="db7c-3f70-68a6-5a38" type="selectionEntry" targetId="1793-5d5e-b8b1-3d54">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="1354-a298-40c9-24a4" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Venom" hidden="false" id="4586-b809-966d-141e" type="selectionEntry" targetId="54fb-1089-b124-b068">
+      <modifiers>
+        <modifier type="remove" value="57f8-02cb-ea36-4d85" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="e826-bd5f-5677-bf1c" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="171b-4548-99c1-5a8e" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Vindicator" hidden="false" id="62a7-bad6-1e79-c248" type="selectionEntry" targetId="15b0-0aed-d26b-e550">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="2c61-0fb2-350a-78f8" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="4ec9-0835-3231-7736" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Warhound" hidden="false" id="b24d-9df6-60ef-7241" type="selectionEntry" targetId="1cf0-ffd8-e3c7-2f25">
+      <modifiers>
+        <modifier type="remove" value="58d2-1cc8-0227-0a42" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="923d-9630-2c49-9960" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="ae9f-4541-77b1-7841" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Whirlwind" hidden="false" id="a978-39e1-37d7-13af" type="selectionEntry" targetId="b5bd-2606-1701-4d58">
+      <modifiers>
+        <modifier type="remove" value="6297-a84f-a103-e2ac" field="category"/>
+        <modifier type="set-primary" value="25a1-fdcd-3308-d901" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Waaagh!" id="d4f7-3516-e83c-fa69" hidden="false" type="rule" targetId="c579-8d44-21ff-1354"/>
+        <infoLink name="Bulky" id="bfe4-d9be-3ca9-03c8" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
+      </infoLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Leader Weapons" id="2041-d177-02cb-e09e" hidden="false">
@@ -3123,5 +3606,15 @@ Bulky | Waaagh!</description>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Apocalypse" id="12e2-c580-71aa-9c19" targetId="efa0-300e-3f94-8853" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Chaos Space Marines" id="1c4e-6215-0063-cb41" targetId="5220-b03f-9cba-cf33" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Dark Eldar" id="e155-7c83-43f6-4f7c" targetId="0284-18cf-eb92-cc49" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Firstborn Marines" id="c4ff-c638-bcee-1ebb" targetId="2b57-386d-935e-c0b8" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Genestealer Cults" id="ef7b-b247-a0e3-7547" targetId="e971-b31b-b278-5da6" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Grey Knights" id="b306-44a4-71d2-a69f" targetId="5e13-1304-0d3d-42f9" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Imperial Guard" id="069b-eca2-b314-eb7e" targetId="2614-1182-626f-c762" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Knights" id="cb87-d0f8-e1e8-25af" targetId="524d-97ab-9591-2625" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Mechanicus" id="6927-4ea7-c6fe-2696" targetId="690b-a1f5-e4c6-b014" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Necrons" id="16b9-1f48-a301-f192" targetId="504e-fd94-4621-eda1" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Tau" id="ae73-a37b-04d1-c9ff" targetId="4cf6-fdee-64d7-fd18" importRootEntries="false"/>
   </catalogueLinks>
 </catalogue>

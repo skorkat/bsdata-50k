@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -933,7 +933,20 @@ Unused Order tokens are lost at the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Scout Sentinel" hidden="false" id="6615-4b5e-2aa1-db2a">
           <infoLinks>
-            <infoLink name="Scout Sentinel" id="d38e-c426-a9eb-75db" hidden="false" type="profile" targetId="5d45-53f1-bd19-b7b8"/>
+            <infoLink name="Scout Sentinel" id="d38e-c426-a9eb-75db" hidden="false" type="profile" targetId="5d45-53f1-bd19-b7b8">
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="3f7a-b7c3-882f-9553" hidden="false">
@@ -1026,7 +1039,15 @@ Unused Order tokens are lost at the end of the turn.</description>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Infiltrate" id="9aa6-f697-764d-1aa5" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+        <infoLink name="Infiltrate" id="9aa6-f697-764d-1aa5" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6297-a84f-a103-e2ac" id="1889-7f25-4bdd-76db" primary="true" name="Elite"/>
@@ -1038,7 +1059,20 @@ Unused Order tokens are lost at the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armoured Sentinel" hidden="false" id="99fc-5835-5969-d73f">
           <infoLinks>
-            <infoLink name="Armoured Sentinel" id="9d94-740a-fdd5-a02e" hidden="false" type="profile" targetId="b2a5-669b-81d0-2caa"/>
+            <infoLink name="Armoured Sentinel" id="9d94-740a-fdd5-a02e" hidden="false" type="profile" targetId="b2a5-669b-81d0-2caa">
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" id="dbeb-1a87-cad6-33cd" hidden="false">
@@ -1148,6 +1182,16 @@ Unused Order tokens are lost at the end of the turn.</description>
             <modifier type="set" value="2+" field="183a-8a11-c349-ae14">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="51bd-a7ed-7589-2739" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1272,6 +1316,16 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="bbc6-73e4-0bda-5452" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1384,7 +1438,20 @@ Unused Order tokens are lost at the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ordinance Battery" hidden="false" id="9584-5d2c-e075-cd93">
           <infoLinks>
-            <infoLink name="Ordinance Battery" id="4e1e-1164-9bf2-cac2" hidden="false" type="profile" targetId="f18e-9172-6f53-9d68"/>
+            <infoLink name="Ordinance Battery" id="4e1e-1164-9bf2-cac2" hidden="false" type="profile" targetId="f18e-9172-6f53-9d68">
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Variant" id="4937-480b-b62c-49a1" hidden="false" sortIndex="1">
@@ -1490,7 +1557,20 @@ Unused Order tokens are lost at the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Hydra" hidden="false" id="d5fb-c406-a2c7-9987">
           <infoLinks>
-            <infoLink name="Hydra" id="4c5a-728e-a861-f240" hidden="false" type="profile" targetId="456d-5c30-a116-6074"/>
+            <infoLink name="Hydra" id="4c5a-728e-a861-f240" hidden="false" type="profile" targetId="456d-5c30-a116-6074">
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Autocannon" id="58f7-a21b-7f4a-b7a8" hidden="false" type="profile" targetId="4ae7-a314-b063-a620">
               <modifiers>
                 <modifier type="set" value="x4" field="annotation"/>
@@ -1548,7 +1628,20 @@ Unused Order tokens are lost at the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Hellhound" hidden="false" id="b735-ecf6-9cde-d62c">
           <infoLinks>
-            <infoLink name="Hellhound" id="5895-1411-c7ce-6641" hidden="false" type="profile" targetId="1967-b1a1-fd28-b724"/>
+            <infoLink name="Hellhound" id="5895-1411-c7ce-6641" hidden="false" type="profile" targetId="1967-b1a1-fd28-b724">
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Secondary Weapon" id="011e-ea45-da11-0341" hidden="false" sortIndex="2">
@@ -1654,7 +1747,20 @@ Unused Order tokens are lost at the end of the turn.</description>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f665-f470-5521-80bf"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Leman Russ" id="744f-0e50-c13f-6ee4" hidden="false" type="profile" targetId="61f5-f10c-0954-9f0e"/>
+            <infoLink name="Leman Russ" id="744f-0e50-c13f-6ee4" hidden="false" type="profile" targetId="61f5-f10c-0954-9f0e">
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="170"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -55,6 +55,11 @@
     </categoryEntry>
     <categoryEntry name="Apocalypse" id="58d2-1cc8-0227-0a42" hidden="false"/>
     <categoryEntry name="Aircraft" id="b069-0f73-de64-e741" hidden="false"/>
+    <categoryEntry name="Looted Tank" id="25a1-fdcd-3308-d901" hidden="false">
+      <constraints>
+        <constraint type="max" value="50" field="limit::b109-6551-e41a-f1f7" scope="roster" shared="true" id="e80a-6454-953a-8f1b" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <profileTypes>
     <profileType name="Melee Weapon" id="4437-4cfe-f1f5-8c41" hidden="false" sortIndex="7">

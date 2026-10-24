@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="4cf6-fdee-64d7-fd18" name="Tau" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Battlesuit" id="b083-7a5c-1d92-5ca6" hidden="false">
       <constraints>
@@ -596,6 +596,18 @@
             <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="5+" field="4a75-e14b-051b-c0f1">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7+" field="d131-a398-ad21-bb05">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -608,6 +620,11 @@
         <infoLink name="Markerlight" id="d516-84d3-ae1a-c6b2" hidden="false" type="rule" targetId="018a-a993-34ba-9a8a">
           <modifiers>
             <modifier type="set" value="Marker Drones only" field="annotation"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Hover" id="4bf0-9479-d3fc-7604" hidden="false" type="rule" targetId="3277-2533-ac2b-057c">
@@ -637,6 +654,18 @@
             <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="5+" field="4a75-e14b-051b-c0f1">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7+" field="d131-a398-ad21-bb05">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -673,6 +702,18 @@
             <!-- <characteristic name="Base" typeId="febd-8847-ba6a-7c26">25mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="5+" field="4a75-e14b-051b-c0f1">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7+" field="d131-a398-ad21-bb05">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -1823,6 +1864,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -1917,6 +1970,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -1972,7 +2037,15 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Infiltrate" id="f00a-39a8-2ecb-5cd0" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b"/>
+        <infoLink name="Infiltrate" id="f00a-39a8-2ecb-5cd0" hidden="false" type="rule" targetId="f6d2-4715-f8a6-5a6b">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Drones" hidden="false" id="9b30-7dc9-69ba-13f8" type="selectionEntryGroup" targetId="acbb-162d-1146-36db">
@@ -2014,6 +2087,18 @@
                 <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
                 <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -2175,6 +2260,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -2257,6 +2354,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -2338,6 +2447,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Devilfish" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="f167-0dab-db03-3f9b">
           <characteristics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Baleblast" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="0768-d8dd-e4dd-620b">
       <characteristics>
@@ -2130,9 +2130,30 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ravager" hidden="false" id="bdab-b181-37b8-6321">
       <infoLinks>
-        <infoLink name="Ravager" id="5714-1962-7c33-43dc" hidden="false" type="profile" targetId="5c4d-3177-5c4e-fdb4"/>
+        <infoLink name="Ravager" id="5714-1962-7c33-43dc" hidden="false" type="profile" targetId="5c4d-3177-5c4e-fdb4">
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Hover" id="cd7c-ac49-5d81-9436" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Deep Strike" id="8aa5-6fe5-e0a6-d6d8" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Deep Strike" id="8aa5-6fe5-e0a6-d6d8" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Bladevanes" id="ccbe-e82b-170a-0f0a" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2161,7 +2182,15 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Trophy Racks" hidden="false" id="756e-6fa0-02de-eebb">
           <infoLinks>
-            <infoLink name="Fear" id="61ac-bd16-5243-4b13" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+            <infoLink name="Fear" id="61ac-bd16-5243-4b13" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
@@ -2193,9 +2222,30 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Raider" hidden="false" id="78ad-4aff-ba7b-9614">
       <infoLinks>
-        <infoLink name="Raider" id="6efa-3a77-1950-9882" hidden="false" type="profile" targetId="4608-34c1-29f9-df73"/>
+        <infoLink name="Raider" id="6efa-3a77-1950-9882" hidden="false" type="profile" targetId="4608-34c1-29f9-df73">
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Hover" id="8cc8-6aa5-c784-3fd2" hidden="false" type="rule" targetId="3277-2533-ac2b-057c"/>
-        <infoLink name="Deep Strike" id="f784-a7bb-fbfb-b90b" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Deep Strike" id="f784-a7bb-fbfb-b90b" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Bladevanes" id="06dd-7219-a316-8c7a" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2224,7 +2274,15 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Trophy Racks" hidden="false" id="c027-bc79-b161-e807">
           <infoLinks>
-            <infoLink name="Fear" id="40c5-70b4-8f1c-c291" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+            <infoLink name="Fear" id="40c5-70b4-8f1c-c291" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
@@ -2253,9 +2311,30 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Venom" hidden="false" id="54fb-1089-b124-b068">
       <infoLinks>
-        <infoLink name="Venom" id="902c-b884-6f95-761c" hidden="false" type="profile" targetId="a303-dd0f-2f5b-fca6"/>
+        <infoLink name="Venom" id="902c-b884-6f95-761c" hidden="false" type="profile" targetId="a303-dd0f-2f5b-fca6">
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Fly" id="7222-6b5d-a7ef-d927" hidden="false" type="rule" targetId="9802-fb17-c1b0-872b"/>
-        <infoLink name="Deep Strike" id="dbe2-6d74-b0b5-2693" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9"/>
+        <infoLink name="Deep Strike" id="dbe2-6d74-b0b5-2693" hidden="false" type="rule" targetId="2f62-8a76-e9b0-d6e9">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Splinter Cannon" id="26eb-14b1-4354-01a4" hidden="false" type="profile" targetId="c449-7018-bb6d-f973"/>
         <infoLink name="Splinter Cannon" id="9fb4-abde-746c-4fba" hidden="false" type="profile" targetId="c449-7018-bb6d-f973"/>
         <infoLink name="Bladevanes" id="3bac-49ae-8a34-b172" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
@@ -2263,7 +2342,15 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Trophy Racks" hidden="false" id="c473-e75d-e521-735f">
           <infoLinks>
-            <infoLink name="Fear" id="5746-394a-305e-7dde" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef"/>
+            <infoLink name="Fear" id="5746-394a-305e-7dde" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>

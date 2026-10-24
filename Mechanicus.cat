@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="690b-a1f5-e4c6-b014" name="Mechanicus" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="6" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="690b-a1f5-e4c6-b014" name="Mechanicus" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="6" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Cult Mechanicus" id="7b50-fead-20b3-9019" hidden="false">
       <constraints>
@@ -975,6 +975,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Dunerider" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="108c-5c4a-02d1-725f">
           <characteristics>
@@ -1525,6 +1537,18 @@
                 <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
                 <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -2088,6 +2112,18 @@
                 <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
                 <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <selectionEntries>
@@ -2311,6 +2347,18 @@
                 <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
                 <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -2524,6 +2572,18 @@
             <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
             <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
