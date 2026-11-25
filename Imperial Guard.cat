@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2614-1182-626f-c762" name="Imperial Guard" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Order - Get Back In The Fight!" id="0ef6-84f4-f577-ebfe" hidden="false">
       <alias>Get Back In The Fight!</alias>
@@ -943,7 +943,17 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
@@ -1039,6 +1049,50 @@ Unused Order tokens are lost at the end of the turn.</description>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="40"/>
           </costs>
+          <profiles>
+            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="3f22-e4fc-d71f-1464">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Multi-laser</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Multi-laser, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7e8a-6f8b-dd62-66e5" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d922-e91e-4cb6-69b3" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7e8a-6f8b-dd62-66e5" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Autocannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="75ee-e796-bc74-6c34" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7e8a-6f8b-dd62-66e5" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Missile Launcher, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="3bbf-f926-4850-7176" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7e8a-6f8b-dd62-66e5" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Lascannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="44ee-c03e-3662-264b" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7e8a-6f8b-dd62-66e5" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Plasma Cannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="758f-c09a-5b54-996a" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7e8a-6f8b-dd62-66e5" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1069,7 +1123,17 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
@@ -1165,6 +1229,50 @@ Unused Order tokens are lost at the end of the turn.</description>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="55"/>
           </costs>
+          <profiles>
+            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="d36e-e1ee-6b3c-92a5">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Multi-laser</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Multi-laser, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="cd99-8ccb-c016-b679" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="ecc3-0cfb-0c31-230a" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="cd99-8ccb-c016-b679" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Autocannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="5322-189d-1390-e2a6" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="cd99-8ccb-c016-b679" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Missile Launcher, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="19fd-934f-c4be-c169" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="cd99-8ccb-c016-b679" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Lascannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8e30-dbed-f900-3bbc" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="cd99-8ccb-c016-b679" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Plasma Cannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="60d8-1e87-d71d-7df1" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="cd99-8ccb-c016-b679" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -1192,7 +1300,17 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1222,9 +1340,6 @@ Unused Order tokens are lost at the end of the turn.</description>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="7727-7b60-6861-4fee">
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
-              </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a34-a310-6ad8-4036"/>
               </constraints>
@@ -1233,6 +1348,9 @@ Unused Order tokens are lost at the end of the turn.</description>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="3e2e-a1e6-fbc2-48b7">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
+              </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97bf-b920-c010-3c53"/>
               </constraints>
@@ -1304,6 +1422,90 @@ Unused Order tokens are lost at the end of the turn.</description>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">2</characteristic>
           </characteristics>
         </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="b7f1-322d-d766-400d">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Multi-Laser, Heavy Bolter</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Multi-laser, Heavy Flamer" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="7727-7b60-6861-4fee" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="81ef-33af-657c-4a72" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Heavy Bolter, Heavy Bolter" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="3e2e-a1e6-fbc2-48b7" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="f187-8696-4934-db79" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Heavy Bolter, Heavy Flamer" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="3e2e-a1e6-fbc2-48b7" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="81ef-33af-657c-4a72" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Heavy Flamer, Heavy Bolter" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="1fb1-145b-25b6-7513" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="f187-8696-4934-db79" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Heavy Flamer, Heavy Flamer" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="1fb1-145b-25b6-7513" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="81ef-33af-657c-4a72" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="4c4f-0d9a-7543-2ca8">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">6x Lasguns, Transport Capacity (12)</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="6x Lasguns, Transport Capacity (12), Hunter-killer Missile" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6x Lasguns, Transport Capacity (12), Heavy Stubber" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6x Lasguns, Transport Capacity (12), Storm Bolter" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6x Lasguns, Transport Capacity (12), Hunter-killer Missile, Heavy Stubber" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6x Lasguns, Transport Capacity (12), Hunter-killer Missile, Storm Bolter" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6x Lasguns, Transport Capacity (12), Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6x Lasguns, Transport Capacity (12), Hunter-killer Missile, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Taurox" hidden="false" id="aa6b-35b8-f20c-fad3">
@@ -1319,6 +1521,24 @@ Unused Order tokens are lost at the end of the turn.</description>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e"/>
           </characteristics>
         </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="a3d1-0222-405c-48c0">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Hot-shot Volley Gun</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2x Hot-shot Volley Gun, Storm Bolter" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="566a-705f-8e52-ce65" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2x Autocannons, Storm Bolter" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="5e59-cdd5-2c64-4981" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="566a-705f-8e52-ce65" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Taurox" id="513b-ff6c-4e3b-a319" hidden="false" type="profile" targetId="ce39-2ee9-a696-d4d7">
@@ -1328,12 +1548,27 @@ Unused Order tokens are lost at the end of the turn.</description>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="bbc6-73e4-0bda-5452" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="3+" field="f7b7-903d-2569-7d39">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="bbc6-73e4-0bda-5452" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1466,7 +1701,17 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
@@ -1500,7 +1745,7 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d3-5310-e997-81db"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Manticore" hidden="false" id="8c69-2670-cb4e-d94e" sortIndex="3">
@@ -1566,6 +1811,124 @@ Unused Order tokens are lost at the end of the turn.</description>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="90"/>
           </costs>
+          <profiles>
+            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="54e1-4735-3fc7-55af">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">4x Mortar (ie. Wyvern)</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Earthshaker Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6279-51c3-1c8f-810a" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Deathstrike Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="17fd-0824-bce5-d7fa" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Storm Eagle Rockets" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8c69-2670-cb4e-d94e" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="9403-053e-6144-121d">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Bolter</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8f05-28d7-5b04-55eb" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8f05-28d7-5b04-55eb" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8f05-28d7-5b04-55eb" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8f05-28d7-5b04-55eb" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8f05-28d7-5b04-55eb" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8f05-28d7-5b04-55eb" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8f05-28d7-5b04-55eb" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1596,7 +1959,17 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
@@ -1648,6 +2021,107 @@ Unused Order tokens are lost at the end of the turn.</description>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="110"/>
           </costs>
+          <profiles>
+            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="2f9e-639f-7cf9-004d">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">4x Autocannon</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="8fd9-660d-e739-844a">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Bolter</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6e8d-93b4-8463-3708" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6e8d-93b4-8463-3708" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6e8d-93b4-8463-3708" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6e8d-93b4-8463-3708" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6e8d-93b4-8463-3708" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6e8d-93b4-8463-3708" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6e8d-93b4-8463-3708" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1678,7 +2152,17 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
@@ -1774,6 +2258,166 @@ Unused Order tokens are lost at the end of the turn.</description>
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="120"/>
           </costs>
+          <profiles>
+            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5b16-90a1-699f-497a">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Inferno Cannon</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Chem Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="5642-ceab-bafe-e888" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Melta Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="042d-f963-e438-6747" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="7e03-8f9a-8144-da25">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Bolter</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="a3d4-d6bc-1944-eb57" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Multi-melta, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1297-e4b4-6660-0dda" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="a3d4-d6bc-1944-eb57" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Multi-melta, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1297-e4b4-6660-0dda" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="a3d4-d6bc-1944-eb57" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Multi-melta, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1297-e4b4-6660-0dda" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="a3d4-d6bc-1944-eb57" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Multi-melta, Hunter-killer Missile, Heavy Stubber" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1297-e4b4-6660-0dda" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="a3d4-d6bc-1944-eb57" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Multi-melta, Hunter-killer Missile, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1297-e4b4-6660-0dda" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="a3d4-d6bc-1944-eb57" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Multi-melta, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1297-e4b4-6660-0dda" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Bolter, Hunter-killer Missile, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="a3d4-d6bc-1944-eb57" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Multi-melta, Hunter-killer Missile, Heavy Stubber, Storm Bolter" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1297-e4b4-6660-0dda" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="fc4c-3af3-7d4b-da78" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="beea-d43e-fca0-8616" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="e6a7-9269-0c7e-a2c9" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1808,7 +2452,17 @@ Unused Order tokens are lost at the end of the turn.</description>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
@@ -2036,7 +2690,9 @@ Unused Order tokens are lost at the end of the turn.</description>
               <modifiers>
                 <modifier type="set" value="Tank Commander" field="name"/>
                 <modifier type="set" value="3+" field="6ba5-adee-cf9c-7941"/>
+                <modifier type="set" value="3+" field="f7b7-903d-2569-7d39"/>
                 <modifier type="set" value="5+" field="1749-ccde-02fe-ae92"/>
+                <modifier type="set" value="5+" field="2091-9449-9db5-814a"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -3157,76 +3813,56 @@ Unused Order tokens are lost at the end of the turn.</description>
         <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
-    <profile name="Chimera" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="09e2-f237-ad16-739b">
+    <profile name="Chimera" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="09e2-f237-ad16-739b">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Armoured Sentinel" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b2a5-669b-81d0-2caa">
+    <profile name="Armoured Sentinel" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="b2a5-669b-81d0-2caa">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">2</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">1</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">7+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
       </characteristics>
     </profile>
-    <profile name="Scout Sentinel" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5d45-53f1-bd19-b7b8">
+    <profile name="Scout Sentinel" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5d45-53f1-bd19-b7b8">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">9</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">2</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">9</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">1</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">7+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Taurox" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="ce39-2ee9-a696-d4d7">
+    <profile name="Taurox" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="ce39-2ee9-a696-d4d7">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
       </characteristics>
     </profile>
     <profile name="Hot-shot Volley Gun" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="11bf-2b65-ce29-1d29">
@@ -3289,58 +3925,43 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Blast, Indirect</characteristic>
       </characteristics>
     </profile>
-    <profile name="Ordinance Battery" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="f18e-9172-6f53-9d68">
+    <profile name="Ordinance Battery" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="f18e-9172-6f53-9d68">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Hydra" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="456d-5c30-a116-6074">
+    <profile name="Hydra" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="456d-5c30-a116-6074">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Hellhound" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="1967-b1a1-fd28-b724">
+    <profile name="Hellhound" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="1967-b1a1-fd28-b724">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
     <profile name="Inferno Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="6cc0-d39a-9dcf-e593">
@@ -3373,22 +3994,17 @@ Unused Order tokens are lost at the end of the turn.</description>
         <characteristic name="Rules" typeId="e0f6-2a4d-5acc-ab93">Poison (2+)</characteristic>
       </characteristics>
     </profile>
-    <profile name="Leman Russ" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="61f5-f10c-0954-9f0e">
+    <profile name="Leman Russ" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="61f5-f10c-0954-9f0e">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">5</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
       </characteristics>
     </profile>
     <profile name="Vanquisher Battle Cannon" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="401c-c1c4-d2b0-8565">

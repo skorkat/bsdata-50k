@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="dc6f-b0e6-dbca-b789" name="Tyranids" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="dc6f-b0e6-dbca-b789" name="Tyranids" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="10" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Synapse" id="8e40-1aab-fb83-9431" hidden="false">
       <description>While a Tyranid unit is within 12” of a unit with this special rule, it can use the Leadership characteristic of that model.
@@ -564,22 +564,32 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
             <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Hive Tyrant" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="f342-dca6-e3ae-ac37">
+        <profile name="Hive Tyrant" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="f342-dca6-e3ae-ac37">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">7</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">5</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">7</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">2+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">5</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">5</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="ddc1-d4d4-589d-8bba">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Boneswords and Monstrous Scything Talons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5525-44f4-23f5-3441">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">First and second additional weapons (see Upgrades below)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 3" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="3819-7050-ab87-dd19">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Neuro-Lance (Reduce Psyker Level by 1 when destroyed)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -616,28 +626,40 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <infoLink name="Stinger Salvoes" id="ee3b-3405-4115-04cb" hidden="false" type="profile" targetId="0921-be41-af74-f2f8"/>
       </infoLinks>
       <profiles>
-        <profile name="Tervigon" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="7b8b-7eeb-c625-7d05">
+        <profile name="Tervigon" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="7b8b-7eeb-c625-7d05">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
           </characteristics>
         </profile>
         <profile name="Tervigon" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="dd9e-1ec2-1824-bfa4">
           <characteristics>
             <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">1</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="9318-e267-b699-ebb5">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Stinger Salvoes</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5a27-d568-ed22-dfef">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Monstrous Crushing Claws" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="16a5-4baf-32c7-80c8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -2364,30 +2386,99 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="180"/>
           </costs>
           <profiles>
-            <profile name="Carnifex" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="e0cc-9cbb-bd18-7753">
+            <profile name="Carnifex" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="e0cc-9cbb-bd18-7753">
               <characteristics>
-                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-                <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
-                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+                <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+                <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+                <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
+                <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+                <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+                <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
+                <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+                <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+                <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
               </characteristics>
+            </profile>
+            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5cbf-e0b2-7de3-6a09">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="2x Devourers" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="730e-145b-a0b0-75d9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Monstrous Crushing Claws" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8ac8-9184-5276-8311" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Screamer-killer Talons" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="bc5c-93c9-e4e9-fbb1" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Stranglethorn Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="ffa0-6fb0-cf4c-f44f" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2x Deathspitters" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7f7c-7d66-0465-e3e0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Venom Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="ae80-b46e-9142-b060" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="a0d3-9f40-0c44-a5e9">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="2x Devourers" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="f4ea-fe04-3618-ae4b" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Monstrous Crushing Claws" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="c5a4-7271-9ad2-617a" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Screamer-killer Talons" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="520f-5da0-fdf0-1167" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Stranglethorn Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8457-92d4-aeff-dfc7" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2x Deathspitters" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="03ae-81ac-8d4e-dd20" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Venom Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7dce-f429-638b-7b5c" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="a9d2-0058-0489-16a4" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Weapon Set 1" id="a9d2-0058-0489-16a4" hidden="false" sortIndex="1">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a540-8973-e8d5-978a-min"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a540-8973-e8d5-978a-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a540-8973-e8d5-978a-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a540-8973-e8d5-978a-max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Monstrous Scything Talons" hidden="false" id="00dc-27d0-eb4d-32b7" sortIndex="1">
@@ -2443,6 +2534,69 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
                   </costs>
                   <infoLinks>
                     <infoLink name="Heavy Venom Cannon" id="99c6-a0ea-66d7-2313" hidden="false" type="profile" targetId="0237-f551-0b7e-b48f"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapon Set 2" id="6075-1360-4519-218e" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f5b-d55f-ab6e-7a51"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe97-3c93-0111-1495"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Monstrous Scything Talons" hidden="false" id="4b98-fecd-2c22-3b01" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Monstrous Scything Talons" id="fb6d-7acb-a819-d66c" hidden="false" type="profile" targetId="05b1-e796-5fe3-38af"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Devourers" hidden="false" id="f4ea-fe04-3618-ae4b" sortIndex="4">
+                  <infoLinks>
+                    <infoLink name="Devourer" id="31f9-4d6d-eef0-02cd" hidden="false" type="profile" targetId="99a7-2b56-6e47-f9db"/>
+                    <infoLink name="Devourer" id="c954-b612-38f2-8f81" hidden="false" type="profile" targetId="99a7-2b56-6e47-f9db"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="15"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Monstrous Crushing Claws" hidden="false" id="c5a4-7271-9ad2-617a" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Monstrous Crushing Claws" id="d7bd-8755-5ee8-90b6" hidden="false" type="profile" targetId="b059-a48e-5537-5fc0"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Screamer-killer Talons" hidden="false" id="520f-5da0-fdf0-1167" sortIndex="3">
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Screamer-killer Talons" id="ada3-b51e-6881-14c6" hidden="false" type="profile" targetId="7bce-09f9-0c52-b071"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Stranglethorn Cannon" hidden="false" id="8457-92d4-aeff-dfc7" sortIndex="5">
+                  <infoLinks>
+                    <infoLink name="Stranglethorn Cannon" id="317b-b8d4-8b91-0714" hidden="false" type="profile" targetId="1797-ce4b-37fd-27d3"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Deathspitters" hidden="false" id="03ae-81ac-8d4e-dd20" sortIndex="7">
+                  <infoLinks>
+                    <infoLink name="Deathspitter" id="6295-381d-2cc7-93d3" hidden="false" type="profile" targetId="e945-ed95-a467-ee65"/>
+                    <infoLink name="Deathspitter" id="5113-8ac4-2eec-9ad8" hidden="false" type="profile" targetId="e945-ed95-a467-ee65"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Venom Cannon" hidden="false" id="7dce-f429-638b-7b5c" sortIndex="6">
+                  <costs>
+                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="25"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Heavy Venom Cannon" id="4f0e-2c95-e65d-0b87" hidden="false" type="profile" targetId="0237-f551-0b7e-b48f"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -2510,22 +2664,34 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <categoryLink targetId="841c-6009-19bb-93fb" id="a8cb-fc06-b8a5-ac99" primary="false" name="Tank"/>
       </categoryLinks>
       <profiles>
-        <profile name="Harpy" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b919-4866-e6dc-dde9">
+        <profile name="Harpy" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="b919-4866-e6dc-dde9">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="42ae-0ae2-d3bb-3b36">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Stranglethorn Cannons</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2x Heavy Venom Cannons" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="5b7e-cb75-3825-fc2e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="545f-d9f8-540e-0de6">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Stinger Salvoes</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2571,22 +2737,32 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="170"/>
       </costs>
       <profiles>
-        <profile name="Hive Crone" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="342c-fbd5-60d9-5b35">
+        <profile name="Hive Crone" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="342c-fbd5-60d9-5b35">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="15fd-1819-510f-8e90">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Drool Cannon</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="6986-3f84-1393-c625">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Scything Talons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 3" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="50ec-6b70-968e-6496">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Stinger Salvoes, Tentaclids</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2609,23 +2785,40 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="290"/>
       </costs>
       <profiles>
-        <profile name="Tyrannofex" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="8b07-ee3d-834c-f071">
+        <profile name="Tyrannofex" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="8b07-ee3d-834c-f071">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5536-ca77-a1e8-9733">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Stinger Salvoes</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="4540-932e-fb22-4fcf">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">3x Fleshborers</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Acid Spray" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="ea8a-92b4-fe81-c92e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Rupture Cannon" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="9357-5bd2-3639-0285" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -2709,22 +2902,34 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="240"/>
       </costs>
       <profiles>
-        <profile name="Mawloc" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="913c-faef-4f9d-d181">
+        <profile name="Mawloc" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="913c-faef-4f9d-d181">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="2eef-69bc-8134-48a3">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Monstrous Scything Talons, Bio-plasma" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="9e68-d16e-502c-0b28" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="6fe3-17a6-544c-2c14">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2770,22 +2975,27 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="200"/>
       </costs>
       <profiles>
-        <profile name="Trygon" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="822e-20a8-cba9-bda2">
+        <profile name="Trygon" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="822e-20a8-cba9-bda2">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="c9e0-933a-0f51-9828">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Bio-electric Pulse</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="d442-4b9a-f08f-84d5">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2833,27 +3043,32 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <categoryLink targetId="c759-da28-35c5-802b" id="d505-28ba-b600-0a73" primary="false" name="Psyker"/>
       </categoryLinks>
       <profiles>
-        <profile name="Maleceptor" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="82d6-30e8-837a-7fb7">
+        <profile name="Maleceptor" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="82d6-30e8-837a-7fb7">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
           </characteristics>
         </profile>
         <profile name="Maleceptor" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="00e6-c3fe-0a28-1742">
           <characteristics>
             <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="258d-edc2-88da-68a0">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="0734-4fa2-da26-7be7">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Neuro-Lance (Reduce Psyker Level by 1 when destroyed)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2880,22 +3095,22 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <categoryLink targetId="86c1-c599-fdfa-24a1" id="396b-f600-4c1a-0340" primary="true" name="Monsters"/>
       </categoryLinks>
       <profiles>
-        <profile name="Toxicrene" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="3316-e450-f9bf-859d">
+        <profile name="Toxicrene" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="3316-e450-f9bf-859d">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="78e4-74c4-b6ad-fffa">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Massive Toxic Lashes</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2909,22 +3124,22 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Exocrine" hidden="false" id="8c10-29fe-4789-6b58">
       <profiles>
-        <profile name="Exocrine" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="8ffa-5dd9-2cab-c4d0">
+        <profile name="Exocrine" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="8ffa-5dd9-2cab-c4d0">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="65d6-0fc9-b651-0ad5">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Bio-plasmic Cannon</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2953,22 +3168,22 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <infoLink name="Shoveling Claws" id="93c9-0473-f376-9177" hidden="false" type="profile" targetId="b993-8262-94a5-07aa"/>
       </infoLinks>
       <profiles>
-        <profile name="Haruspex" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="a9cb-3887-2824-e9bf">
+        <profile name="Haruspex" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="a9cb-3887-2824-e9bf">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="0196-3306-3f9c-97b4">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Grasping Tongue, Ravenous Maw, Shoveling Claws</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2986,22 +3201,27 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="310"/>
       </costs>
       <profiles>
-        <profile name="Norn Assimilator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="9533-1f52-e8e7-a489">
+        <profile name="Norn Assimilator" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="9533-1f52-e8e7-a489">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">6</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">5</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="a2bc-5986-1973-a370">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Toxinjector Harpoon</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="b4b7-6729-dfd9-25f6">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3026,22 +3246,27 @@ Whenever an enemy model attempts a Psychic Test within 12” of a Tyranid unit w
         <infoLink name="Monstrous Scything Talons" id="6b4a-704d-dc5b-8f2f" hidden="false" type="profile" targetId="05b1-e796-5fe3-38af"/>
       </infoLinks>
       <profiles>
-        <profile name="Norn Emmisary" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="ca48-1835-c4fc-ed19">
+        <profile name="Norn Emmisary" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="ca48-1835-c4fc-ed19">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">6</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">5</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="1c5a-3979-817f-3bab">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Monstrous Scything Talons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5aff-5254-77ac-f542">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Neuro-Lance (Reduce Psyker Level by 1 when destroyed)</characteristic>
           </characteristics>
         </profile>
       </profiles>

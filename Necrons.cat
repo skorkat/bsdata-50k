@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="504e-fd94-4621-eda1" name="Necrons" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="false" id="504e-fd94-4621-eda1" name="Necrons" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <categoryEntries>
     <categoryEntry name="Canoptek" id="be30-18f6-3a2a-0e55" hidden="false">
       <constraints>
@@ -749,22 +749,34 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <entryLink import="true" name="Lord Wargear" hidden="false" id="d79e-1d22-b519-0c21" type="selectionEntryGroup" targetId="5f07-41b5-2831-7fc4"/>
       </entryLinks>
       <profiles>
-        <profile name="Catacomb Command Barge" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="bbc2-c190-0794-95fa">
+        <profile name="Catacomb Command Barge" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="bbc2-c190-0794-95fa">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">1</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">6</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">2+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">5</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">2</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">3+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">1</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="3eb0-03c4-cb50-b71a">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Gauss Cannon</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Tesla Cannon" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="04e5-6673-bb90-8b0c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="a0c1-959f-0344-4172">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Staff of Light</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1955,22 +1967,22 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="b9c1-ec26-9c02-2026" id="da4d-9706-2ea4-1ba6" primary="false" name="Walker"/>
       </categoryLinks>
       <profiles>
-        <profile name="The Deceiver" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="87b8-ef49-2946-4efe">
+        <profile name="The Deceiver" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="87b8-ef49-2946-4efe">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">9</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">6</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">9</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">2+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">6</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">5</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">2+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="6219-dabf-02e6-7990">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Golden Fists</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1992,22 +2004,22 @@ Returned models must be placed in unit coherency and may not be placed in base c
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Nightbringer" hidden="false" id="c574-62fc-51d4-c447">
       <profiles>
-        <profile name="The Nightbringer" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="2faf-3440-23d8-e95e">
+        <profile name="The Nightbringer" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="2faf-3440-23d8-e95e">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">10</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">2+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">10</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">2+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">5</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">2+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="091c-9a00-54b3-78c1">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Scythe of the Nightbringer</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2036,22 +2048,22 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="b9c1-ec26-9c02-2026" id="1007-e8b1-e408-dbad" primary="false" name="Walker"/>
       </categoryLinks>
       <profiles>
-        <profile name="The Void Dragon" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="084c-14de-5922-1073">
+        <profile name="The Void Dragon" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="084c-14de-5922-1073">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">1+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">5</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">2+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">100mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">120mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">8</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">1+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">5</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">2+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="990b-96df-6aa1-653b">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Spear of the Void Dragon</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2092,35 +2104,35 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="94ef-5b6a-bdbc-2bbf" primary="false" name="Mechanical"/>
       </categoryLinks>
       <profiles>
-        <profile name="Annihilation Barge" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5ae4-8fc8-0161-8fc0">
+        <profile name="Annihilation Barge" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5ae4-8fc8-0161-8fc0">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="33a2-4c93-e264-5150">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Tesla Cannon</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+            <modifier type="set" value="Gauss Cannon" field="12ff-793d-d259-1d08">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="64ca-278e-7ee1-6d40" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="de99-b620-5084-0a22">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Tesla Destructor</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <costs>
@@ -2163,35 +2175,33 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="6297-a84f-a103-e2ac" id="d351-5363-dcaf-89e3" primary="true" name="Elite"/>
       </categoryLinks>
       <profiles>
-        <profile name="Doomsday Ark" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="2e4b-192c-4e38-f3c4">
+        <profile name="Doomsday Ark" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="2e4b-192c-4e38-f3c4">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="f0b0-cd37-aa37-907b">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Doomsday Cannon</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="2039-ffcb-f06b-cfb0">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Side array (5 Gauss Flayers)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 3" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="81a6-4e27-0709-7e24">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Side array (5 Gauss Flayers)</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <infoLinks>
@@ -2213,35 +2223,28 @@ Returned models must be placed in unit coherency and may not be placed in base c
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Doomstalker" hidden="false" id="ff21-9577-fbce-0f0d">
           <profiles>
-            <profile name="Doomstalker" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="3e40-08dc-5903-8eb1">
+            <profile name="Doomstalker" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="3e40-08dc-5903-8eb1">
               <characteristics>
-                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
-                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-                <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
-                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
-                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+                <characteristic name="WS" typeId="577a-f706-8022-c914">4</characteristic>
+                <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+                <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+                <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+                <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+                <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+                <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+                <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
+                <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
+            </profile>
+            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="2b0e-185f-436e-a4ac">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Doomsday Blaster</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="b387-a402-3851-2af4">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Gauss Flayer</characteristic>
+              </characteristics>
             </profile>
           </profiles>
           <infoLinks>
@@ -2284,40 +2287,33 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="e134-96e2-4789-5d24" primary="false" name="Mechanical"/>
       </categoryLinks>
       <profiles>
-        <profile name="Ghost Ark" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5507-f40a-0f27-e9dd">
+        <profile name="Ghost Ark" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5507-f40a-0f27-e9dd">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Ghost Ark" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="d973-dd33-8ea4-adc0">
           <characteristics>
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="508e-7956-05e9-22af">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Side array (5 Gauss Flayers)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="3277-397b-51f4-e414">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Side array (5 Gauss Flayers)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2336,35 +2332,33 @@ Returned models must be placed in unit coherency and may not be placed in base c
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Monolith" hidden="false" id="ab28-1e66-94ec-a5de">
       <profiles>
-        <profile name="Monolith" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b938-6d6e-6a42-3027">
+        <profile name="Monolith" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="b938-6d6e-6a42-3027">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">10</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">1+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">10</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">14</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">0</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">5</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">3</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="325f-56ad-37e0-bac0">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Particle Whip</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="102c-b2b5-5165-b3d2">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Gauss Flux Arc</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 3" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="a591-4b66-c51b-aabd">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Gauss Flux Arc</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <costs>
@@ -2412,35 +2406,18 @@ Returned models must be placed in unit coherency and may not be placed in base c
         <infoLink name="Bulky" id="55be-8dc5-6f17-df3c" hidden="false" type="rule" targetId="bdeb-e59a-e173-9286"/>
       </infoLinks>
       <profiles>
-        <profile name="Reanimator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="48c2-3cfc-0fbd-7551">
+        <profile name="Reanimator" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="48c2-3cfc-0fbd-7551">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">3</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">5</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">2</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <rules>
@@ -2454,32 +2431,32 @@ Returned models must be placed in unit coherency and may not be placed in base c
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Triarch Stalker" hidden="false" id="1793-5d5e-b8b1-3d54">
       <profiles>
-        <profile name="Triarch Stalker" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="e5f3-0d0b-8a00-c537">
+        <profile name="Triarch Stalker" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="e5f3-0d0b-8a00-c537">
           <characteristics>
-            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
-            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
-            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
-            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
-            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
-            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
+            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">2</characteristic>
+            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+            <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
+            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="86f8-0b91-c708-c922">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heat Ray</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+            <modifier type="set" value="Particle Shredder" field="12ff-793d-d259-1d08">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="2ce9-e6de-0b82-426e" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+            <modifier type="set" value="Heavy Gauss Cannon" field="12ff-793d-d259-1d08">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="d4c2-8563-23b1-a30f" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>

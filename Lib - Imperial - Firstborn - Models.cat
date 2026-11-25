@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="true" id="f909-d379-3a93-cb16" name="aLib - Imperial - Firstborn - Models" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Lib - Imperial - Base" id="331b-005e-07b0-6041" targetId="0d98-1036-43bc-85f0"/>
     <catalogueLink type="catalogue" name="Lib - Imperial - Firstborn - Equipment" id="b609-da18-63b6-2e95" targetId="0e97-bb9e-538e-d4e5"/>
@@ -185,76 +185,56 @@
         <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
-    <profile name="Dreadnought" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="773f-88c1-f007-3b18">
+    <profile name="Dreadnought" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="773f-88c1-f007-3b18">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Drop Pod" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="19a8-eee4-ca93-8741">
+    <profile name="Drop Pod" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="19a8-eee4-ca93-8741">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">0</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">0</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">0</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">0</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">0</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Rhino" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4a75-a220-2562-a611">
+    <profile name="Rhino" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="4a75-a220-2562-a611">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Razorback" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="f630-210e-776c-eec6">
+    <profile name="Razorback" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="f630-210e-776c-eec6">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
     <profile name="Apothecary" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="222c-e928-8fb7-d55a">
@@ -419,94 +399,69 @@
         <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
-    <profile name="Predator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="6a89-5f10-ad5f-f2dc">
+    <profile name="Predator" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="6a89-5f10-ad5f-f2dc">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Vindicator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="8ec9-a28d-4a3d-7a46">
+    <profile name="Vindicator" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="8ec9-a28d-4a3d-7a46">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Whirlwind" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="fdf5-324b-aafc-fb6f">
+    <profile name="Whirlwind" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="fdf5-324b-aafc-fb6f">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Land Speeder" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="38fa-a157-e3ad-7ea8">
+    <profile name="Land Speeder" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="38fa-a157-e3ad-7ea8">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">2</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">5</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
       </characteristics>
     </profile>
-    <profile name="Land Raider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="291b-b3f7-f990-c5b6">
+    <profile name="Land Raider" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="291b-b3f7-f990-c5b6">
       <characteristics>
-        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
-        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
-        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
-        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
-        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
-        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
-        <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
-        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
-        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
-        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
-        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
-        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
-        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
-        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
+        <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
+        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
+        <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
+        <characteristic name="AV" typeId="7014-784f-7071-2027">14</characteristic>
+        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
+        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
+        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
+        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">5</characteristic>
+        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
       </characteristics>
     </profile>
     <profile name="Captain" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="2197-21e7-05b2-7f26">

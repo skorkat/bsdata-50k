@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="2b57-386d-935e-c0b8" name="Firstborn Marines" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="3" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Honoured Brethren" id="ba83-6a23-709e-c810" hidden="false">
       <constraints>
@@ -939,8 +939,11 @@
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="set" value="7" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
+                    <modifier type="set" value="7" field="577a-f706-8022-c914" scope="parent" affects="profiles.Unit"/>
                     <modifier type="set" value="2+" field="6ba5-adee-cf9c-7941" scope="parent" affects="profiles.Vehicle"/>
+                    <modifier type="set" value="2+" field="f7b7-903d-2569-7d39" scope="parent" affects="profiles.Unit"/>
                     <modifier type="set" value="2+" field="1749-ccde-02fe-ae92" scope="parent" affects="profiles.Vehicle"/>
+                    <modifier type="set" value="2+" field="2091-9449-9db5-814a" scope="parent" affects="profiles.Unit"/>
                     <modifier type="set" value="6+++" field="3c92-8b17-10bf-a7a5" scope="parent" affects="profiles.Vehicle"/>
                   </modifiers>
                 </modifierGroup>
@@ -1024,7 +1027,17 @@
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1035,6 +1048,47 @@
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="115"/>
       </costs>
+      <profiles>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="7d4a-e3bf-7ded-572f">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Assault Cannon</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Plasma Cannon" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="b9e6-fc75-eccc-e7c1" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Multi-melta" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="8140-9c43-5b53-bf58" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Twin Lascannon" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="1825-2594-ad5e-828b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="43ae-691a-9fb8-d1a3">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter &amp; Power Fist</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Heavy Flamer &amp; Power Fist" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="deb7-9a5e-0379-4ebf" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Missile Launcher" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="d1f4-1ef4-8f25-3a9a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Drop Pod" hidden="false" id="699d-6d1d-4ad8-1340">
       <categoryLinks>
@@ -1053,7 +1107,17 @@
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1098,6 +1162,18 @@
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
           </characteristics>
         </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="2a2a-aa77-ae4f-3bad">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Deathwind Launcher" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="0049-dfc2-7c7a-74ad" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon" id="fab6-f086-a06a-6e1f" hidden="false">
@@ -1140,7 +1216,17 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1165,6 +1251,35 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">6</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">2</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="428f-4f4c-c4d9-1345">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Turret (2x Heavy Bolter)</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Turret (2x Assault Cannons)" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="cdfc-dfc0-f340-0315" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Turret (2x Lascannons)" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="f9d5-b092-068e-1114" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="a99d-a11d-6b36-3c4c">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="f57b-7e94-b4c1-cca7" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -1250,7 +1365,17 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1275,6 +1400,18 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">2</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="dbc6-be0b-e644-a0ec">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1609-808f-1807-703d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -1611,7 +1748,17 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1669,7 +1816,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="2x Lasannon" hidden="false" id="d52e-29ae-4755-4810" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="2x Lascannon" hidden="false" id="d52e-29ae-4755-4810" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Lascannon" hidden="false" id="01cc-3b55-e2b7-1116" type="selectionEntry" targetId="e9e1-b958-e8fa-2bc5">
                   <constraints>
@@ -1736,7 +1883,17 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1796,7 +1953,17 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1907,7 +2074,17 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
@@ -1923,6 +2100,139 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
           </costs>
+          <profiles>
+            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5ce8-1c94-df7f-eefd">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Bolter</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Multi-melta" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="dda8-7878-2979-140e" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="458d-c62b-c5fc-bfba">
+              <characteristics>
+                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Flamer</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Missile Launcher" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Assault Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Missile Launcher" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Assault Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Missile Launcher, Assault Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Missile Launcher, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Assault Cannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Missile Launcher, Assault Cannon" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Missile Launcher, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Assault Cannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Missile Launcher, Assault Cannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Heavy Flamer, Missile Launcher, Assault Cannon, Hunter-killer Missile" field="12ff-793d-d259-1d08">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="13bb-f5b6-37f1-9068" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="2635-c016-3f7b-eb86" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="d956-fcfa-7e71-732e" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0d61-d82e-4390-a651" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1946,7 +2256,17 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -2082,6 +2402,35 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="7ebb-7a32-062b-8bb9">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Sponsons (2x Flamestorm Cannon)</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Sponsons (4x Lascannon)" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="2565-6e04-d067-d7f9" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Sponsons (2x Hurricane Bolters &amp; Transport (16))" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="a70b-7912-61f0-e2c1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="50e9-2aae-2e1d-868f">
+          <characteristics>
+            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Turret (2x Heavy Bolter)</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Turret (2x Assault Cannon)" field="12ff-793d-d259-1d08">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="21ea-e6ad-5fd8-07d2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
