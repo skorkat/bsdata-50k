@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-50k3-v7dm-0001-0001" name="50k v3" battleScribeVersion="2.03" revision="16" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
+<gameSystem id="sys-86a7-ff6f-05e6-a304" name="50k" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Leader" id="default-category">
       <constraints>
@@ -123,24 +123,6 @@
         <characteristicType name="FNP" id="3c92-8b17-10bf-a7a5"/>
         <characteristicType name="Base" id="72e3-2ba4-4e7f-b1c1"/>
         <characteristicType name="Height" id="326f-b1ed-a380-71dc"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType name="Unit" id="f9ab-bd12-5ccd-fc53" hidden="false" sortIndex="2">
-      <characteristicTypes>
-        <characteristicType name="WS" id="577a-f706-8022-c914"/>
-        <characteristicType name="BS" id="f7b7-903d-2569-7d39"/>
-        <characteristicType name="S" id="99a4-3885-3000-f15c"/>
-        <characteristicType name="AV" id="7014-784f-7071-2027"/>
-        <characteristicType name="I" id="39f8-8e39-e6c9-e5bc"/>
-        <characteristicType name="A" id="0523-de1f-51ca-1d2a"/>
-        <characteristicType name="Ld" id="2091-9449-9db5-814a"/>
-        <characteristicType name="OC" id="2fc7-7a19-1e5a-112f"/>
-        <characteristicType name="AA" id="f36f-2136-0eba-87a4"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType name="Weapon Sets" id="df8d-5c8b-c816-347d" hidden="false" sortIndex="3">
-      <characteristicTypes>
-        <characteristicType name="Weapons" id="12ff-793d-d259-1d08"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Grenades" id="ee67-1829-4789-204c" hidden="false" sortIndex="8">

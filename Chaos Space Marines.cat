@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="3" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="5220-b03f-9cba-cf33" name="Chaos Space Marines" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Chaos" id="7caa-27e6-c7e5-cbd8" targetId="86c1-35b4-c984-858a"/>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="6d9b-c65b-f6ab-d4c5" targetId="0d98-1036-43bc-85f0"/>
@@ -1135,30 +1135,23 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Rhino" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="15a7-c4d7-f178-8834">
+        <profile name="Rhino" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="15a7-c4d7-f178-8834">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="cc25-490f-e20d-e4f9">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="0095-e052-aeb8-d293" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -1217,17 +1210,22 @@ A model aligned with a particular god cannot join units aligned with a different
         <infoLink name="Full Speed" id="d4d5-7fd6-283e-46d3" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0"/>
       </infoLinks>
       <profiles>
-        <profile name="Chaos Drop Pod" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="037a-231d-c006-efb2">
+        <profile name="Chaos Drop Pod" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="037a-231d-c006-efb2">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">2</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">0</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">0</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">0</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">0</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">0</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
         <profile name="Chaos Drop Pod" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="73dc-6bdf-f143-0ebe">
@@ -1235,18 +1233,6 @@ A model aligned with a particular god cannot join units aligned with a different
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="9f63-af1b-b869-f13b">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Havoc Launcher" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="87fb-72c8-40ea-6f48" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -2445,59 +2431,32 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Helbrute" hidden="false" id="1973-6041-df9b-444a">
       <profiles>
-        <profile name="Helbrute" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="74d4-8ff8-af1e-652a">
+        <profile name="Helbrute" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="74d4-8ff8-af1e-652a">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="7c10-fe96-1b14-0cf7">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Heavy Bolter</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Multi-melta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="3c42-dce0-a0e0-2a87" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Plasma Cannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="68a9-aeef-1d78-2a13" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2x Lascannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="e2ac-8937-0e92-e3e6" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2x Autocannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="2f1e-796f-6e61-858d" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="2984-2116-19fc-1278">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Power Fist, Storm Bolter</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
           <modifiers>
-            <modifier type="set" value="Heavy Flamer &amp; Power Fist" field="12ff-793d-d259-1d08">
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ec9d-8126-90f4-9343" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="Missile Launcher" field="12ff-793d-d259-1d08">
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="203f-af75-6268-98d4" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2884,35 +2843,23 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Chaos Vindicator" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="f102-e639-cf3a-869a">
+        <profile name="Chaos Vindicator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="f102-e639-cf3a-869a">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="a6a6-7433-dc9a-8727">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Demolisher Cannon</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="9c7b-0f32-5c18-c461">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="d71e-cf16-204f-20f5" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
@@ -2943,27 +2890,22 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
           </characteristics>
         </profile>
-        <profile name="Chaos Land Raider" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="575e-aad2-2a15-2c62">
+        <profile name="Chaos Land Raider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="575e-aad2-2a15-2c62">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">14</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">5</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="015e-31f0-941e-8541">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Twin Lascannon</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="79b7-1e65-32dd-e80b">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Heavy Bolter</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">14</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>
@@ -3033,7 +2975,7 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
                 <infoLink name="Autocannon" id="31f5-f26b-b4c3-3581" hidden="false" type="profile" targetId="4ae7-a314-b063-a620"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="2x Lascannon" hidden="false" id="7849-f332-5792-1273" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="2x Lasannon" hidden="false" id="7849-f332-5792-1273" sortIndex="1">
               <infoLinks>
                 <infoLink name="Lascannon" id="c95e-551e-e713-8fea" hidden="false" type="profile" targetId="d729-2b11-1734-557a"/>
                 <infoLink name="Lascannon" id="41a6-f56a-eddf-93a2" hidden="false" type="profile" targetId="d729-2b11-1734-557a"/>
@@ -3086,63 +3028,23 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Chaos Predator" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="4e90-5669-c6b4-2052">
+        <profile name="Chaos Predator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4e90-5669-c6b4-2052">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="7be7-8395-6f84-f404">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Lascannon</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="2x Autocannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8592-dcbf-64a3-ec8b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="9936-f8be-6b91-c185">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Heavy Bolters</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="31c7-876a-4ef4-dc74" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="fcec-9509-50e4-dd31" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2x Heavy Bolters" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="31c7-876a-4ef4-dc74" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2x Lascannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="fcec-9509-50e4-dd31" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2x Heavy Bolters, 2x Lascannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="31c7-876a-4ef4-dc74" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="fcec-9509-50e4-dd31" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -3151,57 +3053,23 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Defiler" hidden="false" id="725f-f3dd-1aa8-ba71">
       <profiles>
-        <profile name="Defiler" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="b1a4-dd83-aaf9-ee4b">
+        <profile name="Defiler" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="b1a4-dd83-aaf9-ee4b">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="217b-30ca-b693-ec0b">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Defiler Cannon</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="2f53-906b-4aaf-ba19">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Defiler Scourge</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Havoc Launcher &amp; Power Fist" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="819a-bf7d-c9e4-c345" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2x Heavy Flamer &amp; Power Fist" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="43e7-0fe2-13cb-ac30" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 3" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="dbae-335c-bd3d-d63d">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Heavy Bolter</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="2x Autocannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5abc-081d-47cf-d6c2" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2x Lascannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="a47b-af0e-e28f-78e1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -3398,35 +3266,23 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="105"/>
       </costs>
       <profiles>
-        <profile name="Maulerfiend" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="09a7-e67b-0dd4-5f98">
+        <profile name="Maulerfiend" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="09a7-e67b-0dd4-5f98">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="79db-0ad0-ff23-ce3a">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Power First</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="4c86-45e0-f9c5-430b">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Lasher Tendrils</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="2x Magma Cutters" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="fa9f-3f6a-0f04-f3f8" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -3467,30 +3323,23 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="145"/>
       </costs>
       <profiles>
-        <profile name="Forgefiend" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="757b-5044-b00e-37a0">
+        <profile name="Forgefiend" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="757b-5044-b00e-37a0">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">3+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="9c2d-7d11-4c04-2ea4">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Ectoplasma Cannons</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="2x Heavy Autocannons" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="d9e5-73dd-6e8d-6923" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -3623,27 +3472,22 @@ When a Drop Pod arrives from reserves, units within it can disembark during thei
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Venomcrawler" hidden="false" id="e2b4-c845-be03-08d7">
       <profiles>
-        <profile name="Venomcrawler" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5afe-bb31-7549-6d21">
+        <profile name="Venomcrawler" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5afe-bb31-7549-6d21">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">3+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="2e98-49f5-00ed-4307">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Excruciator Cannons</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="46a5-ef19-6c7c-8864">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Lasher Tendrils</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">3+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
         </profile>
       </profiles>

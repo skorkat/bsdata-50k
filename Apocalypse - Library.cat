@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="efa0-300e-3f94-8853" name="aLib - Apocalypse" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="14" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="ef2a-0b23-f995-b91e">
+<catalogue library="true" id="efa0-300e-3f94-8853" name="aLib - Apocalypse" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="14" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="ef2a-0b23-f995-b91e">
   <publications>
     <publication id="ef2a-0b23-f995-b91e" name="Army - Apocalypse(1).docx" hidden="false"/>
   </publications>
@@ -321,17 +321,7 @@ When the Titanic model is destroyed, its Void Shields are also destroyed. The Sn
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -709,17 +699,7 @@ When the Titanic model is destroyed, its Void Shields are also destroyed. The Sn
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -796,39 +776,30 @@ When the Titanic model is destroyed, its Void Shields are also destroyed. The Sn
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="240"/>
       </costs>
       <profiles>
-        <profile name="Stormraven" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="ac2b-3283-2ff1-6fdc">
+        <profile name="Stormraven" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="ac2b-3283-2ff1-6fdc">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">0</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="8a37-76a4-9f26-d2c3">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Wings (2x Missile Launchers)</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">0</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="Wings (2x Lascannon)" field="12ff-793d-d259-1d08">
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="f794-a4e3-fdf2-9fa0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="3a37-5be6-61ae-ba13">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Turret (2x Heavy Bolters)</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Turret (Multi-melta)" field="12ff-793d-d259-1d08">
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="03a8-2817-901a-dcbf" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -973,17 +944,7 @@ When the Titanic model is destroyed, its Void Shields are also destroyed. The Sn
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -1250,32 +1211,20 @@ When the Titanic model is destroyed, its Void Shields are also destroyed. The Sn
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="200"/>
       </costs>
       <profiles>
-        <profile name="Dakkajet" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5258-a584-6e34-ac62">
+        <profile name="Dakkajet" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5258-a584-6e34-ac62">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">5+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">1</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="f21c-924e-469f-f52a">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Inner Wings: 2x Supa Shoota</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="3b96-407f-7878-4534">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Outer Wings: 2x Supa Shoota</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 3" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="9f8b-78e9-5c49-c8b6">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Nose: 2x Supa Shoota</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">1</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1285,31 +1234,13 @@ When the Titanic model is destroyed, its Void Shields are also destroyed. The Sn
         <categoryLink name="Mechanical" targetId="05d8-53ff-1ca8-52b0" hidden="false" primary="false" id="48ee-d6e3-c03a-dc15"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Supa Shoota (Inner Wings)" hidden="false" id="c6f3-4da2-3c1a-271a" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Supa Shoota" hidden="false" id="c6f3-4da2-3c1a-271a" sortIndex="1">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" id="2386-5e4d-ef25-9b1a"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" id="059f-3405-3019-fecf"/>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" includeChildSelections="false" id="2386-5e4d-ef25-9b1a"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" includeChildSelections="false" id="059f-3405-3019-fecf"/>
           </constraints>
           <infoLinks>
             <infoLink name="Supa Shoota" hidden="false" type="profile" targetId="ba07-c33b-d7a1-a88f" id="996b-ba51-d879-55d9"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Supa Shoota (Outer Wings)" hidden="false" id="a16a-a908-10ba-5979" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" id="8505-0aa1-7d4b-ea6c"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" id="5223-16b5-b413-edce"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Supa Shoota" hidden="false" type="profile" targetId="ba07-c33b-d7a1-a88f" id="8306-586c-e914-628c"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Supa Shoota (Nose)" hidden="false" id="6cac-e788-0749-28e8" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" id="ad30-ad57-97f4-8a16"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" id="87c0-1085-3121-574b"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Supa Shoota" hidden="false" type="profile" targetId="ba07-c33b-d7a1-a88f" id="351e-8112-044b-b2be"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1377,22 +1308,20 @@ When the Titanic model is destroyed, its Void Shields are also destroyed. The Sn
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="150"/>
       </costs>
       <profiles>
-        <profile name="Squiggoth" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="02d4-bbd1-4a21-b157">
+        <profile name="Squiggoth" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="02d4-bbd1-4a21-b157">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">3</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">5+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="1c18-3748-196c-b96a">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Tusks</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">5+++</characteristic>
           </characteristics>
         </profile>
       </profiles>

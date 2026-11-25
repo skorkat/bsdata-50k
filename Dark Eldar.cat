@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0284-18cf-eb92-cc49" name="Dark Eldar" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Baleblast" typeId="722a-9b43-5a7c-42a7" typeName="Ranged Weapon" hidden="false" id="0768-d8dd-e4dd-620b">
       <characteristics>
@@ -547,69 +547,94 @@
         <!-- <characteristic name="Height" typeId="f243-a8fc-2b9d-a27f">40mm</characteristic> -->
       </characteristics>
     </profile>
-    <profile name="Chronos" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="d14b-746d-3feb-ed27">
+    <profile name="Chronos" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="d14b-746d-3feb-ed27">
       <characteristics>
-        <characteristic name="WS" typeId="577a-f706-8022-c914">4</characteristic>
-        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
-        <characteristic name="S" typeId="99a4-3885-3000-f15c">5</characteristic>
-        <characteristic name="AV" typeId="7014-784f-7071-2027">9</characteristic>
-        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
-        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-        <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
-        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
-        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">9</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
       </characteristics>
     </profile>
-    <profile name="Talos" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="1ea1-7168-5d51-eec3">
+    <profile name="Talos" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="1ea1-7168-5d51-eec3">
       <characteristics>
-        <characteristic name="WS" typeId="577a-f706-8022-c914">6</characteristic>
-        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
-        <characteristic name="S" typeId="99a4-3885-3000-f15c">7</characteristic>
-        <characteristic name="AV" typeId="7014-784f-7071-2027">9</characteristic>
-        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
-        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-        <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
-        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
-        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">6</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">7</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">9</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">6+++</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
       </characteristics>
     </profile>
-    <profile name="Venom" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="a303-dd0f-2f5b-fca6">
+    <profile name="Venom" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="a303-dd0f-2f5b-fca6">
       <characteristics>
-        <characteristic name="WS" typeId="577a-f706-8022-c914">3</characteristic>
-        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-        <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
-        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
-        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
-    <profile name="Ravager" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5c4d-3177-5c4e-fdb4">
+    <profile name="Ravager" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5c4d-3177-5c4e-fdb4">
       <characteristics>
-        <characteristic name="WS" typeId="577a-f706-8022-c914">3</characteristic>
-        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-        <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
-        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
-    <profile name="Raider" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="4608-34c1-29f9-df73">
+    <profile name="Raider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="4608-34c1-29f9-df73">
       <characteristics>
-        <characteristic name="WS" typeId="577a-f706-8022-c914">3</characteristic>
-        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-        <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-        <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
-        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
-        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
+        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
       </characteristics>
     </profile>
     <profile name="Lhamaean" typeId="f155-763b-f0e5-a42a" typeName="Unit" hidden="false" id="9045-4f7e-dc30-75e2">
@@ -2001,18 +2026,6 @@
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="60"/>
           </costs>
-          <profiles>
-            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="f348-ee96-ffaf-4906">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Spirit Syphon and Spirit Vortex</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="1aae-6e68-997f-1375">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Spirit-leach Tentacles</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2102,42 +2115,6 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <profiles>
-            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="590c-a97d-dc4c-f125">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Stinger Pod</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="set" value="2x Splinter Cannon" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7aaa-c886-fdd3-4f47" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2x Heat Lance" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="5726-f99f-18ca-d695" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2x Haywire Blaster" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="054c-8ffe-f105-2c8a" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="fee4-3d41-1a4e-970b">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Chain Flails</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="set" value="Talos Gauntlet" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="5190-fb21-3e93-809c" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2160,17 +2137,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -2187,6 +2154,7 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Bladevanes" id="ccbe-e82b-170a-0f0a" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
         <infoLink name="Full Speed" id="5ea8-dbb6-9d54-449d" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -2198,7 +2166,7 @@
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set 1" id="d1b5-564d-9f27-bd7d" hidden="false">
+        <selectionEntryGroup name="Weapons" id="d1b5-564d-9f27-bd7d" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Dark Lance" hidden="false" id="6b82-d2f2-7d38-57a5">
               <infoLinks>
@@ -2215,65 +2183,12 @@
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7db-85ba-0be7-3b29-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7db-85ba-0be7-3b29-max"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set 2" id="2e7d-1cfd-1460-49cf" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Dark Lance" hidden="false" id="41dd-989d-0bd9-495d">
-              <infoLinks>
-                <infoLink name="Dark Lance" id="ddc5-a05f-8a4f-4900" hidden="false" type="profile" targetId="a5ea-6a90-7786-9b9b"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Disintegrator Cannon" hidden="false" id="68f1-7b3b-8e13-c083">
-              <infoLinks>
-                <infoLink name="Disintegrator Cannon" id="795a-b57d-3fbb-0419" hidden="false" type="profile" targetId="10ba-76c8-3a56-2694"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23cb-fa38-9882-b672"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89d8-30cd-a67a-efe8"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set 3" id="2249-f299-39fd-34a3" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Dark Lance" hidden="false" id="a250-1a68-8d9b-b292">
-              <infoLinks>
-                <infoLink name="Dark Lance" id="a1c8-2bea-19d9-59b7" hidden="false" type="profile" targetId="a5ea-6a90-7786-9b9b"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Disintegrator Cannon" hidden="false" id="34df-ae29-0a45-4785">
-              <infoLinks>
-                <infoLink name="Disintegrator Cannon" id="1f8c-65b5-5912-1fad" hidden="false" type="profile" targetId="10ba-76c8-3a56-2694"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef9c-3300-6a58-cac6"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c820-3c64-c37c-d96f"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b7db-85ba-0be7-3b29-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b7db-85ba-0be7-3b29-max"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bladevanes" hidden="false" id="f08d-1582-90d7-3373">
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3db5-f610-b18b-db2d" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bladevanes" id="35bb-2c1f-16c1-7b4b" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trophy Racks" hidden="false" id="756e-6fa0-02de-eebb">
           <infoLinks>
             <infoLink name="Fear" id="61ac-bd16-5243-4b13" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef">
@@ -2302,56 +2217,6 @@
       <costs>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="160"/>
       </costs>
-      <profiles>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="326d-53cf-319d-9411">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Dark Lance</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Disintegrator Cannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="b3d7-fc2b-3cd8-e7fe" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Dark Lance, Bladevanes" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="6b82-d2f2-7d38-57a5" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="f08d-1582-90d7-3373" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Disintegrator Cannon, Bladevanes" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="b3d7-fc2b-3cd8-e7fe" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="f08d-1582-90d7-3373" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="ce67-2c0d-b92d-aaff">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Dark Lance</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Disintegrator Cannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="68f1-7b3b-8e13-c083" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 3" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="e78d-4dd5-ffcf-cb6e">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Dark Lance</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Disintegrator Cannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="34df-ae29-0a45-4785" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Phantasm Grenade Launchers" hidden="false" id="ebf8-c7e8-8fab-e4a4">
       <costs>
@@ -2373,17 +2238,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -2400,6 +2255,7 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Bladevanes" id="06dd-7219-a316-8c7a" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
         <infoLink name="Full Speed" id="23a4-1969-ff56-4df0" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -2434,17 +2290,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bladevanes" hidden="false" id="d067-11ec-4e81-1e20">
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="975f-0927-7a3e-7009" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bladevanes" id="2352-c2d3-9555-96b9" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trophy Racks" hidden="false" id="c027-bc79-b161-e807">
           <infoLinks>
             <infoLink name="Fear" id="40c5-70b4-8f1c-c291" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef">
@@ -2480,30 +2325,6 @@
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">11</characteristic>
           </characteristics>
         </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="40dc-e5d0-44ed-bcf4">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Dark Lance</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Disintegrator Cannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="e41d-2f39-14a0-5e9c" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Dark Lance, Bladevanes" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="1d51-8c63-c748-b483" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="d067-11ec-4e81-1e20" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Disintegrator Cannon, Bladevanes" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="e41d-2f39-14a0-5e9c" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="d067-11ec-4e81-1e20" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Venom" hidden="false" id="54fb-1089-b124-b068">
@@ -2515,17 +2336,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="7+" field="2091-9449-9db5-814a">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="f7b7-903d-2569-7d39">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
@@ -2544,6 +2355,7 @@
         </infoLink>
         <infoLink name="Splinter Cannon" id="26eb-14b1-4354-01a4" hidden="false" type="profile" targetId="c449-7018-bb6d-f973"/>
         <infoLink name="Splinter Cannon" id="9fb4-abde-746c-4fba" hidden="false" type="profile" targetId="c449-7018-bb6d-f973"/>
+        <infoLink name="Bladevanes" id="3bac-49ae-8a34-b172" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
         <infoLink name="Full Speed" id="3a77-4e9b-12e7-4f45" hidden="false" type="rule" targetId="1725-7fd4-0d06-70b0">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -2555,17 +2367,6 @@
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bladevanes" hidden="false" id="96b3-66d7-905e-4796">
-          <costs>
-            <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c850-0618-89de-88ee" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bladevanes" id="f0b6-9eaf-1acb-3c73" hidden="false" type="profile" targetId="27c6-791c-5bf5-a1a2"/>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trophy Racks" hidden="false" id="c473-e75d-e521-735f">
           <infoLinks>
             <infoLink name="Fear" id="5746-394a-305e-7dde" hidden="false" type="rule" targetId="44c6-55b7-292f-99ef">
@@ -2600,18 +2401,6 @@
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">5</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">6</characteristic>
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="ef88-02c5-7c5d-4e6b">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Splinter Cannon</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="2x Splinter Cannon, Bladevanes" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="96b3-66d7-905e-4796" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>

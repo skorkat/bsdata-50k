@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e971-b31b-b278-5da6" name="Genestealer Cults" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="11" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e971-b31b-b278-5da6" name="Genestealer Cults" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="11" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="aLib - Imperial - Base" id="3f5a-473f-8878-4c9d" targetId="0d98-1036-43bc-85f0"/>
   </catalogueLinks>
@@ -1842,40 +1842,35 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Goliath Rockgrinder" hidden="false" id="190c-4098-1787-2fb7">
       <profiles>
-        <profile name="Goliath Rockgrinder" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5487-18d6-2406-f828">
+        <profile name="Goliath Rockgrinder" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5487-18d6-2406-f828">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">7+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="e35b-9c84-b4cb-d522">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Mining Laser</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
           <modifiers>
-            <modifier type="set" value="Heavy Seismic Cannon" field="12ff-793d-d259-1d08">
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="53d7-b8e6-2b64-a28b" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="Clearance Incinerator" field="12ff-793d-d259-1d08">
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="efed-e1d2-0739-31d2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="3ba6-b1fe-75d0-851f">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Stubber, Drilldozer Blade</characteristic>
-          </characteristics>
         </profile>
       </profiles>
       <infoLinks>
@@ -1955,33 +1950,40 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Goliath Truck" hidden="false" id="07b9-1f04-7de0-0a94">
       <profiles>
-        <profile name="Goliath Truck" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="26f2-5ed2-5682-cf49">
+        <profile name="Goliath Truck" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="26f2-5ed2-5682-cf49">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">7+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Goliath Truck" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="d987-ebc8-b815-6910">
           <characteristics>
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">10</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="d9de-47af-9364-6658">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Autocannon</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="8789-9036-ea83-2b53">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Stubber and Transport Capacity (10)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2104,18 +2106,40 @@ Units can still only be activated once, so Cult Ambush tokens do not provide add
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59e6-bc3c-1462-3865-max"/>
                   </constraints>
                   <profiles>
-                    <profile name="Ridgerunner" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="7ab6-9282-57cd-a8db">
+                    <profile name="Ridgerunner" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="7ab6-9282-57cd-a8db">
                       <characteristics>
-                        <characteristic name="WS" typeId="577a-f706-8022-c914">2</characteristic>
-                        <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
-                        <characteristic name="S" typeId="99a4-3885-3000-f15c">5</characteristic>
-                        <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
-                        <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-                        <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-                        <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-                        <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">1</characteristic>
-                        <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+                        <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+                        <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+                        <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
+                        <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+                        <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+                        <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+                        <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+                        <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+                        <characteristic name="OC" typeId="288a-146b-8aa9-78b1">1</characteristic>
+                        <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+                        <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+                        <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                        <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+                        <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="6++" field="5681-e76b-dcac-f4ea">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9c08-d604-5961-3e5f" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                 </selectionEntryGroup>

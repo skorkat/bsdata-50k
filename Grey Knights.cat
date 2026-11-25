@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5e13-1304-0d3d-42f9" name="Grey Knights" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="10" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5e13-1304-0d3d-42f9" name="Grey Knights" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="10" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Grey Knights" id="08b0-72fb-d1dd-b8c3" hidden="false">
       <constraints>
@@ -348,18 +348,6 @@
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="4909-0a8e-a4d2-06af">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="8053-d70b-f48f-4130" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink name="Transport" hidden="false" id="1d57-1ea5-56c2-a1fb" targetId="57f8-02cb-ea36-4d85" primary="true"/>
@@ -402,35 +390,6 @@
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">6</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">2</characteristic>
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="571f-113a-08bb-b644">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Turret (2x Heavy Bolter)</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Turret (2x Assault Cannons)" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="3b98-2cb9-64c4-1fbe" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Turret (2x Lascannons)" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="c5f1-8bbd-3cf7-6ded" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="968f-5b00-85ea-0173">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="077a-a33f-187a-8c45" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -632,35 +591,6 @@
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">0</characteristic>
           </characteristics>
         </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="f109-00c3-374c-eb88">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Sponsons (2x Flamestorm Cannon)</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Sponsons (4x Lascannon)" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="259d-bf46-a977-feb0" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Sponsons (2x Hurricane Bolters &amp; Transport (16))" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="4c4a-989f-13d2-2329" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="3982-eaa0-d911-4926">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Turret (2x Heavy Bolter)</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Turret (2x Assault Cannon)" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="47b4-8937-4591-98ce" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dreadnought" hidden="false" id="f693-cca3-ae4f-cd3a">
@@ -697,11 +627,8 @@
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="set" value="7" field="5fb4-0778-e5dd-b382" scope="parent" affects="profiles.Vehicle"/>
-                    <modifier type="set" value="7" field="577a-f706-8022-c914" scope="parent" affects="profiles.Unit"/>
                     <modifier type="set" value="2+" field="6ba5-adee-cf9c-7941" scope="parent" affects="profiles.Vehicle"/>
-                    <modifier type="set" value="2+" field="f7b7-903d-2569-7d39" scope="parent" affects="profiles.Unit"/>
                     <modifier type="set" value="2+" field="1749-ccde-02fe-ae92" scope="parent" affects="profiles.Vehicle"/>
-                    <modifier type="set" value="2+" field="2091-9449-9db5-814a" scope="parent" affects="profiles.Unit"/>
                     <modifier type="set" value="6+++" field="3c92-8b17-10bf-a7a5" scope="parent" affects="profiles.Vehicle"/>
                   </modifiers>
                 </modifierGroup>
@@ -782,45 +709,6 @@
           <characteristics>
             <characteristic name="Level" typeId="2ae4-30d0-9f48-c672">1</characteristic>
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="6f08-4004-4495-0852">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Assault Cannon</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Plasma Cannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="dc7c-316a-a8a5-a931" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Multi-melta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="59bc-665c-ea11-73b6" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Twin Lascannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="1c31-0a03-0944-4cef" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="8abf-bb53-f431-f8a4">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Storm Bolter &amp; Power Fist</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Heavy Flamer &amp; Power Fist" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="0c93-b5ca-3aff-4179" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Missile Launcher" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="395d-d390-9d66-883a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
@@ -2100,207 +1988,107 @@
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="80"/>
               </costs>
               <profiles>
-                <profile name="Grand Master in Dreadknight" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="cb54-f293-8090-6681">
+                <profile name="Grand Master in Dreadknight" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="cb54-f293-8090-6681">
                   <characteristics>
-                    <characteristic name="WS" typeId="577a-f706-8022-c914">8</characteristic>
-                    <characteristic name="BS" typeId="f7b7-903d-2569-7d39">1+</characteristic>
-                    <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-                    <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-                    <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
-                    <characteristic name="A" typeId="0523-de1f-51ca-1d2a">4</characteristic>
-                    <characteristic name="Ld" typeId="2091-9449-9db5-814a">4+</characteristic>
-                    <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-                    <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+                    <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">8</characteristic>
+                    <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">1+</characteristic>
+                    <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+                    <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+                    <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+                    <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
+                    <characteristic name="A" typeId="ff82-d90f-34a9-9279">4</characteristic>
+                    <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+                    <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+                    <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
+                    <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">4++</characteristic>
+                    <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                    <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+                    <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
                   </characteristics>
-                </profile>
-                <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="9eb7-b3ef-48b7-5e89">
-                  <characteristics>
-                    <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Power Fist</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="Nemesis Daemon Hammer" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="9675-6fd7-c9ce-e63c" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Greatsword" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="78d6-1bf7-dc37-1d1f" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Power Fist, Heavy Incinerator" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b866-0fcb-a027-8ed6" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="7d14-df0c-0d45-ddd2" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Power Fist, Gatling Psilencer" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b866-0fcb-a027-8ed6" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b9a8-e836-a05f-9c1a" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Power Fist, Heavy Psycannon" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b866-0fcb-a027-8ed6" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="69a6-f476-f31d-9c9e" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Daemon Hammer, Heavy Incinerator" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="9675-6fd7-c9ce-e63c" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="7d14-df0c-0d45-ddd2" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Daemon Hammer, Gatling Psilencer" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="9675-6fd7-c9ce-e63c" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b9a8-e836-a05f-9c1a" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Daemon Hammer, Heavy Psycannon" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="9675-6fd7-c9ce-e63c" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="69a6-f476-f31d-9c9e" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Greatsword, Heavy Incinerator" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="78d6-1bf7-dc37-1d1f" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="7d14-df0c-0d45-ddd2" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Greatsword, Gatling Psilencer" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="78d6-1bf7-dc37-1d1f" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b9a8-e836-a05f-9c1a" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Greatsword, Heavy Psycannon" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="78d6-1bf7-dc37-1d1f" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="69a6-f476-f31d-9c9e" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-                <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="87a0-0cf2-ef5d-4905">
-                  <characteristics>
-                    <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Power Fist</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="Nemesis Daemon Hammer" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="f90f-5ac8-3fef-1eb5" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Greatsword" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="fd81-3397-36dd-a767" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Power Fist, Heavy Incinerator" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b233-bbfb-438a-1d26" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="a83b-4f07-54d6-1931" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Power Fist, Gatling Psilencer" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b233-bbfb-438a-1d26" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="ae4d-21c8-df08-2864" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Power Fist, Heavy Psycannon" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="b233-bbfb-438a-1d26" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="40f8-7dce-f3ef-6ca3" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Daemon Hammer, Heavy Incinerator" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="f90f-5ac8-3fef-1eb5" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="a83b-4f07-54d6-1931" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Daemon Hammer, Gatling Psilencer" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="f90f-5ac8-3fef-1eb5" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="ae4d-21c8-df08-2864" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Daemon Hammer, Heavy Psycannon" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="f90f-5ac8-3fef-1eb5" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="40f8-7dce-f3ef-6ca3" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Greatsword, Heavy Incinerator" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="fd81-3397-36dd-a767" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="a83b-4f07-54d6-1931" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Greatsword, Gatling Psilencer" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="fd81-3397-36dd-a767" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="ae4d-21c8-df08-2864" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="Nemesis Greatsword, Heavy Psycannon" field="12ff-793d-d259-1d08">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="fd81-3397-36dd-a767" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="self" childId="40f8-7dce-f3ef-6ca3" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Set 1 (Melee)" id="20b6-caa5-80dd-f78f" hidden="false" defaultSelectionEntryId="b866-0fcb-a027-8ed6">
+                <selectionEntryGroup name="Melee Weapon" id="7f32-e9bc-2c7d-5ecf" hidden="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4b4-a404-7591-881c" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26c2-f990-8fdf-b280" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e18-8305-a5c9-19b0-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e18-8305-a5c9-19b0-max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Power Fist" hidden="false" id="b866-0fcb-a027-8ed6" type="selectionEntry" targetId="2577-0163-65c1-04e5"/>
-                    <entryLink import="true" name="Nemesis Daemon Hammer" hidden="false" id="9675-6fd7-c9ce-e63c" type="selectionEntry" targetId="4e15-e625-3dae-be93"/>
-                    <entryLink import="true" name="Nemesis Greatsword" hidden="false" id="78d6-1bf7-dc37-1d1f" type="selectionEntry" targetId="ff0c-fa41-9201-134e"/>
-                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="f5e3-2654-6fea-a1db" sortIndex="1">
+                      <infoLinks>
+                        <infoLink name="Power Fist" id="b512-576d-9065-f96b" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7712-1938-0146-d952"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Nemesis Greatsword" hidden="false" id="3f90-54e5-a954-25ec" sortIndex="3">
+                      <infoLinks>
+                        <infoLink name="Nemesis Greatsword" id="52d1-4925-95c4-10b3" hidden="false" type="profile" targetId="2316-1161-4eb0-5711"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a2-d282-968f-bdac"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Nemesis Daemon Hammer" hidden="false" id="70ec-c754-d62e-d1fc" sortIndex="2">
+                      <infoLinks>
+                        <infoLink name="Nemesis Daemon Hammer" id="7b14-7749-258b-5c7a" hidden="false" type="profile" targetId="0f71-9386-c3cc-06fb"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e51-ac36-8875-7289"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Weapon Set 1 (Ranged)" id="6120-5275-c9dd-d4ae" hidden="false">
+                <selectionEntryGroup name="Ranged Weapons" id="b7a9-d21c-6e7f-5401" hidden="false">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1955-ec7d-bfeb-225e" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dfc9-5ee1-3639-7b18"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Heavy Incinerator" hidden="false" id="7d14-df0c-0d45-ddd2" type="selectionEntry" targetId="fb0c-fc3f-f7a8-2f47"/>
-                    <entryLink import="true" name="Gatling Psilencer" hidden="false" id="b9a8-e836-a05f-9c1a" type="selectionEntry" targetId="ea2e-98ae-48a9-b400"/>
-                    <entryLink import="true" name="Heavy Psycannon" hidden="false" id="69a6-f476-f31d-9c9e" type="selectionEntry" targetId="83ac-f102-834d-2564"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Weapon Set 2 (Melee)" id="e20f-b7e5-4410-dbc2" hidden="false" defaultSelectionEntryId="b233-bbfb-438a-1d26">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed67-5503-973f-0a13" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e761-0fc0-19da-0512" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Power Fist" hidden="false" id="b233-bbfb-438a-1d26" type="selectionEntry" targetId="2577-0163-65c1-04e5"/>
-                    <entryLink import="true" name="Nemesis Daemon Hammer" hidden="false" id="f90f-5ac8-3fef-1eb5" type="selectionEntry" targetId="4e15-e625-3dae-be93"/>
-                    <entryLink import="true" name="Nemesis Greatsword" hidden="false" id="fd81-3397-36dd-a767" type="selectionEntry" targetId="ff0c-fa41-9201-134e"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Weapon Set 2 (Ranged)" id="94d3-0bf1-5035-ae81" hidden="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbaa-57c2-be2e-28ee" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Heavy Incinerator" hidden="false" id="a83b-4f07-54d6-1931" type="selectionEntry" targetId="fb0c-fc3f-f7a8-2f47"/>
-                    <entryLink import="true" name="Gatling Psilencer" hidden="false" id="ae4d-21c8-df08-2864" type="selectionEntry" targetId="ea2e-98ae-48a9-b400"/>
-                    <entryLink import="true" name="Heavy Psycannon" hidden="false" id="40f8-7dce-f3ef-6ca3" type="selectionEntry" targetId="83ac-f102-834d-2564"/>
-                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Incinerator" hidden="false" id="74b3-44df-2678-7abf" sortIndex="1">
+                      <infoLinks>
+                        <infoLink name="Heavy Incinerator" id="69e6-287a-e5d8-fe7b" hidden="false" type="profile" targetId="b764-8ae4-3ca8-c34c"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f691-19eb-7107-b4e2"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Psycannon" hidden="false" id="aa52-e61d-b6e8-22a0" sortIndex="3">
+                      <infoLinks>
+                        <infoLink name="Heavy Psycannon" id="714c-b338-f4d6-c356" hidden="false" type="profile" targetId="3275-b991-e6b5-a89f"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9b5-9ac4-5c37-9e6c"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Gatling Psilencer" hidden="false" id="f8e6-e84b-1bea-034e" sortIndex="2">
+                      <infoLinks>
+                        <infoLink name="Gatling Psilencer" id="2ce5-5f65-d636-9ce9" hidden="false" type="profile" targetId="c72c-46a3-2ae1-0a33"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c012-0f6a-038f-ee20"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <infoLinks>
+                <infoLink name="Power Fist" id="127c-cfbc-8ebc-abcb" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b95a-c9c9-6fad-6718"/>
@@ -2353,50 +2141,87 @@
         <categoryLink targetId="c759-da28-35c5-802b" id="26b9-cdad-4b14-4662" primary="false" name="Psyker"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set 1 (Melee)" id="d75b-c795-1071-6643" hidden="false" defaultSelectionEntryId="cb9f-d597-1964-afb4">
+        <selectionEntryGroup name="Melee Weapon" id="f1fb-8513-90be-e388" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bab0-e769-a1e0-87f5" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5937-0aca-acc0-c5e5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ea1-a1b6-9d83-24b8-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ea1-a1b6-9d83-24b8-max"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Power Fist" hidden="false" id="cb9f-d597-1964-afb4" type="selectionEntry" targetId="bedf-7c4e-4673-6477"/>
-            <entryLink import="true" name="Nemesis Daemon Hammer" hidden="false" id="8fc6-3f20-6229-2bec" type="selectionEntry" targetId="4c24-7f1c-250e-235b"/>
-            <entryLink import="true" name="Nemesis Greatsword" hidden="false" id="897c-0be8-009e-8a58" type="selectionEntry" targetId="78ca-6496-a5fc-6074"/>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="e8a0-e853-4888-2946" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Power Fist" id="d644-f2a1-8f14-3021" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b2a-40d5-a352-8869"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nemesis Greatsword" hidden="false" id="5516-45f6-1a71-7ab8" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Nemesis Greatsword" id="a31e-32fa-aca1-4816" hidden="false" type="profile" targetId="2316-1161-4eb0-5711"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0759-6426-7021-de73"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nemesis Daemon Hammer" hidden="false" id="48d5-18cd-c2d4-4e19" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Nemesis Daemon Hammer" id="04ab-2b64-5d04-0d8c" hidden="false" type="profile" targetId="0f71-9386-c3cc-06fb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42ad-5509-0607-f0df"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set 1 (Ranged)" id="e1a5-fada-88ee-7f3a" hidden="false">
+        <selectionEntryGroup name="Ranged Weapons" id="bbf7-1f46-e6a0-69ff" hidden="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a391-9e38-1a79-9afd" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="22f9-e74d-66f2-3407"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Heavy Incinerator" hidden="false" id="375b-8b0f-7ae8-786a" type="selectionEntry" targetId="c10d-b226-e4a2-4f7a"/>
-            <entryLink import="true" name="Gatling Psilencer" hidden="false" id="708f-77fc-a329-1970" type="selectionEntry" targetId="712e-674b-5822-f435"/>
-            <entryLink import="true" name="Heavy Psycannon" hidden="false" id="52a2-9f3f-bce6-5593" type="selectionEntry" targetId="4fb6-b8a3-f6e8-2434"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set 2 (Melee)" id="23ea-59b3-00c1-87d6" hidden="false" defaultSelectionEntryId="5a08-b7e2-a390-80df">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f27-4ddb-1ca5-f838" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2522-63e8-aaf3-d643" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Power Fist" hidden="false" id="5a08-b7e2-a390-80df" type="selectionEntry" targetId="bedf-7c4e-4673-6477"/>
-            <entryLink import="true" name="Nemesis Daemon Hammer" hidden="false" id="5848-5c1b-bfc8-50f9" type="selectionEntry" targetId="4c24-7f1c-250e-235b"/>
-            <entryLink import="true" name="Nemesis Greatsword" hidden="false" id="685b-db7c-b6a2-4c41" type="selectionEntry" targetId="78ca-6496-a5fc-6074"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set 2 (Ranged)" id="72be-bd83-59d9-9a6e" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70dd-c7cb-612d-d36a" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Heavy Incinerator" hidden="false" id="7459-6ef6-43bc-cad0" type="selectionEntry" targetId="c10d-b226-e4a2-4f7a"/>
-            <entryLink import="true" name="Gatling Psilencer" hidden="false" id="a1ef-665d-7095-263d" type="selectionEntry" targetId="712e-674b-5822-f435"/>
-            <entryLink import="true" name="Heavy Psycannon" hidden="false" id="b2bf-88b6-859b-40ec" type="selectionEntry" targetId="4fb6-b8a3-f6e8-2434"/>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Incinerator" hidden="false" id="6f79-a7dc-076e-444e" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Heavy Incinerator" id="8509-2625-ea31-0679" hidden="false" type="profile" targetId="b764-8ae4-3ca8-c34c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d4-5883-6b61-cd83"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Psycannon" hidden="false" id="3c08-ad6a-f191-bb00" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Heavy Psycannon" id="e96b-9da2-f527-a11d" hidden="false" type="profile" targetId="3275-b991-e6b5-a89f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cd2-e986-e6d4-025a"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gatling Psilencer" hidden="false" id="d9ae-f2f2-eab2-b553" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Gatling Psilencer" id="d0eb-fe14-4c22-9c45" hidden="false" type="profile" targetId="c72c-46a3-2ae1-0a33"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63c9-aa31-e071-500c"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
+        <infoLink name="Power Fist" id="2476-21b2-a8cf-65ba" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
         <infoLink name="Hammerhand" id="482b-2f80-a9cd-f35c" hidden="false" type="profile" targetId="b330-86f9-844a-1c20">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -2420,18 +2245,35 @@
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="145"/>
       </costs>
       <profiles>
-        <profile name="Dreadknight" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="57d7-b169-49ad-46c2">
+        <profile name="Dreadknight" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="57d7-b169-49ad-46c2">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">4</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">5+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">4</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">5+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">2+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">5++</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Dreadknight" typeId="0559-9901-4faf-94db" typeName="Psyker" hidden="false" id="8c3c-eb69-f905-efad">
           <characteristics>
@@ -2445,148 +2287,6 @@
             </modifier>
           </modifiers>
         </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="b50d-0869-84ee-eaa5">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Power Fist</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Nemesis Daemon Hammer" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8fc6-3f20-6229-2bec" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Greatsword" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="897c-0be8-009e-8a58" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Power Fist, Heavy Incinerator" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="cb9f-d597-1964-afb4" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="375b-8b0f-7ae8-786a" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Power Fist, Gatling Psilencer" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="cb9f-d597-1964-afb4" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="708f-77fc-a329-1970" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Power Fist, Heavy Psycannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="cb9f-d597-1964-afb4" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="52a2-9f3f-bce6-5593" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Daemon Hammer, Heavy Incinerator" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8fc6-3f20-6229-2bec" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="375b-8b0f-7ae8-786a" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Daemon Hammer, Gatling Psilencer" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8fc6-3f20-6229-2bec" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="708f-77fc-a329-1970" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Daemon Hammer, Heavy Psycannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8fc6-3f20-6229-2bec" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="52a2-9f3f-bce6-5593" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Greatsword, Heavy Incinerator" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="897c-0be8-009e-8a58" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="375b-8b0f-7ae8-786a" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Greatsword, Gatling Psilencer" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="897c-0be8-009e-8a58" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="708f-77fc-a329-1970" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Greatsword, Heavy Psycannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="897c-0be8-009e-8a58" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="52a2-9f3f-bce6-5593" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="9271-da39-b1c2-ef74">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Power Fist</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Nemesis Daemon Hammer" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5848-5c1b-bfc8-50f9" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Greatsword" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="685b-db7c-b6a2-4c41" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Power Fist, Heavy Incinerator" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5a08-b7e2-a390-80df" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="7459-6ef6-43bc-cad0" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Power Fist, Gatling Psilencer" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5a08-b7e2-a390-80df" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="a1ef-665d-7095-263d" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Power Fist, Heavy Psycannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5a08-b7e2-a390-80df" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="b2bf-88b6-859b-40ec" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Daemon Hammer, Heavy Incinerator" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5848-5c1b-bfc8-50f9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="7459-6ef6-43bc-cad0" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Daemon Hammer, Gatling Psilencer" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5848-5c1b-bfc8-50f9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="a1ef-665d-7095-263d" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Daemon Hammer, Heavy Psycannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5848-5c1b-bfc8-50f9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="b2bf-88b6-859b-40ec" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Greatsword, Heavy Incinerator" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="685b-db7c-b6a2-4c41" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="7459-6ef6-43bc-cad0" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Greatsword, Gatling Psilencer" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="685b-db7c-b6a2-4c41" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="a1ef-665d-7095-263d" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Nemesis Greatsword, Heavy Psycannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="685b-db7c-b6a2-4c41" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="b2bf-88b6-859b-40ec" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
       </profiles>
       <modifiers>
         <modifier type="remove" value="c759-da28-35c5-802b" field="category">
@@ -2595,120 +2295,6 @@
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="bedf-7c4e-4673-6477">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="637f-4fe3-f3ca-c9bb" shared="true" id="9617-591d-b487-434a" includeChildSelections="true"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Power Fist" id="7e41-6def-b8f5-2559" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Nemesis Daemon Hammer" hidden="false" id="4c24-7f1c-250e-235b">
-      <infoLinks>
-        <infoLink name="Nemesis Daemon Hammer" id="b104-f54a-9409-e6ab" hidden="false" type="profile" targetId="0f71-9386-c3cc-06fb"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Nemesis Greatsword" hidden="false" id="78ca-6496-a5fc-6074">
-      <infoLinks>
-        <infoLink name="Nemesis Greatsword" id="752c-0cda-7dc6-5e3d" hidden="false" type="profile" targetId="2316-1161-4eb0-5711"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Incinerator" hidden="false" id="c10d-b226-e4a2-4f7a">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="637f-4fe3-f3ca-c9bb" shared="true" id="9a87-aac2-d33c-bd19" includeChildSelections="true"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Heavy Incinerator" id="0391-ee35-76b5-7cfd" hidden="false" type="profile" targetId="b764-8ae4-3ca8-c34c"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gatling Psilencer" hidden="false" id="712e-674b-5822-f435">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="637f-4fe3-f3ca-c9bb" shared="true" id="6f31-4b9f-2e0b-bb47" includeChildSelections="true"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Gatling Psilencer" id="89d4-9a6a-c1d2-6552" hidden="false" type="profile" targetId="c72c-46a3-2ae1-0a33"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Psycannon" hidden="false" id="4fb6-b8a3-f6e8-2434">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="637f-4fe3-f3ca-c9bb" shared="true" id="8063-9719-472d-15a1" includeChildSelections="true"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Heavy Psycannon" id="e405-8d29-2138-a3a5" hidden="false" type="profile" targetId="3275-b991-e6b5-a89f"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="2577-0163-65c1-04e5">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="206d-5c2f-1fb0-70f1" shared="true" id="3485-82ec-2c1b-0655" includeChildSelections="true"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Power Fist" id="e431-c649-e264-36db" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Nemesis Daemon Hammer" hidden="false" id="4e15-e625-3dae-be93">
-      <infoLinks>
-        <infoLink name="Nemesis Daemon Hammer" id="ecd1-1abe-1e2d-9e87" hidden="false" type="profile" targetId="0f71-9386-c3cc-06fb"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Nemesis Greatsword" hidden="false" id="ff0c-fa41-9201-134e">
-      <infoLinks>
-        <infoLink name="Nemesis Greatsword" id="e2d7-94f0-fdcf-1b28" hidden="false" type="profile" targetId="2316-1161-4eb0-5711"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Incinerator" hidden="false" id="fb0c-fc3f-f7a8-2f47">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="206d-5c2f-1fb0-70f1" shared="true" id="dd6a-65fb-ce27-8806" includeChildSelections="true"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Heavy Incinerator" id="eec2-41a8-58af-7856" hidden="false" type="profile" targetId="b764-8ae4-3ca8-c34c"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gatling Psilencer" hidden="false" id="ea2e-98ae-48a9-b400">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="206d-5c2f-1fb0-70f1" shared="true" id="95ba-0399-250f-94ae" includeChildSelections="true"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Gatling Psilencer" id="0a46-a07f-8589-d45e" hidden="false" type="profile" targetId="c72c-46a3-2ae1-0a33"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="30"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Psycannon" hidden="false" id="83ac-f102-834d-2564">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="206d-5c2f-1fb0-70f1" shared="true" id="5817-f636-6621-dc19" includeChildSelections="true"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Heavy Psycannon" id="e36a-2e6a-90cd-9236" hidden="false" type="profile" targetId="3275-b991-e6b5-a89f"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="b109-6551-e41a-f1f7" value="35"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

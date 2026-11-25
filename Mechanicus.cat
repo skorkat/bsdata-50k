@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="690b-a1f5-e4c6-b014" name="Mechanicus" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="6" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="690b-a1f5-e4c6-b014" name="Mechanicus" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="6" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Cult Mechanicus" id="7b50-fead-20b3-9019" hidden="false">
       <constraints>
@@ -958,28 +958,40 @@
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="8258-3f89-4a12-41d3" primary="false" name="Mechanical"/>
       </categoryLinks>
       <profiles>
-        <profile name="Dunerider" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="c374-24c8-4ac5-ff97">
+        <profile name="Dunerider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="c374-24c8-4ac5-ff97">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Dunerider" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="108c-5c4a-02d1-725f">
           <characteristics>
             <characteristic name="Capacity" typeId="2a81-e8b9-8e34-15b2">10</characteristic>
             <characteristic name="Firing Deck" typeId="5d08-83fc-3612-449e">10</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5871-16e4-d7b0-7ab4">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">4x Cognis Heavy Stubber</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1516,37 +1528,32 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ironstrider" hidden="false" id="b608-b2de-a8eb-4620">
           <profiles>
-            <profile name="Ironstrider" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="a174-d032-9a24-17b0">
+            <profile name="Ironstrider" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="a174-d032-9a24-17b0">
               <characteristics>
-                <characteristic name="WS" typeId="577a-f706-8022-c914">3</characteristic>
-                <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-                <characteristic name="S" typeId="99a4-3885-3000-f15c">5</characteristic>
-                <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
-                <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
-                <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-                <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-                <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
-                <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="d57a-d7d3-1181-053c">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Cognis Lascannon</characteristic>
+                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
+                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
+                <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
+                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
+                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Radium Jezzail &amp; Phosphor Serpenta" field="12ff-793d-d259-1d08">
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="4360-241e-7aec-370d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="Taser Lance &amp; Phosphor Serpenta" field="12ff-793d-d259-1d08">
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1ffc-67a9-0bbf-62a9" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Volkite Culverin" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7d95-1037-a5ea-df5f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2100,45 +2107,35 @@
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="125"/>
           </costs>
           <profiles>
-            <profile name="Dunecrawler" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="36da-e07f-3b35-369b">
+            <profile name="Dunecrawler" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="36da-e07f-3b35-369b">
               <characteristics>
-                <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-                <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-                <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-                <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
-                <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-                <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-                <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-                <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-                <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="f17d-a5d5-8815-dce1">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Eradication Beamer</characteristic>
+                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+                <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
+                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">80mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
               <modifiers>
-                <modifier type="set" value="2x Heavy Phosphor Blaster" field="12ff-793d-d259-1d08">
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1ec5-7765-438a-4bd5" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="Icarus Array" field="12ff-793d-d259-1d08">
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="b3d8-b4aa-6983-abbe" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Neutron Laser &amp; Cognis Heavy Stubber" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="07ba-f501-fcc4-989c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
-            </profile>
-            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="d8aa-db06-b6ed-cb31">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Cognis Heavy Stubber</characteristic>
-              </characteristics>
             </profile>
           </profiles>
           <selectionEntries>
@@ -2345,59 +2342,52 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Kastelan Robot" hidden="false" id="171d-fb08-13e7-55f4">
           <profiles>
-            <profile name="Kastelan Robot" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="bad3-49da-f49b-c3b3">
+            <profile name="Kastelan Robot" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="bad3-49da-f49b-c3b3">
               <characteristics>
-                <characteristic name="WS" typeId="577a-f706-8022-c914">5</characteristic>
-                <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-                <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-                <characteristic name="AV" typeId="7014-784f-7071-2027">9</characteristic>
-                <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">3</characteristic>
-                <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-                <characteristic name="Ld" typeId="2091-9449-9db5-814a">7+</characteristic>
-                <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">2</characteristic>
-                <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="4084-17eb-7eec-a4e9">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">2x Heavy Phosphor Blaster</characteristic>
+                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">5</characteristic>
+                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">9</characteristic>
+                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">3</characteristic>
+                <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">4+</characteristic>
+                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">2</characteristic>
+                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">6++</characteristic>
+                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
               <modifiers>
-                <modifier type="set" value="2x Power Fist" field="12ff-793d-d259-1d08">
+                <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="21a3-891b-a49a-a5f8" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
-              </modifiers>
-            </profile>
-            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="66b7-f082-6f21-d473">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Heavy Phosphor Blaster</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="set" value="Incendine Combustor" field="12ff-793d-d259-1d08">
+                <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="c59f-a7b5-86e3-2ad5" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon Set 1" id="6a63-08eb-e2b1-f0c4" hidden="false">
+            <selectionEntryGroup name="Weapon 1" id="6a63-08eb-e2b1-f0c4" hidden="false">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed19-bcd4-38f7-e5bd-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed19-bcd4-38f7-e5bd-max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="2x Heavy Phosphor Blaster" hidden="false" id="f866-06d3-a5f5-884f" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Heavy Phosphor Blaster" hidden="false" id="f866-06d3-a5f5-884f" sortIndex="1">
                   <infoLinks>
                     <infoLink name="Heavy Phosphor Blaster" id="4f59-a6fa-e784-ab58" hidden="false" type="profile" targetId="f699-9ef6-8363-8b23"/>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="2x Power Fist" hidden="false" id="21a3-891b-a49a-a5f8" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Incendine Combustor" hidden="false" id="c59f-a7b5-86e3-2ad5" sortIndex="2">
                   <infoLinks>
-                    <infoLink name="Power Fist" id="f93c-6be6-d889-9922" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
+                    <infoLink name="Incendine Combustor" id="765e-667e-c1d3-b40a" hidden="false" type="profile" targetId="ad23-93d8-9b81-dc21"/>
                   </infoLinks>
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
@@ -2405,16 +2395,16 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Weapon Set 2" id="bc12-5329-3485-3d29" hidden="false">
+            <selectionEntryGroup name="Weapon 2" id="bc12-5329-3485-3d29" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy Phosphor Blaster" hidden="false" id="0be5-0bdc-ad78-bcc1" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Heavy Phosphor Blaster" hidden="false" id="0be5-0bdc-ad78-bcc1">
                   <infoLinks>
                     <infoLink name="Heavy Phosphor Blaster" id="db3c-5293-b00c-b0d2" hidden="false" type="profile" targetId="f699-9ef6-8363-8b23"/>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Incendine Combustor" hidden="false" id="c59f-a7b5-86e3-2ad5" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="21a3-891b-a49a-a5f8">
                   <infoLinks>
-                    <infoLink name="Incendine Combustor" id="765e-667e-c1d3-b40a" hidden="false" type="profile" targetId="ad23-93d8-9b81-dc21"/>
+                    <infoLink name="Power Fist" id="f93c-6be6-d889-9922" hidden="false" type="profile" targetId="a5fb-e555-3374-1703"/>
                   </infoLinks>
                   <costs>
                     <cost name="Points" typeId="b109-6551-e41a-f1f7" value="5"/>
@@ -2434,13 +2424,6 @@
           <costs>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="90"/>
           </costs>
-          <modifiers>
-            <modifier type="increment" value="1" field="0523-de1f-51ca-1d2a" affects="profiles.Unit">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="21a3-891b-a49a-a5f8" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2593,41 +2576,41 @@
         </infoLink>
       </infoLinks>
       <profiles>
-        <profile name="Disintegrator" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5682-424d-5e66-4e5b">
+        <profile name="Disintegrator" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5682-424d-5e66-4e5b">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">1</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">3+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">12</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="5a26-b0e7-1ca8-811b">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Belleros Energy Cannon</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">1</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">3+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">12</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
           <modifiers>
-            <modifier type="set" value="Ferrumite Cannon" field="12ff-793d-d259-1d08">
+            <modifier type="set" value="7+" field="1749-ccde-02fe-ae92">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="75e7-f631-c054-bdc1" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="6ba5-adee-cf9c-7941">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="25a1-fdcd-3308-d901" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="b4d7-5b44-91ee-4531">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Disruptor Missile Launcher, 3x Cognis Heavy Stubber</characteristic>
-          </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Primary Weapon" id="a060-8c0d-db29-a652" hidden="false" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Belleros Energy Cannon" hidden="false" id="6092-d343-2ad2-0d97" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Bellaros Energy Cannon" hidden="false" id="6092-d343-2ad2-0d97" sortIndex="1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c02-9b03-b700-f974"/>
               </constraints>

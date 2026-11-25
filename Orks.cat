@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-50k3-v7dm-0001-0001" gameSystemRevision="3" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
+<catalogue library="false" id="007c-4b70-a27b-774e" name="Orks" gameSystemId="sys-86a7-ff6f-05e6-a304" gameSystemRevision="3" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="8377-2337-b353-5228">
   <categoryEntries>
     <categoryEntry name="Speed Freeks" id="2f5d-36c5-eab9-d7e2" hidden="false">
       <constraints>
@@ -618,7 +618,7 @@ The unit gains the following special rules:
 Bulky | Waaagh!</description>
     </rule>
     <rule name="Mek’s Tools" id="06d5-ca88-27cc-e0c8" hidden="false">
-      <description>In the Action Phase, can take an action to repair a Mechanical Walker/Tank model within 3” which is below its starting Wounds. That model removes 1 damage result. Models can only be repaired once per turn.</description>
+      <description>In the Action Phase, can take an action to repair a Mechanical Walker/Tank model within 3” which is below its starting Wounds. That model regains 1 wound. Models can only be repaired once per turn.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -753,8 +753,9 @@ Bulky | Waaagh!</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d683-80e2-d7a9-1d96" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="11" field="7014-784f-7071-2027" scope="parent" affects="profiles.Unit"/>
+            <modifier type="set" value="11" field="d456-0ff3-8a75-eb52" scope="parent" affects="profiles.Vehicle"/>
             <modifier type="set" value="0" field="5d08-83fc-3612-449e" affects="profiles.Transport" scope="parent"/>
+            <modifier type="set" value="3+" field="183a-8a11-c349-ae14" scope="parent" affects="profiles.Vehicle"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Red Paint Job" hidden="false" id="970e-fe61-8aa1-85b2" sortIndex="3">
@@ -781,42 +782,23 @@ Bulky | Waaagh!</description>
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Trukk" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="5d23-4902-f24a-94ab">
+        <profile name="Trukk" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="5d23-4902-f24a-94ab">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">2</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">5+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">2</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">7+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">4+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="8265-7367-a774-eaff">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Big Shoota</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="f5c8-5362-08a0-2274" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="bef5-d407-e343-6479">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Wreckin&apos; Ball</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="43f5-4538-59f0-287e" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Trukk" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="7411-dc7a-0fd0-b63c">
           <characteristics>
@@ -826,7 +808,7 @@ Bulky | Waaagh!</description>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set 1" id="edfa-d488-da06-f74b" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Weapon" id="edfa-d488-da06-f74b" hidden="false" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="343e-505c-d5fc-5179-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="343e-505c-d5fc-5179-max" includeChildSelections="false"/>
@@ -1498,7 +1480,7 @@ Bulky | Waaagh!</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Killa Kan" hidden="false" id="de57-198b-9855-95fa">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon Set 1" id="d6ec-9c54-e388-85a7" hidden="false">
+            <selectionEntryGroup name="Weapon" id="d6ec-9c54-e388-85a7" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Grotzooka" hidden="false" id="c426-508d-b1b2-ca61" sortIndex="1">
                   <infoLinks>
@@ -1551,49 +1533,22 @@ Bulky | Waaagh!</description>
             <infoLink name="Power Klaw" id="f1a8-f594-15e7-72d1" hidden="false" type="profile" targetId="8aa3-456c-4d3c-2915"/>
           </infoLinks>
           <profiles>
-            <profile name="Killa Kan" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="029f-339c-a51f-3d93">
+            <profile name="Killa Kan" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="029f-339c-a51f-3d93">
               <characteristics>
-                <characteristic name="WS" typeId="577a-f706-8022-c914">2</characteristic>
-                <characteristic name="BS" typeId="f7b7-903d-2569-7d39">4+</characteristic>
-                <characteristic name="S" typeId="99a4-3885-3000-f15c">5</characteristic>
-                <characteristic name="AV" typeId="7014-784f-7071-2027">9</characteristic>
-                <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-                <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-                <characteristic name="Ld" typeId="2091-9449-9db5-814a">7+</characteristic>
-                <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-                <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="b2a0-5967-093e-caf6">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Grotzooka</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="set" value="Big Shoota" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7268-af0e-13a0-f4fe" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Rokkit Launcha" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="54cd-cebb-d6fe-83ee" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Skorcha" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6e2d-afcf-6656-ce29" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="1007-e3f1-a71b-c920" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-            <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="c448-101e-b3b5-728b">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Power Klaw</characteristic>
+                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">4+</characteristic>
+                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
+                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+                <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
+                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
               </characteristics>
             </profile>
           </profiles>
@@ -1614,220 +1569,41 @@ Bulky | Waaagh!</description>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="78"/>
       </costs>
       <profiles>
-        <profile name="Deff Dread" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="0d07-49d1-667a-f333">
+        <profile name="Deff Dread" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="0d07-49d1-667a-f333">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">4</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">5+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">6</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">11</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">2</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">6+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">3</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">4</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">6</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">11</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">3</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">6+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">3</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">60mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">90mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="fa0f-90d7-bf03-e4d0">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Upper Arms</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Upper Arms: 2x Big Shoota" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="725a-8c3b-bd34-67bf" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Big Shoota, Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="725a-8c3b-bd34-67bf" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="dee9-1b35-e224-7c09" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Big Shoota, Power Klaw" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="725a-8c3b-bd34-67bf" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Big Shoota, Skorcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="725a-8c3b-bd34-67bf" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="70cf-aec5-f03a-4a39" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Big Shoota, Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="725a-8c3b-bd34-67bf" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="caf2-d3e5-85d0-bc1a" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: 2x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="dee9-1b35-e224-7c09" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Rokkit Launcha, Power Klaw" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="dee9-1b35-e224-7c09" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Rokkit Launcha, Skorcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="dee9-1b35-e224-7c09" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="70cf-aec5-f03a-4a39" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Rokkit Launcha, Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="dee9-1b35-e224-7c09" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="caf2-d3e5-85d0-bc1a" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: 2x Power Klaw" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Power Klaw, Skorcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="70cf-aec5-f03a-4a39" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Power Klaw, Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="caf2-d3e5-85d0-bc1a" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: 2x Skorcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="70cf-aec5-f03a-4a39" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: Skorcha, Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="70cf-aec5-f03a-4a39" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="caf2-d3e5-85d0-bc1a" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Upper Arms: 2x Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="caf2-d3e5-85d0-bc1a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="1ffc-90da-df2e-d4df">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Lower Arms</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="Lower Arms: 2x Big Shoota" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="ed78-1502-bacd-c774" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Big Shoota, Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ed78-1502-bacd-c774" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ba8a-8fea-b9ab-4b60" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Big Shoota, Power Klaw" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ed78-1502-bacd-c774" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Big Shoota, Skorcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ed78-1502-bacd-c774" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="4107-b773-71a3-5fa4" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Big Shoota, Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ed78-1502-bacd-c774" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="97e4-f8c7-6394-f95b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: 2x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="ba8a-8fea-b9ab-4b60" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Rokkit Launcha, Power Klaw" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ba8a-8fea-b9ab-4b60" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Rokkit Launcha, Skorcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ba8a-8fea-b9ab-4b60" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="4107-b773-71a3-5fa4" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Rokkit Launcha, Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="ba8a-8fea-b9ab-4b60" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="97e4-f8c7-6394-f95b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: 2x Power Klaw" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Power Klaw, Skorcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="4107-b773-71a3-5fa4" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Power Klaw, Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="97e4-f8c7-6394-f95b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: 2x Skorcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="4107-b773-71a3-5fa4" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: Skorcha, Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="4107-b773-71a3-5fa4" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="97e4-f8c7-6394-f95b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Lower Arms: 2x Kustom Mega-blasta" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="97e4-f8c7-6394-f95b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set 1 (Upper Arms)" id="9ff1-02e1-fded-0b84" hidden="false">
+        <selectionEntryGroup name="Weapons" id="9ff1-02e1-fded-0b84" hidden="false">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="492d-591e-af47-ab90-min" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="492d-591e-af47-ab90-max" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="492d-591e-af47-ab90-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="492d-591e-af47-ab90-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Big Shoota (Upper Arms)" hidden="false" id="725a-8c3b-bd34-67bf">
+            <selectionEntry type="upgrade" import="true" name="Big Shoota" hidden="false" id="725a-8c3b-bd34-67bf">
               <infoLinks>
                 <infoLink name="Big Shoota" id="0882-dca0-2b93-1cd4" hidden="false" type="profile" targetId="5206-c566-4696-f077"/>
               </infoLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e34c-eb33-1cca-3bca" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e34c-eb33-1cca-3bca" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rokkit Launcha (Upper Arms)" hidden="false" id="dee9-1b35-e224-7c09">
+            <selectionEntry type="upgrade" import="true" name="Rokkit Launcha" hidden="false" id="dee9-1b35-e224-7c09">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
               </costs>
@@ -1835,10 +1611,10 @@ Bulky | Waaagh!</description>
                 <infoLink name="Rokkit Launcha" id="d939-65d0-1de1-c30b" hidden="false" type="profile" targetId="ef04-4692-4093-714e"/>
               </infoLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ce96-37f1-5806-bc89" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ce96-37f1-5806-bc89" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Power Klaw (Upper Arms)" hidden="false" id="8d50-d3c1-16fa-8f5f">
+            <selectionEntry type="upgrade" import="true" name="Power Klaw" hidden="false" id="8d50-d3c1-16fa-8f5f">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="6"/>
               </costs>
@@ -1846,10 +1622,10 @@ Bulky | Waaagh!</description>
                 <infoLink name="Power Klaw" id="8f1f-ae60-01d2-71ba" hidden="false" type="profile" targetId="8aa3-456c-4d3c-2915"/>
               </infoLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2a03-0978-3c75-0e31" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2a03-0978-3c75-0e31" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Skorcha (Upper Arms)" hidden="false" id="70cf-aec5-f03a-4a39">
+            <selectionEntry type="upgrade" import="true" name="Skorcha" hidden="false" id="70cf-aec5-f03a-4a39">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
               </costs>
@@ -1857,10 +1633,10 @@ Bulky | Waaagh!</description>
                 <infoLink name="Skorcha" id="9fd5-10e0-e3a9-baf8" hidden="false" type="profile" targetId="1f7b-ce4c-4e8c-ca9b"/>
               </infoLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9a94-c186-c6dc-259d" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9a94-c186-c6dc-259d" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Kustom Mega-blasta (Upper Arms)" hidden="false" id="caf2-d3e5-85d0-bc1a">
+            <selectionEntry type="upgrade" import="true" name="Kustom Mega-blasta" hidden="false" id="caf2-d3e5-85d0-bc1a">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
               </costs>
@@ -1868,67 +1644,7 @@ Bulky | Waaagh!</description>
                 <infoLink name="Kustom Mega-blasta" id="1fc0-ac43-d109-7df7" hidden="false" type="profile" targetId="1eb7-ed5c-4a57-ec7b"/>
               </infoLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4da6-7c5e-a28f-80cb" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set 2 (Lower Arms)" id="300d-a64a-0290-23f8" hidden="false">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3fb0-7fd8-1af3-cab6" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="96e3-9628-5a3d-e5a3" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Big Shoota (Lower Arms)" hidden="false" id="ed78-1502-bacd-c774">
-              <infoLinks>
-                <infoLink name="Big Shoota" id="5f1f-8801-7d7f-6812" hidden="false" type="profile" targetId="5206-c566-4696-f077"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="74ea-793b-71c5-b8fa" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rokkit Launcha (Lower Arms)" hidden="false" id="ba8a-8fea-b9ab-4b60">
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="3"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Rokkit Launcha" id="c858-dfa2-cc8a-1aed" hidden="false" type="profile" targetId="ef04-4692-4093-714e"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="46ec-339a-9131-e0a2" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Power Klaw (Lower Arms)" hidden="false" id="6df6-cfdb-b574-f76d">
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="6"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Power Klaw" id="2d07-2911-8251-b300" hidden="false" type="profile" targetId="8aa3-456c-4d3c-2915"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="03e1-cb44-9a47-2ef3" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Skorcha (Lower Arms)" hidden="false" id="4107-b773-71a3-5fa4">
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="7"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Skorcha" id="efed-0325-027b-37de" hidden="false" type="profile" targetId="1f7b-ce4c-4e8c-ca9b"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1740-8450-5a61-adf2" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Kustom Mega-blasta (Lower Arms)" hidden="false" id="97e4-f8c7-6394-f95b">
-              <costs>
-                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="9"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Kustom Mega-blasta" id="43bd-4184-7c75-c176" hidden="false" type="profile" targetId="1eb7-ed5c-4a57-ec7b"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b7a6-3110-3abc-fb69" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4da6-7c5e-a28f-80cb" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
@@ -1940,65 +1656,20 @@ Bulky | Waaagh!</description>
         <categoryLink targetId="05d8-53ff-1ca8-52b0" id="699f-13bc-8b37-a19c" primary="false" name="Mechanical"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="4" field="0523-de1f-51ca-1d2a" affects="profiles.Unit">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="2" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-                    <condition type="equalTo" value="2" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" value="4" field="ff82-d90f-34a9-9279" affects="profiles.Vehicle">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
+          </conditions>
         </modifier>
-        <modifier type="set" value="5" field="0523-de1f-51ca-1d2a" affects="profiles.Unit">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="2" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-                    <condition type="equalTo" value="2" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" value="5" field="ff82-d90f-34a9-9279" affects="profiles.Vehicle">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
+          </conditions>
         </modifier>
-        <modifier type="set" value="6" field="0523-de1f-51ca-1d2a" affects="profiles.Unit">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="2" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
-                    <condition type="equalTo" value="2" field="selections" scope="self" childId="6df6-cfdb-b574-f76d" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" value="6" field="ff82-d90f-34a9-9279" affects="profiles.Vehicle">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="8d50-d3c1-16fa-8f5f" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <rules>
@@ -2093,191 +1764,23 @@ Bulky | Waaagh!</description>
         <cost name="Points" typeId="b109-6551-e41a-f1f7" value="110"/>
       </costs>
       <profiles>
-        <profile name="Battlewagon" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="8591-c808-c8ee-b310">
+        <profile name="Battlewagon" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="8591-c808-c8ee-b310">
           <characteristics>
-            <characteristic name="WS" typeId="577a-f706-8022-c914">2</characteristic>
-            <characteristic name="BS" typeId="f7b7-903d-2569-7d39">5+</characteristic>
-            <characteristic name="S" typeId="99a4-3885-3000-f15c">8</characteristic>
-            <characteristic name="AV" typeId="7014-784f-7071-2027">13</characteristic>
-            <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">1</characteristic>
-            <characteristic name="A" typeId="0523-de1f-51ca-1d2a">3</characteristic>
-            <characteristic name="Ld" typeId="2091-9449-9db5-814a">7+</characteristic>
-            <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">5</characteristic>
-            <characteristic name="AA" typeId="f36f-2136-0eba-87a4">1</characteristic>
+            <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">2</characteristic>
+            <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
+            <characteristic name="S" typeId="cd7c-e257-6d0e-3291">8</characteristic>
+            <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">13</characteristic>
+            <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">4</characteristic>
+            <characteristic name="I" typeId="7c98-ceb5-4506-0af7">1</characteristic>
+            <characteristic name="A" typeId="ff82-d90f-34a9-9279">3</characteristic>
+            <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">7+</characteristic>
+            <characteristic name="OC" typeId="288a-146b-8aa9-78b1">5</characteristic>
+            <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">3+</characteristic>
+            <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+            <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+            <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">160mm x 100mm</characteristic> -->
+            <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
           </characteristics>
-        </profile>
-        <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="73eb-9546-6741-38ba">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Mounted Weapons</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 1x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 2x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 3x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 4x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 1x Big Shoota" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 1x Big Shoota, 1x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 1x Big Shoota, 2x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 1x Big Shoota, 3x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 2x Big Shoota" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 2x Big Shoota, 1x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 2x Big Shoota, 2x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 3x Big Shoota" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 3x Big Shoota, 1x Rokkit Launcha" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Mounted Weapons: 4x Big Shoota" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="8e8a-4432-331a-abb4" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="229d-e07f-dd17-01ee" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 2" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="dbf3-d106-e66f-a0eb">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Big Gun</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4264-3388-7491-598c" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="9200-15d6-c143-5096" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="5ddb-6865-fff9-a79a" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="Big Gun: Kannon" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="4264-3388-7491-598c" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Big Gun: Zzap Gun" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="9200-15d6-c143-5096" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Big Gun: Lobba" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="5ddb-6865-fff9-a79a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 3" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="e07f-3cac-541b-624a">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Ram</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d0c1-1cfe-6449-3dad" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="7c0e-3e78-df7e-33d1" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="Ram: Wreckin&apos; Ball" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="d0c1-1cfe-6449-3dad" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Ram: Deff Rolla" field="12ff-793d-d259-1d08">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="7c0e-3e78-df7e-33d1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Weapon Set 4" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="true" id="d12f-f4c5-3997-2348">
-          <characteristics>
-            <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Killkannon</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="9a2f-a998-974a-e1c2" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Battlewagon" typeId="958d-aa23-1ae0-701c" typeName="Transport" hidden="false" id="c039-3bbb-7174-9df5">
           <characteristics>
@@ -2287,7 +1790,7 @@ Bulky | Waaagh!</description>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set 1 (Mounted Weapons)" id="1fe2-d9b0-ba38-3747" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Mounted Weapons" id="1fe2-d9b0-ba38-3747" hidden="false" sortIndex="1">
           <constraints>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="aced-33aa-0a71-eab2" includeChildSelections="false"/>
           </constraints>
@@ -2316,7 +1819,7 @@ Bulky | Waaagh!</description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set 2 (Big Gun)" id="df11-5d84-ac96-2749" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Big Gun" id="df11-5d84-ac96-2749" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Kannon" hidden="false" id="4264-3388-7491-598c">
               <costs>
@@ -2347,35 +1850,6 @@ Bulky | Waaagh!</description>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce64-103a-ba8e-5cfa" includeChildSelections="false"/>
           </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set 3 (Ram)" id="b6a9-550a-786c-7c5a" hidden="false" sortIndex="4">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4d4-b1f1-24a9-9c0d" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Wreckin&apos; Ball" hidden="false" id="d0c1-1cfe-6449-3dad" sortIndex="4">
-                  <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Wreckin’ Ball" id="7f96-59fc-1d85-ea61" hidden="false" type="profile" targetId="46d7-f204-424b-b5e3"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f6-4994-3490-83b1" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Deff Rolla" hidden="false" id="7c0e-3e78-df7e-33d1" sortIndex="5">
-                  <costs>
-                    <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Deff Rolla" id="f471-f18a-1d53-814d" hidden="false" type="profile" targetId="bff9-e39e-4d85-1415"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a125-8b61-dafb-7ecf" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Upgrades" id="53db-a7d8-730e-56c3" hidden="false" sortIndex="3">
           <selectionEntries>
@@ -2409,13 +1883,35 @@ Bulky | Waaagh!</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6716-f25b-af25-4bb5" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wreckin&apos; Ball" hidden="false" id="d0c1-1cfe-6449-3dad" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Wreckin’ Ball" id="7f96-59fc-1d85-ea61" hidden="false" type="profile" targetId="46d7-f204-424b-b5e3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f6-4994-3490-83b1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Deff Rolla" hidden="false" id="7c0e-3e78-df7e-33d1" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="b109-6551-e41a-f1f7" value="20"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Deff Rolla" id="f471-f18a-1d53-814d" hidden="false" type="profile" targetId="bff9-e39e-4d85-1415"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a125-8b61-dafb-7ecf" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="&apos;Ard Case" hidden="false" id="8c88-18e8-98cb-fee3" sortIndex="2">
               <costs>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <modifiers>
-                <modifier type="set" value="14" field="7014-784f-7071-2027" affects="profiles.Unit" scope="parent"/>
-                <modifier type="set" value="2" field="f36f-2136-0eba-87a4" affects="profiles.Unit" scope="parent"/>
+                <modifier type="set" value="14" field="d456-0ff3-8a75-eb52" affects="profiles.Vehicle" scope="parent"/>
+                <modifier type="set" value="2+" field="183a-8a11-c349-ae14" affects="profiles.Vehicle" scope="parent"/>
                 <modifier type="set" value="0" field="5d08-83fc-3612-449e" affects="profiles.Transport" scope="parent"/>
               </modifiers>
               <constraints>
@@ -2441,7 +1937,7 @@ Bulky | Waaagh!</description>
             <cost name="Points" typeId="b109-6551-e41a-f1f7" value="36"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon Set 1 (Turret)" id="55a7-2193-e437-5115" hidden="false">
+            <selectionEntryGroup name="Weapon" id="55a7-2193-e437-5115" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="2x Big Shootas" hidden="false" id="16b2-4e5a-99f8-7653" sortIndex="1">
                   <infoLinks>
@@ -2511,60 +2007,23 @@ Bulky | Waaagh!</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <profiles>
-            <profile name="Buggy" typeId="f9ab-bd12-5ccd-fc53" typeName="Unit" hidden="false" id="67a0-a363-05e3-4c0d">
+            <profile name="Buggy" typeId="a397-0d29-a6e4-23e6" typeName="Vehicle" hidden="false" id="67a0-a363-05e3-4c0d">
               <characteristics>
-                <characteristic name="WS" typeId="577a-f706-8022-c914">3</characteristic>
-                <characteristic name="BS" typeId="f7b7-903d-2569-7d39">5+</characteristic>
-                <characteristic name="S" typeId="99a4-3885-3000-f15c">5</characteristic>
-                <characteristic name="AV" typeId="7014-784f-7071-2027">10</characteristic>
-                <characteristic name="I" typeId="39f8-8e39-e6c9-e5bc">2</characteristic>
-                <characteristic name="A" typeId="0523-de1f-51ca-1d2a">2</characteristic>
-                <characteristic name="Ld" typeId="2091-9449-9db5-814a">8+</characteristic>
-                <characteristic name="OC" typeId="2fc7-7a19-1e5a-112f">1</characteristic>
-                <characteristic name="AA" typeId="f36f-2136-0eba-87a4">0</characteristic>
+                <characteristic name="WS" typeId="5fb4-0778-e5dd-b382">3</characteristic>
+                <characteristic name="BS" typeId="6ba5-adee-cf9c-7941">5+</characteristic>
+                <characteristic name="S" typeId="cd7c-e257-6d0e-3291">5</characteristic>
+                <characteristic name="AV" typeId="d456-0ff3-8a75-eb52">10</characteristic>
+                <characteristic name="W" typeId="a27f-4fe7-d943-c0a2">2</characteristic>
+                <characteristic name="I" typeId="7c98-ceb5-4506-0af7">2</characteristic>
+                <characteristic name="A" typeId="ff82-d90f-34a9-9279">2</characteristic>
+                <characteristic name="Ld" typeId="1749-ccde-02fe-ae92">8+</characteristic>
+                <characteristic name="OC" typeId="288a-146b-8aa9-78b1">1</characteristic>
+                <characteristic name="Sv+" typeId="183a-8a11-c349-ae14">5+</characteristic>
+                <characteristic name="Sv++" typeId="5681-e76b-dcac-f4ea">-</characteristic>
+                <characteristic name="FNP" typeId="3c92-8b17-10bf-a7a5">-</characteristic>
+                <!-- <characteristic name="Base" typeId="72e3-2ba4-4e7f-b1c1">115mm x 75mm</characteristic> -->
+                <!-- <characteristic name="Height" typeId="326f-b1ed-a380-71dc">80mm</characteristic> -->
               </characteristics>
-            </profile>
-            <profile name="Weapon Set 1" typeId="df8d-5c8b-c816-347d" typeName="Weapon Sets" hidden="false" id="8d51-c870-ad8f-f78a">
-              <characteristics>
-                <characteristic name="Weapons" typeId="12ff-793d-d259-1d08">Turret</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="set" value="Turret: 2x Big Shoota" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="16b2-4e5a-99f8-7653" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Turret: 2x Rokkit Launcha" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="77f6-c673-d55e-6f5c" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Turret: Mek Speshul, Big Shoota" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="c661-7ffc-1e68-bfe5" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Turret: Squig Launcha, Heavy Squig Launcha" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="ad94-ab35-984c-e75d" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Turret: Kustom Shokk Rifle, Rokkit Launcha" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="24ea-22b7-6251-ddcb" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Turret: 2x Skorcha" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="c558-748c-5181-d273" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Turret: Rivet Kannon, Skorcha" field="12ff-793d-d259-1d08">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="0e69-5abb-2de7-0ebf" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -2576,7 +2035,7 @@ Bulky | Waaagh!</description>
                 <cost name="Points" typeId="b109-6551-e41a-f1f7" value="10"/>
               </costs>
               <modifiers>
-                <modifier type="set" value="4+" field="f7b7-903d-2569-7d39" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="4+" field="6ba5-adee-cf9c-7941" scope="parent" affects="profiles.Vehicle"/>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48e0-f7c2-a5a2-1bf3" includeChildSelections="false"/>
